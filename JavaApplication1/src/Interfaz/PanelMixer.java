@@ -12,7 +12,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Image;
 import java.util.ArrayList;
-import javafx.scene.control.RadioButton;
+//import javafx.scene.control.RadioButton;
 import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.ImageIcon;
@@ -1817,10 +1817,11 @@ public class PanelMixer extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(51, 51, 51));
 
-        C1.setBackground(new java.awt.Color(102, 102, 102));
+        C1.setBackground(new java.awt.Color(69, 93, 220));
         C1.setFont(new java.awt.Font("Montserrat", 0, 21)); // NOI18N
         C1.setForeground(new java.awt.Color(255, 255, 255));
         C1.setText("CHANNEL 1");
+        C1.setToolTipText("");
         C1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C1ActionPerformed(evt);
@@ -2458,6 +2459,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
         V32.setMaximum(10);
 
+        S1.setBackground(new java.awt.Color(69, 93, 220));
         S1.setText("SOLO");
         S1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3163,7 +3165,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
-
+      C1.setBackground(Color.YELLOW);
       var[1]=true;
       if(!var[2])
       {// TODO add your handling code here:     

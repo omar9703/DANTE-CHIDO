@@ -29,7 +29,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="I1" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
-                                  <Component id="V1" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
+                                  <Component id="V1" alignment="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="C1" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1298,13 +1298,19 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="0" red="ff" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="C1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="66" type="rgb"/>
+          <Color blue="31" green="1f" red="19" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1331,11 +1337,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V9">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1365,11 +1380,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V17">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S17">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1399,11 +1423,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V25">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S25">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1414,6 +1447,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S9">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1443,11 +1482,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V3">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S3">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1477,11 +1525,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V11">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S11">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1511,11 +1568,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V19">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S19">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1545,11 +1611,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V27">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S27">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1560,6 +1635,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1570,6 +1651,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
@@ -1594,6 +1678,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S10">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1604,6 +1694,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V10">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
@@ -1628,6 +1721,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S18">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1638,6 +1737,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V18">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
@@ -1662,6 +1764,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S26">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1672,6 +1780,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V26">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
@@ -1715,11 +1826,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V4">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S4">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1749,11 +1869,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V12">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S12">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1783,11 +1912,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V20">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S20">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1817,11 +1955,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V28">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S28">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1851,11 +1998,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V5">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S5">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1885,6 +2041,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V7">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -1893,6 +2052,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S7">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1922,11 +2087,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V13">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S13">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1956,11 +2130,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V21">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S21">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -1990,11 +2173,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2024,11 +2216,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V29">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S29">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2058,11 +2259,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V14">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S14">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2092,11 +2302,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V22">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S22">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2126,11 +2345,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V30">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S30">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2160,11 +2388,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V8">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S8">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2194,11 +2431,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V15">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S15">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2228,11 +2474,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V16">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S16">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2262,11 +2517,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V23">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S23">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2296,11 +2560,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V24">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S24">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2330,11 +2603,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V31">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S31">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2364,11 +2646,20 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V32">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JToggleButton" name="S32">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2398,6 +2689,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V33">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2406,6 +2700,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S33">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2416,6 +2716,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V34">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2443,6 +2746,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S34">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2453,6 +2762,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V35">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2480,6 +2792,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S35">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2490,6 +2808,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V36">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2517,6 +2838,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S36">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2527,6 +2854,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V37">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2554,6 +2884,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S37">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2583,6 +2919,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V38">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2591,6 +2930,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S38">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2620,6 +2965,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V39">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2628,6 +2976,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S39">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2657,6 +3011,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V40">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2665,6 +3022,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S40">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2694,6 +3057,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V41">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2702,6 +3068,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S41">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2726,6 +3098,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S42">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2741,6 +3119,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V42">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2763,6 +3144,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S43">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2778,6 +3165,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V43">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2800,6 +3190,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S44">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2815,6 +3211,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V44">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2842,6 +3241,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V45">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2850,6 +3252,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S45">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2879,6 +3287,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V46">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2887,6 +3298,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S46">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2916,6 +3333,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V47">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2924,6 +3344,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S47">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2953,6 +3379,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V48">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2961,6 +3390,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S48">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -2990,6 +3425,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V49">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -2998,6 +3436,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S49">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3027,6 +3471,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V50">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3035,6 +3482,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S50">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3064,6 +3517,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V51">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3072,6 +3528,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S51">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3101,6 +3563,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V52">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3109,6 +3574,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S52">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3138,6 +3609,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V53">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3146,6 +3620,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S53">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3156,6 +3636,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S54">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3166,6 +3652,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V54">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3193,6 +3682,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S55">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3203,6 +3698,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V55">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3230,6 +3728,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S56">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3240,6 +3744,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V56">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3286,6 +3793,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V57">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3294,6 +3804,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S57">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3323,6 +3839,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V58">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3331,6 +3850,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S58">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3360,6 +3885,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V59">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3368,6 +3896,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S59">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3397,6 +3931,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V60">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3405,6 +3942,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S60">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3434,6 +3977,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V61">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3442,6 +3988,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S61">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3471,6 +4023,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V62">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3479,6 +4034,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S62">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3508,6 +4069,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V63">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3516,6 +4080,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S63">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -3545,6 +4115,9 @@
     </Component>
     <Component class="javax.swing.JSlider" name="V64">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="4c" green="37" red="2f" type="rgb"/>
+        </Property>
         <Property name="maximum" type="int" value="10"/>
       </Properties>
       <Events>
@@ -3553,6 +4126,12 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S64">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f2" green="c3" red="ba" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="opaque" type="boolean" value="true"/>

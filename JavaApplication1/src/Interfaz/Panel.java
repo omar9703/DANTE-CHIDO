@@ -68,6 +68,15 @@ public class Panel extends javax.swing.JFrame {
        set=new Settings(C,this,mixer);
        this.setBackground(Color.yellow);
     //   this.Bconnect.setEnabled(false);
+       primero.setBorder(null);
+       segundo.setBorder(null);
+       tercero.setBorder(null);
+       cuarto.setBorder(null);
+       
+       primero.setBackground(Color.black);
+       primero.setForeground(Color.white);
+       jPanel1.setBackground(Color.red);
+
        
        //fecha
        df=new SimpleDateFormat("yyyy/dd/MM HH:mm:ss");
@@ -105,6 +114,7 @@ public class Panel extends javax.swing.JFrame {
       MSG.setVisible(false);
       networks.setVisible(false);
       jLabel1.setVisible(false);
+
     }
     
     
@@ -282,6 +292,10 @@ public class Panel extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         vPrincipal = new javax.swing.JSlider();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
@@ -306,7 +320,6 @@ public class Panel extends javax.swing.JFrame {
 
         cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        cLEAR.setIcon(new javax.swing.ImageIcon("C:\\Users\\ocamp\\Documents\\GitHub\\DANTE-CHIDO\\JavaApplication1\\trash-can.png")); // NOI18N
         cLEAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cLEARActionPerformed(evt);
@@ -315,7 +328,15 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(cLEAR);
         cLEAR.setBounds(1170, 60, 120, 40);
 
+        primero.setBackground(new java.awt.Color(35, 38, 49));
+        primero.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        primero.setForeground(new java.awt.Color(65, 71, 90));
         primero.setText("1-16");
+        primero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                primeroMousePressed(evt);
+            }
+        });
         primero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 primeroActionPerformed(evt);
@@ -324,6 +345,9 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(primero);
         primero.setBounds(0, 140, 80, 70);
 
+        segundo.setBackground(new java.awt.Color(35, 38, 49));
+        segundo.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        segundo.setForeground(new java.awt.Color(65, 71, 90));
         segundo.setText("17-32");
         segundo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,6 +357,9 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(segundo);
         segundo.setBounds(0, 240, 80, 70);
 
+        cuarto.setBackground(new java.awt.Color(35, 38, 49));
+        cuarto.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        cuarto.setForeground(new java.awt.Color(65, 71, 90));
         cuarto.setText("49-64");
         cuarto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -406,8 +433,11 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 20);
+        networks.setBounds(880, 690, 130, 24);
 
+        tercero.setBackground(new java.awt.Color(35, 38, 49));
+        tercero.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        tercero.setForeground(new java.awt.Color(65, 71, 90));
         tercero.setText("33-48");
         tercero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -424,6 +454,7 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1890, 740);
 
+        vPrincipal.setBackground(new java.awt.Color(0, 0, 0));
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 vPrincipalStateChanged(evt);
@@ -431,6 +462,16 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(900, 10, 210, 30);
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(80, 440, 10, 70);
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(80, 340, 10, 70);
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(80, 240, 10, 70);
+
+        jPanel1.setBackground(java.awt.Color.red);
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(80, 140, 10, 70);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -469,6 +510,23 @@ public class Panel extends javax.swing.JFrame {
 
     private void primeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primeroActionPerformed
         // TODO add your handling code here:
+        primero.setBackground(Color.black);
+        primero.setForeground(Color.white);
+        jPanel1.setBackground(Color.red);
+        
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+        cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
                 this.scrollPane1.setScrollPosition(0, 0);
@@ -482,6 +540,23 @@ public class Panel extends javax.swing.JFrame {
 
     private void segundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoActionPerformed
         // TODO add your handling code here:
+        segundo.setBackground(Color.black);
+        segundo.setForeground(Color.white);
+        jPanel2.setBackground(Color.red);
+        
+        
+        primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+        cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
                 this.scrollPane1.setScrollPosition(0, 525);
@@ -494,6 +569,23 @@ public class Panel extends javax.swing.JFrame {
 
     private void terceroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_terceroActionPerformed
         // TODO add your handling code here:
+        tercero.setBackground(Color.black);
+        tercero.setForeground(Color.white);
+        jPanel3.setBackground(Color.red);
+        
+        
+        primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
                 this.scrollPane1.setScrollPosition(0, 1050);
@@ -506,6 +598,23 @@ public class Panel extends javax.swing.JFrame {
 
     private void cuartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuartoActionPerformed
         // TODO add your handling code here:
+        cuarto.setBackground(Color.black);
+        cuarto.setForeground(Color.white);
+        jPanel4.setBackground(Color.red);
+        
+        
+         primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
                 this.scrollPane1.setScrollPosition(0, 1575);
@@ -520,6 +629,9 @@ public class Panel extends javax.swing.JFrame {
         // TODO add your handling code here:
         mixer.ClearAll();
     }//GEN-LAST:event_cLEARActionPerformed
+
+    private void primeroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_primeroMousePressed
+    }//GEN-LAST:event_primeroMousePressed
 
     
     /**
@@ -558,6 +670,10 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JComboBox<String> networks;

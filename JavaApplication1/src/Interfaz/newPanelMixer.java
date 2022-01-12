@@ -13,7 +13,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Image;
 import java.util.ArrayList;
-import javafx.scene.control.RadioButton;
+//import javafx.scene.control.RadioButton;
 import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.ImageIcon;
@@ -173,7 +173,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             if(component instanceof JButton)
             {
               
-                ((JButton)component).setBackground(Color.BLUE);
+                ((JButton)component).setBackground(new Color(25, 31, 49));
             }
             
           }
@@ -284,7 +284,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                  audio[index-1].detener();
                  audio[index-1].stop();
                  alternar[index-1]=0;
-                 button.setBackground(Color.BLUE);
+                 button.setBackground(new Color(25, 31, 49));
                  //var[index-1]=false;
                     
                  var[(index*2)-1]=false;
@@ -327,7 +327,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             {
             }
             
-            togglebutton.setBackground(Color.white);
+            togglebutton.setBackground(new Color(69, 93, 220));
+            togglebutton.setForeground(new Color(186, 195, 242));
         }
     }
     
@@ -2502,25 +2503,28 @@ public class newPanelMixer extends javax.swing.JPanel {
           {
             if (component instanceof JSlider)
             {
-                if(component.equals(j))
+                if(component.equals(j)){
                     ((JSlider)component).setValue(10);
-                
+                }
                 if (!component.equals(j)){
                     ((JSlider) component).setValue(0);
                     ((JSlider) component).disable();
+                    
                 }
             }
             if(component instanceof JToggleButton)
             {
                 if(component.equals(r)){
                     r.setSelected(true);
-                    ((JToggleButton)component).setBackground(Color.blue);
+                    ((JToggleButton)component).setBackground(new Color(255, 156, 0));
+                    ((JToggleButton)component).setForeground(Color.black);
                 }
                 
                 else
                 {
                     ((JToggleButton)component).setSelected(false);
-                    ((JToggleButton)component).setBackground(Color.white);
+                    ((JToggleButton)component).setBackground(new Color(69, 93, 220));
+                    ((JToggleButton)component).setForeground(new Color(186,195,242));
                 }
             }
           }
@@ -2836,9 +2840,11 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        V1.setBackground(new java.awt.Color(47, 55, 76));
+        V1.setForeground(new java.awt.Color(255, 0, 102));
         V1.setMaximum(10);
 
-        C1.setBackground(new java.awt.Color(102, 102, 102));
+        C1.setBackground(new java.awt.Color(25, 31, 49));
         C1.setForeground(new java.awt.Color(255, 255, 255));
         C1.setText("jButton1");
         C1.addActionListener(new java.awt.event.ActionListener() {
@@ -2856,8 +2862,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V9.setBackground(new java.awt.Color(47, 55, 76));
         V9.setMaximum(10);
 
+        S1.setBackground(new java.awt.Color(69, 93, 220));
+        S1.setForeground(new java.awt.Color(186, 195, 242));
         S1.setText("SOLO");
         S1.setContentAreaFilled(false);
         S1.setOpaque(true);
@@ -2878,8 +2887,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V17.setBackground(new java.awt.Color(47, 55, 76));
         V17.setMaximum(10);
 
+        S17.setBackground(new java.awt.Color(69, 93, 220));
+        S17.setForeground(new java.awt.Color(186, 195, 242));
         S17.setText("SOLO");
         S17.setContentAreaFilled(false);
         S17.setOpaque(true);
@@ -2900,8 +2912,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V25.setBackground(new java.awt.Color(47, 55, 76));
         V25.setMaximum(10);
 
+        S25.setBackground(new java.awt.Color(69, 93, 220));
+        S25.setForeground(new java.awt.Color(186, 195, 242));
         S25.setText("SOLO");
         S25.setContentAreaFilled(false);
         S25.setOpaque(true);
@@ -2911,6 +2926,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S9.setBackground(new java.awt.Color(69, 93, 220));
+        S9.setForeground(new java.awt.Color(186, 195, 242));
         S9.setText("SOLO");
         S9.setContentAreaFilled(false);
         S9.setOpaque(true);
@@ -2931,8 +2948,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V3.setBackground(new java.awt.Color(47, 55, 76));
         V3.setMaximum(10);
 
+        S3.setBackground(new java.awt.Color(69, 93, 220));
+        S3.setForeground(new java.awt.Color(186, 195, 242));
         S3.setText("SOLO");
         S3.setContentAreaFilled(false);
         S3.setOpaque(true);
@@ -2953,8 +2973,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V11.setBackground(new java.awt.Color(47, 55, 76));
         V11.setMaximum(10);
 
+        S11.setBackground(new java.awt.Color(69, 93, 220));
+        S11.setForeground(new java.awt.Color(186, 195, 242));
         S11.setText("SOLO");
         S11.setContentAreaFilled(false);
         S11.setOpaque(true);
@@ -2975,8 +2998,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V19.setBackground(new java.awt.Color(47, 55, 76));
         V19.setMaximum(10);
 
+        S19.setBackground(new java.awt.Color(69, 93, 220));
+        S19.setForeground(new java.awt.Color(186, 195, 242));
         S19.setText("SOLO");
         S19.setContentAreaFilled(false);
         S19.setOpaque(true);
@@ -2997,8 +3023,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V27.setBackground(new java.awt.Color(47, 55, 76));
         V27.setMaximum(10);
 
+        S27.setBackground(new java.awt.Color(69, 93, 220));
+        S27.setForeground(new java.awt.Color(186, 195, 242));
         S27.setText("SOLO");
         S27.setContentAreaFilled(false);
         S27.setOpaque(true);
@@ -3008,6 +3037,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S2.setBackground(new java.awt.Color(69, 93, 220));
+        S2.setForeground(new java.awt.Color(186, 195, 242));
         S2.setText("SOLO");
         S2.setContentAreaFilled(false);
         S2.setOpaque(true);
@@ -3017,6 +3048,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V2.setBackground(new java.awt.Color(47, 55, 76));
         V2.setMaximum(10);
 
         C2.setBackground(new java.awt.Color(102, 102, 102));
@@ -3030,6 +3062,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S10.setBackground(new java.awt.Color(69, 93, 220));
+        S10.setForeground(new java.awt.Color(186, 195, 242));
         S10.setText("SOLO");
         S10.setContentAreaFilled(false);
         S10.setOpaque(true);
@@ -3039,6 +3073,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V10.setBackground(new java.awt.Color(47, 55, 76));
         V10.setMaximum(10);
 
         C10.setBackground(new java.awt.Color(102, 102, 102));
@@ -3052,6 +3087,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S18.setBackground(new java.awt.Color(69, 93, 220));
+        S18.setForeground(new java.awt.Color(186, 195, 242));
         S18.setText("SOLO");
         S18.setContentAreaFilled(false);
         S18.setOpaque(true);
@@ -3061,6 +3098,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V18.setBackground(new java.awt.Color(47, 55, 76));
         V18.setMaximum(10);
 
         C18.setBackground(new java.awt.Color(102, 102, 102));
@@ -3074,6 +3112,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S26.setBackground(new java.awt.Color(69, 93, 220));
+        S26.setForeground(new java.awt.Color(186, 195, 242));
         S26.setText("SOLO");
         S26.setContentAreaFilled(false);
         S26.setOpaque(true);
@@ -3083,6 +3123,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V26.setBackground(new java.awt.Color(47, 55, 76));
         V26.setMaximum(10);
 
         C26.setBackground(new java.awt.Color(102, 102, 120));
@@ -3107,8 +3148,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V4.setBackground(new java.awt.Color(47, 55, 76));
         V4.setMaximum(10);
 
+        S4.setBackground(new java.awt.Color(69, 93, 220));
+        S4.setForeground(new java.awt.Color(186, 195, 242));
         S4.setText("SOLO");
         S4.setContentAreaFilled(false);
         S4.setOpaque(true);
@@ -3129,8 +3173,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V12.setBackground(new java.awt.Color(47, 55, 76));
         V12.setMaximum(10);
 
+        S12.setBackground(new java.awt.Color(69, 93, 220));
+        S12.setForeground(new java.awt.Color(186, 195, 242));
         S12.setText("SOLO");
         S12.setContentAreaFilled(false);
         S12.setOpaque(true);
@@ -3151,8 +3198,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V20.setBackground(new java.awt.Color(47, 55, 76));
         V20.setMaximum(10);
 
+        S20.setBackground(new java.awt.Color(69, 93, 220));
+        S20.setForeground(new java.awt.Color(186, 195, 242));
         S20.setText("SOLO");
         S20.setContentAreaFilled(false);
         S20.setOpaque(true);
@@ -3173,8 +3223,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V28.setBackground(new java.awt.Color(47, 55, 76));
         V28.setMaximum(10);
 
+        S28.setBackground(new java.awt.Color(69, 93, 220));
+        S28.setForeground(new java.awt.Color(186, 195, 242));
         S28.setText("SOLO");
         S28.setContentAreaFilled(false);
         S28.setOpaque(true);
@@ -3195,8 +3248,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V5.setBackground(new java.awt.Color(47, 55, 76));
         V5.setMaximum(10);
 
+        S5.setBackground(new java.awt.Color(69, 93, 220));
+        S5.setForeground(new java.awt.Color(186, 195, 242));
         S5.setText("SOLO");
         S5.setContentAreaFilled(false);
         S5.setOpaque(true);
@@ -3217,6 +3273,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V7.setBackground(new java.awt.Color(47, 55, 76));
         V7.setMaximum(10);
         V7.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3224,6 +3281,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S7.setBackground(new java.awt.Color(69, 93, 220));
+        S7.setForeground(new java.awt.Color(186, 195, 242));
         S7.setText("SOLO");
         S7.setContentAreaFilled(false);
         S7.setOpaque(true);
@@ -3244,8 +3303,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V13.setBackground(new java.awt.Color(47, 55, 76));
         V13.setMaximum(10);
 
+        S13.setBackground(new java.awt.Color(69, 93, 220));
+        S13.setForeground(new java.awt.Color(186, 195, 242));
         S13.setText("SOLO");
         S13.setContentAreaFilled(false);
         S13.setOpaque(true);
@@ -3266,8 +3328,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V21.setBackground(new java.awt.Color(47, 55, 76));
         V21.setMaximum(10);
 
+        S21.setBackground(new java.awt.Color(69, 93, 220));
+        S21.setForeground(new java.awt.Color(186, 195, 242));
         S21.setText("SOLO");
         S21.setContentAreaFilled(false);
         S21.setOpaque(true);
@@ -3288,8 +3353,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V6.setBackground(new java.awt.Color(47, 55, 76));
         V6.setMaximum(10);
 
+        S6.setBackground(new java.awt.Color(69, 93, 220));
+        S6.setForeground(new java.awt.Color(186, 195, 242));
         S6.setText("SOLO");
         S6.setContentAreaFilled(false);
         S6.setOpaque(true);
@@ -3310,8 +3378,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V29.setBackground(new java.awt.Color(47, 55, 76));
         V29.setMaximum(10);
 
+        S29.setBackground(new java.awt.Color(69, 93, 220));
+        S29.setForeground(new java.awt.Color(186, 195, 242));
         S29.setText("SOLO");
         S29.setContentAreaFilled(false);
         S29.setOpaque(true);
@@ -3332,8 +3403,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V14.setBackground(new java.awt.Color(47, 55, 76));
         V14.setMaximum(10);
 
+        S14.setBackground(new java.awt.Color(69, 93, 220));
+        S14.setForeground(new java.awt.Color(186, 195, 242));
         S14.setText("SOLO");
         S14.setContentAreaFilled(false);
         S14.setOpaque(true);
@@ -3354,8 +3428,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V22.setBackground(new java.awt.Color(47, 55, 76));
         V22.setMaximum(10);
 
+        S22.setBackground(new java.awt.Color(69, 93, 220));
+        S22.setForeground(new java.awt.Color(186, 195, 242));
         S22.setText("SOLO");
         S22.setContentAreaFilled(false);
         S22.setOpaque(true);
@@ -3376,8 +3453,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V30.setBackground(new java.awt.Color(47, 55, 76));
         V30.setMaximum(10);
 
+        S30.setBackground(new java.awt.Color(69, 93, 220));
+        S30.setForeground(new java.awt.Color(186, 195, 242));
         S30.setText("SOLO");
         S30.setContentAreaFilled(false);
         S30.setOpaque(true);
@@ -3398,8 +3478,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V8.setBackground(new java.awt.Color(47, 55, 76));
         V8.setMaximum(10);
 
+        S8.setBackground(new java.awt.Color(69, 93, 220));
+        S8.setForeground(new java.awt.Color(186, 195, 242));
         S8.setText("SOLO");
         S8.setContentAreaFilled(false);
         S8.setOpaque(true);
@@ -3420,8 +3503,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V15.setBackground(new java.awt.Color(47, 55, 76));
         V15.setMaximum(10);
 
+        S15.setBackground(new java.awt.Color(69, 93, 220));
+        S15.setForeground(new java.awt.Color(186, 195, 242));
         S15.setText("SOLO");
         S15.setContentAreaFilled(false);
         S15.setOpaque(true);
@@ -3442,8 +3528,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V16.setBackground(new java.awt.Color(47, 55, 76));
         V16.setMaximum(10);
 
+        S16.setBackground(new java.awt.Color(69, 93, 220));
+        S16.setForeground(new java.awt.Color(186, 195, 242));
         S16.setText("SOLO");
         S16.setContentAreaFilled(false);
         S16.setOpaque(true);
@@ -3464,8 +3553,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V23.setBackground(new java.awt.Color(47, 55, 76));
         V23.setMaximum(10);
 
+        S23.setBackground(new java.awt.Color(69, 93, 220));
+        S23.setForeground(new java.awt.Color(186, 195, 242));
         S23.setText("SOLO");
         S23.setContentAreaFilled(false);
         S23.setOpaque(true);
@@ -3486,8 +3578,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V24.setBackground(new java.awt.Color(47, 55, 76));
         V24.setMaximum(10);
 
+        S24.setBackground(new java.awt.Color(69, 93, 220));
+        S24.setForeground(new java.awt.Color(186, 195, 242));
         S24.setText("SOLO");
         S24.setContentAreaFilled(false);
         S24.setOpaque(true);
@@ -3508,8 +3603,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V31.setBackground(new java.awt.Color(47, 55, 76));
         V31.setMaximum(10);
 
+        S31.setBackground(new java.awt.Color(69, 93, 220));
+        S31.setForeground(new java.awt.Color(186, 195, 242));
         S31.setText("SOLO");
         S31.setContentAreaFilled(false);
         S31.setOpaque(true);
@@ -3530,8 +3628,11 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V32.setBackground(new java.awt.Color(47, 55, 76));
         V32.setMaximum(10);
 
+        S32.setBackground(new java.awt.Color(69, 93, 220));
+        S32.setForeground(new java.awt.Color(186, 195, 242));
         S32.setText("SOLO");
         S32.setContentAreaFilled(false);
         S32.setOpaque(true);
@@ -3552,6 +3653,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V33.setBackground(new java.awt.Color(47, 55, 76));
         V33.setMaximum(10);
         V33.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3559,6 +3661,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S33.setBackground(new java.awt.Color(69, 93, 220));
+        S33.setForeground(new java.awt.Color(186, 195, 242));
         S33.setText("SOLO");
         S33.setContentAreaFilled(false);
         S33.setOpaque(true);
@@ -3568,6 +3672,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V34.setBackground(new java.awt.Color(47, 55, 76));
         V34.setMaximum(10);
         V34.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3586,6 +3691,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S34.setBackground(new java.awt.Color(69, 93, 220));
+        S34.setForeground(new java.awt.Color(186, 195, 242));
         S34.setText("SOLO");
         S34.setContentAreaFilled(false);
         S34.setOpaque(true);
@@ -3595,6 +3702,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V35.setBackground(new java.awt.Color(47, 55, 76));
         V35.setMaximum(10);
         V35.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3613,6 +3721,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S35.setBackground(new java.awt.Color(69, 93, 220));
+        S35.setForeground(new java.awt.Color(186, 195, 242));
         S35.setText("SOLO");
         S35.setContentAreaFilled(false);
         S35.setOpaque(true);
@@ -3622,6 +3732,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V36.setBackground(new java.awt.Color(47, 55, 76));
         V36.setMaximum(10);
         V36.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3640,6 +3751,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S36.setBackground(new java.awt.Color(69, 93, 220));
+        S36.setForeground(new java.awt.Color(186, 195, 242));
         S36.setText("SOLO");
         S36.setContentAreaFilled(false);
         S36.setOpaque(true);
@@ -3649,6 +3762,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V37.setBackground(new java.awt.Color(47, 55, 76));
         V37.setMaximum(10);
         V37.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3667,6 +3781,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S37.setBackground(new java.awt.Color(69, 93, 220));
+        S37.setForeground(new java.awt.Color(186, 195, 242));
         S37.setText("SOLO");
         S37.setContentAreaFilled(false);
         S37.setOpaque(true);
@@ -3687,6 +3803,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V38.setBackground(new java.awt.Color(47, 55, 76));
         V38.setMaximum(10);
         V38.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3694,6 +3811,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S38.setBackground(new java.awt.Color(69, 93, 220));
+        S38.setForeground(new java.awt.Color(186, 195, 242));
         S38.setText("SOLO");
         S38.setContentAreaFilled(false);
         S38.setOpaque(true);
@@ -3714,6 +3833,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V39.setBackground(new java.awt.Color(47, 55, 76));
         V39.setMaximum(10);
         V39.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3721,6 +3841,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S39.setBackground(new java.awt.Color(69, 93, 220));
+        S39.setForeground(new java.awt.Color(186, 195, 242));
         S39.setText("SOLO");
         S39.setContentAreaFilled(false);
         S39.setOpaque(true);
@@ -3741,6 +3863,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V40.setBackground(new java.awt.Color(47, 55, 76));
         V40.setMaximum(10);
         V40.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3748,6 +3871,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S40.setBackground(new java.awt.Color(69, 93, 220));
+        S40.setForeground(new java.awt.Color(186, 195, 242));
         S40.setText("SOLO");
         S40.setContentAreaFilled(false);
         S40.setOpaque(true);
@@ -3768,6 +3893,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V41.setBackground(new java.awt.Color(47, 55, 76));
         V41.setMaximum(10);
         V41.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3775,6 +3901,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S41.setBackground(new java.awt.Color(69, 93, 220));
+        S41.setForeground(new java.awt.Color(186, 195, 242));
         S41.setText("SOLO");
         S41.setContentAreaFilled(false);
         S41.setOpaque(true);
@@ -3793,6 +3921,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S42.setBackground(new java.awt.Color(69, 93, 220));
+        S42.setForeground(new java.awt.Color(186, 195, 242));
         S42.setText("SOLO");
         S42.setContentAreaFilled(false);
         S42.setOpaque(true);
@@ -3804,6 +3934,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        V42.setBackground(new java.awt.Color(47, 55, 76));
         V42.setMaximum(10);
         V42.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3820,6 +3951,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S43.setBackground(new java.awt.Color(69, 93, 220));
+        S43.setForeground(new java.awt.Color(186, 195, 242));
         S43.setText("SOLO");
         S43.setContentAreaFilled(false);
         S43.setOpaque(true);
@@ -3831,6 +3964,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        V43.setBackground(new java.awt.Color(47, 55, 76));
         V43.setMaximum(10);
         V43.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3847,6 +3981,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S44.setBackground(new java.awt.Color(69, 93, 220));
+        S44.setForeground(new java.awt.Color(186, 195, 242));
         S44.setText("SOLO");
         S44.setContentAreaFilled(false);
         S44.setOpaque(true);
@@ -3858,6 +3994,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        V44.setBackground(new java.awt.Color(47, 55, 76));
         V44.setMaximum(10);
         V44.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3876,6 +4013,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V45.setBackground(new java.awt.Color(47, 55, 76));
         V45.setMaximum(10);
         V45.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3883,6 +4021,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S45.setBackground(new java.awt.Color(69, 93, 220));
+        S45.setForeground(new java.awt.Color(186, 195, 242));
         S45.setText("SOLO");
         S45.setContentAreaFilled(false);
         S45.setOpaque(true);
@@ -3903,6 +4043,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V46.setBackground(new java.awt.Color(47, 55, 76));
         V46.setMaximum(10);
         V46.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3910,6 +4051,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S46.setBackground(new java.awt.Color(69, 93, 220));
+        S46.setForeground(new java.awt.Color(186, 195, 242));
         S46.setText("SOLO");
         S46.setContentAreaFilled(false);
         S46.setOpaque(true);
@@ -3930,6 +4073,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V47.setBackground(new java.awt.Color(47, 55, 76));
         V47.setMaximum(10);
         V47.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3937,6 +4081,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S47.setBackground(new java.awt.Color(69, 93, 220));
+        S47.setForeground(new java.awt.Color(186, 195, 242));
         S47.setText("SOLO");
         S47.setContentAreaFilled(false);
         S47.setOpaque(true);
@@ -3957,6 +4103,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V48.setBackground(new java.awt.Color(47, 55, 76));
         V48.setMaximum(10);
         V48.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3964,6 +4111,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S48.setBackground(new java.awt.Color(69, 93, 220));
+        S48.setForeground(new java.awt.Color(186, 195, 242));
         S48.setText("SOLO");
         S48.setContentAreaFilled(false);
         S48.setOpaque(true);
@@ -3984,6 +4133,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V49.setBackground(new java.awt.Color(47, 55, 76));
         V49.setMaximum(10);
         V49.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3991,6 +4141,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S49.setBackground(new java.awt.Color(69, 93, 220));
+        S49.setForeground(new java.awt.Color(186, 195, 242));
         S49.setText("SOLO");
         S49.setContentAreaFilled(false);
         S49.setOpaque(true);
@@ -4011,6 +4163,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V50.setBackground(new java.awt.Color(47, 55, 76));
         V50.setMaximum(10);
         V50.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4018,6 +4171,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S50.setBackground(new java.awt.Color(69, 93, 220));
+        S50.setForeground(new java.awt.Color(186, 195, 242));
         S50.setText("SOLO");
         S50.setContentAreaFilled(false);
         S50.setOpaque(true);
@@ -4038,6 +4193,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V51.setBackground(new java.awt.Color(47, 55, 76));
         V51.setMaximum(10);
         V51.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4045,6 +4201,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S51.setBackground(new java.awt.Color(69, 93, 220));
+        S51.setForeground(new java.awt.Color(186, 195, 242));
         S51.setText("SOLO");
         S51.setContentAreaFilled(false);
         S51.setOpaque(true);
@@ -4065,6 +4223,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V52.setBackground(new java.awt.Color(47, 55, 76));
         V52.setMaximum(10);
         V52.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4072,6 +4231,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S52.setBackground(new java.awt.Color(69, 93, 220));
+        S52.setForeground(new java.awt.Color(186, 195, 242));
         S52.setText("SOLO");
         S52.setContentAreaFilled(false);
         S52.setOpaque(true);
@@ -4092,6 +4253,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V53.setBackground(new java.awt.Color(47, 55, 76));
         V53.setMaximum(10);
         V53.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4099,6 +4261,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S53.setBackground(new java.awt.Color(69, 93, 220));
+        S53.setForeground(new java.awt.Color(186, 195, 242));
         S53.setText("SOLO");
         S53.setContentAreaFilled(false);
         S53.setOpaque(true);
@@ -4108,6 +4272,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S54.setBackground(new java.awt.Color(69, 93, 220));
+        S54.setForeground(new java.awt.Color(186, 195, 242));
         S54.setText("SOLO");
         S54.setContentAreaFilled(false);
         S54.setOpaque(true);
@@ -4117,6 +4283,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V54.setBackground(new java.awt.Color(47, 55, 76));
         V54.setMaximum(10);
         V54.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4135,6 +4302,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S55.setBackground(new java.awt.Color(69, 93, 220));
+        S55.setForeground(new java.awt.Color(186, 195, 242));
         S55.setText("SOLO");
         S55.setContentAreaFilled(false);
         S55.setOpaque(true);
@@ -4144,6 +4313,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V55.setBackground(new java.awt.Color(47, 55, 76));
         V55.setMaximum(10);
         V55.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4162,6 +4332,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        S56.setBackground(new java.awt.Color(69, 93, 220));
+        S56.setForeground(new java.awt.Color(186, 195, 242));
         S56.setText("SOLO");
         S56.setContentAreaFilled(false);
         S56.setOpaque(true);
@@ -4171,6 +4343,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V56.setBackground(new java.awt.Color(47, 55, 76));
         V56.setMaximum(10);
         V56.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4200,6 +4373,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V57.setBackground(new java.awt.Color(47, 55, 76));
         V57.setMaximum(10);
         V57.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4207,6 +4381,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S57.setBackground(new java.awt.Color(69, 93, 220));
+        S57.setForeground(new java.awt.Color(186, 195, 242));
         S57.setText("SOLO");
         S57.setContentAreaFilled(false);
         S57.setOpaque(true);
@@ -4227,6 +4403,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V58.setBackground(new java.awt.Color(47, 55, 76));
         V58.setMaximum(10);
         V58.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4234,6 +4411,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S58.setBackground(new java.awt.Color(69, 93, 220));
+        S58.setForeground(new java.awt.Color(186, 195, 242));
         S58.setText("SOLO");
         S58.setContentAreaFilled(false);
         S58.setOpaque(true);
@@ -4254,6 +4433,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V59.setBackground(new java.awt.Color(47, 55, 76));
         V59.setMaximum(10);
         V59.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4261,6 +4441,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S59.setBackground(new java.awt.Color(69, 93, 220));
+        S59.setForeground(new java.awt.Color(186, 195, 242));
         S59.setText("SOLO");
         S59.setContentAreaFilled(false);
         S59.setOpaque(true);
@@ -4281,6 +4463,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V60.setBackground(new java.awt.Color(47, 55, 76));
         V60.setMaximum(10);
         V60.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4288,6 +4471,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S60.setBackground(new java.awt.Color(69, 93, 220));
+        S60.setForeground(new java.awt.Color(186, 195, 242));
         S60.setText("SOLO");
         S60.setContentAreaFilled(false);
         S60.setOpaque(true);
@@ -4308,6 +4493,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V61.setBackground(new java.awt.Color(47, 55, 76));
         V61.setMaximum(10);
         V61.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4315,6 +4501,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S61.setBackground(new java.awt.Color(69, 93, 220));
+        S61.setForeground(new java.awt.Color(186, 195, 242));
         S61.setText("SOLO");
         S61.setContentAreaFilled(false);
         S61.setOpaque(true);
@@ -4335,6 +4523,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V62.setBackground(new java.awt.Color(47, 55, 76));
         V62.setMaximum(10);
         V62.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4342,6 +4531,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S62.setBackground(new java.awt.Color(69, 93, 220));
+        S62.setForeground(new java.awt.Color(186, 195, 242));
         S62.setText("SOLO");
         S62.setContentAreaFilled(false);
         S62.setOpaque(true);
@@ -4362,6 +4553,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V63.setBackground(new java.awt.Color(47, 55, 76));
         V63.setMaximum(10);
         V63.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4369,6 +4561,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S63.setBackground(new java.awt.Color(69, 93, 220));
+        S63.setForeground(new java.awt.Color(186, 195, 242));
         S63.setText("SOLO");
         S63.setContentAreaFilled(false);
         S63.setOpaque(true);
@@ -4389,6 +4583,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        V64.setBackground(new java.awt.Color(47, 55, 76));
         V64.setMaximum(10);
         V64.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -4396,6 +4591,8 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
         });
 
+        S64.setBackground(new java.awt.Color(69, 93, 220));
+        S64.setForeground(new java.awt.Color(186, 195, 242));
         S64.setText("SOLO");
         S64.setContentAreaFilled(false);
         S64.setOpaque(true);
@@ -4417,7 +4614,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(I1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                     .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(50, 50, 50)

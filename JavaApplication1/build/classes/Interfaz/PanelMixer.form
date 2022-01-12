@@ -602,7 +602,7 @@
     <Component class="javax.swing.JButton" name="C1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="66" type="rgb"/>
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Montserrat" size="21" style="0"/>
@@ -611,6 +611,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="CHANNEL 1"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C1ActionPerformed"/>
@@ -1754,6 +1755,9 @@
     </Component>
     <Component class="javax.swing.JToggleButton" name="S1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="dc" green="5d" red="45" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SOLO"/>
       </Properties>
       <Events>

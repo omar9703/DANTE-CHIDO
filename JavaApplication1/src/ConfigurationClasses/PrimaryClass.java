@@ -5,14 +5,14 @@
  */
 package ConfigurationClasses;
 
-import javax.xml.bind.annotation.XmlRootElement;
+//import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author leone
  */
 
-@XmlRootElement  
+//@XmlRootElement  
 public class PrimaryClass {
  CONFIGURACION CONFIGURACIONObject;
 
