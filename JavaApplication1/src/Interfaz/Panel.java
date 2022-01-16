@@ -273,6 +273,7 @@ public class Panel extends javax.swing.JFrame {
     private void initComponents() {
 
         scrollPane1 = new java.awt.ScrollPane();
+        jLabel4 = new javax.swing.JLabel();
         Bsettings = new javax.swing.JButton();
         cLEAR = new javax.swing.JButton();
         primero = new javax.swing.JButton();
@@ -304,11 +305,15 @@ public class Panel extends javax.swing.JFrame {
 
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 1890, 740);
+
         getContentPane().add(scrollPane1);
         scrollPane1.setBounds(90, 140, 1260, 600);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
-        Bsettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Bsettings.setForeground(new java.awt.Color(255, 255, 255));
         Bsettings.setText("SETTINGS");
         Bsettings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -329,9 +334,9 @@ public class Panel extends javax.swing.JFrame {
         cLEAR.setBounds(1170, 60, 120, 40);
 
         primero.setBackground(new java.awt.Color(35, 38, 49));
-        primero.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        primero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
         primero.setForeground(new java.awt.Color(65, 71, 90));
-        primero.setText("1-16");
+        primero.setText("01-16");
         primero.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 primeroMousePressed(evt);
@@ -343,10 +348,10 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(primero);
-        primero.setBounds(0, 140, 80, 70);
+        primero.setBounds(0, 180, 84, 70);
 
         segundo.setBackground(new java.awt.Color(35, 38, 49));
-        segundo.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        segundo.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
         segundo.setForeground(new java.awt.Color(65, 71, 90));
         segundo.setText("17-32");
         segundo.addActionListener(new java.awt.event.ActionListener() {
@@ -355,10 +360,10 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(segundo);
-        segundo.setBounds(0, 240, 80, 70);
+        segundo.setBounds(0, 250, 84, 70);
 
         cuarto.setBackground(new java.awt.Color(35, 38, 49));
-        cuarto.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        cuarto.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
         cuarto.setForeground(new java.awt.Color(65, 71, 90));
         cuarto.setText("49-64");
         cuarto.addActionListener(new java.awt.event.ActionListener() {
@@ -367,10 +372,11 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuarto);
-        cuarto.setBounds(0, 440, 80, 70);
+        cuarto.setBounds(0, 390, 84, 70);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
-        Bmixer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Bmixer.setForeground(new java.awt.Color(255, 255, 255));
         Bmixer.setText("MIXER");
         Bmixer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -436,7 +442,7 @@ public class Panel extends javax.swing.JFrame {
         networks.setBounds(880, 690, 130, 24);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
-        tercero.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
         tercero.setForeground(new java.awt.Color(65, 71, 90));
         tercero.setText("33-48");
         tercero.addActionListener(new java.awt.event.ActionListener() {
@@ -445,7 +451,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tercero);
-        tercero.setBounds(0, 340, 80, 70);
+        tercero.setBounds(0, 320, 84, 70);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -461,17 +467,17 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(900, 10, 210, 30);
+        vPrincipal.setBounds(900, 25, 210, 20);
         getContentPane().add(jPanel4);
-        jPanel4.setBounds(80, 440, 10, 70);
+        jPanel4.setBounds(83, 390, 7, 70);
         getContentPane().add(jPanel3);
-        jPanel3.setBounds(80, 340, 10, 70);
+        jPanel3.setBounds(83, 320, 7, 70);
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(80, 240, 10, 70);
+        jPanel2.setBounds(83, 240, 7, 70);
 
         jPanel1.setBackground(java.awt.Color.red);
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(80, 140, 10, 70);
+        jPanel1.setBounds(83, 180, 7, 70);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
