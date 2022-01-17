@@ -328,7 +328,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             }
             
             togglebutton.setBackground(new Color(69, 93, 220));
-            togglebutton.setForeground(new Color(186, 195, 242));
+            togglebutton.setIcon(new ImageIcon(getClass().getResource("microfono.png")));
         }
     }
     
@@ -2517,16 +2517,16 @@ public class newPanelMixer extends javax.swing.JPanel {
                 if(component.equals(r)){
                     r.setSelected(true);
                     ((JToggleButton)component).setBackground(new Color(255, 156, 0));
+                    ((JToggleButton)component).setIcon(new ImageIcon(getClass().getResource("auriculares.png")));                    
                     
-                    
-                    ((JToggleButton)component).setForeground(Color.black);
                 }
                 
                 else
                 {
                     ((JToggleButton)component).setSelected(false);
                     ((JToggleButton)component).setBackground(new Color(69, 93, 220));
-                    ((JToggleButton)component).setForeground(new Color(186,195,242));
+                    ((JToggleButton)component).setIcon(new ImageIcon(getClass().getResource("microfono.png")));
+                    
                 }
             }
           }
