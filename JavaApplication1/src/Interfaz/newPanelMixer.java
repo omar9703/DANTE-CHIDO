@@ -3091,8 +3091,9 @@ public class newPanelMixer extends javax.swing.JPanel {
         V128 = new javax.swing.JSlider();
         S128 = new javax.swing.JToggleButton();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 0, 0));
 
+        I1.setBackground(new java.awt.Color(255, 0, 204));
         I1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         I9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -4725,6 +4726,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         C56.setBackground(new java.awt.Color(102, 102, 102));
+        C56.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
         C56.setForeground(new java.awt.Color(255, 255, 255));
         C56.setText("jButton1");
         C56.addActionListener(new java.awt.event.ActionListener() {
@@ -4962,6 +4964,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         I64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         C64.setBackground(new java.awt.Color(102, 102, 102));
+        C64.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
         C64.setForeground(new java.awt.Color(255, 255, 255));
         C64.setText("jButton1");
         C64.addActionListener(new java.awt.event.ActionListener() {

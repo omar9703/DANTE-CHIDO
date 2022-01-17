@@ -230,7 +230,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id9);
-        id9.setBounds(290, 110, 60, 20);
+        id9.setBounds(290, 110, 60, 22);
 
         jLabel157.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel157.setForeground(new java.awt.Color(255, 255, 255));
@@ -245,7 +245,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id10);
-        id10.setBounds(290, 180, 60, 20);
+        id10.setBounds(290, 180, 60, 22);
 
         jLabel158.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel158.setForeground(new java.awt.Color(255, 255, 255));
@@ -260,7 +260,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id11);
-        id11.setBounds(1090, 110, 70, 20);
+        id11.setBounds(1090, 110, 70, 22);
 
         jLabel159.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel159.setForeground(new java.awt.Color(255, 255, 255));
@@ -281,7 +281,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id12);
-        id12.setBounds(1090, 180, 70, 20);
+        id12.setBounds(1090, 180, 70, 22);
 
         jLabel161.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel161.setForeground(new java.awt.Color(255, 255, 255));
@@ -302,7 +302,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id15);
-        id15.setBounds(290, 320, 60, 20);
+        id15.setBounds(290, 320, 60, 22);
 
         id14.setText("10001");
         id14.addActionListener(new java.awt.event.ActionListener() {
@@ -311,7 +311,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id14);
-        id14.setBounds(1090, 250, 70, 20);
+        id14.setBounds(1090, 250, 70, 22);
 
         jLabel163.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel163.setForeground(new java.awt.Color(255, 255, 255));
@@ -326,7 +326,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id16);
-        id16.setBounds(1090, 320, 70, 20);
+        id16.setBounds(1090, 320, 70, 22);
 
         id13.setText("10001");
         id13.addActionListener(new java.awt.event.ActionListener() {
@@ -335,7 +335,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id13);
-        id13.setBounds(290, 250, 60, 20);
+        id13.setBounds(290, 250, 60, 22);
 
         jLabel164.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel164.setForeground(new java.awt.Color(255, 255, 255));
@@ -464,7 +464,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(ch1);
-        ch1.setBounds(140, 50, 78, 20);
+        ch1.setBounds(140, 50, 78, 22);
 
         ch2.setText("10001");
         ch2.addActionListener(new java.awt.event.ActionListener() {
@@ -473,7 +473,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(ch2);
-        ch2.setBounds(280, 50, 78, 20);
+        ch2.setBounds(280, 50, 78, 22);
 
         jLabel219.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel219.setForeground(new java.awt.Color(255, 255, 255));
@@ -510,7 +510,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(serv);
-        serv.setBounds(140, 10, 78, 20);
+        serv.setBounds(140, 10, 78, 22);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -525,7 +525,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(multicast);
-        multicast.setBounds(428, 12, 68, 20);
+        multicast.setBounds(428, 12, 68, 22);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -540,7 +540,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(puerto);
-        puerto.setBounds(644, 12, 59, 20);
+        puerto.setBounds(644, 12, 59, 22);
 
         id1.setText("alguien");
         id1.addActionListener(new java.awt.event.ActionListener() {
@@ -549,7 +549,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id1);
-        id1.setBounds(90, 110, 70, 20);
+        id1.setBounds(90, 110, 70, 22);
 
         id2.setText("alguien");
         id2.addActionListener(new java.awt.event.ActionListener() {
@@ -558,7 +558,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id2);
-        id2.setBounds(90, 180, 70, 20);
+        id2.setBounds(90, 180, 70, 22);
 
         id3.setText("alguien");
         id3.addActionListener(new java.awt.event.ActionListener() {
@@ -567,7 +567,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id3);
-        id3.setBounds(890, 110, 70, 20);
+        id3.setBounds(890, 110, 70, 22);
 
         id4.setText("alguien");
         id4.addActionListener(new java.awt.event.ActionListener() {
@@ -576,7 +576,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id4);
-        id4.setBounds(890, 180, 70, 20);
+        id4.setBounds(890, 180, 70, 22);
 
         id5.setText("alguien");
         id5.addActionListener(new java.awt.event.ActionListener() {
@@ -585,7 +585,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id5);
-        id5.setBounds(90, 250, 70, 20);
+        id5.setBounds(90, 250, 70, 22);
 
         id6.setText("10001");
         id6.addActionListener(new java.awt.event.ActionListener() {
@@ -594,7 +594,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id6);
-        id6.setBounds(890, 250, 70, 20);
+        id6.setBounds(890, 250, 70, 22);
 
         id7.setText("alguien");
         id7.addActionListener(new java.awt.event.ActionListener() {
@@ -603,7 +603,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id7);
-        id7.setBounds(90, 320, 70, 20);
+        id7.setBounds(90, 320, 70, 22);
 
         id8.setText("10001");
         id8.addActionListener(new java.awt.event.ActionListener() {
@@ -612,7 +612,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id8);
-        id8.setBounds(890, 320, 70, 20);
+        id8.setBounds(890, 320, 70, 22);
 
         id17.setText("10001");
         id17.addActionListener(new java.awt.event.ActionListener() {
@@ -621,7 +621,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id17);
-        id17.setBounds(490, 110, 70, 20);
+        id17.setBounds(490, 110, 70, 22);
 
         id18.setText("10001");
         id18.addActionListener(new java.awt.event.ActionListener() {
@@ -630,7 +630,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id18);
-        id18.setBounds(490, 180, 70, 20);
+        id18.setBounds(490, 180, 70, 22);
 
         id19.setText("10001");
         id19.addActionListener(new java.awt.event.ActionListener() {
@@ -639,7 +639,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id19);
-        id19.setBounds(1290, 110, 70, 20);
+        id19.setBounds(1290, 110, 70, 22);
 
         id20.setText("10001");
         id20.addActionListener(new java.awt.event.ActionListener() {
@@ -648,7 +648,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id20);
-        id20.setBounds(1290, 180, 70, 20);
+        id20.setBounds(1290, 180, 70, 22);
 
         id21.setText("10001");
         id21.addActionListener(new java.awt.event.ActionListener() {
@@ -657,7 +657,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id21);
-        id21.setBounds(490, 250, 70, 20);
+        id21.setBounds(490, 250, 70, 22);
 
         id22.setText("10001");
         id22.addActionListener(new java.awt.event.ActionListener() {
@@ -666,7 +666,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id22);
-        id22.setBounds(1290, 250, 70, 20);
+        id22.setBounds(1290, 250, 70, 22);
 
         id24.setText("10001");
         id24.addActionListener(new java.awt.event.ActionListener() {
@@ -675,7 +675,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id24);
-        id24.setBounds(1290, 320, 70, 20);
+        id24.setBounds(1290, 320, 70, 22);
 
         id23.setText("10001");
         id23.addActionListener(new java.awt.event.ActionListener() {
@@ -684,7 +684,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id23);
-        id23.setBounds(490, 320, 70, 20);
+        id23.setBounds(490, 320, 70, 22);
 
         id26.setText("10001");
         id26.addActionListener(new java.awt.event.ActionListener() {
@@ -693,7 +693,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id26);
-        id26.setBounds(690, 180, 77, 20);
+        id26.setBounds(690, 180, 77, 22);
 
         id25.setText("10001");
         id25.addActionListener(new java.awt.event.ActionListener() {
@@ -702,7 +702,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id25);
-        id25.setBounds(690, 110, 77, 20);
+        id25.setBounds(690, 110, 77, 22);
 
         id27.setText("10001");
         id27.addActionListener(new java.awt.event.ActionListener() {
@@ -711,7 +711,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id27);
-        id27.setBounds(1490, 110, 60, 20);
+        id27.setBounds(1490, 110, 60, 22);
 
         id29.setText("10001");
         id29.addActionListener(new java.awt.event.ActionListener() {
@@ -720,7 +720,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id29);
-        id29.setBounds(690, 250, 77, 20);
+        id29.setBounds(690, 250, 77, 22);
 
         id28.setText("10001");
         id28.addActionListener(new java.awt.event.ActionListener() {
@@ -729,7 +729,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id28);
-        id28.setBounds(1490, 180, 60, 20);
+        id28.setBounds(1490, 180, 60, 22);
 
         id30.setText("10001");
         id30.addActionListener(new java.awt.event.ActionListener() {
@@ -738,7 +738,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id30);
-        id30.setBounds(1490, 250, 60, 20);
+        id30.setBounds(1490, 250, 60, 22);
 
         id32.setText("10001");
         id32.addActionListener(new java.awt.event.ActionListener() {
@@ -747,7 +747,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id32);
-        id32.setBounds(1490, 320, 60, 20);
+        id32.setBounds(1490, 320, 60, 22);
 
         id31.setText("10001");
         id31.addActionListener(new java.awt.event.ActionListener() {
@@ -756,7 +756,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(id31);
-        id31.setBounds(690, 320, 77, 20);
+        id31.setBounds(690, 320, 77, 22);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -777,7 +777,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Frecuencys);
-        Frecuencys.setBounds(914, 12, 59, 20);
+        Frecuencys.setBounds(914, 12, 59, 22);
 
         Samples.setText("128");
         Samples.addActionListener(new java.awt.event.ActionListener() {
@@ -786,7 +786,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Samples);
-        Samples.setBounds(1088, 12, 59, 20);
+        Samples.setBounds(1088, 12, 59, 22);
 
         Aceptar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         Aceptar.setText("Accept");
@@ -798,6 +798,7 @@ public class PanelAjustes extends javax.swing.JPanel {
         add(Aceptar);
         Aceptar.setBounds(640, 460, 119, 38);
 
+        jLabel6.setBackground(new java.awt.Color(255, 0, 102));
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("PUERTO UDP");
@@ -811,15 +812,15 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(C1);
-        C1.setBounds(170, 110, 30, 20);
+        C1.setBounds(170, 110, 30, 22);
 
         C2.setText("2");
         add(C2);
-        C2.setBounds(170, 180, 30, 20);
+        C2.setBounds(170, 180, 30, 22);
 
         C3.setText("3");
         add(C3);
-        C3.setBounds(970, 110, 30, 20);
+        C3.setBounds(970, 110, 30, 22);
 
         C9.setText("9");
         C9.addActionListener(new java.awt.event.ActionListener() {
@@ -828,35 +829,35 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(C9);
-        C9.setBounds(360, 110, 30, 20);
+        C9.setBounds(360, 110, 30, 22);
 
         C10.setText("10");
         add(C10);
-        C10.setBounds(360, 180, 30, 20);
+        C10.setBounds(360, 180, 30, 22);
 
         C11.setText("jTextField1");
         add(C11);
-        C11.setBounds(1170, 110, 30, 20);
+        C11.setBounds(1170, 110, 30, 22);
 
         C13.setText("jTextField1");
         add(C13);
-        C13.setBounds(360, 250, 30, 20);
+        C13.setBounds(360, 250, 30, 22);
 
         C12.setText("jTextField1");
         add(C12);
-        C12.setBounds(1170, 180, 30, 20);
+        C12.setBounds(1170, 180, 30, 22);
 
         C14.setText("jTextField1");
         add(C14);
-        C14.setBounds(1170, 250, 30, 20);
+        C14.setBounds(1170, 250, 30, 22);
 
         C15.setText("jTextField1");
         add(C15);
-        C15.setBounds(360, 320, 30, 20);
+        C15.setBounds(360, 320, 30, 22);
 
         C16.setText("jTextField1");
         add(C16);
-        C16.setBounds(1170, 320, 30, 20);
+        C16.setBounds(1170, 320, 30, 22);
 
         C17.setText("jTextField1");
         C17.addActionListener(new java.awt.event.ActionListener() {
@@ -865,35 +866,35 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(C17);
-        C17.setBounds(570, 110, 30, 20);
+        C17.setBounds(570, 110, 30, 22);
 
         C18.setText("jTextField1");
         add(C18);
-        C18.setBounds(570, 180, 30, 20);
+        C18.setBounds(570, 180, 30, 22);
 
         C19.setText("jTextField1");
         add(C19);
-        C19.setBounds(1370, 110, 30, 20);
+        C19.setBounds(1370, 110, 30, 22);
 
         C20.setText("jTextField1");
         add(C20);
-        C20.setBounds(1370, 180, 30, 20);
+        C20.setBounds(1370, 180, 30, 22);
 
         C21.setText("jTextField1");
         add(C21);
-        C21.setBounds(570, 250, 30, 20);
+        C21.setBounds(570, 250, 30, 22);
 
         C22.setText("jTextField1");
         add(C22);
-        C22.setBounds(1370, 250, 30, 20);
+        C22.setBounds(1370, 250, 30, 22);
 
         C23.setText("jTextField1");
         add(C23);
-        C23.setBounds(570, 320, 30, 20);
+        C23.setBounds(570, 320, 30, 22);
 
         C24.setText("jTextField1");
         add(C24);
-        C24.setBounds(1370, 320, 30, 20);
+        C24.setBounds(1370, 320, 30, 22);
 
         jLabel221.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel221.setForeground(new java.awt.Color(255, 255, 255));
@@ -903,55 +904,55 @@ public class PanelAjustes extends javax.swing.JPanel {
 
         C25.setText("jTextField1");
         add(C25);
-        C25.setBounds(770, 110, 30, 20);
+        C25.setBounds(770, 110, 30, 22);
 
         C26.setText("jTextField1");
         add(C26);
-        C26.setBounds(770, 180, 30, 20);
+        C26.setBounds(770, 180, 30, 22);
 
         C27.setText("jTextField1");
         add(C27);
-        C27.setBounds(1560, 110, 30, 20);
+        C27.setBounds(1560, 110, 30, 22);
 
         C28.setText("jTextField1");
         add(C28);
-        C28.setBounds(1560, 180, 30, 20);
+        C28.setBounds(1560, 180, 30, 22);
 
         C29.setText("jTextField1");
         add(C29);
-        C29.setBounds(770, 250, 30, 20);
+        C29.setBounds(770, 250, 30, 22);
 
         C30.setText("jTextField1");
         add(C30);
-        C30.setBounds(1560, 250, 30, 20);
+        C30.setBounds(1560, 250, 30, 22);
 
         C31.setText("jTextField1");
         add(C31);
-        C31.setBounds(770, 320, 30, 20);
+        C31.setBounds(770, 320, 30, 22);
 
         C32.setText("jTextField1");
         add(C32);
-        C32.setBounds(1560, 320, 30, 20);
+        C32.setBounds(1560, 320, 30, 22);
 
         C4.setText("3");
         add(C4);
-        C4.setBounds(970, 180, 30, 20);
+        C4.setBounds(970, 180, 30, 22);
 
         C5.setText("3");
         add(C5);
-        C5.setBounds(170, 250, 30, 20);
+        C5.setBounds(170, 250, 30, 22);
 
         C6.setText("3");
         add(C6);
-        C6.setBounds(970, 250, 30, 20);
+        C6.setBounds(970, 250, 30, 22);
 
         C7.setText("3");
         add(C7);
-        C7.setBounds(170, 320, 30, 20);
+        C7.setBounds(170, 320, 30, 22);
 
         C8.setText("3");
         add(C8);
-        C8.setBounds(970, 320, 30, 20);
+        C8.setBounds(970, 320, 30, 22);
 
         jLabel222.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel222.setForeground(new java.awt.Color(255, 255, 255));
@@ -966,7 +967,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im1);
-        Im1.setBounds(20, 140, 139, 23);
+        Im1.setBounds(20, 140, 139, 25);
 
         Im2.setText("Chose Image");
         Im2.addActionListener(new java.awt.event.ActionListener() {
@@ -984,7 +985,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im3);
-        Im3.setBounds(830, 140, 139, 23);
+        Im3.setBounds(830, 140, 139, 25);
 
         Im4.setText("Chose Image");
         Im4.addActionListener(new java.awt.event.ActionListener() {
@@ -993,7 +994,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im4);
-        Im4.setBounds(830, 210, 139, 23);
+        Im4.setBounds(830, 210, 139, 25);
 
         Im5.setText("Chose Image");
         Im5.addActionListener(new java.awt.event.ActionListener() {
@@ -1002,7 +1003,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im5);
-        Im5.setBounds(20, 280, 139, 23);
+        Im5.setBounds(20, 280, 139, 25);
 
         Im6.setText("Chose Image");
         Im6.addActionListener(new java.awt.event.ActionListener() {
@@ -1011,7 +1012,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im6);
-        Im6.setBounds(830, 280, 139, 23);
+        Im6.setBounds(830, 280, 139, 25);
 
         Im7.setText("Chose Image");
         Im7.addActionListener(new java.awt.event.ActionListener() {
@@ -1020,7 +1021,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im7);
-        Im7.setBounds(20, 350, 139, 23);
+        Im7.setBounds(20, 350, 139, 25);
 
         Im8.setText("Chose Image");
         Im8.addActionListener(new java.awt.event.ActionListener() {
@@ -1029,7 +1030,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im8);
-        Im8.setBounds(830, 350, 139, 23);
+        Im8.setBounds(830, 350, 139, 25);
 
         Im9.setText("Chose Image");
         Im9.addActionListener(new java.awt.event.ActionListener() {
@@ -1038,7 +1039,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im9);
-        Im9.setBounds(220, 140, 139, 23);
+        Im9.setBounds(220, 140, 139, 25);
 
         Im10.setText("Chose Image");
         Im10.addActionListener(new java.awt.event.ActionListener() {
@@ -1047,7 +1048,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im10);
-        Im10.setBounds(220, 210, 139, 23);
+        Im10.setBounds(220, 210, 139, 25);
 
         Im11.setText("Chose Image");
         Im11.addActionListener(new java.awt.event.ActionListener() {
@@ -1056,7 +1057,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im11);
-        Im11.setBounds(1020, 140, 139, 23);
+        Im11.setBounds(1020, 140, 139, 25);
 
         Im12.setText("Chose Image");
         Im12.addActionListener(new java.awt.event.ActionListener() {
@@ -1065,7 +1066,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im12);
-        Im12.setBounds(1020, 210, 139, 23);
+        Im12.setBounds(1020, 210, 139, 25);
 
         Im13.setText("Chose Image");
         Im13.addActionListener(new java.awt.event.ActionListener() {
@@ -1074,7 +1075,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im13);
-        Im13.setBounds(220, 280, 139, 23);
+        Im13.setBounds(220, 280, 139, 25);
 
         Im14.setText("Chose Image");
         Im14.addActionListener(new java.awt.event.ActionListener() {
@@ -1083,7 +1084,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im14);
-        Im14.setBounds(1020, 280, 139, 23);
+        Im14.setBounds(1020, 280, 139, 25);
 
         Im15.setText("Chose Image");
         Im15.addActionListener(new java.awt.event.ActionListener() {
@@ -1092,7 +1093,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im15);
-        Im15.setBounds(220, 350, 139, 23);
+        Im15.setBounds(220, 350, 139, 25);
 
         Im16.setText("Chose Image");
         Im16.addActionListener(new java.awt.event.ActionListener() {
@@ -1101,7 +1102,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im16);
-        Im16.setBounds(1020, 350, 139, 23);
+        Im16.setBounds(1020, 350, 139, 25);
 
         Im17.setText("Chose Image");
         Im17.addActionListener(new java.awt.event.ActionListener() {
@@ -1110,7 +1111,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im17);
-        Im17.setBounds(420, 140, 139, 23);
+        Im17.setBounds(420, 140, 139, 25);
 
         Im18.setText("Chose Image");
         Im18.addActionListener(new java.awt.event.ActionListener() {
@@ -1119,7 +1120,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im18);
-        Im18.setBounds(420, 210, 139, 23);
+        Im18.setBounds(420, 210, 139, 25);
 
         Im19.setText("Chose Image");
         Im19.addActionListener(new java.awt.event.ActionListener() {
@@ -1128,7 +1129,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im19);
-        Im19.setBounds(1220, 140, 139, 23);
+        Im19.setBounds(1220, 140, 139, 25);
 
         Im20.setText("Chose Image");
         Im20.addActionListener(new java.awt.event.ActionListener() {
@@ -1137,7 +1138,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im20);
-        Im20.setBounds(1220, 210, 139, 23);
+        Im20.setBounds(1220, 210, 139, 25);
 
         Im21.setText("Chose Image");
         Im21.addActionListener(new java.awt.event.ActionListener() {
@@ -1146,7 +1147,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im21);
-        Im21.setBounds(420, 280, 139, 23);
+        Im21.setBounds(420, 280, 139, 25);
 
         Im22.setText("Chose Image");
         Im22.addActionListener(new java.awt.event.ActionListener() {
@@ -1155,7 +1156,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im22);
-        Im22.setBounds(1220, 280, 139, 23);
+        Im22.setBounds(1220, 280, 139, 25);
 
         Im23.setText("Chose Image");
         Im23.addActionListener(new java.awt.event.ActionListener() {
@@ -1164,7 +1165,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im23);
-        Im23.setBounds(420, 350, 139, 23);
+        Im23.setBounds(420, 350, 139, 25);
 
         Im24.setText("Chose Image");
         Im24.addActionListener(new java.awt.event.ActionListener() {
@@ -1173,7 +1174,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im24);
-        Im24.setBounds(1220, 350, 139, 23);
+        Im24.setBounds(1220, 350, 139, 25);
 
         Im25.setText("Chose Image");
         Im25.addActionListener(new java.awt.event.ActionListener() {
@@ -1182,7 +1183,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im25);
-        Im25.setBounds(620, 140, 139, 23);
+        Im25.setBounds(620, 140, 139, 25);
 
         Im26.setText("Chose Image");
         Im26.addActionListener(new java.awt.event.ActionListener() {
@@ -1191,7 +1192,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im26);
-        Im26.setBounds(620, 210, 139, 23);
+        Im26.setBounds(620, 210, 139, 25);
 
         Im27.setText("Chose Image");
         Im27.addActionListener(new java.awt.event.ActionListener() {
@@ -1200,7 +1201,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im27);
-        Im27.setBounds(1420, 140, 139, 23);
+        Im27.setBounds(1420, 140, 139, 25);
 
         Im28.setText("Chose Image");
         Im28.addActionListener(new java.awt.event.ActionListener() {
@@ -1209,7 +1210,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im28);
-        Im28.setBounds(1420, 210, 139, 23);
+        Im28.setBounds(1420, 210, 139, 25);
 
         Im29.setText("Chose Image");
         Im29.addActionListener(new java.awt.event.ActionListener() {
@@ -1218,7 +1219,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im29);
-        Im29.setBounds(620, 280, 139, 23);
+        Im29.setBounds(620, 280, 139, 25);
 
         Im30.setText("Chose Image");
         Im30.addActionListener(new java.awt.event.ActionListener() {
@@ -1227,7 +1228,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im30);
-        Im30.setBounds(1420, 280, 139, 23);
+        Im30.setBounds(1420, 280, 139, 25);
 
         Im31.setText("Chose Image");
         Im31.addActionListener(new java.awt.event.ActionListener() {
@@ -1236,7 +1237,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im31);
-        Im31.setBounds(620, 350, 139, 23);
+        Im31.setBounds(620, 350, 139, 25);
 
         Im32.setText("Chose Image");
         Im32.addActionListener(new java.awt.event.ActionListener() {
@@ -1245,7 +1246,7 @@ public class PanelAjustes extends javax.swing.JPanel {
             }
         });
         add(Im32);
-        Im32.setBounds(1420, 350, 139, 23);
+        Im32.setBounds(1420, 350, 139, 25);
     }// </editor-fold>//GEN-END:initComponents
 
     private void id9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id9ActionPerformed
