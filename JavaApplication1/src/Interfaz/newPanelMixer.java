@@ -30,7 +30,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     private ArrayList<String> canales;
     private int Frecuencia;
     private int Muestra;
-  
+    
     private int alternarSOLO = 0;
     
     private ThreadAudio[] audio = new ThreadAudio[64];
@@ -2517,6 +2517,8 @@ public class newPanelMixer extends javax.swing.JPanel {
                 if(component.equals(r)){
                     r.setSelected(true);
                     ((JToggleButton)component).setBackground(new Color(255, 156, 0));
+                    
+                    
                     ((JToggleButton)component).setForeground(Color.black);
                 }
                 
@@ -3131,7 +3133,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S1.setBackground(new java.awt.Color(69, 93, 220));
         S1.setForeground(new java.awt.Color(186, 195, 242));
-        S1.setText("S");
+        S1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S1.setContentAreaFilled(false);
         S1.setOpaque(true);
         S1.addActionListener(new java.awt.event.ActionListener() {
@@ -3158,7 +3160,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S17.setBackground(new java.awt.Color(69, 93, 220));
         S17.setForeground(new java.awt.Color(186, 195, 242));
-        S17.setText("S");
+        S17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S17.setContentAreaFilled(false);
         S17.setOpaque(true);
         S17.addActionListener(new java.awt.event.ActionListener() {
@@ -3185,8 +3187,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S25.setBackground(new java.awt.Color(69, 93, 220));
         S25.setForeground(new java.awt.Color(186, 195, 242));
+        S25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S25.setSelected(true);
-        S25.setText("S");
         S25.setContentAreaFilled(false);
         S25.setOpaque(true);
         S25.addActionListener(new java.awt.event.ActionListener() {
@@ -3197,7 +3199,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S9.setBackground(new java.awt.Color(69, 93, 220));
         S9.setForeground(new java.awt.Color(186, 195, 242));
-        S9.setText("S");
+        S9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S9.setContentAreaFilled(false);
         S9.setOpaque(true);
         S9.addActionListener(new java.awt.event.ActionListener() {
@@ -3224,7 +3226,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S3.setBackground(new java.awt.Color(69, 93, 220));
         S3.setForeground(new java.awt.Color(186, 195, 242));
-        S3.setText("S");
+        S3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S3.setContentAreaFilled(false);
         S3.setOpaque(true);
         S3.addActionListener(new java.awt.event.ActionListener() {
@@ -3251,7 +3253,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S11.setBackground(new java.awt.Color(69, 93, 220));
         S11.setForeground(new java.awt.Color(186, 195, 242));
-        S11.setText("S");
+        S11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S11.setContentAreaFilled(false);
         S11.setOpaque(true);
         S11.addActionListener(new java.awt.event.ActionListener() {
@@ -3278,7 +3280,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S19.setBackground(new java.awt.Color(69, 93, 220));
         S19.setForeground(new java.awt.Color(186, 195, 242));
-        S19.setText("S");
+        S19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S19.setContentAreaFilled(false);
         S19.setOpaque(true);
         S19.addActionListener(new java.awt.event.ActionListener() {
@@ -3305,7 +3307,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S27.setBackground(new java.awt.Color(69, 93, 220));
         S27.setForeground(new java.awt.Color(186, 195, 242));
-        S27.setText("S");
+        S27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S27.setContentAreaFilled(false);
         S27.setOpaque(true);
         S27.addActionListener(new java.awt.event.ActionListener() {
@@ -3316,7 +3318,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S2.setBackground(new java.awt.Color(69, 93, 220));
         S2.setForeground(new java.awt.Color(186, 195, 242));
-        S2.setText("S");
+        S2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S2.setContentAreaFilled(false);
         S2.setOpaque(true);
         S2.addActionListener(new java.awt.event.ActionListener() {
@@ -3343,7 +3345,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S10.setBackground(new java.awt.Color(69, 93, 220));
         S10.setForeground(new java.awt.Color(186, 195, 242));
-        S10.setText("S");
+        S10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S10.setContentAreaFilled(false);
         S10.setOpaque(true);
         S10.addActionListener(new java.awt.event.ActionListener() {
@@ -3371,7 +3373,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S18.setBackground(new java.awt.Color(69, 93, 220));
         S18.setForeground(new java.awt.Color(186, 195, 242));
-        S18.setText("S");
+        S18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S18.setContentAreaFilled(false);
         S18.setOpaque(true);
         S18.addActionListener(new java.awt.event.ActionListener() {
@@ -3398,7 +3400,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S26.setBackground(new java.awt.Color(69, 93, 220));
         S26.setForeground(new java.awt.Color(186, 195, 242));
-        S26.setText("S");
+        S26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S26.setContentAreaFilled(false);
         S26.setOpaque(true);
         S26.addActionListener(new java.awt.event.ActionListener() {
@@ -3441,7 +3443,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S4.setBackground(new java.awt.Color(69, 93, 220));
         S4.setForeground(new java.awt.Color(186, 195, 242));
-        S4.setText("S");
+        S4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S4.setContentAreaFilled(false);
         S4.setOpaque(true);
         S4.addActionListener(new java.awt.event.ActionListener() {
@@ -3468,7 +3470,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S12.setBackground(new java.awt.Color(69, 93, 220));
         S12.setForeground(new java.awt.Color(186, 195, 242));
-        S12.setText("S");
+        S12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S12.setContentAreaFilled(false);
         S12.setOpaque(true);
         S12.addActionListener(new java.awt.event.ActionListener() {
@@ -3495,7 +3497,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S20.setBackground(new java.awt.Color(69, 93, 220));
         S20.setForeground(new java.awt.Color(186, 195, 242));
-        S20.setText("S");
+        S20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S20.setContentAreaFilled(false);
         S20.setOpaque(true);
         S20.addActionListener(new java.awt.event.ActionListener() {
@@ -3522,7 +3524,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S28.setBackground(new java.awt.Color(69, 93, 220));
         S28.setForeground(new java.awt.Color(186, 195, 242));
-        S28.setText("S");
+        S28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S28.setContentAreaFilled(false);
         S28.setOpaque(true);
         S28.addActionListener(new java.awt.event.ActionListener() {
@@ -3549,7 +3551,8 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S5.setBackground(new java.awt.Color(69, 93, 220));
         S5.setForeground(new java.awt.Color(186, 195, 242));
-        S5.setText("S");
+        S5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
+        S5.setSelected(true);
         S5.setContentAreaFilled(false);
         S5.setOpaque(true);
         S5.addActionListener(new java.awt.event.ActionListener() {
@@ -3581,7 +3584,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S7.setBackground(new java.awt.Color(69, 93, 220));
         S7.setForeground(new java.awt.Color(186, 195, 242));
-        S7.setText("SOLO");
+        S7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S7.setContentAreaFilled(false);
         S7.setOpaque(true);
         S7.addActionListener(new java.awt.event.ActionListener() {
@@ -3608,7 +3611,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S13.setBackground(new java.awt.Color(69, 93, 220));
         S13.setForeground(new java.awt.Color(186, 195, 242));
-        S13.setText("S");
+        S13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S13.setContentAreaFilled(false);
         S13.setOpaque(true);
         S13.addActionListener(new java.awt.event.ActionListener() {
@@ -3635,7 +3638,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S21.setBackground(new java.awt.Color(69, 93, 220));
         S21.setForeground(new java.awt.Color(186, 195, 242));
-        S21.setText("S");
+        S21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S21.setContentAreaFilled(false);
         S21.setOpaque(true);
         S21.addActionListener(new java.awt.event.ActionListener() {
@@ -3662,7 +3665,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S6.setBackground(new java.awt.Color(69, 93, 220));
         S6.setForeground(new java.awt.Color(186, 195, 242));
-        S6.setText("S");
+        S6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S6.setContentAreaFilled(false);
         S6.setOpaque(true);
         S6.addActionListener(new java.awt.event.ActionListener() {
@@ -3689,7 +3692,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S29.setBackground(new java.awt.Color(69, 93, 220));
         S29.setForeground(new java.awt.Color(186, 195, 242));
-        S29.setText("S");
+        S29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S29.setContentAreaFilled(false);
         S29.setOpaque(true);
         S29.addActionListener(new java.awt.event.ActionListener() {
@@ -3717,7 +3720,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S14.setBackground(new java.awt.Color(69, 93, 220));
         S14.setForeground(new java.awt.Color(186, 195, 242));
-        S14.setText("S");
+        S14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S14.setContentAreaFilled(false);
         S14.setOpaque(true);
         S14.addActionListener(new java.awt.event.ActionListener() {
@@ -3744,7 +3747,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S22.setBackground(new java.awt.Color(69, 93, 220));
         S22.setForeground(new java.awt.Color(186, 195, 242));
-        S22.setText("S");
+        S22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S22.setContentAreaFilled(false);
         S22.setOpaque(true);
         S22.addActionListener(new java.awt.event.ActionListener() {
@@ -3771,7 +3774,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S30.setBackground(new java.awt.Color(69, 93, 220));
         S30.setForeground(new java.awt.Color(186, 195, 242));
-        S30.setText("S");
+        S30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S30.setContentAreaFilled(false);
         S30.setOpaque(true);
         S30.addActionListener(new java.awt.event.ActionListener() {
@@ -3798,7 +3801,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S8.setBackground(new java.awt.Color(69, 93, 220));
         S8.setForeground(new java.awt.Color(186, 195, 242));
-        S8.setText("SOLO");
+        S8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S8.setContentAreaFilled(false);
         S8.setOpaque(true);
         S8.addActionListener(new java.awt.event.ActionListener() {
@@ -3825,7 +3828,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S15.setBackground(new java.awt.Color(69, 93, 220));
         S15.setForeground(new java.awt.Color(186, 195, 242));
-        S15.setText("SOLO");
+        S15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S15.setContentAreaFilled(false);
         S15.setOpaque(true);
         S15.addActionListener(new java.awt.event.ActionListener() {
@@ -3852,7 +3855,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S16.setBackground(new java.awt.Color(69, 93, 220));
         S16.setForeground(new java.awt.Color(186, 195, 242));
-        S16.setText("SOLO");
+        S16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S16.setContentAreaFilled(false);
         S16.setOpaque(true);
         S16.addActionListener(new java.awt.event.ActionListener() {
@@ -3879,7 +3882,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S23.setBackground(new java.awt.Color(69, 93, 220));
         S23.setForeground(new java.awt.Color(186, 195, 242));
-        S23.setText("SOLO");
+        S23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S23.setContentAreaFilled(false);
         S23.setOpaque(true);
         S23.addActionListener(new java.awt.event.ActionListener() {
@@ -3906,7 +3909,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S24.setBackground(new java.awt.Color(69, 93, 220));
         S24.setForeground(new java.awt.Color(186, 195, 242));
-        S24.setText("SOLO");
+        S24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S24.setContentAreaFilled(false);
         S24.setOpaque(true);
         S24.addActionListener(new java.awt.event.ActionListener() {
@@ -3933,7 +3936,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S31.setBackground(new java.awt.Color(69, 93, 220));
         S31.setForeground(new java.awt.Color(186, 195, 242));
-        S31.setText("SOLO");
+        S31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S31.setContentAreaFilled(false);
         S31.setOpaque(true);
         S31.addActionListener(new java.awt.event.ActionListener() {
@@ -3960,7 +3963,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S32.setBackground(new java.awt.Color(69, 93, 220));
         S32.setForeground(new java.awt.Color(186, 195, 242));
-        S32.setText("SOLO");
+        S32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S32.setContentAreaFilled(false);
         S32.setOpaque(true);
         S32.addActionListener(new java.awt.event.ActionListener() {
@@ -3992,7 +3995,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S33.setBackground(new java.awt.Color(69, 93, 220));
         S33.setForeground(new java.awt.Color(186, 195, 242));
-        S33.setText("SOLO");
+        S33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S33.setContentAreaFilled(false);
         S33.setOpaque(true);
         S33.addActionListener(new java.awt.event.ActionListener() {
@@ -4024,7 +4027,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S34.setBackground(new java.awt.Color(69, 93, 220));
         S34.setForeground(new java.awt.Color(186, 195, 242));
-        S34.setText("SOLO");
+        S34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S34.setContentAreaFilled(false);
         S34.setOpaque(true);
         S34.addActionListener(new java.awt.event.ActionListener() {
@@ -4056,7 +4059,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S35.setBackground(new java.awt.Color(69, 93, 220));
         S35.setForeground(new java.awt.Color(186, 195, 242));
-        S35.setText("SOLO");
+        S35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S35.setContentAreaFilled(false);
         S35.setOpaque(true);
         S35.addActionListener(new java.awt.event.ActionListener() {
@@ -4088,7 +4091,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S36.setBackground(new java.awt.Color(69, 93, 220));
         S36.setForeground(new java.awt.Color(186, 195, 242));
-        S36.setText("SOLO");
+        S36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S36.setContentAreaFilled(false);
         S36.setOpaque(true);
         S36.addActionListener(new java.awt.event.ActionListener() {
@@ -4120,7 +4123,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S37.setBackground(new java.awt.Color(69, 93, 220));
         S37.setForeground(new java.awt.Color(186, 195, 242));
-        S37.setText("SOLO");
+        S37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S37.setContentAreaFilled(false);
         S37.setOpaque(true);
         S37.addActionListener(new java.awt.event.ActionListener() {
@@ -4152,7 +4155,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S38.setBackground(new java.awt.Color(69, 93, 220));
         S38.setForeground(new java.awt.Color(186, 195, 242));
-        S38.setText("SOLO");
+        S38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S38.setContentAreaFilled(false);
         S38.setOpaque(true);
         S38.addActionListener(new java.awt.event.ActionListener() {
@@ -4184,7 +4187,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S39.setBackground(new java.awt.Color(69, 93, 220));
         S39.setForeground(new java.awt.Color(186, 195, 242));
-        S39.setText("SOLO");
+        S39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S39.setContentAreaFilled(false);
         S39.setOpaque(true);
         S39.addActionListener(new java.awt.event.ActionListener() {
@@ -4216,7 +4219,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S40.setBackground(new java.awt.Color(69, 93, 220));
         S40.setForeground(new java.awt.Color(186, 195, 242));
-        S40.setText("SOLO");
+        S40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S40.setContentAreaFilled(false);
         S40.setOpaque(true);
         S40.addActionListener(new java.awt.event.ActionListener() {
@@ -4248,7 +4251,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S41.setBackground(new java.awt.Color(69, 93, 220));
         S41.setForeground(new java.awt.Color(186, 195, 242));
-        S41.setText("SOLO");
+        S41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S41.setContentAreaFilled(false);
         S41.setOpaque(true);
         S41.addActionListener(new java.awt.event.ActionListener() {
@@ -4269,7 +4272,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S42.setBackground(new java.awt.Color(69, 93, 220));
         S42.setForeground(new java.awt.Color(186, 195, 242));
-        S42.setText("SOLO");
+        S42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S42.setContentAreaFilled(false);
         S42.setOpaque(true);
         S42.addActionListener(new java.awt.event.ActionListener() {
@@ -4301,7 +4304,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S43.setBackground(new java.awt.Color(69, 93, 220));
         S43.setForeground(new java.awt.Color(186, 195, 242));
-        S43.setText("SOLO");
+        S43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S43.setContentAreaFilled(false);
         S43.setOpaque(true);
         S43.addActionListener(new java.awt.event.ActionListener() {
@@ -4333,7 +4336,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S44.setBackground(new java.awt.Color(69, 93, 220));
         S44.setForeground(new java.awt.Color(186, 195, 242));
-        S44.setText("SOLO");
+        S44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S44.setContentAreaFilled(false);
         S44.setOpaque(true);
         S44.addActionListener(new java.awt.event.ActionListener() {
@@ -4376,7 +4379,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S45.setBackground(new java.awt.Color(69, 93, 220));
         S45.setForeground(new java.awt.Color(186, 195, 242));
-        S45.setText("SOLO");
+        S45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S45.setContentAreaFilled(false);
         S45.setOpaque(true);
         S45.addActionListener(new java.awt.event.ActionListener() {
@@ -4408,7 +4411,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S46.setBackground(new java.awt.Color(69, 93, 220));
         S46.setForeground(new java.awt.Color(186, 195, 242));
-        S46.setText("SOLO");
+        S46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S46.setContentAreaFilled(false);
         S46.setOpaque(true);
         S46.addActionListener(new java.awt.event.ActionListener() {
@@ -4440,7 +4443,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S47.setBackground(new java.awt.Color(69, 93, 220));
         S47.setForeground(new java.awt.Color(186, 195, 242));
-        S47.setText("SOLO");
+        S47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S47.setContentAreaFilled(false);
         S47.setOpaque(true);
         S47.addActionListener(new java.awt.event.ActionListener() {
@@ -4472,7 +4475,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S48.setBackground(new java.awt.Color(69, 93, 220));
         S48.setForeground(new java.awt.Color(186, 195, 242));
-        S48.setText("SOLO");
+        S48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S48.setContentAreaFilled(false);
         S48.setOpaque(true);
         S48.addActionListener(new java.awt.event.ActionListener() {
@@ -4504,7 +4507,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S49.setBackground(new java.awt.Color(69, 93, 220));
         S49.setForeground(new java.awt.Color(186, 195, 242));
-        S49.setText("SOLO");
+        S49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S49.setContentAreaFilled(false);
         S49.setOpaque(true);
         S49.addActionListener(new java.awt.event.ActionListener() {
@@ -4536,7 +4539,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S50.setBackground(new java.awt.Color(69, 93, 220));
         S50.setForeground(new java.awt.Color(186, 195, 242));
-        S50.setText("SOLO");
+        S50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S50.setContentAreaFilled(false);
         S50.setOpaque(true);
         S50.addActionListener(new java.awt.event.ActionListener() {
@@ -4568,7 +4571,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S51.setBackground(new java.awt.Color(69, 93, 220));
         S51.setForeground(new java.awt.Color(186, 195, 242));
-        S51.setText("SOLO");
+        S51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S51.setContentAreaFilled(false);
         S51.setOpaque(true);
         S51.addActionListener(new java.awt.event.ActionListener() {
@@ -4600,7 +4603,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S52.setBackground(new java.awt.Color(69, 93, 220));
         S52.setForeground(new java.awt.Color(186, 195, 242));
-        S52.setText("SOLO");
+        S52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S52.setContentAreaFilled(false);
         S52.setOpaque(true);
         S52.addActionListener(new java.awt.event.ActionListener() {
@@ -4632,7 +4635,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S53.setBackground(new java.awt.Color(69, 93, 220));
         S53.setForeground(new java.awt.Color(186, 195, 242));
-        S53.setText("SOLO");
+        S53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S53.setContentAreaFilled(false);
         S53.setOpaque(true);
         S53.addActionListener(new java.awt.event.ActionListener() {
@@ -4643,7 +4646,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S54.setBackground(new java.awt.Color(69, 93, 220));
         S54.setForeground(new java.awt.Color(186, 195, 242));
-        S54.setText("SOLO");
+        S54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S54.setContentAreaFilled(false);
         S54.setOpaque(true);
         S54.addActionListener(new java.awt.event.ActionListener() {
@@ -4675,7 +4678,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S55.setBackground(new java.awt.Color(69, 93, 220));
         S55.setForeground(new java.awt.Color(186, 195, 242));
-        S55.setText("SOLO");
+        S55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S55.setContentAreaFilled(false);
         S55.setOpaque(true);
         S55.addActionListener(new java.awt.event.ActionListener() {
@@ -4707,7 +4710,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S56.setBackground(new java.awt.Color(69, 93, 220));
         S56.setForeground(new java.awt.Color(186, 195, 242));
-        S56.setText("SOLO");
+        S56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S56.setContentAreaFilled(false);
         S56.setOpaque(true);
         S56.addActionListener(new java.awt.event.ActionListener() {
@@ -4760,7 +4763,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S57.setBackground(new java.awt.Color(69, 93, 220));
         S57.setForeground(new java.awt.Color(186, 195, 242));
-        S57.setText("SOLO");
+        S57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S57.setContentAreaFilled(false);
         S57.setOpaque(true);
         S57.addActionListener(new java.awt.event.ActionListener() {
@@ -4792,7 +4795,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S58.setBackground(new java.awt.Color(69, 93, 220));
         S58.setForeground(new java.awt.Color(186, 195, 242));
-        S58.setText("SOLO");
+        S58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S58.setContentAreaFilled(false);
         S58.setOpaque(true);
         S58.addActionListener(new java.awt.event.ActionListener() {
@@ -4824,7 +4827,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S59.setBackground(new java.awt.Color(69, 93, 220));
         S59.setForeground(new java.awt.Color(186, 195, 242));
-        S59.setText("SOLO");
+        S59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S59.setContentAreaFilled(false);
         S59.setOpaque(true);
         S59.addActionListener(new java.awt.event.ActionListener() {
@@ -4856,7 +4859,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S60.setBackground(new java.awt.Color(69, 93, 220));
         S60.setForeground(new java.awt.Color(186, 195, 242));
-        S60.setText("SOLO");
+        S60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S60.setContentAreaFilled(false);
         S60.setOpaque(true);
         S60.addActionListener(new java.awt.event.ActionListener() {
@@ -4888,7 +4891,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S61.setBackground(new java.awt.Color(69, 93, 220));
         S61.setForeground(new java.awt.Color(186, 195, 242));
-        S61.setText("SOLO");
+        S61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S61.setContentAreaFilled(false);
         S61.setOpaque(true);
         S61.addActionListener(new java.awt.event.ActionListener() {
@@ -4920,7 +4923,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S62.setBackground(new java.awt.Color(69, 93, 220));
         S62.setForeground(new java.awt.Color(186, 195, 242));
-        S62.setText("SOLO");
+        S62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S62.setContentAreaFilled(false);
         S62.setOpaque(true);
         S62.addActionListener(new java.awt.event.ActionListener() {
@@ -4952,7 +4955,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S63.setBackground(new java.awt.Color(69, 93, 220));
         S63.setForeground(new java.awt.Color(186, 195, 242));
-        S63.setText("SOLO");
+        S63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S63.setContentAreaFilled(false);
         S63.setOpaque(true);
         S63.addActionListener(new java.awt.event.ActionListener() {
@@ -4984,7 +4987,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         S64.setBackground(new java.awt.Color(69, 93, 220));
         S64.setForeground(new java.awt.Color(186, 195, 242));
-        S64.setText("SOLO");
+        S64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/microfono.png"))); // NOI18N
         S64.setContentAreaFilled(false);
         S64.setOpaque(true);
         S64.addActionListener(new java.awt.event.ActionListener() {
