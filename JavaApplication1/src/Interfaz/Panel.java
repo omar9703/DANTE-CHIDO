@@ -329,6 +329,7 @@ public class Panel extends javax.swing.JFrame {
 
         cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        cLEAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/basura.png"))); // NOI18N
         cLEAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cLEARActionPerformed(evt);
