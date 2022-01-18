@@ -899,6 +899,7 @@
         </Property>
         <Property name="maximum" type="int" value="10"/>
         <Property name="orientation" type="int" value="1"/>
+        <Property name="paintLabels" type="boolean" value="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="C1">

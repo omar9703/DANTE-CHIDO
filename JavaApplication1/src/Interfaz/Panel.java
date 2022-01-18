@@ -324,6 +324,7 @@ public class Panel extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -333,7 +334,6 @@ public class Panel extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(102, 41, 188));
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(694, 10, 180, 120);
 
@@ -352,7 +352,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(890, 70, 120, 40);
+        Bsettings.setBounds(910, 20, 120, 40);
 
         cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -363,7 +363,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cLEAR);
-        cLEAR.setBounds(1170, 70, 120, 40);
+        cLEAR.setBounds(1190, 20, 120, 40);
 
         primero.setBackground(new java.awt.Color(35, 38, 49));
         primero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -416,7 +416,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer);
-        Bmixer.setBounds(1030, 70, 120, 40);
+        Bmixer.setBounds(1050, 20, 120, 40);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -461,7 +461,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(MSG);
-        MSG.setBounds(580, 60, 290, 33);
+        MSG.setBounds(780, 60, 40, 20);
         getContentPane().add(alarma);
         alarma.setBounds(310, 20, 52, 54);
 
@@ -499,7 +499,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(900, 25, 210, 20);
+        vPrincipal.setBounds(950, 75, 360, 30);
 
         jPanel4.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel4);
@@ -516,6 +516,10 @@ public class Panel extends javax.swing.JFrame {
         jPanel1.setBackground(java.awt.Color.red);
         getContentPane().add(jPanel1);
         jPanel1.setBounds(83, 180, 7, 70);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/bocina.png"))); // NOI18N
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(910, 70, 40, 40);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1350, 740);
 
@@ -718,6 +722,7 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
