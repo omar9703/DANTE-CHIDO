@@ -272,8 +272,8 @@ public class Panel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         scrollPane1 = new java.awt.ScrollPane();
-        jLabel4 = new javax.swing.JLabel();
         Bsettings = new javax.swing.JButton();
         cLEAR = new javax.swing.JButton();
         primero = new javax.swing.JButton();
@@ -291,23 +291,27 @@ public class Panel extends javax.swing.JFrame {
         networks = new javax.swing.JComboBox<>();
         tercero = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         vPrincipal = new javax.swing.JSlider();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
         setForeground(new java.awt.Color(0, 51, 102));
         getContentPane().setLayout(null);
 
+        jLabel3.setBackground(new java.awt.Color(102, 41, 188));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(694, 10, 180, 120);
+
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 1890, 740);
-
         getContentPane().add(scrollPane1);
         scrollPane1.setBounds(90, 140, 1260, 600);
 
@@ -321,7 +325,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(890, 60, 120, 40);
+        Bsettings.setBounds(890, 70, 120, 40);
 
         cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -331,7 +335,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cLEAR);
-        cLEAR.setBounds(1170, 60, 120, 40);
+        cLEAR.setBounds(1170, 70, 120, 40);
 
         primero.setBackground(new java.awt.Color(35, 38, 49));
         primero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -384,7 +388,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer);
-        Bmixer.setBounds(1030, 60, 120, 40);
+        Bmixer.setBounds(1030, 70, 120, 40);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -439,7 +443,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 24);
+        networks.setBounds(880, 690, 130, 20);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -457,8 +461,8 @@ public class Panel extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1030, 690, 127, 20);
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 1890, 740);
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 1890, 740);
 
         vPrincipal.setBackground(new java.awt.Color(0, 0, 0));
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -473,11 +477,13 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(jPanel3);
         jPanel3.setBounds(83, 320, 7, 70);
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(83, 240, 7, 70);
+        jPanel2.setBounds(83, 250, 7, 70);
 
         jPanel1.setBackground(java.awt.Color.red);
         getContentPane().add(jPanel1);
         jPanel1.setBounds(83, 180, 7, 70);
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 1350, 740);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -675,7 +681,9 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JButton cuarto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
