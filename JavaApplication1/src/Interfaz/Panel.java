@@ -107,7 +107,7 @@ public class Panel extends javax.swing.JFrame {
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("nuevoFondo.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("fondosinlogo.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
