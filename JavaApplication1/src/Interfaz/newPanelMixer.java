@@ -56,7 +56,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         this.P=P;
         initComponents();
         X=new XmlRead();
-       
+        
         Conf= X.Read("config.xml");
         GlobalConfig.servidor = Conf.GetServidor();       
         GlobalConfig.ListaAlias = Conf.GetAlias();
@@ -1617,6 +1617,8 @@ public class newPanelMixer extends javax.swing.JPanel {
        this.repaint();
     } 
  
+    
+    
     private void LoadImages(Configuracion C){
              
        if(!C.GetListaImages().get(0).equals("0")){

@@ -84,7 +84,11 @@ public class Panel extends javax.swing.JFrame {
        
          
        Xread=new XmlRead();
-         
+       Conf = new Configuracion();
+       
+    
+        
+        Conf=Xread.Read("config.xml");
          //apagar temporalmente logs (boton)
        //this.Bping.setEnabled(false);
     //   this.Bstop.setEnabled(false);
@@ -114,9 +118,32 @@ public class Panel extends javax.swing.JFrame {
       MSG.setVisible(false);
       networks.setVisible(false);
       jLabel1.setVisible(false);
-
+      
+        LoadImageProject(Conf);
     }
     
+    
+    public void LoadImageProject(Configuracion C){
+        if(!C.GetpathImageProject().equals("0")){
+                try{
+                    jLabel3.setIcon(new javax.swing.ImageIcon(C.GetpathImageProject()));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                jLabel3.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+    }
     
     public void setpanel(Networks NT){
       scrollPane1.add(NT);

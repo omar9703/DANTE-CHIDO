@@ -23,6 +23,15 @@ public class Configuracion {
     private String Network;
     private String PortUDP;
     
+    private String pathImageProject;
+    
+    public void SetpathImageProject(String pathImageProject){
+      this.pathImageProject=pathImageProject;
+    }
+    
+    public String GetpathImageProject(){
+      return pathImageProject;
+    }
     
     public void SetMultiCast(String multicast){
       this.multicast=multicast;

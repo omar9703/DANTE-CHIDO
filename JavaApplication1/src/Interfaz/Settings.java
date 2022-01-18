@@ -39,6 +39,7 @@ public class Settings extends javax.swing.JPanel {
     //private PanelMixer Mixer;
     private newPanelMixer Mixer;
     private String Inteface;
+    private String pathImageProject="";
     public Settings(Coordinador cor,Panel P,newPanelMixer Mixer) {
         
         puertos=new ArrayList<>();
@@ -2994,6 +2995,7 @@ public class Settings extends javax.swing.JPanel {
         GlobalConfig.PortUDP = Conf.GetPortUDP();
         GlobalConfig.puerto = Conf.GetPuerto();
         GlobalConfig.Network = Conf.GetNet();
+        Conf.SetpathImageProject(pathImageProject);
         try{
             cor.WriteXml(Conf,"config.xml");
             //cor.WriteXml(Conf,"conf");
@@ -3001,6 +3003,7 @@ public class Settings extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Configuracion guardada exitosamente");
             Mixer.SetAlias(Alias);
             Mixer.SetImages(Images);
+            P.LoadImageProject(Conf);
 
         }
         catch(Exception e){
@@ -3011,6 +3014,28 @@ public class Settings extends javax.swing.JPanel {
 
     }//GEN-LAST:event_AceptarActionPerformed
 
+    private void LoadImageProject(Configuracion C){
+        if(!C.GetpathImageProject().equals("0")){
+                try{
+                    jLabel3.setIcon(new javax.swing.ImageIcon(C.GetpathImageProject()));
+                    this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+        }
+       else{
+           try{
+                jLabel3.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                this.repaint();
+                }
+                catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }
+       
+       }
+    }
+    
     private void servActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_servActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_servActionPerformed
@@ -3249,10 +3274,31 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im65ActionPerformed
         // TODO add your handling code here:
+        SaveImage(65);
     }//GEN-LAST:event_Im65ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        try{
+            final JFileChooser fc=new JFileChooser();
+            if(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
+               String path=fc.getSelectedFile().getAbsolutePath();
+               String nombre=fc.getSelectedFile().getName();
+             
+                System.out.println(path);
+                //Images.remove(index);
+                //Images.add(index,path);
+                pathImageProject = path;
+                jButton1.setText(nombre);
+            }
+            else
+            {
+               Images.add(null);
+            }            
+        }
+        catch(Exception ex){
+            JOptionPane.showMessageDialog(null,"Error de archivo ");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void PaintSettings(Configuracion C){

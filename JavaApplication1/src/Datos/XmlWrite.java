@@ -49,6 +49,7 @@ public class XmlWrite {
             Tag Muestra=new Tag("MUESTRA");
             Tag Network=new Tag("NETWORK");
             Tag PortUDP=new Tag("PortUDP");
+            Tag pathimage = new Tag("pathimage");
             ArrayList<Tag> canales=new ArrayList<Tag>();
             ArrayList<Tag> Imagenes=new ArrayList<Tag>();
            
@@ -57,7 +58,7 @@ public class XmlWrite {
             serv.addContenido(Conf.GetServidor());         
             escape.addContenido(Conf.GetPuerto());
             PortUDP.addContenido(Conf.GetPortUDP());
-            
+            pathimage.addContenido(Conf.GetpathImageProject());
             for(int a=0;a<64;a++){
                 canales.add(new Tag("CANAL"));
                 canales.get(a).addAtributo("id",Alias.get(a));
@@ -94,8 +95,8 @@ public class XmlWrite {
             servidor.addTagHijo(serv);
             servidor.addTagHijo(escape);
             servidor.addTagHijo(PortUDP);
-           
-            
+            servidor.addTagHijo(Asio);
+            servidor.addTagHijo(pathimage);
             J.escribirXML(raiz);
             System.out.println("Escrito correctamente");
             Logs.Write("Configuracion escrita correctamente");

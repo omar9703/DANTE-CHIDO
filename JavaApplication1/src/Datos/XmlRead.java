@@ -66,6 +66,10 @@ public class XmlRead {
             Element E3=(Element)N3;
             Conf.SetPortUDP(E3.getTextContent());   //establecer puerto de escucha
             
+            firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("pathimage");
+            Node N4=firstNameList2.item(0);
+            Element E4=(Element)N4;
+            Conf.SetpathImageProject(E4.getTextContent());   //establecer puerto de escucha
                                   
             firstNameList = ((Element)nodototal.item(0)).getElementsByTagName("ASIO"); 
             firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("CANAL");

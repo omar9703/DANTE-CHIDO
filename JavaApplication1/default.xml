@@ -43,6 +43,7 @@
 <MUESTRA>64</MUESTRA>
 <NETWORK>default</NETWORK>
 </ASIO>
+<pathimage>0</pathimage>
 <IMAGES>
 <IMAGE>0</IMAGE>
 <IMAGE>0</IMAGE>
