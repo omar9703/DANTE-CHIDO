@@ -76,6 +76,8 @@ public class Panel extends javax.swing.JFrame {
        primero.setBackground(Color.black);
        primero.setForeground(Color.white);
        jPanel1.setBackground(Color.red);
+       
+       
 
        
        //fecha
