@@ -106,7 +106,6 @@ public class Settings extends javax.swing.JPanel {
         Im19 = new javax.swing.JButton();
         Im20 = new javax.swing.JButton();
         Im22 = new javax.swing.JButton();
-        Im27 = new javax.swing.JButton();
         Im28 = new javax.swing.JButton();
         Im30 = new javax.swing.JButton();
         Im29 = new javax.swing.JButton();
@@ -283,6 +282,9 @@ public class Settings extends javax.swing.JPanel {
         jLabel258 = new javax.swing.JLabel();
         id64 = new javax.swing.JTextField();
         Im64 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        Im65 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(0, 0, 0));
 
@@ -520,16 +522,6 @@ public class Settings extends javax.swing.JPanel {
         Im22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Im22ActionPerformed(evt);
-            }
-        });
-
-        Im27.setBackground(new java.awt.Color(69, 93, 220));
-        Im27.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
-        Im27.setForeground(new java.awt.Color(208, 212, 223));
-        Im27.setText("Chose Image");
-        Im27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Im27ActionPerformed(evt);
             }
         });
 
@@ -936,7 +928,7 @@ public class Settings extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(208, 212, 223));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("MUESTRA");
+        jLabel5.setText("CARGAR IMAGEN PROYECTO");
 
         Samples.setBackground(new java.awt.Color(38, 40, 52));
         Samples.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -1819,6 +1811,32 @@ public class Settings extends javax.swing.JPanel {
             }
         });
 
+        jLabel7.setBackground(new java.awt.Color(233, 19, 71));
+        jLabel7.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(208, 212, 223));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("MUESTRA");
+
+        Im65.setBackground(new java.awt.Color(69, 93, 220));
+        Im65.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Im65.setForeground(new java.awt.Color(208, 212, 223));
+        Im65.setText("Chose Image");
+        Im65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Im65ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(69, 93, 220));
+        jButton1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(208, 212, 223));
+        jButton1.setText("CARGAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -1837,9 +1855,11 @@ public class Settings extends javax.swing.JPanel {
                 .addGap(0, 0, 0)
                 .addComponent(puerto, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(100, 100, 100)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(Samples, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(Samples, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addComponent(ch2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1850,7 +1870,9 @@ public class Settings extends javax.swing.JPanel {
                 .addGap(100, 100, 100)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(Frecuencys, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(Frecuencys, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(400, 400, 400)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jLabel217, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1901,7 +1923,7 @@ public class Settings extends javax.swing.JPanel {
                 .addGap(20, 20, 20)
                 .addComponent(Im19, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
-                .addComponent(Im27, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(Im65, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jLabel222, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2276,15 +2298,17 @@ public class Settings extends javax.swing.JPanel {
                     .addComponent(multicast, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(puerto, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Samples, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Samples, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ch2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(serv, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Frecuencys, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Frecuencys, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel217, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2312,7 +2336,7 @@ public class Settings extends javax.swing.JPanel {
                     .addComponent(Im3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Im11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Im19, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Im27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Im65, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel222, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2584,11 +2608,6 @@ public class Settings extends javax.swing.JPanel {
         // TODO add your handling code here:
         SaveImage(21);
     }//GEN-LAST:event_Im22ActionPerformed
-
-    private void Im27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im27ActionPerformed
-        // TODO add your handling code here:
-        SaveImage(26);
-    }//GEN-LAST:event_Im27ActionPerformed
 
     private void Im28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im28ActionPerformed
         // TODO add your handling code here:
@@ -3228,6 +3247,14 @@ public class Settings extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_id2ActionPerformed
 
+    private void Im65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im65ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Im65ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void PaintSettings(Configuracion C){
         
         ArrayList<String> puertos2=C.GetLista();
@@ -3364,7 +3391,6 @@ public class Settings extends javax.swing.JPanel {
     private javax.swing.JButton Im24;
     private javax.swing.JButton Im25;
     private javax.swing.JButton Im26;
-    private javax.swing.JButton Im27;
     private javax.swing.JButton Im28;
     private javax.swing.JButton Im29;
     private javax.swing.JButton Im3;
@@ -3406,6 +3432,7 @@ public class Settings extends javax.swing.JPanel {
     private javax.swing.JButton Im62;
     private javax.swing.JButton Im63;
     private javax.swing.JButton Im64;
+    private javax.swing.JButton Im65;
     private javax.swing.JButton Im7;
     private javax.swing.JButton Im8;
     private javax.swing.JButton Im9;
@@ -3476,6 +3503,7 @@ public class Settings extends javax.swing.JPanel {
     private javax.swing.JTextField id7;
     private javax.swing.JTextField id8;
     private javax.swing.JTextField id9;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel156;
     private javax.swing.JLabel jLabel157;
@@ -3546,6 +3574,7 @@ public class Settings extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField multicast;
     private javax.swing.JTextField puerto;
     private javax.swing.JTextField serv;

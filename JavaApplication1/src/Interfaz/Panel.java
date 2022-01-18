@@ -443,7 +443,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 20);
+        networks.setBounds(880, 690, 130, 24);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -472,10 +472,16 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(900, 25, 210, 20);
+
+        jPanel4.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel4);
         jPanel4.setBounds(83, 390, 7, 70);
+
+        jPanel3.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel3);
         jPanel3.setBounds(83, 320, 7, 70);
+
+        jPanel2.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel2);
         jPanel2.setBounds(83, 250, 7, 70);
 

@@ -610,7 +610,7 @@
                   <Component id="S27" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="C27" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="V2" min="-2" pref="170" max="-2" attributes="0"/>
                   <Component id="I2" min="-2" pref="170" max="-2" attributes="0"/>
@@ -647,7 +647,7 @@
                   <Component id="S28" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="C28" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="V5" min="-2" pref="170" max="-2" attributes="0"/>
                   <Component id="I5" min="-2" pref="170" max="-2" attributes="0"/>
@@ -870,7 +870,7 @@
                   <Component id="S64" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="C64" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="70" max="32767" attributes="0"/>
+              <EmptySpace pref="110" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
