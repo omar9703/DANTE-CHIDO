@@ -3106,6 +3106,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         V1.setForeground(new java.awt.Color(255, 0, 102));
         V1.setMaximum(10);
         V1.setOrientation(javax.swing.JSlider.VERTICAL);
+        V1.setPaintLabels(true);
 
         C1.setBackground(new java.awt.Color(25, 31, 49));
         C1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N

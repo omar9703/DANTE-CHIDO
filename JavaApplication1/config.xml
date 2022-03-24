@@ -1,214 +1,214 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <CONFIGURACION>
-<SERVIDOR>
-<MULTICAST>224.0.0.3</MULTICAST>
-<SERV>192.168.1.91</SERV>
-<ESC>4050</ESC>
-<PortUDP>5001</PortUDP>
-<ASIO>
-<CANAL id="channel 1">5001</CANAL>
-<CANAL id="channel 9">5001</CANAL>
-<CANAL id="channel 5">5001</CANAL>
-<CANAL id="channel 13">5001</CANAL>
-<CANAL id="channel 17">5001</CANAL>
-<CANAL id="channel 21">5001</CANAL>
-<CANAL id="channel 25">5001</CANAL>
-<CANAL id="channel 26">5001</CANAL>
-<CANAL id="channel 2">5001</CANAL>
-<CANAL id="channel 10">5001</CANAL>
-<CANAL id="channel 6">5001</CANAL>
-<CANAL id="channel 14">5001</CANAL>
-<CANAL id="channel 18">5001</CANAL>
-<CANAL id="channel 22">5001</CANAL>
-<CANAL id="channel 27">5001</CANAL>
-<CANAL id="channel 28">5001</CANAL>
-<CANAL id="channel 3">5001</CANAL>
-<CANAL id="channel 11">5001</CANAL>
-<CANAL id="channel 7">5001</CANAL>
-<CANAL id="channel 15">5001</CANAL>
-<CANAL id="canal 19">5001</CANAL>
-<CANAL id="channel 23">5001</CANAL>
-<CANAL id="channel 29">5001</CANAL>
-<CANAL id="channel 30">5001</CANAL>
-<CANAL id="channel 4">5001</CANAL>
-<CANAL id="channel 12">5001</CANAL>
-<CANAL id="channel 8">5001</CANAL>
-<CANAL id="channel 16">5001</CANAL>
-<CANAL id="channel 20">5001</CANAL>
-<CANAL id="channel 24">5001</CANAL>
-<CANAL id="channel 31">5001</CANAL>
-<CANAL id="channel 32">5001</CANAL>
-<CANAL id="channel 33">5001</CANAL>
-<CANAL id="channel 34">5001</CANAL>
-<CANAL id="channel 35">5001</CANAL>
-<CANAL id="channel 36">5001</CANAL>
-<CANAL id="channel 37">5001</CANAL>
-<CANAL id="channel 38">5001</CANAL>
-<CANAL id="channel 39">5001</CANAL>
-<CANAL id="channel 40">5001</CANAL>
-<CANAL id="channel 41">5001</CANAL>
-<CANAL id="channel 42">5001</CANAL>
-<CANAL id="channel 43">5001</CANAL>
-<CANAL id="channel 44">5001</CANAL>
-<CANAL id="channel 45">5001</CANAL>
-<CANAL id="channel 46">5001</CANAL>
-<CANAL id="channel 47">5001</CANAL>
-<CANAL id="channel 48">5001</CANAL>
-<CANAL id="channel 49">5001</CANAL>
-<CANAL id="channel 50">5001</CANAL>
-<CANAL id="channel 51">5001</CANAL>
-<CANAL id="channel 52">5001</CANAL>
-<CANAL id="channel 53">5001</CANAL>
-<CANAL id="channel 54">5001</CANAL>
-<CANAL id="channel 55">5001</CANAL>
-<CANAL id="channel 56">5001</CANAL>
-<CANAL id="channel 57">5001</CANAL>
-<CANAL id="channel 58">5001</CANAL>
-<CANAL id="channel 59">5001</CANAL>
-<CANAL id="channel 60">5001</CANAL>
-<CANAL id="channel 61">5001</CANAL>
-<CANAL id="channel 62">5001</CANAL>
-<CANAL id="channel 63">5001</CANAL>
-<CANAL id="channel 64">5001</CANAL>
-<FRECUENCIA>44100</FRECUENCIA>
-<MUESTRA>64</MUESTRA>
-<NETWORK>default</NETWORK>
-</ASIO>
-<pathimage>C:\Users\leone\Pictures\mannschaft.jpg</pathimage>
-</SERVIDOR>
-<ASIO>
-<CANAL id="channel 1">5001</CANAL>
-<CANAL id="channel 9">5001</CANAL>
-<CANAL id="channel 5">5001</CANAL>
-<CANAL id="channel 13">5001</CANAL>
-<CANAL id="channel 17">5001</CANAL>
-<CANAL id="channel 21">5001</CANAL>
-<CANAL id="channel 25">5001</CANAL>
-<CANAL id="channel 26">5001</CANAL>
-<CANAL id="channel 2">5001</CANAL>
-<CANAL id="channel 10">5001</CANAL>
-<CANAL id="channel 6">5001</CANAL>
-<CANAL id="channel 14">5001</CANAL>
-<CANAL id="channel 18">5001</CANAL>
-<CANAL id="channel 22">5001</CANAL>
-<CANAL id="channel 27">5001</CANAL>
-<CANAL id="channel 28">5001</CANAL>
-<CANAL id="channel 3">5001</CANAL>
-<CANAL id="channel 11">5001</CANAL>
-<CANAL id="channel 7">5001</CANAL>
-<CANAL id="channel 15">5001</CANAL>
-<CANAL id="canal 19">5001</CANAL>
-<CANAL id="channel 23">5001</CANAL>
-<CANAL id="channel 29">5001</CANAL>
-<CANAL id="channel 30">5001</CANAL>
-<CANAL id="channel 4">5001</CANAL>
-<CANAL id="channel 12">5001</CANAL>
-<CANAL id="channel 8">5001</CANAL>
-<CANAL id="channel 16">5001</CANAL>
-<CANAL id="channel 20">5001</CANAL>
-<CANAL id="channel 24">5001</CANAL>
-<CANAL id="channel 31">5001</CANAL>
-<CANAL id="channel 32">5001</CANAL>
-<CANAL id="channel 33">5001</CANAL>
-<CANAL id="channel 34">5001</CANAL>
-<CANAL id="channel 35">5001</CANAL>
-<CANAL id="channel 36">5001</CANAL>
-<CANAL id="channel 37">5001</CANAL>
-<CANAL id="channel 38">5001</CANAL>
-<CANAL id="channel 39">5001</CANAL>
-<CANAL id="channel 40">5001</CANAL>
-<CANAL id="channel 41">5001</CANAL>
-<CANAL id="channel 42">5001</CANAL>
-<CANAL id="channel 43">5001</CANAL>
-<CANAL id="channel 44">5001</CANAL>
-<CANAL id="channel 45">5001</CANAL>
-<CANAL id="channel 46">5001</CANAL>
-<CANAL id="channel 47">5001</CANAL>
-<CANAL id="channel 48">5001</CANAL>
-<CANAL id="channel 49">5001</CANAL>
-<CANAL id="channel 50">5001</CANAL>
-<CANAL id="channel 51">5001</CANAL>
-<CANAL id="channel 52">5001</CANAL>
-<CANAL id="channel 53">5001</CANAL>
-<CANAL id="channel 54">5001</CANAL>
-<CANAL id="channel 55">5001</CANAL>
-<CANAL id="channel 56">5001</CANAL>
-<CANAL id="channel 57">5001</CANAL>
-<CANAL id="channel 58">5001</CANAL>
-<CANAL id="channel 59">5001</CANAL>
-<CANAL id="channel 60">5001</CANAL>
-<CANAL id="channel 61">5001</CANAL>
-<CANAL id="channel 62">5001</CANAL>
-<CANAL id="channel 63">5001</CANAL>
-<CANAL id="channel 64">5001</CANAL>
-<FRECUENCIA>44100</FRECUENCIA>
-<MUESTRA>64</MUESTRA>
-<NETWORK>default</NETWORK>
-</ASIO>
-<IMAGES>
-<IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.jpg</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>boton.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>no_image.png</IMAGE>
-<IMAGE>home.png</IMAGE>
-<IMAGE>gray.png</IMAGE>
-</IMAGES>
+    <SERVIDOR>
+        <MULTICAST>224.0.0.3</MULTICAST>
+        <SERV>192.168.1.91</SERV>
+        <ESC>4050</ESC>
+        <PortUDP>5001</PortUDP>
+        <ASIO>
+            <CANAL id="channel 1">5001</CANAL>
+            <CANAL id="channel 9">5001</CANAL>
+            <CANAL id="channel 5">5001</CANAL>
+            <CANAL id="channel 13">5001</CANAL>
+            <CANAL id="channel 17">5001</CANAL>
+            <CANAL id="channel 21">5001</CANAL>
+            <CANAL id="channel 25">5001</CANAL>
+            <CANAL id="channel 26">5001</CANAL>
+            <CANAL id="channel 2">5001</CANAL>
+            <CANAL id="channel 10">5001</CANAL>
+            <CANAL id="channel 6">5001</CANAL>
+            <CANAL id="channel 14">5001</CANAL>
+            <CANAL id="channel 18">5001</CANAL>
+            <CANAL id="channel 22">5001</CANAL>
+            <CANAL id="channel 27">5001</CANAL>
+            <CANAL id="channel 28">5001</CANAL>
+            <CANAL id="channel 3">5001</CANAL>
+            <CANAL id="channel 11">5001</CANAL>
+            <CANAL id="channel 7">5001</CANAL>
+            <CANAL id="channel 15">5001</CANAL>
+            <CANAL id="canal 19">5001</CANAL>
+            <CANAL id="channel 23">5001</CANAL>
+            <CANAL id="channel 29">5001</CANAL>
+            <CANAL id="channel 30">5001</CANAL>
+            <CANAL id="channel 4">5001</CANAL>
+            <CANAL id="channel 12">5001</CANAL>
+            <CANAL id="channel 8">5001</CANAL>
+            <CANAL id="channel 16">5001</CANAL>
+            <CANAL id="channel 20">5001</CANAL>
+            <CANAL id="channel 24">5001</CANAL>
+            <CANAL id="channel 31">5001</CANAL>
+            <CANAL id="channel 32">5001</CANAL>
+            <CANAL id="channel 33">5001</CANAL>
+            <CANAL id="channel 34">5001</CANAL>
+            <CANAL id="channel 35">5001</CANAL>
+            <CANAL id="channel 36">5001</CANAL>
+            <CANAL id="channel 37">5001</CANAL>
+            <CANAL id="channel 38">5001</CANAL>
+            <CANAL id="channel 39">5001</CANAL>
+            <CANAL id="channel 40">5001</CANAL>
+            <CANAL id="channel 41">5001</CANAL>
+            <CANAL id="channel 42">5001</CANAL>
+            <CANAL id="channel 43">5001</CANAL>
+            <CANAL id="channel 44">5001</CANAL>
+            <CANAL id="channel 45">5001</CANAL>
+            <CANAL id="channel 46">5001</CANAL>
+            <CANAL id="channel 47">5001</CANAL>
+            <CANAL id="channel 48">5001</CANAL>
+            <CANAL id="channel 49">5001</CANAL>
+            <CANAL id="channel 50">5001</CANAL>
+            <CANAL id="channel 51">5001</CANAL>
+            <CANAL id="channel 52">5001</CANAL>
+            <CANAL id="channel 53">5001</CANAL>
+            <CANAL id="channel 54">5001</CANAL>
+            <CANAL id="channel 55">5001</CANAL>
+            <CANAL id="channel 56">5001</CANAL>
+            <CANAL id="channel 57">5001</CANAL>
+            <CANAL id="channel 58">5001</CANAL>
+            <CANAL id="channel 59">5001</CANAL>
+            <CANAL id="channel 60">5001</CANAL>
+            <CANAL id="channel 61">5001</CANAL>
+            <CANAL id="channel 62">5001</CANAL>
+            <CANAL id="channel 63">5001</CANAL>
+            <CANAL id="channel 64">5001</CANAL>
+            <FRECUENCIA>44100</FRECUENCIA>
+            <MUESTRA>64</MUESTRA>
+            <NETWORK>default</NETWORK>
+        </ASIO>
+        <pathimage>C:\Users\Rodineitor\Pictures\532a534e325341c726923109815581d6.jpg</pathimage>
+    </SERVIDOR>
+    <ASIO>
+        <CANAL id="channel 1">5001</CANAL>
+        <CANAL id="channel 9">5001</CANAL>
+        <CANAL id="channel 5">5001</CANAL>
+        <CANAL id="channel 13">5001</CANAL>
+        <CANAL id="channel 17">5001</CANAL>
+        <CANAL id="channel 21">5001</CANAL>
+        <CANAL id="channel 25">5001</CANAL>
+        <CANAL id="channel 26">5001</CANAL>
+        <CANAL id="channel 2">5001</CANAL>
+        <CANAL id="channel 10">5001</CANAL>
+        <CANAL id="channel 6">5001</CANAL>
+        <CANAL id="channel 14">5001</CANAL>
+        <CANAL id="channel 18">5001</CANAL>
+        <CANAL id="channel 22">5001</CANAL>
+        <CANAL id="channel 27">5001</CANAL>
+        <CANAL id="channel 28">5001</CANAL>
+        <CANAL id="channel 3">5001</CANAL>
+        <CANAL id="channel 11">5001</CANAL>
+        <CANAL id="channel 7">5001</CANAL>
+        <CANAL id="channel 15">5001</CANAL>
+        <CANAL id="canal 19">5001</CANAL>
+        <CANAL id="channel 23">5001</CANAL>
+        <CANAL id="channel 29">5001</CANAL>
+        <CANAL id="channel 30">5001</CANAL>
+        <CANAL id="channel 4">5001</CANAL>
+        <CANAL id="channel 12">5001</CANAL>
+        <CANAL id="channel 8">5001</CANAL>
+        <CANAL id="channel 16">5001</CANAL>
+        <CANAL id="channel 20">5001</CANAL>
+        <CANAL id="channel 24">5001</CANAL>
+        <CANAL id="channel 31">5001</CANAL>
+        <CANAL id="channel 32">5001</CANAL>
+        <CANAL id="channel 33">5001</CANAL>
+        <CANAL id="channel 34">5001</CANAL>
+        <CANAL id="channel 35">5001</CANAL>
+        <CANAL id="channel 36">5001</CANAL>
+        <CANAL id="channel 37">5001</CANAL>
+        <CANAL id="channel 38">5001</CANAL>
+        <CANAL id="channel 39">5001</CANAL>
+        <CANAL id="channel 40">5001</CANAL>
+        <CANAL id="channel 41">5001</CANAL>
+        <CANAL id="channel 42">5001</CANAL>
+        <CANAL id="channel 43">5001</CANAL>
+        <CANAL id="channel 44">5001</CANAL>
+        <CANAL id="channel 45">5001</CANAL>
+        <CANAL id="channel 46">5001</CANAL>
+        <CANAL id="channel 47">5001</CANAL>
+        <CANAL id="channel 48">5001</CANAL>
+        <CANAL id="channel 49">5001</CANAL>
+        <CANAL id="channel 50">5001</CANAL>
+        <CANAL id="channel 51">5001</CANAL>
+        <CANAL id="channel 52">5001</CANAL>
+        <CANAL id="channel 53">5001</CANAL>
+        <CANAL id="channel 54">5001</CANAL>
+        <CANAL id="channel 55">5001</CANAL>
+        <CANAL id="channel 56">5001</CANAL>
+        <CANAL id="channel 57">5001</CANAL>
+        <CANAL id="channel 58">5001</CANAL>
+        <CANAL id="channel 59">5001</CANAL>
+        <CANAL id="channel 60">5001</CANAL>
+        <CANAL id="channel 61">5001</CANAL>
+        <CANAL id="channel 62">5001</CANAL>
+        <CANAL id="channel 63">5001</CANAL>
+        <CANAL id="channel 64">5001</CANAL>
+        <FRECUENCIA>44100</FRECUENCIA>
+        <MUESTRA>64</MUESTRA>
+        <NETWORK>default</NETWORK>
+    </ASIO>
+    <IMAGES>
+        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.jpg</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>boton.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>no_image.png</IMAGE>
+        <IMAGE>home.png</IMAGE>
+        <IMAGE>gray.png</IMAGE>
+    </IMAGES>
 </CONFIGURACION>
