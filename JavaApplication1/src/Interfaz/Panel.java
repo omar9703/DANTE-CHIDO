@@ -308,6 +308,8 @@ public class Panel extends javax.swing.JFrame {
         primero = new javax.swing.JButton();
         segundo = new javax.swing.JButton();
         cuarto = new javax.swing.JButton();
+        Bmixer2 = new javax.swing.JButton();
+        Bmixer1 = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         EtiquetaStatus = new javax.swing.JLabel();
@@ -328,6 +330,8 @@ public class Panel extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
@@ -342,7 +346,7 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(90, 140, 1260, 600);
+        scrollPane1.setBounds(360, 140, 990, 590);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
         Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -408,6 +412,30 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(cuarto);
         cuarto.setBounds(0, 390, 84, 70);
 
+        Bmixer2.setBackground(new java.awt.Color(231, 25, 76));
+        Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
+        Bmixer2.setForeground(new java.awt.Color(255, 255, 255));
+        Bmixer2.setText("TERMINAR");
+        Bmixer2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bmixer2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Bmixer2);
+        Bmixer2.setBounds(240, 147, 120, 40);
+
+        Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
+        Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
+        Bmixer1.setForeground(new java.awt.Color(255, 255, 255));
+        Bmixer1.setLabel("INICIAR");
+        Bmixer1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bmixer1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Bmixer1);
+        Bmixer1.setBounds(90, 147, 120, 40);
+
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
         Bmixer.setForeground(new java.awt.Color(255, 255, 255));
@@ -449,6 +477,7 @@ public class Panel extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
+        jTextArea1.setPreferredSize(new java.awt.Dimension(167, 94));
         jScrollPane2.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane2);
@@ -473,7 +502,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 24);
+        networks.setBounds(880, 690, 130, 22);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -524,6 +553,20 @@ public class Panel extends javax.swing.JFrame {
         jLabel6.setBounds(910, 70, 40, 40);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1350, 740);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setCaretColor(new java.awt.Color(255, 255, 255));
+        jTextArea2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextArea2FocusGained(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTextArea2);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(90, 186, 270, 540);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -685,6 +728,19 @@ public class Panel extends javax.swing.JFrame {
     private void primeroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_primeroMousePressed
     }//GEN-LAST:event_primeroMousePressed
 
+    private void Bmixer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Bmixer1ActionPerformed
+
+    private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Bmixer2ActionPerformed
+
+    private void jTextArea2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextArea2FocusGained
+        // TODO add your handling code here:
+        System.out.println("empiezo a escribir");
+    }//GEN-LAST:event_jTextArea2FocusGained
+
     
     /**
      * @param args the command line arguments
@@ -711,6 +767,8 @@ public class Panel extends javax.swing.JFrame {
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Bmixer;
+    private javax.swing.JButton Bmixer1;
+    private javax.swing.JButton Bmixer2;
     private javax.swing.JButton Bsettings;
     private javax.swing.JLabel EtiquetaConect;
     private javax.swing.JLabel EtiquetaStatus;
@@ -729,8 +787,10 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JComboBox<String> networks;
     private javax.swing.JButton primero;
     private java.awt.ScrollPane scrollPane1;

@@ -12,10 +12,14 @@ import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 //import /*pruebas*/.PruebaXML.*;
-import xml.analizador.dom.*;
-import xml.analizador.dom.modelo.Tag;
-import xml.analizador.dom.modelo.Atributo;
-import xml.analizador.dom.JespXML;
+//import cl.analizador.dom.*;
+//import xml.analizador.dom.modelo.Tag;
+//import xml.analizador.dom.modelo.Atributo;
+//import xml.analizador.dom.JespXML;
+
+import org.jespxml.modelo.Tag;
+import org.jespxml.JespXML;
+import org.jespxml.modelo.Atributo;
 
 /**
  *
