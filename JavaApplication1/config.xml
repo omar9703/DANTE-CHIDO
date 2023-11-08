@@ -14,7 +14,7 @@
             <CANAL id="channel 21">5001</CANAL>
             <CANAL id="channel 25">5001</CANAL>
             <CANAL id="channel 26">5001</CANAL>
-            <CANAL id="channel 2">5001</CANAL>
+            <CANAL id="popoo">5001</CANAL>
             <CANAL id="channel 10">5001</CANAL>
             <CANAL id="channel 6">5001</CANAL>
             <CANAL id="channel 14">5001</CANAL>
@@ -74,7 +74,7 @@
             <MUESTRA>64</MUESTRA>
             <NETWORK>default</NETWORK>
         </ASIO>
-        <pathimage>C:\Users\Rodineitor\Pictures\532a534e325341c726923109815581d6.jpg</pathimage>
+        <pathimage/>
     </SERVIDOR>
     <ASIO>
         <CANAL id="channel 1">5001</CANAL>
@@ -85,7 +85,7 @@
         <CANAL id="channel 21">5001</CANAL>
         <CANAL id="channel 25">5001</CANAL>
         <CANAL id="channel 26">5001</CANAL>
-        <CANAL id="channel 2">5001</CANAL>
+        <CANAL id="popoo">5001</CANAL>
         <CANAL id="channel 10">5001</CANAL>
         <CANAL id="channel 6">5001</CANAL>
         <CANAL id="channel 14">5001</CANAL>
@@ -146,7 +146,7 @@
         <NETWORK>default</NETWORK>
     </ASIO>
     <IMAGES>
-        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>gray.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
         <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
         <IMAGE>no_image.png</IMAGE>
@@ -154,7 +154,7 @@
         <IMAGE>no_image.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
-        <IMAGE>C:\Users\audio\OneDrive\Imágenes\Saved Pictures\foto Logo AVS.jpg</IMAGE>
+        <IMAGE>C:\Users\ocamp\Documents\GitHub\DANTE-CHIDO\JavaApplication1\green.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
         <IMAGE>no_image.png</IMAGE>
