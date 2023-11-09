@@ -7,6 +7,7 @@ package Negocio;
 import Interfaz.Panel;
 import Interfaz.PanelMixer;
  import Interfaz.PanelAjustes;
+import Interfaz.LoginPanel;
 
 import Datos.XmlRead;
 import Datos.Configuracion;
@@ -29,19 +30,21 @@ public class ClienteDante {
    static ThreadStart start;
    static Networks N;
    static PanelLogs PA;
+   static LoginPanel lp ;
   
     public static void main(String[] args) {
         // TODO code application logic here
         
         try{
            Logs.Write("Iniciando aplicacion clente");
-       P=new Panel();
+           lp = new LoginPanel();
+       //P=new Panel();
   
-       PA=new PanelLogs();
-       start=new ThreadStart(P);
-       start.start();
-   
-       P.setVisible(true);
+       //PA=new PanelLogs();
+       //start=new ThreadStart(P);
+       //start.start();
+   lp.setVisible(true);
+       //P.setVisible(true);
         }
         catch(Exception e){
           Logs.Write("error en archivo de configuracion");
