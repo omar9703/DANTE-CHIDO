@@ -6,8 +6,11 @@ package Interfaz;
 
 import Datos.Logs;
 import Negocio.ThreadStart;
+import com.google.gson.Gson;
 import java.awt.Dimension;
+import models.LoginUser;
 import models.StatusMessage;
+import models.Usuario;
 import serviceMark.HttpClientExecutor;
 
 /**
@@ -126,15 +129,37 @@ static Panel P;
             
         //login
             String url = "http://127.0.0.1:5000/api/v1/users/login";
-            String objeto = "{ \"username\": \"leon\", \"password\": \"123456\" }";
+            LoginUser loginuser = new LoginUser();
+            loginuser.setUsername(jTextField2.getText().trim());
+            loginuser.setPassword(jTextField1.getText().trim());
+            Gson gson = new Gson();
+            String json = gson.toJson(loginuser);
             try {
-                StatusMessage statusMessage = HttpClientExecutor.sendPostRequest(url, objeto).get();
-
-                System.out.println("Status Code: " + statusMessage.statuscode);
-                System.out.println("Message: " + statusMessage.message);
-                System.out.println("Data: " + statusMessage.data);
+                StatusMessage statusMessage = HttpClientExecutor.sendPostRequest(url, json).get();
+                
+                if(statusMessage.statuscode==401){
+                    //acceso no autorizado
+                    
+                    return;
+                }
+                
+                if(statusMessage.statuscode==404){
+                    //not found
+                    
+                    return;
+                }
+                
+                if(statusMessage.statuscode==201){
+                    
+                    String json2 = "{\"apellidoMaterno\":\"lazcurain\",\"apellidoPaterno\":\"lopetegui\",\"correo\":\"string\",\"event\":\"000001\",\"fechaAlta\":\"2023-11-21T04:20:51.533000\",\"fechaUltimaModificacion\":\"2023-11-21T04:20:51.533000\",\"id\":1,\"nombre\":\"leon\",\"proyectoId\":3,\"rol\":{\"fechaAlta\":\"2023-11-21T04:14:00.520000\",\"fechaUltimaModificacion\":\"2023-11-21T04:14:00.520000\",\"id\":1,\"nombre\":\"Administrador\"},\"rolId\":1,\"telefono\":\"string\",\"username\":\"leon\"}";
+                    // Deserializar la cadena JSON a la clase Credenciales
+                    Usuario credenciales = new Gson().fromJson(json2, Usuario.class);
+                    int a=1;
+                }
+               
             } catch (Exception e) {
                 e.printStackTrace();
+                return;
             }
             
             P=new Panel();

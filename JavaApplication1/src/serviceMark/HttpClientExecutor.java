@@ -63,6 +63,8 @@ public class HttpClientExecutor {
                     // Parse the JSON string manually (replace with your preferred JSON library)
                     String estado = response.body();
                     
+                    //StatusMessage credenciales = new Gson().fromJson(estado, StatusMessage.class);
+                    
                     // Use Gson for JSON deserialization
                     Gson gson = new Gson();
                     Type type = new TypeToken<HashMap<String, Object>>() {}.getType();
