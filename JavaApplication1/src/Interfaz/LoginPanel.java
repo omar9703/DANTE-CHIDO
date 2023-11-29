@@ -153,7 +153,7 @@ static Panel P;
                     
                     String json2 = "{\"apellidoMaterno\":\"lazcurain\",\"apellidoPaterno\":\"lopetegui\",\"correo\":\"string\",\"event\":\"000001\",\"fechaAlta\":\"2023-11-21T04:20:51.533000\",\"fechaUltimaModificacion\":\"2023-11-21T04:20:51.533000\",\"id\":1,\"nombre\":\"leon\",\"proyectoId\":3,\"rol\":{\"fechaAlta\":\"2023-11-21T04:14:00.520000\",\"fechaUltimaModificacion\":\"2023-11-21T04:14:00.520000\",\"id\":1,\"nombre\":\"Administrador\"},\"rolId\":1,\"telefono\":\"string\",\"username\":\"leon\"}";
                     // Deserializar la cadena JSON a la clase Credenciales
-                    Usuario credenciales = new Gson().fromJson(json2, Usuario.class);
+                    Usuario credenciales = new Gson().fromJson(statusMessage.data, Usuario.class);
                     int a=1;
                 }
                

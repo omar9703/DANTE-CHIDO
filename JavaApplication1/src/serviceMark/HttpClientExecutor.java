@@ -15,6 +15,7 @@ import models.StatusMessage;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
+import java.util.List;
 /**
  *
  * @author leone-
@@ -63,16 +64,15 @@ public class HttpClientExecutor {
                     // Parse the JSON string manually (replace with your preferred JSON library)
                     String estado = response.body();
                     
-                    //StatusMessage credenciales = new Gson().fromJson(estado, StatusMessage.class);
-                    
+                                   
                     // Use Gson for JSON deserialization
                     Gson gson = new Gson();
                     Type type = new TypeToken<HashMap<String, Object>>() {}.getType();
                     HashMap<String, Object> htmlAttributes = gson.fromJson(estado, type);
                    
 
-                    statusMessage.message = htmlAttributes.get("message").toString();
-                    statusMessage.data = htmlAttributes.containsKey("data") ? htmlAttributes.get("data").toString() : "";
+                    statusMessage.message = new Gson().toJson(htmlAttributes.get("message"));
+                    statusMessage.data = new Gson().toJson(htmlAttributes.containsKey("data") ? htmlAttributes.get("data"): "");
 
                     return statusMessage;
                 });
