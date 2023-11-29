@@ -7,6 +7,8 @@ package Interfaz;
 import Datos.Logs;
 import Negocio.ThreadStart;
 import java.awt.Dimension;
+import models.StatusMessage;
+import serviceMark.HttpClientExecutor;
 
 /**
  *
@@ -121,13 +123,27 @@ static Panel P;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-       P=new Panel();
-  
-       PA=new PanelLogs();
-       start=new ThreadStart(P);
-       start.start();
-       P.setVisible(true);
-       this.dispose();
+            
+        //login
+            String url = "http://127.0.0.1:5000/api/v1/users/login";
+            String objeto = "{ \"username\": \"leon\", \"password\": \"123456\" }";
+            try {
+                StatusMessage statusMessage = HttpClientExecutor.sendPostRequest(url, objeto).get();
+
+                System.out.println("Status Code: " + statusMessage.statuscode);
+                System.out.println("Message: " + statusMessage.message);
+                System.out.println("Data: " + statusMessage.data);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            
+            P=new Panel();
+
+            PA=new PanelLogs();
+            start=new ThreadStart(P);
+            start.start();
+            P.setVisible(true);
+            this.dispose();
         }
         catch(Exception e){
           Logs.Write("error en archivo de configuracion");
