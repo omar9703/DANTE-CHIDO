@@ -4,10 +4,13 @@
  */
 package Interfaz;
 
+import Datos.Configuracion;
 import Datos.Logs;
+import Datos.XmlRead;
 import Negocio.ThreadStart;
 import com.google.gson.Gson;
 import java.awt.Dimension;
+import models.CurrentUser;
 import models.LoginUser;
 import models.StatusMessage;
 import models.Usuario;
@@ -31,6 +34,11 @@ static Panel P;
         this.setResizable(false);
        //this.setSize(new Dimension(1366,766));
        this.setLocationRelativeTo(null);
+       
+       
+       Configuracion Conf = new Configuracion();
+
+        Conf=new XmlRead().Read("config.xml");
     }
 
     /**
@@ -150,11 +158,11 @@ static Panel P;
                 }
                 
                 if(statusMessage.statuscode==201){
-                    
-                    String json2 = "{\"apellidoMaterno\":\"lazcurain\",\"apellidoPaterno\":\"lopetegui\",\"correo\":\"string\",\"event\":\"000001\",\"fechaAlta\":\"2023-11-21T04:20:51.533000\",\"fechaUltimaModificacion\":\"2023-11-21T04:20:51.533000\",\"id\":1,\"nombre\":\"leon\",\"proyectoId\":3,\"rol\":{\"fechaAlta\":\"2023-11-21T04:14:00.520000\",\"fechaUltimaModificacion\":\"2023-11-21T04:14:00.520000\",\"id\":1,\"nombre\":\"Administrador\"},\"rolId\":1,\"telefono\":\"string\",\"username\":\"leon\"}";
-                    // Deserializar la cadena JSON a la clase Credenciales
+
                     Usuario credenciales = new Gson().fromJson(statusMessage.data, Usuario.class);
-                    int a=1;
+                    CurrentUser.evento=credenciales.getEvent();
+                    CurrentUser.idUsuario=credenciales.getId();
+                    CurrentUser.idproyecto=credenciales.getProyectoId();
                 }
                
             } catch (Exception e) {

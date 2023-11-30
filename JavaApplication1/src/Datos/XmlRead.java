@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Datos;
+import java.io.BufferedReader;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
@@ -11,6 +12,7 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,7 +37,7 @@ public class XmlRead {
             ListaAlias=new ArrayList<>();
             ListaImages=new ArrayList<>();
             
-            File fXmlFile = new File(URL);
+            File fXmlFile = new File(URL);  
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(fXmlFile);
@@ -55,7 +57,7 @@ public class XmlRead {
             Node N1=firstNameList2.item(0);
             Element E1=(Element)N1;
             Conf.SetServidor(E1.getTextContent());   //establecer servidor
-          
+                  
             firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("ESC");
             Node N2=firstNameList2.item(0);
             Element E2=(Element)N2;
@@ -65,6 +67,11 @@ public class XmlRead {
             Node N3=firstNameList2.item(0);
             Element E3=(Element)N3;
             Conf.SetPortUDP(E3.getTextContent());   //establecer puerto de escucha
+            
+            firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("URL");  
+            Node N35=firstNameList2.item(0);
+            Element E35=(Element)N35;
+            Conf.SetServidor(E35.getTextContent());   //establecer url
             
             firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("pathimage");
             Node N4=firstNameList2.item(0);

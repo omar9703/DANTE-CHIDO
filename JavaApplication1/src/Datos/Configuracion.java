@@ -15,6 +15,7 @@ public class Configuracion {
     private String multicast;
     private String servidor;
     private String puerto;
+    private String url;
     private ArrayList<String> ListaPuertos;
     private ArrayList<String> ListaAlias;
     private ArrayList<String> ListaImages;
@@ -24,6 +25,14 @@ public class Configuracion {
     private String PortUDP;
     
     private String pathImageProject;
+    
+    public String geturl(){
+        return url;
+    }
+    
+    public void seturl(String utl){
+        this.url=url;
+    }
     
     public void SetpathImageProject(String pathImageProject){
       this.pathImageProject=pathImageProject;

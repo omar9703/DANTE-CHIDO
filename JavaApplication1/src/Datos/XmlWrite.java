@@ -53,6 +53,7 @@ public class XmlWrite {
             Tag Muestra=new Tag("MUESTRA");
             Tag Network=new Tag("NETWORK");
             Tag PortUDP=new Tag("PortUDP");
+            Tag PortURL=new Tag("URL");
             Tag pathimage = new Tag("pathimage");
             ArrayList<Tag> canales=new ArrayList<Tag>();
             ArrayList<Tag> Imagenes=new ArrayList<Tag>();
@@ -62,6 +63,7 @@ public class XmlWrite {
             serv.addContenido(Conf.GetServidor());         
             escape.addContenido(Conf.GetPuerto());
             PortUDP.addContenido(Conf.GetPortUDP());
+            PortURL.addContenido(Conf.geturl());
             pathimage.addContenido(Conf.GetpathImageProject());
             for(int a=0;a<64;a++){
                 canales.add(new Tag("CANAL"));

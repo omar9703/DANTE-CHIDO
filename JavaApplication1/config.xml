@@ -5,6 +5,7 @@
         <SERV>192.168.1.91</SERV>
         <ESC>4050</ESC>
         <PortUDP>5001</PortUDP>
+        <URL>5001</URL>
         <ASIO>
             <CANAL id="channel 1">5001</CANAL>
             <CANAL id="channel 9">5001</CANAL>
