@@ -71,7 +71,7 @@ public class XmlRead {
             firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("URL");  
             Node N35=firstNameList2.item(0);
             Element E35=(Element)N35;
-            Conf.SetServidor(E35.getTextContent());   //establecer url
+            Conf.seturl(E35.getTextContent());   //establecer url
             
             firstNameList2 = ((Element)firstNameList.item(0)).getElementsByTagName("pathimage");
             Node N4=firstNameList2.item(0);

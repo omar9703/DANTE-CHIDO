@@ -30,7 +30,7 @@ public class Configuracion {
         return url;
     }
     
-    public void seturl(String utl){
+    public void seturl(String url){
         this.url=url;
     }
     

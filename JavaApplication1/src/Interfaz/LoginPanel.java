@@ -39,6 +39,7 @@ static Panel P;
        Configuracion Conf = new Configuracion();
 
         Conf=new XmlRead().Read("config.xml");
+        CurrentUser.url=Conf.geturl().trim();
     }
 
     /**
@@ -143,7 +144,7 @@ static Panel P;
             Gson gson = new Gson();
             String json = gson.toJson(loginuser);
             try {
-                StatusMessage statusMessage = HttpClientExecutor.sendPostRequest(url, json).get();
+                StatusMessage statusMessage = HttpClientExecutor.sendPostRequest(CurrentUser.url+"/users/login", json).get();
                 
                 if(statusMessage.statuscode==401){
                     //acceso no autorizado
