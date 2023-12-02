@@ -10,6 +10,7 @@ import Datos.XmlRead;
 import Negocio.ThreadStart;
 import com.google.gson.Gson;
 import java.awt.Dimension;
+import javax.swing.JOptionPane;
 import models.CurrentUser;
 import models.LoginUser;
 import models.StatusMessage;
@@ -148,13 +149,13 @@ static Panel P;
                 
                 if(statusMessage.statuscode==401){
                     //acceso no autorizado
-                    
+                    JOptionPane.showMessageDialog(null, "Credenciales Incorrectas");
                     return;
                 }
                 
                 if(statusMessage.statuscode==404){
                     //not found
-                    
+                    JOptionPane.showMessageDialog(null, "Usuario NO encontrado");
                     return;
                 }
                 
@@ -167,6 +168,7 @@ static Panel P;
                 }
                
             } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Ocurrio algun error, intentelo mas tarde");
                 e.printStackTrace();
                 return;
             }

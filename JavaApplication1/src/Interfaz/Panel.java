@@ -17,15 +17,22 @@ import Datos.volumen;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import Negocio.NetworkInterfaces;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 import java.awt.image.BufferedImage;
+import java.time.LocalDate;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import models.CommentRequest;
+import models.CurrentUser;
 /**
  *
  * @author leone
@@ -54,6 +61,8 @@ public class Panel extends javax.swing.JFrame {
    public volumen vol;
    private boolean isMixer=false;
    private boolean isSetting = false;
+   private LocalDateTime timeInit;
+   private LocalDateTime timeEnd;
    
     public Panel() {
        initComponents();
@@ -435,7 +444,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer1);
-        Bmixer1.setBounds(90, 147, 120, 40);
+        Bmixer1.setBounds(90, 150, 120, 40);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -503,7 +512,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 23);
+        networks.setBounds(880, 690, 130, 22);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -522,7 +531,7 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1030, 690, 127, 20);
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 1890, 740);
+        jLabel5.setBounds(-30, 0, 1890, 740);
 
         vPrincipal.setBackground(new java.awt.Color(0, 0, 0));
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -571,8 +580,13 @@ public class Panel extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(51, 204, 0));
         jButton1.setText("Enviar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
-        jButton1.setBounds(190, 120, 72, 23);
+        jButton1.setBounds(190, 120, 63, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -736,16 +750,64 @@ public class Panel extends javax.swing.JFrame {
 
     private void Bmixer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer1ActionPerformed
         // TODO add your handling code here:
+        timeInit=LocalDateTime.now();
+        
+        
     }//GEN-LAST:event_Bmixer1ActionPerformed
 
     private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
         // TODO add your handling code here:
+        timeEnd=LocalDateTime.now();
     }//GEN-LAST:event_Bmixer2ActionPerformed
 
     private void jTextArea2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextArea2FocusGained
         // TODO add your handling code here:
         System.out.println("empiezo a escribir");
     }//GEN-LAST:event_jTextArea2FocusGained
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        if(timeInit==null){
+            //no time
+            return;
+        }
+        
+        if(jTextArea2.getText().equals("")){
+            return;
+        }
+        
+        if(timeEnd!=null){
+            Duration duration = Duration.between(timeInit, timeEnd);
+            long horasDiferencia = duration.toHours();
+
+            // Verificar si la diferencia es positiva o negativa
+            if (horasDiferencia < 0) {
+                return;
+            }
+            
+        }
+        
+        //armar el json
+        Gson gson = new GsonBuilder()
+                .excludeFieldsWithoutExposeAnnotation()
+                .create();
+        
+        CommentRequest request = new CommentRequest();
+        request.setComentario(jTextArea2.getText().trim());
+        request.setIDEvento(CurrentUser.evento);
+        request.setProyectId((int)CurrentUser.idproyecto);
+        request.setUsuarioId((int)CurrentUser.idUsuario);
+        request.setFechaInicio(timeInit.toString());
+        if(timeEnd!=null){
+            request.setFechaFin(timeEnd.toString());
+        }
+        
+        String json = gson.toJson(request);
+        
+        
+        timeInit=null;
+        timeEnd=null;
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     /**
