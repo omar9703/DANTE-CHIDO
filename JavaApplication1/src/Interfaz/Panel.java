@@ -332,6 +332,7 @@ public class Panel extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
@@ -502,7 +503,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 22);
+        networks.setBounds(880, 690, 130, 23);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -567,6 +568,11 @@ public class Panel extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(90, 186, 270, 540);
+
+        jButton1.setBackground(new java.awt.Color(51, 204, 0));
+        jButton1.setText("Enviar");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(190, 120, 72, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -777,6 +783,7 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel alarma;
     private javax.swing.JButton cLEAR;
     private javax.swing.JButton cuarto;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
