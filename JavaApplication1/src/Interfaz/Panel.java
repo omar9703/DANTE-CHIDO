@@ -33,6 +33,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import models.CommentRequest;
 import models.CurrentUser;
+import serviceMark.CommentSender;
 /**
  *
  * @author leone
@@ -803,8 +804,8 @@ public class Panel extends javax.swing.JFrame {
         }
         
         String json = gson.toJson(request);
-        
-        
+     
+        new Thread(new CommentSender(json)).start();
         timeInit=null;
         timeEnd=null;
     }//GEN-LAST:event_jButton1ActionPerformed

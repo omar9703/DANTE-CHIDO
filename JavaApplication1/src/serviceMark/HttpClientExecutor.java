@@ -35,11 +35,15 @@ public class HttpClientExecutor {
                     statusMessage.statuscode = response.statusCode();
 
                     // Parse the JSON string manually (replace with your preferred JSON library)
-                    String jsonString = response.body();
-                    HashMap<String, Object> htmlAttributes = parseJson(jsonString);
+                    String estado = response.body();
+                    // Use Gson for JSON deserialization
+                    Gson gson = new Gson();
+                    Type type = new TypeToken<HashMap<String, Object>>() {}.getType();
+                    HashMap<String, Object> htmlAttributes = gson.fromJson(estado, type);
+                   
 
-                    statusMessage.message = htmlAttributes.get("message").toString();
-                    statusMessage.data = htmlAttributes.containsKey("data") ? htmlAttributes.get("data").toString() : "";
+                    statusMessage.message = new Gson().toJson(htmlAttributes.get("message"));
+                    statusMessage.data = new Gson().toJson(htmlAttributes.containsKey("data") ? htmlAttributes.get("data"): "");
 
                     return statusMessage;
                 });
