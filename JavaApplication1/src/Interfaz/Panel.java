@@ -33,12 +33,13 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import models.CommentRequest;
 import models.CurrentUser;
+import serviceMark.AliasHandlerEvent;
 import serviceMark.CommentSender;
 /**
  *
  * @author leone
  */
-public class Panel extends javax.swing.JFrame {
+public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.EventoListener{
 
     /**
      * Creates new form Panel
@@ -132,8 +133,17 @@ public class Panel extends javax.swing.JFrame {
       jLabel1.setVisible(false);
       
         LoadImageProject(Conf);
+        
+        //suscribe event
+        AliasHandlerEvent.suscribeEvento(this);
     }
     
+    @Override
+    public void onEvento(String mensaje) {
+        // Manejar el evento
+        jTextArea2.setText(jTextArea2.getText()+" "+mensaje+" ");
+         
+    }
     
     public void LoadImageProject(Configuracion C){
         if(!C.GetpathImageProject().equals("0")){
