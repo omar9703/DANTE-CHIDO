@@ -33,6 +33,8 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import models.CommentRequest;
 import models.CurrentUser;
+import models.ListCharacters;
+import static models.ListCharacters.characters;
 import serviceMark.AliasHandlerEvent;
 import serviceMark.CommentSender;
 /**
@@ -65,6 +67,8 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
    private boolean isSetting = false;
    private LocalDateTime timeInit;
    private LocalDateTime timeEnd;
+   
+   private ArrayList<String> charactersList;
    
     public Panel() {
        initComponents();
@@ -136,12 +140,15 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
         
         //suscribe event
         AliasHandlerEvent.suscribeEvento(this);
+        
+        charactersList = new ArrayList<String>();
     }
     
     @Override
     public void onEvento(String mensaje) {
         // Manejar el evento
         jTextArea2.setText(jTextArea2.getText()+" "+mensaje+" ");
+        charactersList.add(mensaje);
          
     }
     
@@ -814,10 +821,11 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
         }
         
         String json = gson.toJson(request);
-     
-        new Thread(new CommentSender(json)).start();
+        ArrayList<String> copiaLista = new ArrayList<>(charactersList);
+        new Thread(new CommentSender(json,copiaLista)).start();
         timeInit=null;
         timeEnd=null;
+        charactersList.clear();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
