@@ -4777,6 +4777,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("T");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel2);
         jLabel2.setBounds(90, 0, 20, 30);
 
@@ -4791,6 +4796,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("T");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
         jPanel3.add(jLabel3);
         jLabel3.setBounds(90, 0, 20, 30);
 
@@ -4805,6 +4815,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("T");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         jPanel4.add(jLabel4);
         jLabel4.setBounds(90, 0, 20, 30);
 
@@ -4819,6 +4834,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("T");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         jPanel5.add(jLabel5);
         jLabel5.setBounds(90, 0, 20, 30);
 
@@ -4833,6 +4853,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("T");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
         jPanel6.add(jLabel6);
         jLabel6.setBounds(90, 0, 20, 30);
 
@@ -4847,6 +4872,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("T");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         jPanel7.add(jLabel7);
         jLabel7.setBounds(90, 0, 20, 30);
 
@@ -4861,6 +4891,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("T");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
         jPanel8.add(jLabel8);
         jLabel8.setBounds(90, 0, 20, 30);
 
@@ -4875,6 +4910,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel9.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("T");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
         jPanel9.add(jLabel9);
         jLabel9.setBounds(90, 0, 20, 30);
 
@@ -4889,6 +4929,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel10.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("T");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
         jPanel10.add(jLabel10);
         jLabel10.setBounds(90, 0, 20, 30);
 
@@ -4903,6 +4948,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel11.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("T");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel11.add(jLabel11);
         jLabel11.setBounds(90, 0, 20, 30);
 
@@ -4917,6 +4967,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel12.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("T");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
         jPanel12.add(jLabel12);
         jLabel12.setBounds(90, 0, 20, 30);
 
@@ -4931,6 +4986,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel13.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("T");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
         jPanel13.add(jLabel13);
         jLabel13.setBounds(90, 0, 20, 30);
 
@@ -4945,6 +5005,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel14.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("T");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
         jPanel14.add(jLabel14);
         jLabel14.setBounds(90, 0, 20, 30);
 
@@ -4959,6 +5024,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel15.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("T");
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
         jPanel15.add(jLabel15);
         jLabel15.setBounds(90, 0, 20, 30);
 
@@ -4973,6 +5043,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel16.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("T");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
         jPanel16.add(jLabel16);
         jLabel16.setBounds(90, 0, 20, 30);
 
@@ -4987,6 +5062,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel17.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("T");
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
+            }
+        });
         jPanel17.add(jLabel17);
         jLabel17.setBounds(90, 0, 20, 30);
 
@@ -5001,6 +5081,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel18.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("T");
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
         jPanel18.add(jLabel18);
         jLabel18.setBounds(90, 0, 20, 30);
 
@@ -5015,6 +5100,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel19.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("T");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
         jPanel19.add(jLabel19);
         jLabel19.setBounds(90, 0, 20, 30);
 
@@ -5029,6 +5119,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel20.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("T");
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
         jPanel20.add(jLabel20);
         jLabel20.setBounds(90, 0, 20, 30);
 
@@ -5043,6 +5138,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel21.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("T");
+        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel21MouseClicked(evt);
+            }
+        });
         jPanel21.add(jLabel21);
         jLabel21.setBounds(90, 0, 20, 30);
 
@@ -5057,6 +5157,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel22.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("T");
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
         jPanel22.add(jLabel22);
         jLabel22.setBounds(90, 0, 20, 30);
 
@@ -5071,6 +5176,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel23.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("T");
+        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel23MouseClicked(evt);
+            }
+        });
         jPanel23.add(jLabel23);
         jLabel23.setBounds(90, 0, 20, 30);
 
@@ -5085,6 +5195,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel24.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("T");
+        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel24MouseClicked(evt);
+            }
+        });
         jPanel24.add(jLabel24);
         jLabel24.setBounds(90, 0, 20, 30);
 
@@ -5099,6 +5214,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel25.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("T");
+        jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel25MouseClicked(evt);
+            }
+        });
         jPanel25.add(jLabel25);
         jLabel25.setBounds(90, 0, 20, 30);
 
@@ -5113,6 +5233,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel26.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("T");
+        jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel26MouseClicked(evt);
+            }
+        });
         jPanel26.add(jLabel26);
         jLabel26.setBounds(90, 0, 20, 30);
 
@@ -5127,6 +5252,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel27.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("T");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel27MouseClicked(evt);
+            }
+        });
         jPanel27.add(jLabel27);
         jLabel27.setBounds(90, 0, 20, 30);
 
@@ -5141,6 +5271,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel28.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("T");
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel28MouseClicked(evt);
+            }
+        });
         jPanel28.add(jLabel28);
         jLabel28.setBounds(90, 0, 20, 30);
 
@@ -5155,6 +5290,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel29.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("T");
+        jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel29MouseClicked(evt);
+            }
+        });
         jPanel29.add(jLabel29);
         jLabel29.setBounds(90, 0, 20, 30);
 
@@ -5169,6 +5309,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel30.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("T");
+        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel30MouseClicked(evt);
+            }
+        });
         jPanel30.add(jLabel30);
         jLabel30.setBounds(90, 0, 20, 30);
 
@@ -5183,6 +5328,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel31.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("T");
+        jLabel31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel31MouseClicked(evt);
+            }
+        });
         jPanel31.add(jLabel31);
         jLabel31.setBounds(90, 0, 20, 30);
 
@@ -5197,6 +5347,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel32.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("T");
+        jLabel32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel32MouseClicked(evt);
+            }
+        });
         jPanel32.add(jLabel32);
         jLabel32.setBounds(90, 0, 20, 30);
 
@@ -5211,6 +5366,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel33.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("T");
+        jLabel33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel33MouseClicked(evt);
+            }
+        });
         jPanel33.add(jLabel33);
         jLabel33.setBounds(90, 0, 20, 30);
 
@@ -5225,6 +5385,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel34.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setText("T");
+        jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel34MouseClicked(evt);
+            }
+        });
         jPanel34.add(jLabel34);
         jLabel34.setBounds(90, 0, 20, 30);
 
@@ -5239,6 +5404,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel35.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setText("T");
+        jLabel35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel35MouseClicked(evt);
+            }
+        });
         jPanel35.add(jLabel35);
         jLabel35.setBounds(90, 0, 20, 30);
 
@@ -5253,6 +5423,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel36.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("T");
+        jLabel36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel36MouseClicked(evt);
+            }
+        });
         jPanel36.add(jLabel36);
         jLabel36.setBounds(90, 0, 20, 30);
 
@@ -5267,6 +5442,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel37.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("T");
+        jLabel37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel37MouseClicked(evt);
+            }
+        });
         jPanel37.add(jLabel37);
         jLabel37.setBounds(90, 0, 20, 30);
 
@@ -5281,6 +5461,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel38.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("T");
+        jLabel38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel38MouseClicked(evt);
+            }
+        });
         jPanel38.add(jLabel38);
         jLabel38.setBounds(90, 0, 20, 30);
 
@@ -5295,6 +5480,11 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel39.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("T");
+        jLabel39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel39MouseClicked(evt);
+            }
+        });
         jPanel39.add(jLabel39);
         jLabel39.setBounds(90, 0, 20, 30);
 
@@ -7534,9 +7724,185 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        int a=1;
+        
         AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(0));
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(1));
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(2));
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(3));
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(4));
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(5));
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(6));
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(7));
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(8));
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(9));
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(10));
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(11));
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(12));
+    }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(13));
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(14));
+    }//GEN-LAST:event_jLabel15MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(15));
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(16));
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(17));
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(18));
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(19));
+    }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(20));
+    }//GEN-LAST:event_jLabel21MouseClicked
+
+    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(21));
+    }//GEN-LAST:event_jLabel22MouseClicked
+
+    private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(22));
+    }//GEN-LAST:event_jLabel23MouseClicked
+
+    private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(23));
+    }//GEN-LAST:event_jLabel24MouseClicked
+
+    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
+        // TODO add your handling code here:
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(24));
+    }//GEN-LAST:event_jLabel25MouseClicked
+
+    private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(25));
+    }//GEN-LAST:event_jLabel26MouseClicked
+
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(26));
+    }//GEN-LAST:event_jLabel27MouseClicked
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(27));
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(28));
+    }//GEN-LAST:event_jLabel29MouseClicked
+
+    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(29));
+    }//GEN-LAST:event_jLabel30MouseClicked
+
+    private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(30));
+    }//GEN-LAST:event_jLabel31MouseClicked
+
+    private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(31));
+    }//GEN-LAST:event_jLabel32MouseClicked
+
+    private void jLabel33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(32));
+    }//GEN-LAST:event_jLabel33MouseClicked
+
+    private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(33));
+    }//GEN-LAST:event_jLabel34MouseClicked
+
+    private void jLabel35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel35MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(34));
+    }//GEN-LAST:event_jLabel35MouseClicked
+
+    private void jLabel36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel36MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(35));
+    }//GEN-LAST:event_jLabel36MouseClicked
+
+    private void jLabel37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel37MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(36));
+    }//GEN-LAST:event_jLabel37MouseClicked
+
+    private void jLabel38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel38MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(37));
+    }//GEN-LAST:event_jLabel38MouseClicked
+
+    private void jLabel39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel39MouseClicked
+        AliasHandlerEvent.lanzarEvento(GlobalConfig.ListaAlias.get(38));
+    }//GEN-LAST:event_jLabel39MouseClicked
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
