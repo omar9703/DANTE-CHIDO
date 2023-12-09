@@ -31,6 +31,7 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import javax.swing.JOptionPane;
 import models.CommentRequest;
 import models.CurrentUser;
 import models.ListCharacters;
@@ -148,7 +149,10 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
     public void onEvento(String mensaje) {
         // Manejar el evento
         jTextArea2.setText(jTextArea2.getText()+" "+mensaje+" ");
-        charactersList.add(mensaje);
+        if(!charactersList.contains(mensaje)){
+            charactersList.add(mensaje);
+        }
+        
          
     }
     
@@ -787,10 +791,12 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
         // TODO add your handling code here:
         if(timeInit==null){
             //no time
+            JOptionPane.showMessageDialog(null, "No se ha insertado una hora de Inicio");
             return;
         }
         
         if(jTextArea2.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "No se ha insertado un comentario");
             return;
         }
         
@@ -800,6 +806,7 @@ public class Panel extends javax.swing.JFrame implements AliasHandlerEvent.Event
 
             // Verificar si la diferencia es positiva o negativa
             if (horasDiferencia < 0) {
+                JOptionPane.showMessageDialog(null, "La fecha de termino NO debe de ser menor a la fecha inicial");
                 return;
             }
             
