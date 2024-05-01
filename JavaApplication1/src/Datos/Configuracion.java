@@ -10,6 +10,9 @@ import java.util.ArrayList;
  *
  * @author leone
  */
+
+
+
 public class Configuracion {
     
     private String multicast;

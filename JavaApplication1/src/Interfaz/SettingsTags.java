@@ -4,8 +4,15 @@
  */
 package Interfaz;
 
+import Datos.ConfigTags;
+import Datos.WriteXml;
+import Datos.XmlRead;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+import java.util.Arrays;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
 
 
 /**
@@ -13,7 +20,9 @@ import java.lang.reflect.Modifier;
  * @author ocamp
  */
 public class SettingsTags extends javax.swing.JFrame {
-
+    XmlRead XR ;
+    
+    public ArrayList<JTextField> textfieldsNames;
     /**
      * Creates new form SettingsTags
      */
@@ -22,6 +31,17 @@ public class SettingsTags extends javax.swing.JFrame {
          this.setResizable(false);
        //this.setSize(new Dimension(1366,766));
        this.setLocationRelativeTo(null);
+       this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+       textfieldsNames = new ArrayList<>(Arrays.asList(jTextField1,jTextField2,jTextField3,jTextField4,jTextField5,jTextField6,jTextField7,jTextField8,jTextField9,jTextField10,jTextField11,jTextField12,jTextField13,jTextField14,jTextField15,jTextField16,
+               jTextField17,jTextField18,jTextField19,jTextField20,jTextField21,jTextField22,jTextField23,jTextField24,jTextField25));
+       XR = new XmlRead();
+       ConfigTags ct = XR.ReadTagsConfig();
+       if (ct.getNames().size() > 0)
+       {
+        for(int i=0;i<textfieldsNames.size();i++){
+            textfieldsNames.get(i).setText(ct.getNames().get(i));
+        }
+       }
     }
 
     /**
@@ -701,6 +721,11 @@ public class SettingsTags extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(0, 0, 204));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Aceptar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1413,6 +1438,22 @@ for (Field f : fields) {
     private void jTextField50KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField50KeyReleased
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField50KeyReleased
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+        ArrayList<String> names = new ArrayList<String>();
+        
+        for(int i=0;i<textfieldsNames.size();i++){
+            names.add(textfieldsNames.get(i).getText());
+        }
+        
+        ConfigTags ct = new ConfigTags();
+        ct.setNames(names);
+        WriteXml xw = new WriteXml();
+        xw.WriteTagsConfig(ct);
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

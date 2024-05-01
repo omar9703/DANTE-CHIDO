@@ -19,12 +19,19 @@ import javax.swing.JComboBox;
 import Negocio.NetworkInterfaces;
 import java.awt.Dimension;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
+import javax.swing.JComponent;
+import javax.swing.JRootPane;
 import javax.swing.JScrollPane;
+import javax.swing.KeyStroke;
 import javax.swing.ScrollPaneConstants;
 /**
  *
@@ -77,9 +84,16 @@ public class Panel extends javax.swing.JFrame {
        primero.setForeground(Color.white);
        jPanel1.setBackground(Color.red);
        
-       
-
-       
+       KeyStroke ks = KeyStroke.getKeyStroke("control F12");
+        JRootPane rootPane = this.getRootPane();
+        rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(ks, "myAction");
+         rootPane.getActionMap().put("myAction", new AbstractAction() {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println("hello, world");
+                    SettingsTags tags = new SettingsTags();
+                    tags.setVisible(true);
+                }
+            });
        //fecha
        df=new SimpleDateFormat("yyyy/dd/MM HH:mm:ss");
        today=Calendar.getInstance().getTime();
@@ -336,6 +350,11 @@ public class Panel extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
         setForeground(new java.awt.Color(0, 51, 102));
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                formKeyReleased(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         jLabel3.setBackground(new java.awt.Color(102, 41, 188));
@@ -520,6 +539,12 @@ public class Panel extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1030, 690, 127, 20);
+
+        jLabel5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jLabel5KeyReleased(evt);
+            }
+        });
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 1890, 740);
 
@@ -740,6 +765,17 @@ public class Panel extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.out.println("empiezo a escribir");
     }//GEN-LAST:event_jTextArea2FocusGained
+
+    private void formKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyReleased
+        // TODO add your handling code here:
+       
+        
+    }//GEN-LAST:event_formKeyReleased
+
+    private void jLabel5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel5KeyReleased
+        // TODO add your handling code here:
+        System.out.println("keyCode" + evt.getKeyCode()+ "control"+evt.isControlDown()+ "alt"+evt.isAltDown()+ "shift"+ evt.isShiftDown()+evt.isActionKey());
+    }//GEN-LAST:event_jLabel5KeyReleased
 
     
     /**

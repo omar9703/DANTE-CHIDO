@@ -2,7 +2,7 @@
 <CONFIGURACION>
     <SERVIDOR>
         <MULTICAST>224.0.0.3</MULTICAST>
-        <SERV>192.168.1.91</SERV>
+        <SERV>192.168</SERV>
         <ESC>4050</ESC>
         <PortUDP>5001</PortUDP>
         <ASIO>

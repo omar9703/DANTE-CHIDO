@@ -22,11 +22,12 @@ import java.util.ArrayList;
  * @author leone
  */
 public class XmlRead {
-    
+    private ConfigTags configT ;
     private Configuracion Conf;
     private ArrayList<String> LIstaPuertos;
     private ArrayList<String> ListaAlias;
     private ArrayList<String> ListaImages;
+    private ArrayList<String> ListNames;
     
     public Configuracion Read(String URL){
         try {
@@ -143,5 +144,47 @@ public class XmlRead {
         
         return Conf;
     }
+    
+    
+    public ConfigTags ReadTagsConfig()
+    {
+        try {
+            configT = new ConfigTags();
+            ListNames=new ArrayList<>();
+             File fXmlFile = new File("TagsConfig.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(fXmlFile);
+            doc.getDocumentElement().normalize();
+            
+            NodeList nodototal=doc.getElementsByTagName("TagsConfig.xml");
+            NodeList nodo1 = ((Element)nodototal.item(0)).getElementsByTagName("CONFIGURACION"); 
+            NodeList firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COMENTARIO"); 
+             for(int i=0;i<firstNameList.getLength();i++){
+                 Node N=firstNameList.item(i);
+                 
+                 Element E=(Element)N;
+                 String descripcion=E.getAttribute("id");
+               //  System.out.println(E.getAttribute("id"));
+                 //System.out.println(E.getTextContent());
+                 ListNames.add(descripcion);
+             }
+             configT.setNames(ListNames);
+            
+           System.out.println(firstNameList.getLength() +" "+ configT.getNames().size());
+        }
+        catch (ParserConfigurationException ex) {
+            Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
+            Logs.Write("Error en lectura de configuracion");
+        } catch (SAXException ex) {
+            Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
+            Logs.Write("error en lectura de configuracion");
+        } catch (IOException ex) {
+            Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
+            Logs.Write("Error en lectura de configuracion");
+        }
+        return configT;
+    }
+    
     
 }

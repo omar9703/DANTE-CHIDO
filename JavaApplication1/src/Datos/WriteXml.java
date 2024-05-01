@@ -116,5 +116,38 @@ public class WriteXml {
         
      
     }
-    
+    public void WriteTagsConfig(ConfigTags ct)
+    {
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            DOMImplementation implementation = builder.getDOMImplementation();
+            Document document = implementation.createDocument(null, "TagsConfig.xml", null);
+            document.setXmlVersion("1.0");
+            Element raiz = document.getDocumentElement();
+            
+        Element Asio=document.createElement("CONFIGURACION");
+            for(int i=0;i<ct.getNames().size();i++){
+                Element canal=document.createElement("COMENTARIO");
+                canal.setAttribute("id", ct.getNames().get(i));
+                //Text Valuecanal=document.createTextNode(Conf.GetLista().get(i));
+                //canal.appendChild(Valuecanal);
+                Asio.appendChild(canal);
+               
+            }
+            raiz.appendChild(Asio);
+            Source source = new DOMSource(document);
+            //Indicamos donde lo queremos almacenar
+            Result result = new StreamResult(new java.io.File("TagsConfig.xml")); //nombre del archivo
+            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.transform(source, result);
+            
+            } catch (ParserConfigurationException ex) {
+            Logger.getLogger(WriteXml.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerConfigurationException ex) {
+            Logger.getLogger(WriteXml.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerException ex) {
+            Logger.getLogger(WriteXml.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
