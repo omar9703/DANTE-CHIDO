@@ -139,8 +139,8 @@ public class Panel extends javax.swing.JFrame {
         LoadImageProject(Conf);
         ConfigTags ct = new ConfigTags();
         
-        jTextArea2.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("control F1"), "Enter");
-        jTextArea2.getActionMap().put("Enter", new AbstractAction() {
+        rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("control F1"), "Enter");
+        rootPane.getActionMap().put("Enter", new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
                     System.out.println("hello, world");
                     
