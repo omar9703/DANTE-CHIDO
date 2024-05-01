@@ -21,7 +21,7 @@ import javax.swing.JTextField;
  */
 public class SettingsTags extends javax.swing.JFrame {
     XmlRead XR ;
-    
+    public ArrayList<String> codesNames;
     public ArrayList<JTextField> textfieldsNames;
     /**
      * Creates new form SettingsTags
@@ -35,13 +35,16 @@ public class SettingsTags extends javax.swing.JFrame {
        textfieldsNames = new ArrayList<>(Arrays.asList(jTextField1,jTextField2,jTextField3,jTextField4,jTextField5,jTextField6,jTextField7,jTextField8,jTextField9,jTextField10,jTextField11,jTextField12,jTextField13,jTextField14,jTextField15,jTextField16,
                jTextField17,jTextField18,jTextField19,jTextField20,jTextField21,jTextField22,jTextField23,jTextField24,jTextField25));
        XR = new XmlRead();
+       codesNames = new ArrayList<>(Arrays.asList("","","",""));
        ConfigTags ct = XR.ReadTagsConfig();
        if (ct.getNames().size() > 0)
        {
         for(int i=0;i<textfieldsNames.size();i++){
             textfieldsNames.get(i).setText(ct.getNames().get(i));
         }
-       }
+       }                                                    
+                                                                                    
+                                                                                               
     }
 
     /**
@@ -1220,8 +1223,9 @@ public class SettingsTags extends javax.swing.JFrame {
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
         // TODO add your handling code here:
-        System.out.println("keyCode" + evt.getKeyCode()+ "control"+evt.isControlDown()+ "alt"+evt.isAltDown()+ "shift"+ evt.isShiftDown()+evt.isActionKey());
+        System.out.println("keyCode" + evt.getKeyChar()+ "control"+evt.isControlDown()+ "alt"+evt.isAltDown()+ "shift"+ evt.isShiftDown()+evt.isActionKey());
   // Ctrl + Shift + S
+ 
   if(evt.getKeyCode() == 83 && evt.isShiftDown() && evt.isControlDown()){
     System.out.println("Save As...");
   }
@@ -1238,12 +1242,29 @@ public class SettingsTags extends javax.swing.JFrame {
 
     private void jTextField26KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField26KeyReleased
         // TODO add your handling code here:
-        
+        System.out.println(evt.getKeyCode());
         Field[] fields = java.awt.event.KeyEvent.class.getDeclaredFields();
-for (Field f : fields) {
-    if (Modifier.isStatic(f.getModifiers())) {
-        System.out.println(f.getName());
-    } 
+        System.out.println(evt.getSource());
+        JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
 }
     }//GEN-LAST:event_jTextField26KeyReleased
 

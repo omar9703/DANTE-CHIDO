@@ -135197,3 +135197,48 @@
 30/4/2024;18:59:31 - Lectura de xml escrita correctamente
 30/4/2024;18:59:31 - Lectura de xml escrita correctamente
 30/4/2024;18:59:31 - Lectura de xml escrita correctamente
+30/4/2024;19:24:49 - Iniciando aplicacion clente
+30/4/2024;19:24:49 - Lectura de xml escrita correctamente
+30/4/2024;19:24:49 - Lectura de xml escrita correctamente
+30/4/2024;19:24:49 - Lectura de xml escrita correctamente
+30/4/2024;19:24:49 - Lectura de xml escrita correctamente
+30/4/2024;19:39:41 - Iniciando aplicacion clente
+30/4/2024;19:39:42 - Lectura de xml escrita correctamente
+30/4/2024;19:39:42 - Lectura de xml escrita correctamente
+30/4/2024;19:39:42 - Lectura de xml escrita correctamente
+30/4/2024;19:39:42 - Lectura de xml escrita correctamente
+30/4/2024;19:53:44 - Iniciando aplicacion clente
+30/4/2024;19:53:44 - Lectura de xml escrita correctamente
+30/4/2024;19:53:45 - Lectura de xml escrita correctamente
+30/4/2024;19:53:45 - Lectura de xml escrita correctamente
+30/4/2024;19:53:45 - Lectura de xml escrita correctamente
+30/4/2024;19:54:45 - Iniciando aplicacion clente
+30/4/2024;19:54:46 - Lectura de xml escrita correctamente
+30/4/2024;19:54:46 - Lectura de xml escrita correctamente
+30/4/2024;19:54:46 - Lectura de xml escrita correctamente
+30/4/2024;19:54:46 - Lectura de xml escrita correctamente
+30/4/2024;19:56:19 - Iniciando aplicacion clente
+30/4/2024;19:56:19 - Lectura de xml escrita correctamente
+30/4/2024;19:56:19 - Lectura de xml escrita correctamente
+30/4/2024;19:56:19 - Lectura de xml escrita correctamente
+30/4/2024;19:56:19 - Lectura de xml escrita correctamente
+30/4/2024;19:59:24 - Iniciando aplicacion clente
+30/4/2024;19:59:24 - Lectura de xml escrita correctamente
+30/4/2024;19:59:24 - Lectura de xml escrita correctamente
+30/4/2024;19:59:24 - Lectura de xml escrita correctamente
+30/4/2024;19:59:24 - Lectura de xml escrita correctamente
+30/4/2024;20:4:13 - Iniciando aplicacion clente
+30/4/2024;20:4:13 - Lectura de xml escrita correctamente
+30/4/2024;20:4:13 - Lectura de xml escrita correctamente
+30/4/2024;20:4:13 - Lectura de xml escrita correctamente
+30/4/2024;20:4:13 - Lectura de xml escrita correctamente
+30/4/2024;20:10:56 - Iniciando aplicacion clente
+30/4/2024;20:10:57 - Lectura de xml escrita correctamente
+30/4/2024;20:10:57 - Lectura de xml escrita correctamente
+30/4/2024;20:10:57 - Lectura de xml escrita correctamente
+30/4/2024;20:10:57 - Lectura de xml escrita correctamente
+30/4/2024;20:11:18 - Iniciando aplicacion clente
+30/4/2024;20:11:19 - Lectura de xml escrita correctamente
+30/4/2024;20:11:19 - Lectura de xml escrita correctamente
+30/4/2024;20:11:19 - Lectura de xml escrita correctamente
+30/4/2024;20:11:19 - Lectura de xml escrita correctamente
