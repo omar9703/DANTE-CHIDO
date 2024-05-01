@@ -28,6 +28,7 @@ public class XmlRead {
     private ArrayList<String> ListaAlias;
     private ArrayList<String> ListaImages;
     private ArrayList<String> ListNames;
+    private ArrayList<String> ListCommands;
     
     public Configuracion Read(String URL){
         try {
@@ -151,6 +152,7 @@ public class XmlRead {
         try {
             configT = new ConfigTags();
             ListNames=new ArrayList<>();
+            ListCommands=new ArrayList<>();
              File fXmlFile = new File("TagsConfig.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -168,10 +170,12 @@ public class XmlRead {
                //  System.out.println(E.getAttribute("id"));
                  //System.out.println(E.getTextContent());
                  ListNames.add(descripcion);
+                 ListCommands.add(E.getTextContent());
              }
              configT.setNames(ListNames);
+             configT.setCommands(ListCommands);
             
-           System.out.println(firstNameList.getLength() +" "+ configT.getNames().size());
+           System.out.println(firstNameList.getLength() +" "+ configT.getNames().size()+" "+configT.getCommands().size());
         }
         catch (ParserConfigurationException ex) {
             Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);

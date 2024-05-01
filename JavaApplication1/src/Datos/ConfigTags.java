@@ -26,4 +26,15 @@ public class ConfigTags {
          return this.namesComments;
           
       }
+      public void setCommands(ArrayList<String> names)
+      {
+          this.command =  names;
+      }
+      
+      public ArrayList<String> getCommands()
+      {
+          
+         return this.command;
+          
+      }
 }

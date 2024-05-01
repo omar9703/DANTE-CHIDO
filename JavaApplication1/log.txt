@@ -135242,3 +135242,28 @@
 30/4/2024;20:11:19 - Lectura de xml escrita correctamente
 30/4/2024;20:11:19 - Lectura de xml escrita correctamente
 30/4/2024;20:11:19 - Lectura de xml escrita correctamente
+1/5/2024;15:41:12 - Iniciando aplicacion clente
+1/5/2024;15:41:13 - Lectura de xml escrita correctamente
+1/5/2024;15:41:13 - Lectura de xml escrita correctamente
+1/5/2024;15:41:13 - Lectura de xml escrita correctamente
+1/5/2024;15:41:13 - Lectura de xml escrita correctamente
+1/5/2024;15:51:12 - Iniciando aplicacion clente
+1/5/2024;15:51:13 - Lectura de xml escrita correctamente
+1/5/2024;15:51:13 - Lectura de xml escrita correctamente
+1/5/2024;15:51:13 - Lectura de xml escrita correctamente
+1/5/2024;15:51:13 - Lectura de xml escrita correctamente
+1/5/2024;16:0:12 - Iniciando aplicacion clente
+1/5/2024;16:0:13 - Lectura de xml escrita correctamente
+1/5/2024;16:0:13 - Lectura de xml escrita correctamente
+1/5/2024;16:0:13 - Lectura de xml escrita correctamente
+1/5/2024;16:0:13 - Lectura de xml escrita correctamente
+1/5/2024;16:1:23 - Iniciando aplicacion clente
+1/5/2024;16:1:24 - Lectura de xml escrita correctamente
+1/5/2024;16:1:24 - Lectura de xml escrita correctamente
+1/5/2024;16:1:24 - Lectura de xml escrita correctamente
+1/5/2024;16:1:24 - Lectura de xml escrita correctamente
+1/5/2024;16:2:21 - Iniciando aplicacion clente
+1/5/2024;16:2:21 - Lectura de xml escrita correctamente
+1/5/2024;16:2:21 - Lectura de xml escrita correctamente
+1/5/2024;16:2:21 - Lectura de xml escrita correctamente
+1/5/2024;16:2:21 - Lectura de xml escrita correctamente
