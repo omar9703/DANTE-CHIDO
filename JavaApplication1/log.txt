@@ -135267,3 +135267,300 @@
 1/5/2024;16:2:21 - Lectura de xml escrita correctamente
 1/5/2024;16:2:21 - Lectura de xml escrita correctamente
 1/5/2024;16:2:21 - Lectura de xml escrita correctamente
+1/5/2024;17:7:18 - Iniciando aplicacion clente
+1/5/2024;17:7:18 - Lectura de xml escrita correctamente
+1/5/2024;17:7:18 - Lectura de xml escrita correctamente
+1/5/2024;17:7:19 - Lectura de xml escrita correctamente
+1/5/2024;17:7:19 - Lectura de xml escrita correctamente
+1/5/2024;17:8:33 - Iniciando aplicacion clente
+1/5/2024;17:8:33 - Lectura de xml escrita correctamente
+1/5/2024;17:8:33 - Lectura de xml escrita correctamente
+1/5/2024;17:8:33 - Lectura de xml escrita correctamente
+1/5/2024;17:8:33 - Lectura de xml escrita correctamente
+1/5/2024;17:8:59 - Iniciando aplicacion clente
+1/5/2024;17:8:59 - Lectura de xml escrita correctamente
+1/5/2024;17:8:59 - Lectura de xml escrita correctamente
+1/5/2024;17:8:59 - Lectura de xml escrita correctamente
+1/5/2024;17:8:59 - Lectura de xml escrita correctamente
+1/5/2024;17:13:39 - Iniciando aplicacion clente
+1/5/2024;17:13:40 - Lectura de xml escrita correctamente
+1/5/2024;17:13:40 - Lectura de xml escrita correctamente
+1/5/2024;17:13:40 - Lectura de xml escrita correctamente
+1/5/2024;17:13:40 - Lectura de xml escrita correctamente
+1/5/2024;17:13:40 - error en archivo de configuracion
+1/5/2024;17:13:54 - Iniciando aplicacion clente
+1/5/2024;17:13:55 - Lectura de xml escrita correctamente
+1/5/2024;17:13:55 - Lectura de xml escrita correctamente
+1/5/2024;17:13:55 - Lectura de xml escrita correctamente
+1/5/2024;17:13:55 - Lectura de xml escrita correctamente
+1/5/2024;17:13:55 - error en archivo de configuracion
+1/5/2024;17:14:28 - Iniciando aplicacion clente
+1/5/2024;17:14:28 - Lectura de xml escrita correctamente
+1/5/2024;17:14:28 - Lectura de xml escrita correctamente
+1/5/2024;17:14:28 - Lectura de xml escrita correctamente
+1/5/2024;17:14:28 - Lectura de xml escrita correctamente
+1/5/2024;17:15:14 - Iniciando aplicacion clente
+1/5/2024;17:15:15 - Lectura de xml escrita correctamente
+1/5/2024;17:15:15 - Lectura de xml escrita correctamente
+1/5/2024;17:15:15 - Lectura de xml escrita correctamente
+1/5/2024;17:15:15 - Lectura de xml escrita correctamente
+1/5/2024;17:16:6 - Iniciando aplicacion clente
+1/5/2024;17:16:6 - Lectura de xml escrita correctamente
+1/5/2024;17:16:7 - Lectura de xml escrita correctamente
+1/5/2024;17:16:7 - Lectura de xml escrita correctamente
+1/5/2024;17:16:7 - Lectura de xml escrita correctamente
+1/5/2024;17:16:54 - Iniciando aplicacion clente
+1/5/2024;17:16:54 - Lectura de xml escrita correctamente
+1/5/2024;17:16:54 - Lectura de xml escrita correctamente
+1/5/2024;17:16:54 - Lectura de xml escrita correctamente
+1/5/2024;17:16:54 - Lectura de xml escrita correctamente
+1/5/2024;17:21:0 - Iniciando aplicacion clente
+1/5/2024;17:21:0 - Lectura de xml escrita correctamente
+1/5/2024;17:21:0 - Lectura de xml escrita correctamente
+1/5/2024;17:21:0 - Lectura de xml escrita correctamente
+1/5/2024;17:21:0 - Lectura de xml escrita correctamente
+1/5/2024;17:21:46 - Iniciando aplicacion clente
+1/5/2024;17:21:46 - Lectura de xml escrita correctamente
+1/5/2024;17:21:46 - Lectura de xml escrita correctamente
+1/5/2024;17:21:46 - Lectura de xml escrita correctamente
+1/5/2024;17:21:46 - Lectura de xml escrita correctamente
+1/5/2024;17:22:15 - Iniciando aplicacion clente
+1/5/2024;17:22:16 - Lectura de xml escrita correctamente
+1/5/2024;17:22:16 - Lectura de xml escrita correctamente
+1/5/2024;17:22:16 - Lectura de xml escrita correctamente
+1/5/2024;17:22:16 - Lectura de xml escrita correctamente
+1/5/2024;17:22:45 - Iniciando aplicacion clente
+1/5/2024;17:22:46 - Lectura de xml escrita correctamente
+1/5/2024;17:22:46 - Lectura de xml escrita correctamente
+1/5/2024;17:22:46 - Lectura de xml escrita correctamente
+1/5/2024;17:22:46 - Lectura de xml escrita correctamente
+1/5/2024;17:26:28 - Iniciando aplicacion clente
+1/5/2024;17:26:28 - Lectura de xml escrita correctamente
+1/5/2024;17:26:28 - Lectura de xml escrita correctamente
+1/5/2024;17:26:28 - Lectura de xml escrita correctamente
+1/5/2024;17:26:28 - Lectura de xml escrita correctamente
+1/5/2024;18:56:0 - Iniciando aplicacion clente
+1/5/2024;18:56:1 - Lectura de xml escrita correctamente
+1/5/2024;18:56:1 - Lectura de xml escrita correctamente
+1/5/2024;18:56:1 - Lectura de xml escrita correctamente
+1/5/2024;18:56:1 - Lectura de xml escrita correctamente
+1/5/2024;18:56:37 - Iniciando aplicacion clente
+1/5/2024;18:56:37 - Lectura de xml escrita correctamente
+1/5/2024;18:56:37 - Lectura de xml escrita correctamente
+1/5/2024;18:56:37 - Lectura de xml escrita correctamente
+1/5/2024;18:56:37 - Lectura de xml escrita correctamente
+1/5/2024;18:56:50 - Iniciando aplicacion clente
+1/5/2024;18:56:51 - Lectura de xml escrita correctamente
+1/5/2024;18:56:51 - Lectura de xml escrita correctamente
+1/5/2024;18:56:51 - Lectura de xml escrita correctamente
+1/5/2024;18:56:51 - Lectura de xml escrita correctamente
+1/5/2024;18:58:53 - Iniciando aplicacion clente
+1/5/2024;18:58:53 - Lectura de xml escrita correctamente
+1/5/2024;18:58:53 - Lectura de xml escrita correctamente
+1/5/2024;18:58:53 - Lectura de xml escrita correctamente
+1/5/2024;18:58:53 - Lectura de xml escrita correctamente
+1/5/2024;18:59:30 - Iniciando aplicacion clente
+1/5/2024;18:59:30 - Lectura de xml escrita correctamente
+1/5/2024;18:59:30 - Lectura de xml escrita correctamente
+1/5/2024;18:59:30 - Lectura de xml escrita correctamente
+1/5/2024;18:59:30 - Lectura de xml escrita correctamente
+1/5/2024;18:59:53 - Iniciando aplicacion clente
+1/5/2024;18:59:53 - Lectura de xml escrita correctamente
+1/5/2024;18:59:53 - Lectura de xml escrita correctamente
+1/5/2024;18:59:53 - Lectura de xml escrita correctamente
+1/5/2024;18:59:53 - Lectura de xml escrita correctamente
+1/5/2024;19:0:23 - Iniciando aplicacion clente
+1/5/2024;19:0:23 - Lectura de xml escrita correctamente
+1/5/2024;19:0:23 - Lectura de xml escrita correctamente
+1/5/2024;19:0:24 - Lectura de xml escrita correctamente
+1/5/2024;19:0:24 - Lectura de xml escrita correctamente
+1/5/2024;19:4:30 - Iniciando aplicacion clente
+1/5/2024;19:4:30 - Lectura de xml escrita correctamente
+1/5/2024;19:4:30 - Lectura de xml escrita correctamente
+1/5/2024;19:4:31 - Lectura de xml escrita correctamente
+1/5/2024;19:4:31 - Lectura de xml escrita correctamente
+1/5/2024;19:5:5 - Iniciando aplicacion clente
+1/5/2024;19:5:5 - Lectura de xml escrita correctamente
+1/5/2024;19:5:5 - Lectura de xml escrita correctamente
+1/5/2024;19:5:6 - Lectura de xml escrita correctamente
+1/5/2024;19:5:6 - Lectura de xml escrita correctamente
+1/5/2024;19:11:19 - Iniciando aplicacion clente
+1/5/2024;19:11:20 - Lectura de xml escrita correctamente
+1/5/2024;19:11:20 - Lectura de xml escrita correctamente
+1/5/2024;19:11:20 - Lectura de xml escrita correctamente
+1/5/2024;19:11:20 - Lectura de xml escrita correctamente
+1/5/2024;20:52:37 - Iniciando aplicacion clente
+1/5/2024;20:52:38 - Lectura de xml escrita correctamente
+1/5/2024;20:52:38 - Lectura de xml escrita correctamente
+1/5/2024;20:52:38 - Lectura de xml escrita correctamente
+1/5/2024;20:52:38 - Lectura de xml escrita correctamente
+1/5/2024;20:53:51 - Iniciando aplicacion clente
+1/5/2024;20:53:51 - Lectura de xml escrita correctamente
+1/5/2024;20:53:52 - Lectura de xml escrita correctamente
+1/5/2024;20:53:52 - Lectura de xml escrita correctamente
+1/5/2024;20:53:52 - Lectura de xml escrita correctamente
+1/5/2024;20:54:11 - Iniciando aplicacion clente
+1/5/2024;20:54:11 - Lectura de xml escrita correctamente
+1/5/2024;20:54:11 - Lectura de xml escrita correctamente
+1/5/2024;20:54:11 - Lectura de xml escrita correctamente
+1/5/2024;20:54:11 - Lectura de xml escrita correctamente
+1/5/2024;20:56:50 - Iniciando aplicacion clente
+1/5/2024;20:56:50 - Lectura de xml escrita correctamente
+1/5/2024;20:56:50 - Lectura de xml escrita correctamente
+1/5/2024;20:56:50 - Lectura de xml escrita correctamente
+1/5/2024;20:56:50 - Lectura de xml escrita correctamente
+1/5/2024;20:59:45 - Iniciando aplicacion clente
+1/5/2024;20:59:45 - Lectura de xml escrita correctamente
+1/5/2024;20:59:45 - Lectura de xml escrita correctamente
+1/5/2024;20:59:45 - Lectura de xml escrita correctamente
+1/5/2024;20:59:45 - Lectura de xml escrita correctamente
+1/5/2024;21:0:24 - Iniciando aplicacion clente
+1/5/2024;21:0:25 - Lectura de xml escrita correctamente
+1/5/2024;21:0:25 - Lectura de xml escrita correctamente
+1/5/2024;21:0:25 - Lectura de xml escrita correctamente
+1/5/2024;21:0:25 - Lectura de xml escrita correctamente
+1/5/2024;21:1:40 - Iniciando aplicacion clente
+1/5/2024;21:1:41 - Lectura de xml escrita correctamente
+1/5/2024;21:1:41 - Lectura de xml escrita correctamente
+1/5/2024;21:1:41 - Lectura de xml escrita correctamente
+1/5/2024;21:1:41 - Lectura de xml escrita correctamente
+1/5/2024;21:2:8 - Iniciando aplicacion clente
+1/5/2024;21:2:8 - Lectura de xml escrita correctamente
+1/5/2024;21:2:8 - Lectura de xml escrita correctamente
+1/5/2024;21:2:8 - Lectura de xml escrita correctamente
+1/5/2024;21:2:8 - Lectura de xml escrita correctamente
+1/5/2024;21:2:20 - Iniciando aplicacion clente
+1/5/2024;21:2:21 - Lectura de xml escrita correctamente
+1/5/2024;21:2:21 - Lectura de xml escrita correctamente
+1/5/2024;21:2:21 - Lectura de xml escrita correctamente
+1/5/2024;21:2:21 - Lectura de xml escrita correctamente
+1/5/2024;21:42:41 - Iniciando aplicacion clente
+1/5/2024;21:42:41 - Lectura de xml escrita correctamente
+1/5/2024;21:42:41 - Lectura de xml escrita correctamente
+1/5/2024;21:42:41 - Lectura de xml escrita correctamente
+1/5/2024;21:42:41 - Lectura de xml escrita correctamente
+1/5/2024;21:43:25 - Iniciando aplicacion clente
+1/5/2024;21:43:26 - Lectura de xml escrita correctamente
+1/5/2024;21:43:26 - Lectura de xml escrita correctamente
+1/5/2024;21:43:26 - Lectura de xml escrita correctamente
+1/5/2024;21:43:26 - Lectura de xml escrita correctamente
+1/5/2024;21:43:51 - Iniciando aplicacion clente
+1/5/2024;21:43:51 - Lectura de xml escrita correctamente
+1/5/2024;21:43:51 - Lectura de xml escrita correctamente
+1/5/2024;21:43:51 - Lectura de xml escrita correctamente
+1/5/2024;21:43:51 - Lectura de xml escrita correctamente
+1/5/2024;21:44:26 - Iniciando aplicacion clente
+1/5/2024;21:44:26 - Lectura de xml escrita correctamente
+1/5/2024;21:44:26 - Lectura de xml escrita correctamente
+1/5/2024;21:44:27 - Lectura de xml escrita correctamente
+1/5/2024;21:44:27 - Lectura de xml escrita correctamente
+1/5/2024;21:45:23 - Iniciando aplicacion clente
+1/5/2024;21:45:23 - Lectura de xml escrita correctamente
+1/5/2024;21:45:23 - Lectura de xml escrita correctamente
+1/5/2024;21:45:23 - Lectura de xml escrita correctamente
+1/5/2024;21:45:23 - Lectura de xml escrita correctamente
+1/5/2024;21:46:9 - Iniciando aplicacion clente
+1/5/2024;21:46:10 - Lectura de xml escrita correctamente
+1/5/2024;21:46:10 - Lectura de xml escrita correctamente
+1/5/2024;21:46:10 - Lectura de xml escrita correctamente
+1/5/2024;21:46:10 - Lectura de xml escrita correctamente
+1/5/2024;21:46:22 - Iniciando aplicacion clente
+1/5/2024;21:46:22 - Lectura de xml escrita correctamente
+1/5/2024;21:46:22 - Lectura de xml escrita correctamente
+1/5/2024;21:46:23 - Lectura de xml escrita correctamente
+1/5/2024;21:46:23 - Lectura de xml escrita correctamente
+1/5/2024;21:46:45 - Iniciando aplicacion clente
+1/5/2024;21:46:46 - Lectura de xml escrita correctamente
+1/5/2024;21:46:46 - Lectura de xml escrita correctamente
+1/5/2024;21:46:46 - Lectura de xml escrita correctamente
+1/5/2024;21:46:46 - Lectura de xml escrita correctamente
+1/5/2024;21:47:32 - Iniciando aplicacion clente
+1/5/2024;21:47:33 - Lectura de xml escrita correctamente
+1/5/2024;21:47:33 - Lectura de xml escrita correctamente
+1/5/2024;21:47:33 - Lectura de xml escrita correctamente
+1/5/2024;21:47:33 - Lectura de xml escrita correctamente
+1/5/2024;21:54:11 - Iniciando aplicacion clente
+1/5/2024;21:54:11 - Lectura de xml escrita correctamente
+1/5/2024;21:54:11 - Lectura de xml escrita correctamente
+1/5/2024;21:54:12 - Lectura de xml escrita correctamente
+1/5/2024;21:54:12 - Lectura de xml escrita correctamente
+1/5/2024;21:55:57 - Iniciando aplicacion clente
+1/5/2024;21:55:58 - Lectura de xml escrita correctamente
+1/5/2024;21:55:58 - Lectura de xml escrita correctamente
+1/5/2024;21:55:58 - Lectura de xml escrita correctamente
+1/5/2024;21:55:58 - Lectura de xml escrita correctamente
+1/5/2024;21:56:9 - Iniciando aplicacion clente
+1/5/2024;21:56:9 - Lectura de xml escrita correctamente
+1/5/2024;21:56:9 - Lectura de xml escrita correctamente
+1/5/2024;21:56:9 - Lectura de xml escrita correctamente
+1/5/2024;21:56:9 - Lectura de xml escrita correctamente
+1/5/2024;21:56:33 - Iniciando aplicacion clente
+1/5/2024;21:56:33 - Lectura de xml escrita correctamente
+1/5/2024;21:56:34 - Lectura de xml escrita correctamente
+1/5/2024;21:56:34 - Lectura de xml escrita correctamente
+1/5/2024;21:56:34 - Lectura de xml escrita correctamente
+1/5/2024;21:58:30 - Iniciando aplicacion clente
+1/5/2024;21:58:30 - Lectura de xml escrita correctamente
+1/5/2024;21:58:30 - Lectura de xml escrita correctamente
+1/5/2024;21:58:31 - Lectura de xml escrita correctamente
+1/5/2024;21:58:31 - Lectura de xml escrita correctamente
+1/5/2024;21:59:20 - Iniciando aplicacion clente
+1/5/2024;21:59:20 - Lectura de xml escrita correctamente
+1/5/2024;21:59:20 - Lectura de xml escrita correctamente
+1/5/2024;21:59:20 - Lectura de xml escrita correctamente
+1/5/2024;21:59:20 - Lectura de xml escrita correctamente
+1/5/2024;21:59:28 - Iniciando aplicacion clente
+1/5/2024;21:59:28 - Lectura de xml escrita correctamente
+1/5/2024;21:59:28 - Lectura de xml escrita correctamente
+1/5/2024;21:59:29 - Lectura de xml escrita correctamente
+1/5/2024;21:59:29 - Lectura de xml escrita correctamente
+1/5/2024;22:0:44 - Iniciando aplicacion clente
+1/5/2024;22:0:45 - Lectura de xml escrita correctamente
+1/5/2024;22:0:45 - Lectura de xml escrita correctamente
+1/5/2024;22:0:45 - Lectura de xml escrita correctamente
+1/5/2024;22:0:45 - Lectura de xml escrita correctamente
+1/5/2024;22:5:26 - Iniciando aplicacion clente
+1/5/2024;22:5:27 - Lectura de xml escrita correctamente
+1/5/2024;22:5:27 - Lectura de xml escrita correctamente
+1/5/2024;22:5:27 - Lectura de xml escrita correctamente
+1/5/2024;22:5:27 - Lectura de xml escrita correctamente
+1/5/2024;22:6:52 - Iniciando aplicacion clente
+1/5/2024;22:6:53 - Lectura de xml escrita correctamente
+1/5/2024;22:6:53 - Lectura de xml escrita correctamente
+1/5/2024;22:6:53 - Lectura de xml escrita correctamente
+1/5/2024;22:6:53 - Lectura de xml escrita correctamente
+1/5/2024;22:7:11 - Iniciando aplicacion clente
+1/5/2024;22:7:11 - Lectura de xml escrita correctamente
+1/5/2024;22:7:11 - Lectura de xml escrita correctamente
+1/5/2024;22:7:11 - Lectura de xml escrita correctamente
+1/5/2024;22:7:11 - Lectura de xml escrita correctamente
+1/5/2024;22:9:18 - Iniciando aplicacion clente
+1/5/2024;22:9:18 - Lectura de xml escrita correctamente
+1/5/2024;22:9:18 - Lectura de xml escrita correctamente
+1/5/2024;22:9:19 - Lectura de xml escrita correctamente
+1/5/2024;22:9:19 - Lectura de xml escrita correctamente
+1/5/2024;22:10:58 - Iniciando aplicacion clente
+1/5/2024;22:10:58 - Lectura de xml escrita correctamente
+1/5/2024;22:10:58 - Lectura de xml escrita correctamente
+1/5/2024;22:10:59 - Lectura de xml escrita correctamente
+1/5/2024;22:10:59 - Lectura de xml escrita correctamente
+1/5/2024;22:11:31 - Iniciando aplicacion clente
+1/5/2024;22:11:31 - Lectura de xml escrita correctamente
+1/5/2024;22:11:31 - Lectura de xml escrita correctamente
+1/5/2024;22:11:31 - Lectura de xml escrita correctamente
+1/5/2024;22:11:31 - Lectura de xml escrita correctamente
+1/5/2024;22:14:17 - Iniciando aplicacion clente
+1/5/2024;22:14:18 - Lectura de xml escrita correctamente
+1/5/2024;22:14:18 - Lectura de xml escrita correctamente
+1/5/2024;22:14:18 - Lectura de xml escrita correctamente
+1/5/2024;22:14:18 - Lectura de xml escrita correctamente
+1/5/2024;22:28:12 - Iniciando aplicacion clente
+1/5/2024;22:28:13 - Lectura de xml escrita correctamente
+1/5/2024;22:28:13 - Lectura de xml escrita correctamente
+1/5/2024;22:28:13 - Lectura de xml escrita correctamente
+1/5/2024;22:28:13 - Lectura de xml escrita correctamente
+1/5/2024;22:28:56 - Iniciando aplicacion clente
+1/5/2024;22:28:57 - Lectura de xml escrita correctamente
+1/5/2024;22:28:57 - Lectura de xml escrita correctamente
+1/5/2024;22:28:57 - Lectura de xml escrita correctamente
+1/5/2024;22:28:57 - Lectura de xml escrita correctamente

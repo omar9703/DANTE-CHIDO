@@ -5,6 +5,7 @@
 package Interfaz;
 
 import Datos.ConfigTags;
+import Datos.Logs;
 import Datos.WriteXml;
 import Datos.XmlRead;
 import java.lang.reflect.Field;
@@ -12,6 +13,7 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 
@@ -21,19 +23,24 @@ import javax.swing.JTextField;
  */
 public class SettingsTags extends javax.swing.JFrame {
     XmlRead XR ;
+    public Panel p;
     public ArrayList<String> codesNames;
     public ArrayList<JTextField> textfieldsNames;
+    public ArrayList<JTextField> textfieldsCommands;
     /**
      * Creates new form SettingsTags
      */
-    public SettingsTags() {
+    public SettingsTags(Panel p) {
         initComponents();
+        this.p = p;
          this.setResizable(false);
        //this.setSize(new Dimension(1366,766));
        this.setLocationRelativeTo(null);
        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
        textfieldsNames = new ArrayList<>(Arrays.asList(jTextField1,jTextField2,jTextField3,jTextField4,jTextField5,jTextField6,jTextField7,jTextField8,jTextField9,jTextField10,jTextField11,jTextField12,jTextField13,jTextField14,jTextField15,jTextField16,
                jTextField17,jTextField18,jTextField19,jTextField20,jTextField21,jTextField22,jTextField23,jTextField24,jTextField25));
+       textfieldsCommands = new ArrayList<>(Arrays.asList(jTextField26,jTextField27,jTextField28,jTextField29,jTextField30,jTextField31,jTextField32,jTextField33,jTextField34,jTextField35,jTextField36,jTextField37,jTextField38,jTextField39,jTextField40,jTextField41,
+               jTextField42,jTextField43,jTextField44,jTextField45,jTextField46,jTextField47,jTextField48,jTextField49,jTextField50));
        XR = new XmlRead();
        codesNames = new ArrayList<>(Arrays.asList("","","",""));
        ConfigTags ct = XR.ReadTagsConfig();
@@ -42,7 +49,17 @@ public class SettingsTags extends javax.swing.JFrame {
         for(int i=0;i<textfieldsNames.size();i++){
             textfieldsNames.get(i).setText(ct.getNames().get(i));
         }
-       }                                                    
+       }     
+       if (ct.getCommands().size() > 0)
+       {
+           
+        for(int i=0;i<textfieldsCommands.size();i++){
+            if (ct.getCommands().get(i)!=" ")
+            {
+                textfieldsCommands.get(i).setText(ct.getCommands().get(i));
+            }
+        }
+       }  
                                                                                     
                                                                                                
     }
@@ -1242,9 +1259,6 @@ public class SettingsTags extends javax.swing.JFrame {
 
     private void jTextField26KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField26KeyReleased
         // TODO add your handling code here:
-        System.out.println(evt.getKeyCode());
-        Field[] fields = java.awt.event.KeyEvent.class.getDeclaredFields();
-        System.out.println(evt.getSource());
         JTextField jf1;
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
@@ -1255,6 +1269,14 @@ if (evt.getSource() instanceof JTextField) {
         {
             String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
             jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
         }
         else
         {
@@ -1274,6 +1296,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField27KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField27KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField27KeyReleased
 
     private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
@@ -1282,6 +1333,38 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField28KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField28KeyReleased
         // TODO add your handling code here:
+            System.out.println(evt.getKeyCode());
+        Field[] fields = java.awt.event.KeyEvent.class.getDeclaredFields();
+        System.out.println(evt.getSource());
+        JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField28KeyReleased
 
     private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
@@ -1290,6 +1373,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField29KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField29KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField29KeyReleased
 
     private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
@@ -1298,6 +1410,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField30KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField30KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField30KeyReleased
 
     private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
@@ -1306,6 +1447,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField31KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField31KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField31KeyReleased
 
     private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
@@ -1314,6 +1484,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField32KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField32KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField32KeyReleased
 
     private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
@@ -1322,6 +1521,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField33KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField33KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField33KeyReleased
 
     private void jTextField34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField34ActionPerformed
@@ -1330,6 +1558,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField34KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField34KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField34KeyReleased
 
     private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed
@@ -1338,6 +1595,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField35KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField35KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField35KeyReleased
 
     private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
@@ -1346,6 +1632,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField36KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField36KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField36KeyReleased
 
     private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
@@ -1354,6 +1669,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField37KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField37KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField37KeyReleased
 
     private void jTextField38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField38ActionPerformed
@@ -1362,6 +1706,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField38KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField38KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField38KeyReleased
 
     private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
@@ -1370,6 +1743,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField39KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField39KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField39KeyReleased
 
     private void jTextField40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField40ActionPerformed
@@ -1378,6 +1780,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField40KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField40KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField40KeyReleased
 
     private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
@@ -1386,6 +1817,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField41KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField41KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField41KeyReleased
 
     private void jTextField42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField42ActionPerformed
@@ -1394,6 +1854,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField42KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField42KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField42KeyReleased
 
     private void jTextField43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField43ActionPerformed
@@ -1402,6 +1891,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField43KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField43KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField43KeyReleased
 
     private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
@@ -1410,6 +1928,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField44KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField44KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField44KeyReleased
 
     private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
@@ -1418,6 +1965,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField45KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField45KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField45KeyReleased
 
     private void jTextField46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField46ActionPerformed
@@ -1426,6 +2002,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField46KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField46KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField46KeyReleased
 
     private void jTextField47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField47ActionPerformed
@@ -1434,6 +2039,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField47KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField47KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField47KeyReleased
 
     private void jTextField48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField48ActionPerformed
@@ -1442,6 +2076,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField48KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField48KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField48KeyReleased
 
     private void jTextField49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField49ActionPerformed
@@ -1450,6 +2113,35 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField49KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField49KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField49KeyReleased
 
     private void jTextField50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField50ActionPerformed
@@ -1458,58 +2150,81 @@ if (evt.getSource() instanceof JTextField) {
 
     private void jTextField50KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField50KeyReleased
         // TODO add your handling code here:
+                JTextField jf1;
+if (evt.getSource() instanceof JTextField) {
+    jf1 = (JTextField) evt.getSource();
+
+    if (evt.getKeyCode()!=8)
+    {
+        if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
+        {
+            String aux = (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())).substring(0, 0);
+            jf1.setText(jf1.getText()+aux);
+        }
+        else if (evt.getKeyCode()== 17)
+        {
+            jf1.setText(jf1.getText() + "control" + " ");
+        }
+        else if (evt.getKeyCode()== 16)
+        {
+            jf1.setText(jf1.getText() + "shift" + " ");
+        }
+        else
+        {
+            jf1.setText(jf1.getText() + (java.awt.event.KeyEvent.getKeyText(evt.getKeyCode())));
+        }
+    }   
+    else
+    {
+        jf1.setText("");
+    }
+}
     }//GEN-LAST:event_jTextField50KeyReleased
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         
         ArrayList<String> names = new ArrayList<String>();
+        ArrayList<String> commands = new ArrayList<String>();
         
         for(int i=0;i<textfieldsNames.size();i++){
             names.add(textfieldsNames.get(i).getText());
         }
         
+        for(int i=0;i<textfieldsCommands.size();i++){
+            if (textfieldsCommands.get(i).getText() == "")
+            {
+                commands.add(" ");
+            }
+            else
+            {
+                commands.add(textfieldsCommands.get(i).getText());
+            }
+        }
+        
         ConfigTags ct = new ConfigTags();
         ct.setNames(names);
+        ct.setCommands(commands);
         WriteXml xw = new WriteXml();
-        xw.WriteTagsConfig(ct);
+        try
+        {
+            xw.WriteTagsConfig(ct);
+            p.ResetSettings();
+            JOptionPane.showMessageDialog(null, "Configuracion guardada exitosamente");
+            this.dispose();
+        }
+       catch(Exception e){
+            System.out.println("Error en escritura de archivo de configuracion "+e);
+            JOptionPane.showMessageDialog(null, "Error de configuracion");
+            Logs.Write("Error en escritura de archivo de configuracion");
+        }
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SettingsTags.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SettingsTags.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SettingsTags.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SettingsTags.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SettingsTags().setVisible(true);
-            }
-        });
-    }
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

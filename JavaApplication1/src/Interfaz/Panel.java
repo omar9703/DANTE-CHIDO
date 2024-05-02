@@ -18,6 +18,7 @@ import Datos.volumen;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import Negocio.NetworkInterfaces;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -26,14 +27,23 @@ import java.awt.event.AdjustmentListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
+import java.util.Locale;
 import javax.imageio.ImageIO;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JRootPane;
 import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.KeyStroke;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+import com.opencsv.CSVWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author leone
@@ -43,6 +53,8 @@ public class Panel extends javax.swing.JFrame {
     /**
      * Creates new form Panel
      */
+    List<String[]> list;
+   public DefaultTableModel model;
    private PanelAjustes ajustes;
    //private PanelMixer mixer;
    private newPanelMixer mixer;
@@ -62,6 +74,8 @@ public class Panel extends javax.swing.JFrame {
    public volumen vol;
    private boolean isMixer=false;
    private boolean isSetting = false;
+   
+   public ArrayList<String> comandos;
    
     public Panel() {
        initComponents();
@@ -88,10 +102,12 @@ public class Panel extends javax.swing.JFrame {
        KeyStroke ks = KeyStroke.getKeyStroke("control F12");
         JRootPane rootPane = this.getRootPane();
         rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(ks, "myAction");
+        final Panel p = this;
          rootPane.getActionMap().put("myAction", new AbstractAction() {
+             
                 public void actionPerformed(ActionEvent e) {
                     System.out.println("hello, world");
-                    SettingsTags tags = new SettingsTags();
+                    SettingsTags tags = new SettingsTags(p);
                     tags.setVisible(true);
                 }
             });
@@ -137,19 +153,62 @@ public class Panel extends javax.swing.JFrame {
       jLabel1.setVisible(false);
       
         LoadImageProject(Conf);
-        ConfigTags ct = new ConfigTags();
+        ConfigTags ct = Xread.ReadTagsConfig();
         
-        rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("control F1"), "Enter");
-        rootPane.getActionMap().put("Enter", new AbstractAction() {
+        System.out.println(ct.getCommands());
+        comandos = ct.getCommands();
+        for(int x = 0; x<ct.getCommands().size();x++)
+        {
+            if (ct.getCommands().get(x) != " ")
+            {
+                final int index = x;
+            jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
+            jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println("hello, world");
+                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index)+ " ");
                     
                 }
             });
+            }
+        }
+        String[] columnNames = {"Hora",
+                        "Descripción"};
+        model = new DefaultTableModel(columnNames,0);
+       
+        jTable1.setModel(model);
         
-        
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
     }
     
+    public void ResetSettings()
+    {
+        
+        for(int x = 0; x<comandos.size();x++)
+        {
+            if (comandos.get(x) != " ")
+            {
+                jTextArea2.getInputMap().remove(KeyStroke.getKeyStroke(comandos.get(x)));
+            }
+        }
+        ConfigTags ct = Xread.ReadTagsConfig();
+        
+        System.out.println(ct.getCommands());
+        comandos = ct.getCommands();
+        for(int x = 0; x<ct.getCommands().size();x++)
+        {
+            if (ct.getCommands().get(x) != " ")
+            {
+                final int index = x;
+            jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
+            jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
+                public void actionPerformed(ActionEvent e) {
+                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index)+ " ");
+                    
+                }
+            });
+            }
+        }
+    }
     
     public void LoadImageProject(Configuracion C){
         if(!C.GetpathImageProject().equals("0")){
@@ -337,6 +396,10 @@ public class Panel extends javax.swing.JFrame {
         Bmixer2 = new javax.swing.JButton();
         Bmixer1 = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         EtiquetaStatus = new javax.swing.JLabel();
         EtiquetaConect = new javax.swing.JLabel();
@@ -348,7 +411,6 @@ public class Panel extends javax.swing.JFrame {
         networks = new javax.swing.JComboBox<>();
         tercero = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         vPrincipal = new javax.swing.JSlider();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -356,8 +418,6 @@ public class Panel extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 102));
@@ -446,7 +506,7 @@ public class Panel extends javax.swing.JFrame {
         Bmixer2.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer2.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer2.setText("TERMINAR");
+        Bmixer2.setText("Cancelar");
         Bmixer2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer2ActionPerformed(evt);
@@ -458,7 +518,7 @@ public class Panel extends javax.swing.JFrame {
         Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
         Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer1.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer1.setLabel("INICIAR");
+        Bmixer1.setText("Añadir");
         Bmixer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer1ActionPerformed(evt);
@@ -478,6 +538,38 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(Bmixer);
         Bmixer.setBounds(1050, 20, 120, 40);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setSelectedTextColor(new java.awt.Color(0, 0, 0));
+        jTextArea2.setSelectionColor(new java.awt.Color(0, 0, 0));
+        jTextArea2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextArea2FocusGained(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTextArea2);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(90, 186, 270, 270);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane3);
+        jScrollPane3.setBounds(90, 460, 270, 280);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -552,14 +644,6 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1030, 690, 127, 20);
 
-        jLabel5.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jLabel5KeyReleased(evt);
-            }
-        });
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 1890, 740);
-
         vPrincipal.setBackground(new java.awt.Color(0, 0, 0));
         vPrincipal.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -590,20 +674,6 @@ public class Panel extends javax.swing.JFrame {
         jLabel6.setBounds(910, 70, 40, 40);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1350, 740);
-
-        jTextArea2.setColumns(20);
-        jTextArea2.setLineWrap(true);
-        jTextArea2.setRows(5);
-        jTextArea2.setCaretColor(new java.awt.Color(255, 255, 255));
-        jTextArea2.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextArea2FocusGained(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTextArea2);
-
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(90, 186, 270, 540);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -767,8 +837,31 @@ public class Panel extends javax.swing.JFrame {
 
     private void Bmixer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer1ActionPerformed
         // TODO add your handling code here:
+        
+        if (!jTextArea2.getText().equals(""))
+        {
+            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
+            Date date = new Date();
+            String result = formatter.format(date);
+            String[] item = {result,jTextArea2.getText()}; 
+            model.addRow(item);
+            
+            String[] header = {"markIn", "markOut", "comment"};
+            list = new ArrayList<>();
+            list.add(header);
+             String[] record1 = {result, "na", jTextArea2.getText()};
+            jTextArea2.setText("");
+            list.add(record1);
+        // default all fields are enclosed in double quotes
+        // default separator is a comma
+        try (CSVWriter writer = new CSVWriter(new FileWriter("monitor.csv"))) {
+            writer.writeAll(list);
+        }   catch (IOException ex) {
+                Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_Bmixer1ActionPerformed
-
+    
     private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Bmixer2ActionPerformed
@@ -783,11 +876,6 @@ public class Panel extends javax.swing.JFrame {
        
         
     }//GEN-LAST:event_formKeyReleased
-
-    private void jLabel5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel5KeyReleased
-        // TODO add your handling code here:
-        System.out.println("keyCode" + evt.getKeyCode()+ "control"+evt.isControlDown()+ "alt"+evt.isAltDown()+ "shift"+ evt.isShiftDown()+evt.isActionKey());
-    }//GEN-LAST:event_jLabel5KeyReleased
 
     
     /**
@@ -829,7 +917,6 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -837,6 +924,8 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JComboBox<String> networks;
