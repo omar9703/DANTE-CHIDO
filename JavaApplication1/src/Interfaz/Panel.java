@@ -18,6 +18,8 @@ import Datos.volumen;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import Negocio.NetworkInterfaces;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -39,6 +41,9 @@ import javax.swing.KeyStroke;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.table.DefaultTableModel;
 import com.opencsv.CSVWriter;
+import com.opencsv.exceptions.CsvException;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
@@ -77,7 +82,7 @@ public class Panel extends javax.swing.JFrame {
    
    public ArrayList<String> comandos;
    
-    public Panel() {
+    public Panel() throws FileNotFoundException, IOException, CsvException {
        initComponents();
        this.setResizable(false);
        this.setSize(new Dimension(1366,766));
@@ -178,6 +183,25 @@ public class Panel extends javax.swing.JFrame {
         jTable1.setModel(model);
         
         jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        
+        String[] header = {"markIn", "markOut", "take","comment"};
+            list = new ArrayList<>();
+            list.add(header);
+            
+            CSVReader reader = new CSVReaderBuilder(new FileReader("monitor.csv")).build();
+     String [] nextLine;
+     while ((nextLine = reader.readNext()) != null) {
+        // nextLine[] is an array of values from the line
+        if (!nextLine[0].contains("markIn"))
+        {
+            String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
+            list.add(aux);
+            String[] item = {nextLine[0],nextLine[3]}; 
+            System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
+            model.addRow(item);
+        }
+     }
+     
     }
     
     public void ResetSettings()
@@ -569,7 +593,7 @@ public class Panel extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(90, 460, 270, 280);
+        jScrollPane3.setBounds(90, 460, 270, 270);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -846,10 +870,8 @@ public class Panel extends javax.swing.JFrame {
             String[] item = {result,jTextArea2.getText()}; 
             model.addRow(item);
             
-            String[] header = {"markIn", "markOut", "comment"};
-            list = new ArrayList<>();
-            list.add(header);
-             String[] record1 = {result, "na", jTextArea2.getText()};
+            
+             String[] record1 = {result, "na",""+list.size() ,jTextArea2.getText()};
             jTextArea2.setText("");
             list.add(record1);
         // default all fields are enclosed in double quotes
