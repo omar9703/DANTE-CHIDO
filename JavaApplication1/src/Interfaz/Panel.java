@@ -14,6 +14,7 @@ import java.util.Calendar;
 import java.util.Date;
 import Datos.XmlRead;
 import Datos.Configuracion;
+import Datos.WriteXml;
 import Datos.volumen;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -49,6 +50,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  *
  * @author leone
@@ -79,10 +83,12 @@ public class Panel extends javax.swing.JFrame {
    public volumen vol;
    private boolean isMixer=false;
    private boolean isSetting = false;
-   
+   JFileChooser chooser;
+   String choosertitle;
    public ArrayList<String> comandos;
-   
-    public Panel() throws FileNotFoundException, IOException, CsvException {
+   public Boolean FileFound;
+   public String URL;
+    public Panel() {
        initComponents();
        this.setResizable(false);
        this.setSize(new Dimension(1366,766));
@@ -114,6 +120,26 @@ public class Panel extends javax.swing.JFrame {
                     System.out.println("hello, world");
                     SettingsTags tags = new SettingsTags(p);
                     tags.setVisible(true);
+                }
+            });
+         KeyStroke ks1 = KeyStroke.getKeyStroke("control A");       
+        rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(ks1, "myAction2");
+         rootPane.getActionMap().put("myAction2", new AbstractAction() {
+             
+                public void actionPerformed(ActionEvent e) {
+                    chooser = new JFileChooser(); 
+              chooser.setDialogTitle(choosertitle);
+    chooser.setCurrentDirectory(new java.io.File("."));
+
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("csv", "CSV");
+        chooser.addChoosableFileFilter(filter);
+    if (chooser.showOpenDialog(p) == JFileChooser.APPROVE_OPTION) { 
+      System.out.println("getCurrentDirectory(): " 
+         +  chooser.getCurrentDirectory());
+      System.out.println("getSelectedFile() : " 
+         +  chooser.getSelectedFile());
+         p.SetNewProject(chooser.getCurrentDirectory().toString());
+    }
                 }
             });
        //fecha
@@ -187,9 +213,12 @@ public class Panel extends javax.swing.JFrame {
         String[] header = {"markIn", "markOut", "take","comment"};
             list = new ArrayList<>();
             list.add(header);
-            
-            CSVReader reader = new CSVReaderBuilder(new FileReader("monitor.csv")).build();
+
+            try
+                 {
+            CSVReader reader = new CSVReaderBuilder(new FileReader(ct.url+"\\monitor.csv")).build();
      String [] nextLine;
+     URL = ct.url;
      while ((nextLine = reader.readNext()) != null) {
         // nextLine[] is an array of values from the line
         if (!nextLine[0].contains("markIn"))
@@ -201,6 +230,17 @@ public class Panel extends javax.swing.JFrame {
             model.addRow(item);
         }
      }
+     FileFound = true;
+                     }
+            catch(IOException I)
+                       {
+                                FileFound = false; 
+                             }
+            catch(CsvException I)
+                       {
+                             FileFound = false;    
+                             }
+            
      
     }
     
@@ -232,6 +272,65 @@ public class Panel extends javax.swing.JFrame {
             });
             }
         }
+    }
+    public void SetNewProject(String url)
+    {
+         WriteXml xl = new WriteXml();
+ 
+            xl.WriteRouteCSV(url);
+             try
+                 {
+            CSVReader reader = new CSVReaderBuilder(new FileReader(url+"\\monitor.csv")).build();
+     String [] nextLine;
+     list.clear();
+     String[] header = {"markIn", "markOut", "take","comment"};
+            list = new ArrayList<>();
+            list.add(header);
+     while ((nextLine = reader.readNext()) != null) {
+        // nextLine[] is an array of values from the line
+        if (!nextLine[0].contains("markIn"))
+        {
+            String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
+            
+            list.add(aux);
+            String[] item = {nextLine[0],nextLine[3]}; 
+            System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
+            model.addRow(item);
+        }
+     }
+     FileFound = true;
+                     }
+            catch(IOException I)
+                       {
+                                FileFound = false; 
+                             }
+            catch(CsvException I)
+                       {
+                             FileFound = false;    
+                             }
+         
+    }
+    public void ResetFolderFile(String url )
+    {
+        this.URL = url;
+        int rows = model.getRowCount(); 
+    for(int i = rows - 1; i >=0; i--)
+    {
+        model.removeRow(i); 
+    }
+    list.clear();
+    String[] header = {"markIn", "markOut", "take","comment"};
+            list = new ArrayList<>();
+            list.add(header);
+    try
+                 {
+            CSVReader reader = new CSVReaderBuilder(new FileReader(URL+"\\monitor.csv")).build();
+            FileFound = true;
+                 }
+     catch(IOException I)
+                       {
+                                FileFound = false; 
+                             }
     }
     
     public void LoadImageProject(Configuracion C){
@@ -861,7 +960,8 @@ public class Panel extends javax.swing.JFrame {
 
     private void Bmixer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer1ActionPerformed
         // TODO add your handling code here:
-        
+        if (FileFound)
+        {
         if (!jTextArea2.getText().equals(""))
         {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
@@ -876,16 +976,91 @@ public class Panel extends javax.swing.JFrame {
             list.add(record1);
         // default all fields are enclosed in double quotes
         // default separator is a comma
-        try (CSVWriter writer = new CSVWriter(new FileWriter("monitor.csv"))) {
+        try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\monitor.csv"))) {
             writer.writeAll(list);
         }   catch (IOException ex) {
                 Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+        }
+        else
+        {
+            String[] options = new String[] {"Nuevo", "Abrir"};
+    int response = JOptionPane.showOptionDialog(null, "Seleccione una opción", "Sin proyecto seleccionado.",
+        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+        null, options, options[0]);
+              chooser = new JFileChooser(); 
+              chooser.setDialogTitle(choosertitle);
+    chooser.setCurrentDirectory(new java.io.File("."));
+    if (response == 0)
+    {   
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    //
+    // disable the "All files" option.
+    //
+        chooser.setAcceptAllFileFilterUsed(false);
+    //    
+    }
+    else
+    {
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("csv", "CSV");
+        chooser.addChoosableFileFilter(filter);
+    }
+    if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
+      System.out.println("getCurrentDirectory(): " 
+         +  chooser.getCurrentDirectory());
+      System.out.println("getSelectedFile() : " 
+         +  chooser.getSelectedFile());
+         WriteXml xl = new WriteXml();
+         if (response == 0)
+         {
+            xl.WriteRouteCSV(chooser.getSelectedFile().toString());
+         }
+         else
+         {
+            xl.WriteRouteCSV(chooser.getCurrentDirectory().toString());
+             try
+                 {
+            CSVReader reader = new CSVReaderBuilder(new FileReader(chooser.getCurrentDirectory().toString()+"\\monitor.csv")).build();
+     String [] nextLine;
+     list.clear();
+     String[] header = {"markIn", "markOut", "take","comment"};
+            list = new ArrayList<>();
+            list.add(header);
+     while ((nextLine = reader.readNext()) != null) {
+        // nextLine[] is an array of values from the line
+        if (!nextLine[0].contains("markIn"))
+        {
+            String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
+            
+            list.add(aux);
+            String[] item = {nextLine[0],nextLine[3]}; 
+            System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
+            model.addRow(item);
+        }
+     }
+     FileFound = true;
+                     }
+            catch(IOException I)
+                       {
+                                FileFound = false; 
+                             }
+            catch(CsvException I)
+                       {
+                             FileFound = false;    
+                             }
+         }
+                
+      }
+    else {
+      System.out.println("No Selection ");
+      }
+        }
     }//GEN-LAST:event_Bmixer1ActionPerformed
     
     private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
         // TODO add your handling code here:
+      
     }//GEN-LAST:event_Bmixer2ActionPerformed
 
     private void jTextArea2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextArea2FocusGained

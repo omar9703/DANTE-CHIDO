@@ -173,8 +173,10 @@ public class XmlRead {
                  ListCommands.add(E.getTextContent());
              }
              configT.setNames(ListNames);
-             configT.setCommands(ListCommands);
-            
+             configT.setCommands(ListCommands); 
+             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("FOLDERROUTER"); 
+            System.out.println(firstNameList.getLength());
+            configT.url = firstNameList.item(0).getTextContent();
            System.out.println(firstNameList.getLength() +" "+ configT.getNames().size()+" "+configT.getCommands().size());
         }
         catch (ParserConfigurationException ex) {

@@ -4,25 +4,19 @@
  * and open the template in the editor.
  */
 package Datos;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import org.w3c.dom.Attr;
-import org.w3c.dom.DOMImplementation;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Text;
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 /**
  *
  * @author Leonel López
@@ -116,6 +110,15 @@ public class WriteXml {
         
      
     }
+    
+    public boolean WriteRouteCSV(String url)
+    {
+           XmlRead xr = new XmlRead();
+           ConfigTags ct = xr.ReadTagsConfig();
+           ct.url = url;
+           return WriteTagsConfig(ct);
+            
+    }
     public Boolean WriteTagsConfig(ConfigTags ct)
     {
         try {
@@ -127,14 +130,19 @@ public class WriteXml {
             Element raiz = document.getDocumentElement();
             
         Element Asio=document.createElement("CONFIGURACION");
+        Element canal=document.createElement("FOLDERROUTER");
+            Text Valuecanal=document.createTextNode(ct.url);
+                canal.appendChild(Valuecanal);
+                Asio.appendChild(canal);
             for(int i=0;i<ct.getNames().size();i++){
-                Element canal=document.createElement("COMENTARIO");
+                canal=document.createElement("COMENTARIO");
                 canal.setAttribute("id", ct.getNames().get(i));
-                Text Valuecanal=document.createTextNode(ct.getCommands().get(i));
+                Valuecanal=document.createTextNode(ct.getCommands().get(i));
                 canal.appendChild(Valuecanal);
                 Asio.appendChild(canal);
                
             }
+            
             raiz.appendChild(Asio);
             Source source = new DOMSource(document);
             //Indicamos donde lo queremos almacenar
