@@ -52,6 +52,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  *
@@ -241,9 +243,29 @@ public class Panel extends javax.swing.JFrame {
                              FileFound = false;    
                              }
             
+            
+            SetListenerTable();
+           
      
     }
-    
+    public void SetListenerTable()
+    {
+        final Panel p1 = this;
+        jTable1.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
+        public void valueChanged(ListSelectionEvent event) {
+            // do some actions here, for example
+            // print first column value from selected row
+            int viewRow = jTable1.getSelectedRow();
+            if (!event.getValueIsAdjusting() && viewRow != -1) {
+            
+            System.out.println(jTable1.getValueAt(jTable1.getSelectedRow(), 0).toString());
+            EditPanel p = new EditPanel(p1,viewRow);
+            p.setVisible(true);
+            jTable1.clearSelection();
+            }
+        }
+    });
+    }
     public void ResetSettings()
     {
         
@@ -331,6 +353,38 @@ public class Panel extends javax.swing.JFrame {
                        {
                                 FileFound = false; 
                              }
+    }
+    
+    public void UpdateFile()
+    {
+
+        // default all fields are enclosed in double quotes
+        // default separator is a comma
+        try {
+            CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\monitor.csv"));
+        
+            writer.writeAll(list);
+            System.out.println(list);
+              int rows = model.getRowCount(); 
+    for(int i = rows - 1; i >=0; i--)
+    {
+        model.removeRow(i); 
+    }
+            for(int x=1;x<list.size();x++)
+            {
+                String[] item = {list.get(x)[0],list.get(x)[3]};
+                model.addRow(item);
+            }
+             
+            writer.close();
+            
+     
+        }catch (IOException ex) {
+                Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+           
+     
+        
     }
     
     public void LoadImageProject(Configuracion C){
