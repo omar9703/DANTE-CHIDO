@@ -1818,7 +1818,7 @@ public class PanelMixer extends javax.swing.JPanel {
         setBackground(new java.awt.Color(51, 51, 51));
 
         C1.setBackground(new java.awt.Color(69, 93, 220));
-        C1.setFont(new java.awt.Font("Montserrat", 0, 21)); // NOI18N
+        C1.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         C1.setForeground(new java.awt.Color(255, 255, 255));
         C1.setText("CHANNEL 1");
         C1.setToolTipText("");

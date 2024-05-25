@@ -48,6 +48,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
@@ -64,6 +66,9 @@ public class Panel extends javax.swing.JFrame {
     /**
      * Creates new form Panel
      */
+     private final SimpleDateFormat sdf  = new SimpleDateFormat("HH:mm");
+    private int   currentSecond;
+    private Calendar calendar;
     List<String[]> list;
    public DefaultTableModel model;
    private PanelAjustes ajustes;
@@ -90,6 +95,7 @@ public class Panel extends javax.swing.JFrame {
    public ArrayList<String> comandos;
    public Boolean FileFound;
    public String URL;
+   public Boolean added = true;
     public Panel() {
        initComponents();
        this.setResizable(false);
@@ -229,7 +235,7 @@ public class Panel extends javax.swing.JFrame {
             list.add(aux);
             String[] item = {nextLine[0],nextLine[3]}; 
             System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
-            model.addRow(item);
+            model.insertRow(0, item);
         }
      }
      FileFound = true;
@@ -246,7 +252,30 @@ public class Panel extends javax.swing.JFrame {
             
             SetListenerTable();
            
-     
+     this.SetTimer();
+     jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+     jTable1.getColumnModel().getColumn(0).setPreferredWidth(85);
+     jTable1.getColumnModel().getColumn(1).setPreferredWidth(212);
+    }
+    
+    public void SetTimer()
+    {
+        
+        reset();
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate( new TimerTask(){
+            public void run(){
+                if( currentSecond == 60 ) {
+                    reset();
+                }
+                jLabel5.setText( String.format("%s:%02d", sdf.format(calendar.getTime()), currentSecond ));
+                currentSecond++;
+            }
+        }, 0, 1000 );
+    }
+     private void reset(){
+        calendar = Calendar.getInstance();
+        currentSecond = calendar.get(Calendar.SECOND);
     }
     public void SetListenerTable()
     {
@@ -298,7 +327,11 @@ public class Panel extends javax.swing.JFrame {
     public void SetNewProject(String url)
     {
          WriteXml xl = new WriteXml();
- 
+   int rows = model.getRowCount(); 
+    for(int i = rows - 1; i >=0; i--)
+    {
+        model.removeRow(i); 
+    }
             xl.WriteRouteCSV(url);
              try
                  {
@@ -317,7 +350,7 @@ public class Panel extends javax.swing.JFrame {
             list.add(aux);
             String[] item = {nextLine[0],nextLine[3]}; 
             System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
-            model.addRow(item);
+            model.insertRow(0, item);
         }
      }
      FileFound = true;
@@ -373,7 +406,7 @@ public class Panel extends javax.swing.JFrame {
             for(int x=1;x<list.size();x++)
             {
                 String[] item = {list.get(x)[0],list.get(x)[3]};
-                model.addRow(item);
+                model.insertRow(0, item);
             }
              
             writer.close();
@@ -563,14 +596,15 @@ public class Panel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
         scrollPane1 = new java.awt.ScrollPane();
         Bsettings = new javax.swing.JButton();
         cLEAR = new javax.swing.JButton();
         primero = new javax.swing.JButton();
         segundo = new javax.swing.JButton();
+        Bmixer4 = new javax.swing.JButton();
         cuarto = new javax.swing.JButton();
         Bmixer2 = new javax.swing.JButton();
+        Bmixer3 = new javax.swing.JButton();
         Bmixer1 = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -581,6 +615,7 @@ public class Panel extends javax.swing.JFrame {
         EtiquetaStatus = new javax.swing.JLabel();
         EtiquetaConect = new javax.swing.JLabel();
         Etiquetacanales = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         MSG = new javax.swing.JTextField();
@@ -589,6 +624,7 @@ public class Panel extends javax.swing.JFrame {
         tercero = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         vPrincipal = new javax.swing.JSlider();
+        jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -606,18 +642,13 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jLabel3.setBackground(new java.awt.Color(102, 41, 188));
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(694, 10, 180, 120);
-
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(360, 140, 990, 590);
+        scrollPane1.setBounds(390, 140, 960, 590);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
-        Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
         Bsettings.setForeground(new java.awt.Color(255, 255, 255));
         Bsettings.setText("SETTINGS");
         Bsettings.addActionListener(new java.awt.event.ActionListener() {
@@ -626,7 +657,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bsettings);
-        Bsettings.setBounds(910, 20, 120, 40);
+        Bsettings.setBounds(890, 20, 140, 40);
 
         cLEAR.setBackground(new java.awt.Color(69, 93, 220));
         cLEAR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -668,6 +699,18 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(segundo);
         segundo.setBounds(0, 250, 84, 70);
 
+        Bmixer4.setBackground(new java.awt.Color(51, 204, 0));
+        Bmixer4.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
+        Bmixer4.setForeground(new java.awt.Color(255, 255, 255));
+        Bmixer4.setText("TAGS");
+        Bmixer4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bmixer4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Bmixer4);
+        Bmixer4.setBounds(750, 20, 120, 40);
+
         cuarto.setBackground(new java.awt.Color(35, 38, 49));
         cuarto.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
         cuarto.setForeground(new java.awt.Color(65, 71, 90));
@@ -680,17 +723,30 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(cuarto);
         cuarto.setBounds(0, 390, 84, 70);
 
-        Bmixer2.setBackground(new java.awt.Color(231, 25, 76));
+        Bmixer2.setBackground(new java.awt.Color(0, 204, 0));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer2.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer2.setText("Cancelar");
+        Bmixer2.setText("Nuevo");
         Bmixer2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer2ActionPerformed(evt);
             }
         });
         getContentPane().add(Bmixer2);
-        Bmixer2.setBounds(240, 147, 120, 40);
+        Bmixer2.setBounds(90, 145, 80, 40);
+
+        Bmixer3.setBackground(new java.awt.Color(231, 25, 76));
+        Bmixer3.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
+        Bmixer3.setForeground(new java.awt.Color(255, 255, 255));
+        Bmixer3.setText("Cancelar");
+        Bmixer3.setMargin(new java.awt.Insets(2, 7, 3, 7));
+        Bmixer3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bmixer3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Bmixer3);
+        Bmixer3.setBounds(297, 145, 90, 40);
 
         Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
         Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
@@ -702,10 +758,10 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Bmixer1);
-        Bmixer1.setBounds(90, 147, 120, 40);
+        Bmixer1.setBounds(195, 145, 80, 40);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
-        Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
         Bmixer.setForeground(new java.awt.Color(255, 255, 255));
         Bmixer.setText("MIXER");
         Bmixer.addActionListener(new java.awt.event.ActionListener() {
@@ -730,7 +786,7 @@ public class Panel extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea2);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(90, 186, 270, 270);
+        jScrollPane1.setBounds(90, 186, 300, 270);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -743,10 +799,11 @@ public class Panel extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        jTable1.setRowHeight(22);
         jScrollPane3.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(90, 460, 270, 270);
+        jScrollPane3.setBounds(90, 460, 300, 260);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -771,6 +828,11 @@ public class Panel extends javax.swing.JFrame {
         Etiquetacanales.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(Etiquetacanales);
         Etiquetacanales.setBounds(816, 24, 38, 36);
+
+        jLabel3.setBackground(new java.awt.Color(102, 41, 188));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(680, 10, 180, 120);
 
         jTextArea1.setBackground(new java.awt.Color(51, 51, 51));
         jTextArea1.setColumns(20);
@@ -829,6 +891,12 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(950, 75, 360, 30);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(720, 90, 160, 30);
 
         jPanel4.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel4);
@@ -1014,20 +1082,37 @@ public class Panel extends javax.swing.JFrame {
 
     private void Bmixer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer1ActionPerformed
         // TODO add your handling code here:
-        if (FileFound)
+       if (!this.added)
+       {
+           if (!jTextArea2.getText().equals(""))
+            {
+                list.getLast()[3] = jTextArea2.getText();
+                this.UpdateFile();
+                jTextArea2.setText("");
+                this.added = true;
+            }
+       }
+    }//GEN-LAST:event_Bmixer1ActionPerformed
+    
+    private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
+        // TODO add your handling code here:
+        //boton de nuevo
+         if (FileFound)
         {
-        if (!jTextArea2.getText().equals(""))
-        {
+        //if (!jTextArea2.getText().equals(""))
+       // {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
             Date date = new Date();
             String result = formatter.format(date);
             String[] item = {result,jTextArea2.getText()}; 
-            model.addRow(item);
+            //model.addRow(item);
+            model.insertRow(0, item);
             
             
-             String[] record1 = {result, "na",""+list.size() ,jTextArea2.getText()};
+             String[] record1 = {result, "na",""+list.size() ," "};
             jTextArea2.setText("");
             list.add(record1);
+            this.added = false;
         // default all fields are enclosed in double quotes
         // default separator is a comma
         try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\monitor.csv"))) {
@@ -1035,7 +1120,7 @@ public class Panel extends javax.swing.JFrame {
         }   catch (IOException ex) {
                 Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        
         }
         else
         {
@@ -1069,6 +1154,13 @@ public class Panel extends javax.swing.JFrame {
          if (response == 0)
          {
             xl.WriteRouteCSV(chooser.getSelectedFile().toString());
+            FileFound = true;
+            URL = chooser.getSelectedFile().toString();
+            list.clear();
+            String[] header = {"markIn", "markOut", "take","comment"};
+            list = new ArrayList<>();
+            list.add(header);
+            this.UpdateFile();
          }
          else
          {
@@ -1110,10 +1202,6 @@ public class Panel extends javax.swing.JFrame {
       System.out.println("No Selection ");
       }
         }
-    }//GEN-LAST:event_Bmixer1ActionPerformed
-    
-    private void Bmixer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer2ActionPerformed
-        // TODO add your handling code here:
       
     }//GEN-LAST:event_Bmixer2ActionPerformed
 
@@ -1127,6 +1215,21 @@ public class Panel extends javax.swing.JFrame {
        
         
     }//GEN-LAST:event_formKeyReleased
+
+    private void Bmixer3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer3ActionPerformed
+        // TODO add your handling code here:
+        if(!added)
+        {
+            list.removeLast();
+            this.UpdateFile();
+        }
+    }//GEN-LAST:event_Bmixer3ActionPerformed
+
+    private void Bmixer4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bmixer4ActionPerformed
+        // TODO add your handling code here:
+        SettingsTags tags = new SettingsTags(this);
+                    tags.setVisible(true);
+    }//GEN-LAST:event_Bmixer4ActionPerformed
 
     
     /**
@@ -1156,6 +1259,8 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JButton Bmixer;
     private javax.swing.JButton Bmixer1;
     private javax.swing.JButton Bmixer2;
+    private javax.swing.JButton Bmixer3;
+    private javax.swing.JButton Bmixer4;
     private javax.swing.JButton Bsettings;
     private javax.swing.JLabel EtiquetaConect;
     private javax.swing.JLabel EtiquetaStatus;
@@ -1168,6 +1273,7 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

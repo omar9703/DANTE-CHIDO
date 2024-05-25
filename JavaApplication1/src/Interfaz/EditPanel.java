@@ -15,6 +15,7 @@ public class EditPanel extends javax.swing.JFrame {
 
     Panel p;
     int index;
+    int aux;
     /**
      * Creates new form EditPanel
      */
@@ -25,8 +26,9 @@ public class EditPanel extends javax.swing.JFrame {
        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.p = p;
         this.index = i;
-        jLabel1.setText(this.p.list.get(i+1)[0]);
-        jTextArea1.setText(this.p.list.get(i+1)[3]);
+        aux = this.p.list.size();
+        jLabel1.setText(this.p.list.get(aux-(i+1))[0]);
+        jTextArea1.setText(this.p.list.get(aux-(i+1))[3]);
         
     }
 
@@ -44,6 +46,7 @@ public class EditPanel extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,12 +65,21 @@ public class EditPanel extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(204, 0, 0));
+        jButton2.setBackground(new java.awt.Color(51, 153, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Cancelar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setBackground(new java.awt.Color(255, 0, 0));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Borrar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -86,6 +98,8 @@ public class EditPanel extends javax.swing.JFrame {
                         .addGap(72, 72, 72)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(128, 128, 128)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(57, 57, 57))
         );
@@ -102,7 +116,8 @@ public class EditPanel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(98, 98, 98))
         );
 
@@ -118,15 +133,29 @@ public class EditPanel extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (jTextArea1.getText() != "")
         {
-            if (jTextArea1.getText() != this.p.list.get(index+1)[3])
+            if (jTextArea1.getText() != this.p.list.get(aux - (index+1))[3])
             {
-                this.p.list.get(index+1)[3] = jTextArea1.getText();
+                this.p.list.get(aux - (index+1))[3] = jTextArea1.getText();
                 this.p.UpdateFile();
                 JOptionPane.showMessageDialog(null, "Cambios guardados exitosamente");
                 this.dispose();
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        String[] options = { "Aceptar", "Cancelar" };
+        int selection = JOptionPane.showOptionDialog(null, "¿Estas seguro de borrar este comentario?", "¡Cuidado!", 
+                                                      0, 3, null, options, options[0]);
+        if (selection == 0)
+        {
+            this.p.list.remove(aux - (index+1));
+            this.p.UpdateFile();
+            JOptionPane.showMessageDialog(null, "Comentario borrado exitosamente");
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,6 +198,7 @@ public class EditPanel extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
