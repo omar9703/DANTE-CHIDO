@@ -136463,3 +136463,13 @@
 24/5/2024;18:25:4 - Lectura de xml escrita correctamente
 24/5/2024;18:25:4 - Lectura de xml escrita correctamente
 24/5/2024;18:25:4 - Lectura de xml escrita correctamente
+28/5/2024;13:4:33 - Iniciando aplicacion clente
+28/5/2024;13:4:33 - Lectura de xml escrita correctamente
+28/5/2024;13:4:33 - Lectura de xml escrita correctamente
+28/5/2024;13:4:34 - Lectura de xml escrita correctamente
+28/5/2024;13:4:34 - Lectura de xml escrita correctamente
+28/5/2024;13:13:37 - Iniciando aplicacion clente
+28/5/2024;13:13:37 - Lectura de xml escrita correctamente
+28/5/2024;13:13:37 - Lectura de xml escrita correctamente
+28/5/2024;13:13:38 - Lectura de xml escrita correctamente
+28/5/2024;13:13:38 - Lectura de xml escrita correctamente

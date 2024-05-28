@@ -702,7 +702,7 @@ public class Panel extends javax.swing.JFrame {
         Bmixer4.setBackground(new java.awt.Color(51, 204, 0));
         Bmixer4.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
         Bmixer4.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer4.setText("TAGS");
+        Bmixer4.setText("MARKS");
         Bmixer4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer4ActionPerformed(evt);
@@ -1104,7 +1104,7 @@ public class Panel extends javax.swing.JFrame {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
             Date date = new Date();
             String result = formatter.format(date);
-            String[] item = {result,jTextArea2.getText()}; 
+            String[] item = {result," "}; 
             //model.addRow(item);
             model.insertRow(0, item);
             
