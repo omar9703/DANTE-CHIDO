@@ -9,6 +9,12 @@ import Datos.Logs;
 import Datos.WriteXml;
 import Datos.XmlRead;
 import com.opencsv.CSVWriter;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -16,6 +22,7 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
@@ -23,6 +30,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.*;
 
 
 /**
@@ -188,6 +197,7 @@ public class SettingsTags extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(java.awt.Color.black);
@@ -779,6 +789,15 @@ public class SettingsTags extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setBackground(new java.awt.Color(0, 204, 204));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Generate txt & csv");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1000,7 +1019,8 @@ public class SettingsTags extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(14, 14, 14))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -1040,7 +1060,8 @@ public class SettingsTags extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30)
-                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -1172,7 +1193,7 @@ public class SettingsTags extends javax.swing.JFrame {
                     .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel50)
                     .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(254, 254, 254)
@@ -2381,6 +2402,189 @@ if (evt.getSource() instanceof JTextField) {
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+
+    if (p.list.size() > 1)
+    {
+        BufferedWriter writer;
+        GenerateExcel();
+        try {
+            writer = new BufferedWriter(new FileWriter(p.URL+"\\monitor.txt", false));
+            
+        for(String[] list : p.list)
+        {
+            if (list[0] != "markIn")
+            {
+                String str = list[0];
+                char ch = ';';
+                int index = 8;
+                str = str.substring(0, index) + ch + str.substring(index + 1);
+                System.out.println(str);       
+                String aux = p.User+"\t" + str + "\tV1\t" + "red\t" + "Take: " + list[2] + "\tQuality: 0 " + "Custom 1  " + "Custom 2  " + "Custom 3  " + "Custom 4  " + list[3] + "\t1";
+                System.out.println(aux);            
+                writer.write(aux);
+                writer.newLine();               
+            }
+        }
+        writer.close();
+        JOptionPane.showMessageDialog(null, "Archivos Generados Exitosamente");
+        }
+        catch(IOException ex){
+            JOptionPane.showMessageDialog(null, "Error al crear txt");
+                ex.printStackTrace();
+                }
+    }
+    else
+    {
+        JOptionPane.showMessageDialog(null, "No hay marcas disponibles");
+    }
+    
+
+
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    
+    private void GenerateExcel()
+    {
+        Workbook workbook = new XSSFWorkbook();
+
+    Sheet sheet = workbook.createSheet("test");
+
+    Row header = sheet.createRow(0);
+
+    CellStyle headerStyle = workbook.createCellStyle();
+    headerStyle.setAlignment(HorizontalAlignment.CENTER);
+    headerStyle.setVerticalAlignment(VerticalAlignment.TOP);
+    
+    XSSFFont font = ((XSSFWorkbook) workbook).createFont();
+    font.setFontName("Calibri");
+    font.setFontHeightInPoints((short) 11);
+    font.setBold(true);
+    headerStyle.setFont(font);
+
+    Cell headerCell = header.createCell(1);
+    headerCell.setCellValue("markIn");
+    headerCell.setCellStyle(headerStyle);
+
+    headerCell = header.createCell(2);
+    headerCell.setCellValue("dur");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(3);
+    headerCell.setCellValue("scene");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(4);
+    headerCell.setCellValue("comment");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(5);
+    headerCell.setCellValue("Custom 1");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(6);
+    headerCell.setCellValue("Custom 2");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(7);
+    headerCell.setCellValue("take");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(8);
+    headerCell.setCellValue("quality");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(9);
+    headerCell.setCellValue("selected");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(10);
+    headerCell.setCellValue("fps");
+    headerCell.setCellStyle(headerStyle);
+
+    CellStyle style = workbook.createCellStyle();
+    style.setWrapText(true);
+    
+    XSSFFont font2 = ((XSSFWorkbook) workbook).createFont();
+    font2.setFontName("Calibri");
+    font2.setFontHeightInPoints((short) 11);
+    font2.setBold(false);
+    
+    style.setFont(font2);
+    style.setVerticalAlignment(VerticalAlignment.DISTRIBUTED);
+    
+    
+    for(int x = p.list.size()-1; x >= 1; x--)
+    {
+        Row row = sheet.createRow(p.list.size()- (x));
+        
+        Cell cell = row.createCell(0);
+        String aux = p.list.get(x)[2];
+        int a = Integer.valueOf(aux);
+        String b = String.format("%03d", a);
+        cell.setCellValue(b);
+        cell.setCellStyle(style);
+
+        cell = row.createCell(1);
+        cell.setCellValue(p.list.get(x)[0]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(2);
+        cell.setCellValue("na");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(3);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(4);
+        cell.setCellValue(p.list.get(x)[3]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(5);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(6);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(7);
+        cell.setCellValue(p.list.get(x)[2]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(8);
+        cell.setCellValue(0);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(9);
+        cell.setCellValue("FALSE");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(10);
+        cell.setCellValue("29.97d");
+        cell.setCellStyle(style);
+    }
+    
+
+    File currDir = new File(".");
+    String path = currDir.getAbsolutePath();
+    String fileLocation = p.URL + "\\temp.xlsx";
+
+FileOutputStream outputStream;
+        try {
+            outputStream = new FileOutputStream(fileLocation);
+            workbook.write(outputStream);
+        workbook.close();
+        outputStream.close();
+        } catch (FileNotFoundException ex) {
+             JOptionPane.showMessageDialog(null, "Error al crear xlsx");
+            Logger.getLogger(SettingsTags.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+             JOptionPane.showMessageDialog(null, "Error al crear xls");
+            Logger.getLogger(SettingsTags.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -2391,6 +2595,7 @@ if (evt.getSource() instanceof JTextField) {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

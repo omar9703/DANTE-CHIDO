@@ -38,13 +38,13 @@ public class ClienteDante {
         
         try{
            Logs.Write("Iniciando aplicacion clente");
-           P = new Panel();
+           LoginPanel lp = new LoginPanel();
        //P=new Panel();
   
        //PA=new PanelLogs();
        //start=new ThreadStart(P);
        //start.start();
-   P.setVisible(true);
+   lp.setVisible(true);
        //P.setVisible(true);
         }
         catch(Exception e){

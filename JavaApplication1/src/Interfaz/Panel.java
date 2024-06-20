@@ -43,6 +43,8 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.table.DefaultTableModel;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -96,8 +98,11 @@ public class Panel extends javax.swing.JFrame {
    public Boolean FileFound;
    public String URL;
    public Boolean added = true;
-    public Panel() {
+   public String User;
+   ArrayList<String> colors ;
+    public Panel()  {
        initComponents();
+       colors = new ArrayList<>();
        this.setResizable(false);
        this.setSize(new Dimension(1366,766));
        this.setLocationRelativeTo(null);
@@ -210,8 +215,10 @@ public class Panel extends javax.swing.JFrame {
             });
             }
         }
+
+    
         String[] columnNames = {"Hora",
-                        "Descripción"};
+                        "Descripción","Color"};
         model = new DefaultTableModel(columnNames,0);
        
         jTable1.setModel(model);
@@ -222,21 +229,25 @@ public class Panel extends javax.swing.JFrame {
             list = new ArrayList<>();
             list.add(header);
 
-            try
-                 {
+         try
+            {
             CSVReader reader = new CSVReaderBuilder(new FileReader(ct.url+"\\monitor.csv")).build();
-     String [] nextLine;
-     URL = ct.url;
-     while ((nextLine = reader.readNext()) != null) {
+            String [] nextLine;
+            URL = ct.url;
+            ReadColorsFile();
+            System.out.println(colors);
+            int index = 0;
+            while ((nextLine = reader.readNext()) != null) {
         // nextLine[] is an array of values from the line
-        if (!nextLine[0].contains("markIn"))
-        {
-            String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
-            list.add(aux);
-            String[] item = {nextLine[0],nextLine[3]}; 
-            System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
-            model.insertRow(0, item);
-        }
+                if (!nextLine[0].contains("markIn"))
+                {
+                    String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
+                    list.add(aux);
+                    String[] item = {nextLine[0],nextLine[3],colors.get(index)}; 
+                    System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
+                    model.insertRow(0, item);
+                    index++;
+                }
      }
      FileFound = true;
                      }
@@ -254,10 +265,11 @@ public class Panel extends javax.swing.JFrame {
            
      this.SetTimer();
      jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-     jTable1.getColumnModel().getColumn(0).setPreferredWidth(85);
-     jTable1.getColumnModel().getColumn(1).setPreferredWidth(212);
-    }
+     jTable1.getColumnModel().getColumn(0).setPreferredWidth(75);
+     jTable1.getColumnModel().getColumn(1).setPreferredWidth(180);
+     jTable1.getColumnModel().getColumn(2).setPreferredWidth(42);
     
+    }
     public void SetTimer()
     {
         
@@ -348,7 +360,7 @@ public class Panel extends javax.swing.JFrame {
             String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
             
             list.add(aux);
-            String[] item = {nextLine[0],nextLine[3]}; 
+            String[] item = {nextLine[0],nextLine[3],""}; 
             System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
             model.insertRow(0, item);
         }
@@ -399,25 +411,54 @@ public class Panel extends javax.swing.JFrame {
             writer.writeAll(list);
             System.out.println(list);
               int rows = model.getRowCount(); 
-    for(int i = rows - 1; i >=0; i--)
-    {
-        model.removeRow(i); 
-    }
+            for(int i = rows - 1; i >=0; i--)
+            {
+                model.removeRow(i); 
+            }
+            colors.set(list.size() - 2,jComboBox1.getSelectedItem().toString() );
+            WriteColorsFile();
             for(int x=1;x<list.size();x++)
             {
-                String[] item = {list.get(x)[0],list.get(x)[3]};
+                String[] item = {list.get(x)[0],list.get(x)[3],colors.get(x - 1)};
                 model.insertRow(0, item);
-            }
-             
-            writer.close();
-            
-     
+            }           
+            writer.close(); 
         }catch (IOException ex) {
                 Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
-            }
-           
-     
-        
+            }      
+    }
+    
+    public void WriteColorsFile()
+    {
+        BufferedWriter writer;
+        try {
+            writer = new BufferedWriter(new FileWriter(URL+"\\colors.txt", false));
+            
+        for(String list : colors)
+        {      
+                System.out.println(list);            
+                writer.write(list);
+                writer.newLine();               
+        }
+        writer.close();
+        }
+        catch(IOException ex){
+            JOptionPane.showMessageDialog(null, "Error al crear txt");
+                ex.printStackTrace();
+                }
+    }
+    
+    public void ReadColorsFile() throws IOException
+    {
+        try (BufferedReader br = new BufferedReader(new FileReader(URL+"\\colors.txt"))) {
+        String line;
+        while ((line = br.readLine()) != null) {
+           // process the line.
+           System.out.println(line);
+           colors.add(line);
+        }
+        br.close();
+        }
     }
     
     public void LoadImageProject(Configuracion C){
@@ -603,6 +644,7 @@ public class Panel extends javax.swing.JFrame {
         segundo = new javax.swing.JButton();
         Bmixer4 = new javax.swing.JButton();
         cuarto = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
         Bmixer2 = new javax.swing.JButton();
         Bmixer3 = new javax.swing.JButton();
         Bmixer1 = new javax.swing.JButton();
@@ -722,6 +764,10 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(cuarto);
         cuarto.setBounds(0, 390, 84, 70);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cyan", "None", "Red", "Green", "Blue", "Magenta", "Yellow", "Black", "White", "Default", "Exciting Purple" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(290, 120, 90, 22);
 
         Bmixer2.setBackground(new java.awt.Color(0, 204, 0));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
@@ -1104,7 +1150,9 @@ public class Panel extends javax.swing.JFrame {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
             Date date = new Date();
             String result = formatter.format(date);
-            String[] item = {result," "}; 
+            String[] item = {result," ",jComboBox1.getSelectedItem().toString()}; 
+            colors.add(jComboBox1.getSelectedItem().toString());
+            WriteColorsFile();
             //model.addRow(item);
             model.insertRow(0, item);
             
@@ -1180,7 +1228,7 @@ public class Panel extends javax.swing.JFrame {
             String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
             
             list.add(aux);
-            String[] item = {nextLine[0],nextLine[3]}; 
+            String[] item = {nextLine[0],nextLine[3],""}; 
             System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
             model.addRow(item);
         }
@@ -1269,6 +1317,7 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel alarma;
     private javax.swing.JButton cLEAR;
     private javax.swing.JButton cuarto;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
