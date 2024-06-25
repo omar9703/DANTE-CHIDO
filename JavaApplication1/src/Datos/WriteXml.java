@@ -147,15 +147,15 @@ public class WriteXml {
                 canal3.appendChild(Valuecanal3);
                 Asio.appendChild(canal3);
                 
-                Element canal4=document.createElement("SHORTCUTADD");
+                Element canal4=document.createElement("SHORTCUTNADD");
             Text Valuecanal4=document.createTextNode(ct.ShortcutAdd);
                 canal4.appendChild(Valuecanal4);
                 Asio.appendChild(canal4);
                 
-                Element canal5=document.createElement("SHORTCUTCANCEL");
+                Element canal5=document.createElement("SHORTCUTNCANCEL");
             Text Valuecanal5=document.createTextNode(ct.ShortcutCancel);
                 canal5.appendChild(Valuecanal5);
-                Asio.appendChild(canal3);
+                Asio.appendChild(canal5);
                 
             for(int i=0;i<ct.getNames().size();i++){
                 canal=document.createElement("COMENTARIO");

@@ -181,9 +181,9 @@ public class XmlRead {
             configT.nameFiles = firstNameList.item(0).getTextContent();
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNEW");
             configT.ShortcutNew = firstNameList.item(0).getTextContent();
-            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTADD");
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNADD");
             configT.ShortcutAdd = firstNameList.item(0).getTextContent();
-            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTCANCEL");
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNCANCEL");
             configT.ShortcutCancel = firstNameList.item(0).getTextContent();
            System.out.println(firstNameList.getLength() +" "+ configT.getNames().size()+" "+configT.getCommands().size());
         }

@@ -196,6 +196,8 @@ public class Panel extends javax.swing.JFrame {
         LoadImageProject(Conf);
         ConfigTags ct = Xread.ReadTagsConfig();
         shortNew = ct.ShortcutNew;
+        this.shortAdd=ct.ShortcutAdd;
+        this.shortCancel=ct.ShortcutCancel;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
@@ -212,6 +214,7 @@ public class Panel extends javax.swing.JFrame {
             });
             }
         }
+
          if (!" ".equals(shortNew))
         {
             rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortNew), "newButton");

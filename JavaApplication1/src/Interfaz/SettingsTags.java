@@ -85,6 +85,14 @@ public class SettingsTags extends javax.swing.JFrame {
        {
            jTextField52.setText(ct.ShortcutNew);
        }
+       if (!" ".equals(ct.ShortcutAdd))
+       {
+           jTextField51.setText(ct.ShortcutAdd);
+       }
+       if (!" ".equals(ct.ShortcutCancel))
+       {
+           jTextField53.setText(ct.ShortcutCancel);
+       }
                                                                                     
                                                                                                
     }

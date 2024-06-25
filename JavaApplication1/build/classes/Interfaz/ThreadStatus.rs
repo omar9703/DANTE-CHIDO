@@ -1,1 +1,0 @@
-Negocio.ThreadStatus
