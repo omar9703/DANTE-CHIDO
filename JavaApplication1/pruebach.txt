@@ -1,0 +1,5 @@
+UHJIKHJK	19:18:09;748	V1	Green	Take: 1	Quality: 0 Custom 1  Custom 2  Custom 3  Custom 4  dfgfd dfgd	1
+UHJIKHJK	21:34:37;766	V1	Cyan	Take: 2	Quality: 0 Custom 1  Custom 2  Custom 3  Custom 4  SFSDFDSS	1
+UHJIKHJK	21:35:46;432	V1	Cyan	Take: 3	Quality: 0 Custom 1  Custom 2  Custom 3  Custom 4   	1
+UHJIKHJK	21:35:47;727	V1	Cyan	Take: 4	Quality: 0 Custom 1  Custom 2  Custom 3  Custom 4   	1
+UHJIKHJK	21:40:22;742	V1	Cyan	Take: 5	Quality: 0 Custom 1  Custom 2  Custom 3  Custom 4  SDFSDFS	1

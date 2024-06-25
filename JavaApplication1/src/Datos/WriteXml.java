@@ -111,11 +111,12 @@ public class WriteXml {
      
     }
     
-    public boolean WriteRouteCSV(String url)
+    public boolean WriteRouteCSV(String url,String name)
     {
            XmlRead xr = new XmlRead();
            ConfigTags ct = xr.ReadTagsConfig();
            ct.url = url;
+           ct.nameFiles = name;
            return WriteTagsConfig(ct);
             
     }
@@ -130,10 +131,32 @@ public class WriteXml {
             Element raiz = document.getDocumentElement();
             
         Element Asio=document.createElement("CONFIGURACION");
+        
         Element canal=document.createElement("FOLDERROUTER");
             Text Valuecanal=document.createTextNode(ct.url);
                 canal.appendChild(Valuecanal);
                 Asio.appendChild(canal);
+                
+                Element canal2=document.createElement("FILENAME");
+            Text Valuecanal2=document.createTextNode(ct.nameFiles);
+                canal2.appendChild(Valuecanal2);
+                Asio.appendChild(canal2);
+                
+                Element canal3=document.createElement("SHORTCUTNEW");
+            Text Valuecanal3=document.createTextNode(ct.ShortcutNew);
+                canal3.appendChild(Valuecanal3);
+                Asio.appendChild(canal3);
+                
+                Element canal4=document.createElement("SHORTCUTADD");
+            Text Valuecanal4=document.createTextNode(ct.ShortcutAdd);
+                canal4.appendChild(Valuecanal4);
+                Asio.appendChild(canal4);
+                
+                Element canal5=document.createElement("SHORTCUTCANCEL");
+            Text Valuecanal5=document.createTextNode(ct.ShortcutCancel);
+                canal5.appendChild(Valuecanal5);
+                Asio.appendChild(canal3);
+                
             for(int i=0;i<ct.getNames().size();i++){
                 canal=document.createElement("COMENTARIO");
                 canal.setAttribute("id", ct.getNames().get(i));

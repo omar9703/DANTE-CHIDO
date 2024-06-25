@@ -45,7 +45,9 @@ import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -54,11 +56,21 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFFont;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /**
  *
  * @author leone
@@ -68,6 +80,9 @@ public class Panel extends javax.swing.JFrame {
     /**
      * Creates new form Panel
      */
+    public String shortNew = " ";
+    public String shortAdd = " ";
+    public String shortCancel = " ";
      private final SimpleDateFormat sdf  = new SimpleDateFormat("HH:mm");
     private int   currentSecond;
     private Calendar calendar;
@@ -99,6 +114,7 @@ public class Panel extends javax.swing.JFrame {
    public String URL;
    public Boolean added = true;
    public String User;
+   public String fileName;
    ArrayList<String> colors ;
     public Panel()  {
        initComponents();
@@ -135,26 +151,7 @@ public class Panel extends javax.swing.JFrame {
                     tags.setVisible(true);
                 }
             });
-         KeyStroke ks1 = KeyStroke.getKeyStroke("control A");       
-        rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(ks1, "myAction2");
-         rootPane.getActionMap().put("myAction2", new AbstractAction() {
-             
-                public void actionPerformed(ActionEvent e) {
-                    chooser = new JFileChooser(); 
-              chooser.setDialogTitle(choosertitle);
-    chooser.setCurrentDirectory(new java.io.File("."));
 
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("csv", "CSV");
-        chooser.addChoosableFileFilter(filter);
-    if (chooser.showOpenDialog(p) == JFileChooser.APPROVE_OPTION) { 
-      System.out.println("getCurrentDirectory(): " 
-         +  chooser.getCurrentDirectory());
-      System.out.println("getSelectedFile() : " 
-         +  chooser.getSelectedFile());
-         p.SetNewProject(chooser.getCurrentDirectory().toString());
-    }
-                }
-            });
        //fecha
        df=new SimpleDateFormat("yyyy/dd/MM HH:mm:ss");
        today=Calendar.getInstance().getTime();
@@ -198,7 +195,7 @@ public class Panel extends javax.swing.JFrame {
       
         LoadImageProject(Conf);
         ConfigTags ct = Xread.ReadTagsConfig();
-        
+        shortNew = ct.ShortcutNew;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
@@ -209,11 +206,44 @@ public class Panel extends javax.swing.JFrame {
             jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
             jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
-                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index)+ " ");
+                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index));
                     
                 }
             });
             }
+        }
+         if (!" ".equals(shortNew))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortNew), "newButton");
+            rootPane.getActionMap().put("newButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer2ActionPerformed(e);
+                    
+                }
+            });
+        }
+         if (!" ".equals(shortAdd))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortAdd), "addButton");
+            rootPane.getActionMap().put("addButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer1ActionPerformed(e);
+                    
+                }
+            });
+        }
+        if (!" ".equals(shortCancel))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortCancel), "canButton");
+            rootPane.getActionMap().put("canButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer3ActionPerformed(e);
+                    
+                }
+            });
         }
 
     
@@ -228,12 +258,13 @@ public class Panel extends javax.swing.JFrame {
         String[] header = {"markIn", "markOut", "take","comment"};
             list = new ArrayList<>();
             list.add(header);
-
+            this.fileName = ct.nameFiles;
          try
             {
-            CSVReader reader = new CSVReaderBuilder(new FileReader(ct.url+"\\monitor.csv")).build();
+            CSVReader reader = new CSVReaderBuilder(new FileReader(ct.url+"\\"+this.fileName+".csv")).build();
             String [] nextLine;
             URL = ct.url;
+            
             ReadColorsFile();
             System.out.println(colors);
             int index = 0;
@@ -312,13 +343,26 @@ public class Panel extends javax.swing.JFrame {
         
         for(int x = 0; x<comandos.size();x++)
         {
-            if (comandos.get(x) != " ")
+            if (!" ".equals(comandos.get(x)))
             {
                 jTextArea2.getInputMap().remove(KeyStroke.getKeyStroke(comandos.get(x)));
             }
         }
-        ConfigTags ct = Xread.ReadTagsConfig();
         
+        if (!" ".equals(shortNew))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(shortNew));
+        }
+        if (!" ".equals(shortAdd))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(shortAdd));
+        }
+        if (!" ".equals(shortCancel))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(shortCancel));
+        }
+        ConfigTags ct = Xread.ReadTagsConfig();
+        shortNew = ct.ShortcutNew;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
@@ -329,30 +373,72 @@ public class Panel extends javax.swing.JFrame {
             jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
             jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
-                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index)+ " ");
+                    jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index));
                     
                 }
             });
             }
         }
+        if (!" ".equals(shortNew))
+        {
+            final Panel p = this;
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortNew), "newButton");
+            rootPane.getActionMap().put("newButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer2ActionPerformed(e);
+                    
+                }
+            });
+        }
+        if (!" ".equals(shortAdd))
+        {
+            final Panel p = this;
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortAdd), "addButton");
+            rootPane.getActionMap().put("addButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer1ActionPerformed(e);
+                    
+                }
+            });
+        }
+        if (!" ".equals(shortCancel))
+        {
+            final Panel p = this;
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortCancel), "canButton");
+            rootPane.getActionMap().put("canButton", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    p.Bmixer3ActionPerformed(e);
+                    
+                }
+            });
+        }
+        
     }
-    public void SetNewProject(String url)
+    public void SetNewProject(String url, String nombre)
     {
          WriteXml xl = new WriteXml();
-   int rows = model.getRowCount(); 
-    for(int i = rows - 1; i >=0; i--)
-    {
-        model.removeRow(i); 
-    }
-            xl.WriteRouteCSV(url);
-             try
+        int rows = model.getRowCount(); 
+        for(int i = rows - 1; i >=0; i--)
+        {
+            model.removeRow(i); 
+        }
+        xl.WriteRouteCSV(url,nombre);
+        URL = url;
+        this.fileName = nombre;
+        try
                  {
-            CSVReader reader = new CSVReaderBuilder(new FileReader(url+"\\monitor.csv")).build();
-     String [] nextLine;
-     list.clear();
-     String[] header = {"markIn", "markOut", "take","comment"};
+                CSVReader reader = new CSVReaderBuilder(new FileReader(url+"\\"+nombre+".csv")).build();
+                String [] nextLine;
+                list.clear();
+                colors.clear();
+                ReadColorsFile();
+                String[] header = {"markIn", "markOut", "take","comment"};
             list = new ArrayList<>();
             list.add(header);
+            int index = 0;
      while ((nextLine = reader.readNext()) != null) {
         // nextLine[] is an array of values from the line
         if (!nextLine[0].contains("markIn"))
@@ -360,9 +446,10 @@ public class Panel extends javax.swing.JFrame {
             String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
             
             list.add(aux);
-            String[] item = {nextLine[0],nextLine[3],""}; 
+            String[] item = {nextLine[0],nextLine[3],colors.get(index)}; 
             System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
             model.insertRow(0, item);
+            index++;
         }
      }
      FileFound = true;
@@ -377,9 +464,10 @@ public class Panel extends javax.swing.JFrame {
                              }
          
     }
-    public void ResetFolderFile(String url )
+    public void ResetFolderFile(String url, String name )
     {
         this.URL = url;
+        this.fileName = name;
         int rows = model.getRowCount(); 
     for(int i = rows - 1; i >=0; i--)
     {
@@ -391,7 +479,7 @@ public class Panel extends javax.swing.JFrame {
             list.add(header);
     try
                  {
-            CSVReader reader = new CSVReaderBuilder(new FileReader(URL+"\\monitor.csv")).build();
+            CSVReader reader = new CSVReaderBuilder(new FileReader(URL+"\\"+this.fileName+".csv")).build();
             FileFound = true;
                  }
      catch(IOException I)
@@ -406,7 +494,7 @@ public class Panel extends javax.swing.JFrame {
         // default all fields are enclosed in double quotes
         // default separator is a comma
         try {
-            CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\monitor.csv"));
+            CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\"+this.fileName+".csv"));
         
             writer.writeAll(list);
             System.out.println(list);
@@ -415,7 +503,6 @@ public class Panel extends javax.swing.JFrame {
             {
                 model.removeRow(i); 
             }
-            colors.set(list.size() - 2,jComboBox1.getSelectedItem().toString() );
             WriteColorsFile();
             for(int x=1;x<list.size();x++)
             {
@@ -440,12 +527,193 @@ public class Panel extends javax.swing.JFrame {
                 writer.write(list);
                 writer.newLine();               
         }
+        WritetxtFile();
         writer.close();
         }
         catch(IOException ex){
             JOptionPane.showMessageDialog(null, "Error al crear txt");
                 ex.printStackTrace();
                 }
+    }
+    
+    public void WritetxtFile()
+    {
+        if (list.size() > 1)
+    {
+        GenerateExcel();
+        BufferedWriter writer;
+        try {
+            writer = new BufferedWriter(new FileWriter(URL+"\\"+this.fileName+".txt", false));
+            int index2 = 0;
+        for(String[] list : list)
+        {
+            if (list[0] != "markIn")
+            {
+                String str = list[0];
+                char ch = ';';
+                int index = 8;
+                str = str.substring(0, index) + ch + str.substring(index + 1);
+                System.out.println(str);       
+                String aux = User+"\t" + str + "\tV1\t" + colors.get(index2) +"\t" + "Take: " + list[2] + "\tQuality: 0 " + "Custom 1  " + "Custom 2  " + "Custom 3  " + "Custom 4  " + list[3] + "\t1";
+                System.out.println(aux);            
+                writer.write(aux);
+                writer.newLine();  
+                index2++;
+            }
+        }
+        writer.close();
+       
+        }
+        catch(IOException ex){
+            JOptionPane.showMessageDialog(null, "Error al crear txt");
+                ex.printStackTrace();
+                }
+    }
+    else
+    {
+        
+    }
+    }
+    private void GenerateExcel()
+    {
+        Workbook workbook = new XSSFWorkbook();
+
+    Sheet sheet = workbook.createSheet("test");
+
+    Row header = sheet.createRow(0);
+
+    CellStyle headerStyle = workbook.createCellStyle();
+    headerStyle.setAlignment(HorizontalAlignment.CENTER);
+    headerStyle.setVerticalAlignment(VerticalAlignment.TOP);
+    
+    XSSFFont font = ((XSSFWorkbook) workbook).createFont();
+    font.setFontName("Calibri");
+    font.setFontHeightInPoints((short) 11);
+    font.setBold(true);
+    headerStyle.setFont(font);
+
+    Cell headerCell = header.createCell(1);
+    headerCell.setCellValue("markIn");
+    headerCell.setCellStyle(headerStyle);
+
+    headerCell = header.createCell(2);
+    headerCell.setCellValue("dur");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(3);
+    headerCell.setCellValue("scene");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(4);
+    headerCell.setCellValue("comment");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(5);
+    headerCell.setCellValue("Custom 1");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(6);
+    headerCell.setCellValue("Custom 2");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(7);
+    headerCell.setCellValue("take");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(8);
+    headerCell.setCellValue("quality");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(9);
+    headerCell.setCellValue("selected");
+    headerCell.setCellStyle(headerStyle);
+    
+    headerCell = header.createCell(10);
+    headerCell.setCellValue("fps");
+    headerCell.setCellStyle(headerStyle);
+
+    CellStyle style = workbook.createCellStyle();
+    style.setWrapText(true);
+    
+    XSSFFont font2 = ((XSSFWorkbook) workbook).createFont();
+    font2.setFontName("Calibri");
+    font2.setFontHeightInPoints((short) 11);
+    font2.setBold(false);
+    
+    style.setFont(font2);
+    style.setVerticalAlignment(VerticalAlignment.DISTRIBUTED);
+    
+    
+    for(int x = list.size()-1; x >= 1; x--)
+    {
+        Row row = sheet.createRow(list.size()- (x));
+        
+        Cell cell = row.createCell(0);
+        String aux = list.get(x)[2];
+        int a = Integer.valueOf(aux);
+        String b = String.format("%03d", a);
+        cell.setCellValue(b);
+        cell.setCellStyle(style);
+
+        cell = row.createCell(1);
+        cell.setCellValue(list.get(x)[0]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(2);
+        cell.setCellValue("na");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(3);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(4);
+        cell.setCellValue(list.get(x)[3]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(5);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(6);
+        cell.setCellValue("");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(7);
+        cell.setCellValue(list.get(x)[2]);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(8);
+        cell.setCellValue(0);
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(9);
+        cell.setCellValue("FALSE");
+        cell.setCellStyle(style);
+        
+        cell = row.createCell(10);
+        cell.setCellValue("29.97d");
+        cell.setCellStyle(style);
+    }
+    
+
+    File currDir = new File(".");
+    String path = currDir.getAbsolutePath();
+    String fileLocation = URL+"\\"+this.fileName+".xlsx";
+
+FileOutputStream outputStream;
+        try {
+            outputStream = new FileOutputStream(fileLocation);
+            workbook.write(outputStream);
+        workbook.close();
+        outputStream.close();
+        } catch (FileNotFoundException ex) {
+             JOptionPane.showMessageDialog(null, "Error al crear xlsx");
+            Logger.getLogger(SettingsTags.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+             JOptionPane.showMessageDialog(null, "Error al crear xls");
+            Logger.getLogger(SettingsTags.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     public void ReadColorsFile() throws IOException
@@ -1163,7 +1431,7 @@ public class Panel extends javax.swing.JFrame {
             this.added = false;
         // default all fields are enclosed in double quotes
         // default separator is a comma
-        try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\monitor.csv"))) {
+        try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\"+this.fileName+".csv"))) {
             writer.writeAll(list);
         }   catch (IOException ex) {
                 Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
@@ -1182,9 +1450,6 @@ public class Panel extends javax.swing.JFrame {
     if (response == 0)
     {   
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-    //
-    // disable the "All files" option.
-    //
         chooser.setAcceptAllFileFilterUsed(false);
     //    
     }
@@ -1194,46 +1459,81 @@ public class Panel extends javax.swing.JFrame {
         chooser.addChoosableFileFilter(filter);
     }
     if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) { 
-      System.out.println("getCurrentDirectory(): " 
+        System.out.println("getCurrentDirectory(): " 
          +  chooser.getCurrentDirectory());
-      System.out.println("getSelectedFile() : " 
+        System.out.println("getSelectedFile() : " 
          +  chooser.getSelectedFile());
          WriteXml xl = new WriteXml();
+         String resp = "Ingrese el nombre del proyecto";
+      boolean auxb = false;
+      String auxn = "";
          if (response == 0)
          {
-            xl.WriteRouteCSV(chooser.getSelectedFile().toString());
+             
+             while (!auxb)
+             {
+                    String input = JOptionPane.showInputDialog(null, resp);                  
+            if(input == null || (input != null && ("".equals(input))))   
+            {
+                auxb = false;
+                JOptionPane.showMessageDialog(null, "Ingrese un nombre!");
+            }
+            else
+            {
+                auxb = true;
+                auxn = input;
+            }
+             }
+        
+            xl.WriteRouteCSV(chooser.getSelectedFile().toString(),auxn);
             FileFound = true;
             URL = chooser.getSelectedFile().toString();
             list.clear();
             String[] header = {"markIn", "markOut", "take","comment"};
             list = new ArrayList<>();
             list.add(header);
+            this.fileName = auxn;
             this.UpdateFile();
          }
+
          else
          {
-            xl.WriteRouteCSV(chooser.getCurrentDirectory().toString());
+            
+            String[] splitted = chooser.getSelectedFile().toString().split( Pattern.quote("\\"));
+        
+        if (splitted.length > 0)
+        {
+            
+            String name = splitted[splitted.length - 1];
+            String auxx = name.substring(0, name.length()-4);
+            System.out.println(name + " " + auxx);
+            this.URL = chooser.getCurrentDirectory().toString();
+            this.fileName = auxx;
+        xl.WriteRouteCSV(chooser.getCurrentDirectory().toString(),auxx);
              try
                  {
-            CSVReader reader = new CSVReaderBuilder(new FileReader(chooser.getCurrentDirectory().toString()+"\\monitor.csv")).build();
-     String [] nextLine;
-     list.clear();
-     String[] header = {"markIn", "markOut", "take","comment"};
-            list = new ArrayList<>();
-            list.add(header);
-     while ((nextLine = reader.readNext()) != null) {
-        // nextLine[] is an array of values from the line
-        if (!nextLine[0].contains("markIn"))
-        {
-            String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
-            
-            list.add(aux);
-            String[] item = {nextLine[0],nextLine[3],""}; 
-            System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
-            model.addRow(item);
-        }
-     }
-     FileFound = true;
+            CSVReader reader = new CSVReaderBuilder(new FileReader(chooser.getCurrentDirectory().toString()+"\\"+auxx+".csv")).build();
+            String [] nextLine;
+            list.clear();
+            ReadColorsFile();
+            String[] header = {"markIn", "markOut", "take","comment"};
+                   list = new ArrayList<>();
+                   list.add(header);
+                   int index = 0;
+            while ((nextLine = reader.readNext()) != null) {
+                // nextLine[] is an array of values from the line
+                if (!nextLine[0].contains("markIn"))
+                {
+                    String[] aux = {nextLine[0], nextLine[1], nextLine[2],nextLine[3]};
+
+                    list.add(aux);
+                    String[] item = {nextLine[0],nextLine[3],colors.get(index)}; 
+                    System.out.println(nextLine[0] +" "+ nextLine[1] +" "+ nextLine[2] +" "+ nextLine[3]);
+                    model.addRow(item);
+                    index = 0;
+                }
+            }
+            FileFound = true;
                      }
             catch(IOException I)
                        {
@@ -1244,7 +1544,7 @@ public class Panel extends javax.swing.JFrame {
                              FileFound = false;    
                              }
          }
-                
+}  
       }
     else {
       System.out.println("No Selection ");

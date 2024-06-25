@@ -174,9 +174,17 @@ public class XmlRead {
              }
              configT.setNames(ListNames);
              configT.setCommands(ListCommands); 
-             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("FOLDERROUTER"); 
+             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("FOLDERROUTER");        
             System.out.println(firstNameList.getLength());
             configT.url = firstNameList.item(0).getTextContent();
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("FILENAME"); 
+            configT.nameFiles = firstNameList.item(0).getTextContent();
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNEW");
+            configT.ShortcutNew = firstNameList.item(0).getTextContent();
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTADD");
+            configT.ShortcutAdd = firstNameList.item(0).getTextContent();
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTCANCEL");
+            configT.ShortcutCancel = firstNameList.item(0).getTextContent();
            System.out.println(firstNameList.getLength() +" "+ configT.getNames().size()+" "+configT.getCommands().size());
         }
         catch (ParserConfigurationException ex) {

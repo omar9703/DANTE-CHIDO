@@ -15,6 +15,10 @@ public class ConfigTags {
      private ArrayList<String> namesComments;
       private ArrayList<String> command;
       public String url;
+      public String nameFiles;
+      public String ShortcutNew;
+      public String ShortcutAdd;
+      public String ShortcutCancel;
       public void setNames(ArrayList<String> names)
       {
           this.namesComments =  names;

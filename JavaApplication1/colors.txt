@@ -1,2 +1,5 @@
 Green
-Magenta
+Cyan
+Cyan
+Cyan
+Cyan
