@@ -5,8 +5,7 @@ Cyan
 Cyan
 Cyan
 Cyan
-Cyan
-Cyan
-Cyan
-Cyan
-Cyan
+Black
+Magenta
+Yellow
+Exciting Purple
