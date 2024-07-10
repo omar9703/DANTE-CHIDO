@@ -19,6 +19,12 @@ public class ConfigTags {
       public String ShortcutNew;
       public String ShortcutAdd;
       public String ShortcutCancel;
+      public String ShortcutColor1;
+      public String ShortcutColor2;
+      public String ShortcutColor3; 
+      public String Color1;
+      public String Color2;
+      public String Color3;
       public void setNames(ArrayList<String> names)
       {
           this.namesComments =  names;

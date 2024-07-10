@@ -30,7 +30,7 @@ public class EditPanel extends javax.swing.JFrame {
         jLabel1.setText(this.p.list.get(aux-(i+1))[0]);
         jTextArea1.setText(this.p.list.get(aux-(i+1))[3]);
         
-        jComboBox1.setSelectedItem(p.colors.get(p.colors.size()-(i+2)));
+        jComboBox1.setSelectedItem(p.colors.get(p.colors.size()-(i+1)));
     }
 
     /**
@@ -85,7 +85,7 @@ public class EditPanel extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cyan", "None", "Red", "Green", "Blue", "Magenta", "Yellow", "Black", "White", "Default", "Exciting Purple" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cyan", "None", "Red", "Green", "Blue", "Magenta", "Yellow", "Black", "White", "Default" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,7 +145,7 @@ public class EditPanel extends javax.swing.JFrame {
             if (jTextArea1.getText() != this.p.list.get(aux - (index+1))[3])
             {
                 this.p.list.get(aux - (index+1))[3] = jTextArea1.getText();
-                this.p.colors.set(p.colors.size() - (index+2), jComboBox1.getSelectedItem().toString());
+                this.p.colors.set(p.colors.size() - (index+1), jComboBox1.getSelectedItem().toString());
                 System.out.println(jComboBox1.getSelectedItem().toString()+this.p.colors);
                 this.p.UpdateFile();
                 JOptionPane.showMessageDialog(null, "Cambios guardados exitosamente");

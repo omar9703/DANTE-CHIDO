@@ -56,6 +56,12 @@ static Panel P;
             }
         });
 
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
         label2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         label2.setForeground(new java.awt.Color(255, 255, 255));
         label2.setText("USUARIO");
@@ -126,6 +132,31 @@ static Panel P;
           Logs.Write("error en archivo de configuracion");
        }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+        try{
+            if (!"".equals(jTextField2.getText()))
+            {
+                P=new Panel();
+  
+                PA=new PanelLogs();
+                start=new ThreadStart(P);
+                start.start();
+                P.User = jTextField2.getText();
+                P.setVisible(true);
+                this.dispose();
+            }
+            else
+            {
+                
+            }
+        }
+        catch(Exception e){
+          Logs.Write("error en archivo de configuracion");
+       }
+    
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments

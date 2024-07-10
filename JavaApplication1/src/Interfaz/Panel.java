@@ -81,6 +81,9 @@ public class Panel extends javax.swing.JFrame {
      * Creates new form Panel
      */
     public String shortNew = " ";
+    public String ShortColor1 = " ";
+     public String ShortColor2 = " ";
+      public String ShortColor3 = " ";
     public String shortAdd = " ";
     public String shortCancel = " ";
      private final SimpleDateFormat sdf  = new SimpleDateFormat("HH:mm");
@@ -198,6 +201,9 @@ public class Panel extends javax.swing.JFrame {
         shortNew = ct.ShortcutNew;
         this.shortAdd=ct.ShortcutAdd;
         this.shortCancel=ct.ShortcutCancel;
+        this.ShortColor1 = ct.ShortcutColor1;
+        this.ShortColor2 = ct.ShortcutColor2;
+        this.ShortColor3 = ct.ShortcutColor3;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
@@ -244,6 +250,42 @@ public class Panel extends javax.swing.JFrame {
             {
                 public void actionPerformed(ActionEvent e) {
                     p.Bmixer3ActionPerformed(e);
+                    
+                }
+            });
+        }
+        if (!" ".equals(ShortColor1))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor1), "ButtonC1");
+            rootPane.getActionMap().put("ButtonC1", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color1);
+                    p.jComboBox1.setSelectedItem(ct.Color1);
+                    
+                }
+            });
+        }
+        if (!" ".equals(ShortColor2))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor2), "ButtonC2");
+            rootPane.getActionMap().put("ButtonC2", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color2);
+                    p.jComboBox1.setSelectedItem(ct.Color2);
+                    
+                }
+            });
+        }
+        if (!" ".equals(ShortColor3))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor3), "ButtonC3");
+            rootPane.getActionMap().put("ButtonC3", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color1);
+                    p.jComboBox1.setSelectedItem(ct.Color3);
                     
                 }
             });
@@ -331,6 +373,7 @@ public class Panel extends javax.swing.JFrame {
             // do some actions here, for example
             // print first column value from selected row
             int viewRow = jTable1.getSelectedRow();
+            System.out.println(viewRow);
             if (!event.getValueIsAdjusting() && viewRow != -1) {
             
             System.out.println(jTable1.getValueAt(jTable1.getSelectedRow(), 0).toString());
@@ -364,8 +407,25 @@ public class Panel extends javax.swing.JFrame {
         {
             rootPane.getInputMap().remove(KeyStroke.getKeyStroke(shortCancel));
         }
+        if (!" ".equals(ShortColor1))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor1));
+        }
+        if (!" ".equals(ShortColor2))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor2));
+        }
+        if (!" ".equals(ShortColor3))
+        {
+            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor3));
+        }
         ConfigTags ct = Xread.ReadTagsConfig();
         shortNew = ct.ShortcutNew;
+        shortAdd = ct.ShortcutAdd;
+        shortCancel = ct.ShortcutCancel;
+         this.ShortColor1 = ct.ShortcutColor1;
+        this.ShortColor2 = ct.ShortcutColor2;
+        this.ShortColor3 = ct.ShortcutColor3;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
@@ -414,6 +474,43 @@ public class Panel extends javax.swing.JFrame {
             {
                 public void actionPerformed(ActionEvent e) {
                     p.Bmixer3ActionPerformed(e);
+                    
+                }
+            });
+        }
+        final Panel p = this;
+        if (!" ".equals(ShortColor1))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor1), "ButtonC1");
+            rootPane.getActionMap().put("ButtonC1", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color1);
+                    p.jComboBox1.setSelectedItem(ct.Color1);
+                    
+                }
+            });
+        }
+        if (!" ".equals(ShortColor2))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor2), "ButtonC2");
+            rootPane.getActionMap().put("ButtonC2", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color2);
+                    p.jComboBox1.setSelectedItem(ct.Color2);
+                    
+                }
+            });
+        }
+        if (!" ".equals(ShortColor3))
+        {
+            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor3), "ButtonC3");
+            rootPane.getActionMap().put("ButtonC3", new AbstractAction()
+            {
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(ct.Color1);
+                    p.jComboBox1.setSelectedItem(ct.Color3);
                     
                 }
             });
@@ -477,6 +574,8 @@ public class Panel extends javax.swing.JFrame {
         model.removeRow(i); 
     }
     list.clear();
+    colors.clear();
+    WriteColorsFile();
     String[] header = {"markIn", "markOut", "take","comment"};
             list = new ArrayList<>();
             list.add(header);
@@ -557,10 +656,9 @@ public class Panel extends javax.swing.JFrame {
                 int index = 8;
                 str = str.substring(0, index) + ch + str.substring(index + 1);
                 System.out.println(str);       
-                String aux = User+"\t" + str + "\tV1\t" + colors.get(index2) +"\t" + "Take: " + list[2] + "\tQuality: 0 " + "Custom 1  " + "Custom 2  " + "Custom 3  " + "Custom 4  " + list[3] + "\t1";
+                String aux = User+"\t" + str + "\tV1\t" + colors.get(index2) +"\t" + "Take: " + list[2] + " Quality: 0 " + "LOGGER " + list[3] + "\t1";
                 System.out.println(aux);            
-                writer.write(aux);
-                writer.newLine();  
+                writer.write(aux+"\n");
                 index2++;
             }
         }
@@ -1036,27 +1134,33 @@ FileOutputStream outputStream;
         getContentPane().add(cuarto);
         cuarto.setBounds(0, 390, 84, 70);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cyan", "None", "Red", "Green", "Blue", "Magenta", "Yellow", "Black", "White", "Default", "Exciting Purple" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cyan", "None", "Red", "Green", "Blue", "Magenta", "Yellow", "Black", "White", "Default" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(290, 120, 90, 22);
 
         Bmixer2.setBackground(new java.awt.Color(0, 204, 0));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer2.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer2.setText("Nuevo");
+        Bmixer2.setText("Nueva marca");
+        Bmixer2.setMargin(new java.awt.Insets(2, 2, 3, 2));
         Bmixer2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer2ActionPerformed(evt);
             }
         });
         getContentPane().add(Bmixer2);
-        Bmixer2.setBounds(90, 145, 80, 40);
+        Bmixer2.setBounds(90, 145, 100, 40);
 
         Bmixer3.setBackground(new java.awt.Color(231, 25, 76));
-        Bmixer3.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
+        Bmixer3.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 12)); // NOI18N
         Bmixer3.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer3.setText("Cancelar");
-        Bmixer3.setMargin(new java.awt.Insets(2, 7, 3, 7));
+        Bmixer3.setText("Cancelar marca");
+        Bmixer3.setMargin(new java.awt.Insets(2, 1, 3, 1));
         Bmixer3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer3ActionPerformed(evt);
@@ -1068,14 +1172,15 @@ FileOutputStream outputStream;
         Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
         Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer1.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer1.setText("Añadir");
+        Bmixer1.setText("Añadir marca");
+        Bmixer1.setMargin(new java.awt.Insets(2, 2, 3, 2));
         Bmixer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Bmixer1ActionPerformed(evt);
             }
         });
         getContentPane().add(Bmixer1);
-        Bmixer1.setBounds(195, 145, 80, 40);
+        Bmixer1.setBounds(195, 145, 100, 40);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -1572,6 +1677,7 @@ FileOutputStream outputStream;
         if(!added)
         {
             list.removeLast();
+            colors.removeLast();
             this.UpdateFile();
         }
     }//GEN-LAST:event_Bmixer3ActionPerformed
@@ -1581,6 +1687,10 @@ FileOutputStream outputStream;
         SettingsTags tags = new SettingsTags(this);
                     tags.setVisible(true);
     }//GEN-LAST:event_Bmixer4ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     
     /**
