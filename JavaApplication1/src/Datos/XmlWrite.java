@@ -11,11 +11,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+import org.jespxml.JespXML;
+import org.jespxml.modelo.Tag;
 //import /*pruebas*/.PruebaXML.*;
-import xml.analizador.dom.*;
-import xml.analizador.dom.modelo.Tag;
-import xml.analizador.dom.modelo.Atributo;
-import xml.analizador.dom.JespXML;
+
 
 /**
  *
