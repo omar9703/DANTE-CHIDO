@@ -231,7 +231,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             try{
             if(!audio[x].equals(null))
                 audio[x].detener();
-                audio[x].stop();
+                audio[x].interrupt();
             }
             catch(Exception e)
             {
@@ -242,7 +242,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 
                 if(varNoexcept[x+1]){
                     audioSolo[x].detener();
-                    audioSolo[x].stop();
+                    audioSolo[x].interrupt();
                 }
                 
             }                             
@@ -286,7 +286,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
             if(alternar[index-1]==2){
                  audio[index-1].detener();
-                 audio[index-1].stop();
+                 audio[index-1].interrupt();
                  alternar[index-1]=0;
                  button.setBackground(new Color(25, 31, 49));
                  //var[index-1]=false;
@@ -323,7 +323,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             try{
                 if(varNoexcept[index]){
                     audioSolo[index-1].detener();
-                    audioSolo[index-1].stop();
+                    audioSolo[index-1].interrupt();
                 }
                 
             }
@@ -2550,7 +2550,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 try{
                 if(!audioSolo[x].equals(null)){
                     audioSolo[x].detener();
-                    audioSolo[x].stop();
+                    audioSolo[x].interrupt();
                 }
                     
                 }
@@ -6519,7 +6519,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
     if(alternar[0]==2){
          audio[0].detener();
-         audio[0].stop();
+         audio[0].interrupt();
          alternar[0]=0;
          C1.setBackground(Color.BLUE);
          var[1]=false;
@@ -6554,7 +6554,7 @@ public class newPanelMixer extends javax.swing.JPanel {
     }   
     if(alternar[8]==2){
          audio[8].detener();
-         audio[8].stop();
+         audio[8].interrupt();
          alternar[8]=0;
          C9.setBackground(Color.BLUE);
          var[17]=false;
@@ -6623,7 +6623,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[2]=false;
             audioSolo[0].detener();
-            audioSolo[0].stop();
+            audioSolo[0].interrupt();
         }
         */
     }//GEN-LAST:event_S1ActionPerformed
@@ -6658,7 +6658,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[18]=false;
             audio[8].detener();
-            audio[8].stop();
+            audio[8].interrupt();
         }
         */
     }//GEN-LAST:event_S9ActionPerformed
@@ -7142,7 +7142,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[32]=false;
             audio[15].detener();
-            audio[15].stop();
+            audio[15].interrupt();
         }
         */
     }//GEN-LAST:event_S16ActionPerformed
@@ -7295,7 +7295,7 @@ public class newPanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[54]=false;
             audio[26].detener();
-            audio[26].stop();
+            audio[26].interrupt();
         }
         */
     }//GEN-LAST:event_S27ActionPerformed

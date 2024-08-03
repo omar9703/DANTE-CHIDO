@@ -3226,7 +3226,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
     if(alternar0==2){
          audio0.detener();
-         audio0.stop();
+         audio0.interrupt();
          alternar0=0;
          C1.setBackground(Color.BLUE);
          var[1]=false;
@@ -3246,7 +3246,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
     if(alternar0==2){
          audio0.detener();
-         audio0.stop();
+         audio0.interrupt();
          alternar0=0;
          C1.setBackground(Color.white);
         }*/
@@ -3300,7 +3300,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
     if(alternar1==2){
          audio1.detener();
-         audio1.stop();
+         audio1.interrupt();
          alternar1=0;
          C2.setBackground(Color.BLUE);
         var[3]=false;
@@ -3353,7 +3353,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
     if(alternar2==2){
          audio2.detener();
-         audio2.stop();
+         audio2.interrupt();
          alternar2=0;
          C3.setBackground(Color.BLUE);
          var[5]=false;
@@ -3402,7 +3402,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar3==2){
          audio3.detener();
-         audio3.stop();
+         audio3.interrupt();
          alternar3=0;
          C4.setBackground(Color.BLUE);
          var[7]=false;
@@ -3453,7 +3453,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar4==2){
          audio4.detener();
-         audio4.stop();
+         audio4.interrupt();
          alternar4=0;
          C5.setBackground(Color.BLUE);
          var[9]=false;
@@ -3502,7 +3502,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar5==2){
          audio5.detener();
-         audio5.stop();
+         audio5.interrupt();
          alternar5=0;
          C6.setBackground(Color.BLUE);
          var[11]=false;
@@ -3639,7 +3639,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar8==2){
          audio8.detener();
-         audio8.stop();
+         audio8.interrupt();
          alternar8=0;
          C9.setBackground(Color.BLUE);
          var[17]=false;
@@ -3687,7 +3687,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar9==2){
          audio9.detener();
-         audio9.stop();
+         audio9.interrupt();
          alternar9=0;
          C10.setBackground(Color.BLUE);
          var[19]=false;
@@ -3734,7 +3734,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar10==2){
          audio10.detener();
-         audio10.stop();
+         audio10.interrupt();
          alternar10=0;
          C11.setBackground(Color.BLUE);
          var[21]=false;
@@ -3783,7 +3783,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar11==2){
          audio11.detener();
-         audio11.stop();
+         audio11.interrupt();
          alternar11=0;
          C12.setBackground(Color.BLUE);
          var[23]=false;
@@ -3830,7 +3830,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar12==2){
          audio12.detener();
-         audio12.stop();
+         audio12.interrupt();
          alternar12=0;
          C13.setBackground(Color.BLUE);
          var[25]=false;
@@ -3877,7 +3877,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar13==2){
          audio13.detener();
-         audio13.stop();
+         audio13.interrupt();
          alternar13=0;
          C14.setBackground(Color.BLUE);
          var[27]=false;
@@ -3926,7 +3926,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar16==2){
          audio16.detener();
-         audio16.stop();
+         audio16.interrupt();
          alternar16=0;
          C17.setBackground(Color.BLUE);
          var[33]=true;
@@ -3973,7 +3973,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar17==2){
          audio17.detener();
-         audio17.stop();
+         audio17.interrupt();
          alternar17=0;
          C18.setBackground(Color.BLUE);
          var[35]=false;
@@ -4020,7 +4020,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar18==2){
          audio18.detener();
-         audio18.stop();
+         audio18.interrupt();
          alternar18=0;
          C19.setBackground(Color.BLUE);
          var[37]=false;
@@ -4067,7 +4067,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar19==2){
          audio19.detener();
-         audio19.stop();
+         audio19.interrupt();
          alternar19=0;
          C20.setBackground(Color.BLUE);
          var[39]=false;
@@ -4114,7 +4114,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar20==2){
          audio20.detener();
-         audio20.stop();
+         audio20.interrupt();
          alternar20=0;
          C21.setBackground(Color.BLUE);
          var[41]=false;
@@ -4161,7 +4161,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar21==2){
          audio21.detener();
-         audio21.stop();
+         audio21.interrupt();
          alternar21=0;
          C22.setBackground(Color.BLUE);
          var[43]=false;
@@ -4208,7 +4208,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar24==2){
          audio24.detener();
-         audio24.stop();
+         audio24.interrupt();
          alternar24=0;
          C25.setBackground(Color.BLUE);
          var[49]=false;
@@ -4255,7 +4255,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar25==2){
          audio25.detener();
-         audio25.stop();
+         audio25.interrupt();
          alternar25=0;
          C26.setBackground(Color.BLUE);
          var[51]=false;
@@ -4302,7 +4302,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar26==2){
          audio26.detener();
-         audio26.stop();
+         audio26.interrupt();
          alternar26=0;
          C27.setBackground(Color.BLUE);
          var[53]=false;
@@ -4333,7 +4333,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar27==2){
          audio27.detener();
-         audio27.stop();
+         audio27.interrupt();
          alternar27=0;
          C28.setBackground(Color.BLUE);
          var[55]=false;
@@ -4380,7 +4380,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar28==2){
          audio28.detener();
-         audio28.stop();
+         audio28.interrupt();
          alternar28=0;
          C29.setBackground(Color.BLUE);
          var[57]=false;
@@ -4427,7 +4427,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar29==2){
          audio29.detener();
-         audio29.stop();
+         audio29.interrupt();
          alternar29=0;
          C30.setBackground(Color.BLUE);
          var[59]=false;
@@ -4505,7 +4505,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar6==2){
          audio6.detener();
-         audio6.stop();
+         audio6.interrupt();
          alternar6=0;
          C7.setBackground(Color.BLUE);
          var[13]=false;
@@ -4536,7 +4536,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar7==2){
          audio7.detener();
-         audio7.stop();
+         audio7.interrupt();
          alternar7=0;
          C8.setBackground(Color.BLUE);
          var[15]=false;
@@ -4569,7 +4569,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar14==2){
          audio14.detener();
-         audio14.stop();
+         audio14.interrupt();
          alternar14=0;
          C15.setBackground(Color.BLUE);
          var[29]=false;
@@ -4601,7 +4601,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar15==2){
          audio15.detener();
-         audio15.stop();
+         audio15.interrupt();
          alternar15=0;
          C16.setBackground(Color.BLUE);
          var[31]=false;
@@ -4633,7 +4633,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar22==2){
          audio22.detener();
-         audio22.stop();
+         audio22.interrupt();
          alternar22=0;
          C23.setBackground(Color.BLUE);
          var[45]=false;
@@ -4665,7 +4665,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar23==2){
          audio23.detener();
-         audio23.stop();
+         audio23.interrupt();
          alternar23=0;
          C24.setBackground(Color.BLUE);
          var[47]=false;
@@ -4696,7 +4696,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar30==2){
          audio30.detener();
-         audio30.stop();
+         audio30.interrupt();
          alternar30=0;
          C31.setBackground(Color.BLUE);
          var[61]=false;
@@ -4726,7 +4726,7 @@ public class PanelMixer extends javax.swing.JPanel {
     }   
     if(alternar31==2){
          audio31.detener();
-         audio31.stop();
+         audio31.interrupt();
          alternar4=0;
          C32.setBackground(Color.BLUE);
          var[63]=false;
@@ -4826,7 +4826,7 @@ public class PanelMixer extends javax.swing.JPanel {
             {
                 try{
                 audio[x].detener();
-                audio[x].stop();
+                audio[x].interrupt();
                 }
                 catch(Exception e)
                 {
@@ -4883,7 +4883,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[2]=false;
             audio[0].detener();
-            audio[0].stop();
+            audio[0].interrupt();
         }
     }//GEN-LAST:event_S1ActionPerformed
 
@@ -4913,7 +4913,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[18]=false;
             audio[8].detener();
-            audio[8].stop();
+            audio[8].interrupt();
         }
     }//GEN-LAST:event_S9ActionPerformed
 
@@ -4945,7 +4945,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[34]=false;
             audio[16].detener();
-            audio[16].stop();
+            audio[16].interrupt();
         }
     }//GEN-LAST:event_S17ActionPerformed
 
@@ -4976,7 +4976,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[50]=false;
             audio[24].detener();
-            audio[24].stop();
+            audio[24].interrupt();
         }
     }//GEN-LAST:event_S25ActionPerformed
 
@@ -5009,7 +5009,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[6]=false;
             audio[2].detener();
-            audio[2].stop();
+            audio[2].interrupt();
         }
     }//GEN-LAST:event_S3ActionPerformed
 
@@ -5040,7 +5040,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[22]=false;
             audio[10].detener();
-            audio[10].stop();
+            audio[10].interrupt();
         }
     }//GEN-LAST:event_S11ActionPerformed
 
@@ -5071,7 +5071,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[38]=false;
             audio[18].detener();
-            audio[18].stop();
+            audio[18].interrupt();
         }
     }//GEN-LAST:event_S19ActionPerformed
 
@@ -5102,7 +5102,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[54]=false;
             audio[26].detener();
-            audio[26].stop();
+            audio[26].interrupt();
         }
     }//GEN-LAST:event_S27ActionPerformed
 
@@ -5133,7 +5133,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[4]=false;
             audio[1].detener();
-            audio[1].stop();
+            audio[1].interrupt();
         }
     }//GEN-LAST:event_S2ActionPerformed
 
@@ -5164,7 +5164,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[20]=false;
             audio[9].detener();
-            audio[9].stop();
+            audio[9].interrupt();
             
         }
     }//GEN-LAST:event_S10ActionPerformed
@@ -5196,7 +5196,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[36]=false;
             audio[17].detener();
-            audio[17].stop();
+            audio[17].interrupt();
         }
     }//GEN-LAST:event_S18ActionPerformed
 
@@ -5227,7 +5227,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[52]=false;
             audio[25].detener();
-            audio[25].stop();
+            audio[25].interrupt();
         }
     }//GEN-LAST:event_S26ActionPerformed
 
@@ -5257,7 +5257,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[8]=false;
             audio[3].detener();
-            audio[3].stop();
+            audio[3].interrupt();
         }
     }//GEN-LAST:event_S4ActionPerformed
 
@@ -5289,7 +5289,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[24]=false;
             audio[11].detener();
-            audio[11].stop();
+            audio[11].interrupt();
         }
     }//GEN-LAST:event_S12ActionPerformed
 
@@ -5321,7 +5321,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[40]=false;
             audio[19].detener();
-            audio[19].stop();
+            audio[19].interrupt();
         }
     }//GEN-LAST:event_S20ActionPerformed
 
@@ -5352,7 +5352,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[56]=false;
             audio[27].detener();
-            audio[27].stop();
+            audio[27].interrupt();
         }
     }//GEN-LAST:event_S28ActionPerformed
 
@@ -5384,7 +5384,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[10]=false;
              audio[4].detener();
-            audio[4].stop();
+            audio[4].interrupt();
         }
     }//GEN-LAST:event_S5ActionPerformed
 
@@ -5415,7 +5415,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[26]=false;
             audio[12].detener();
-            audio[12].stop();
+            audio[12].interrupt();
         }
     }//GEN-LAST:event_S13ActionPerformed
 
@@ -5446,7 +5446,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[42]=false;
              audio[20].detener();
-            audio[20].stop();
+            audio[20].interrupt();
         }
     }//GEN-LAST:event_S21ActionPerformed
 
@@ -5478,7 +5478,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[12]=false;
             audio[5].detener();
-            audio[5].stop();
+            audio[5].interrupt();
         }
     }//GEN-LAST:event_S6ActionPerformed
 
@@ -5509,7 +5509,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[58]=false;
             audio[28].detener();
-            audio[28].stop();
+            audio[28].interrupt();
         }
     }//GEN-LAST:event_S29ActionPerformed
 
@@ -5541,7 +5541,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[28]=false;
             audio[13].detener();
-            audio[13].stop();
+            audio[13].interrupt();
         }
     }//GEN-LAST:event_S14ActionPerformed
 
@@ -5572,7 +5572,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[44]=false;
             audio[21].detener();
-            audio[21].stop();
+            audio[21].interrupt();
         }
     }//GEN-LAST:event_S22ActionPerformed
 
@@ -5603,7 +5603,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[60]=false;
             audio[29].detener();
-            audio[29].stop();
+            audio[29].interrupt();
         }
     }//GEN-LAST:event_S30ActionPerformed
 
@@ -5635,7 +5635,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[14]=false;
             audio[6].detener();
-            audio[6].stop();
+            audio[6].interrupt();
         }
     }//GEN-LAST:event_S7ActionPerformed
 
@@ -5667,7 +5667,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[16]=false;
             audio[7].detener();
-            audio[7].stop();
+            audio[7].interrupt();
         }
     }//GEN-LAST:event_S8ActionPerformed
 
@@ -5699,7 +5699,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[30]=false;
             audio[7].detener();
-            audio[7].stop();
+            audio[7].interrupt();
         }
     }//GEN-LAST:event_S15ActionPerformed
 
@@ -5731,7 +5731,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[32]=false;
             audio[15].detener();
-            audio[15].stop();
+            audio[15].interrupt();
         }
     }//GEN-LAST:event_S16ActionPerformed
 
@@ -5763,7 +5763,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[46]=false;
             audio[22].detener();
-            audio[22].stop();
+            audio[22].interrupt();
         }
     }//GEN-LAST:event_S23ActionPerformed
 
@@ -5795,7 +5795,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[48]=false;
             audio[23].detener();
-            audio[23].stop();
+            audio[23].interrupt();
         }
     }//GEN-LAST:event_S24ActionPerformed
 
@@ -5827,7 +5827,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[62]=false;
              audio[23].detener();
-            audio[23].stop();
+            audio[23].interrupt();
         }
     }//GEN-LAST:event_S31ActionPerformed
 
@@ -5859,7 +5859,7 @@ public class PanelMixer extends javax.swing.JPanel {
             EnableVolume();
             var[64]=false;
             audio[31].detener();
-            audio[31].stop();
+            audio[31].interrupt();
         }
     }//GEN-LAST:event_S32ActionPerformed
 
@@ -5879,7 +5879,7 @@ public class PanelMixer extends javax.swing.JPanel {
 
     if(alternar==2){
          audio.detener();
-         audio.stop();
+         audio.interrupt();
          alternar=0;
          J.setBackground(Color.white);
         }

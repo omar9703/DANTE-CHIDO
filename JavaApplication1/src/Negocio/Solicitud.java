@@ -114,7 +114,7 @@ public class Solicitud {
                    
            if(Audio.isAlive()){
             Audio.detener();
-            Audio.stop();
+            Audio.interrupt();
           
         }
                    

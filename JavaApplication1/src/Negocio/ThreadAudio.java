@@ -179,6 +179,7 @@ public class ThreadAudio extends Thread{
             long RMS=0;
             isrunning = true;
             while(!continuar){
+                
                 socket.receive(PaqueteCliente);
                 //Sock.receive(PaqueteCliente);
                
