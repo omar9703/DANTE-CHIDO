@@ -1591,7 +1591,7 @@ public class SettingsTags extends javax.swing.JFrame {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1628,7 +1628,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1668,7 +1668,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1705,7 +1705,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1742,7 +1742,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1779,7 +1779,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1816,7 +1816,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1853,7 +1853,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1890,7 +1890,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1927,7 +1927,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -1964,7 +1964,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2001,7 +2001,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2038,7 +2038,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2075,7 +2075,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2112,7 +2112,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2149,7 +2149,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2186,7 +2186,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2223,7 +2223,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2260,7 +2260,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2297,7 +2297,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2334,7 +2334,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2371,7 +2371,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2408,7 +2408,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2445,7 +2445,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2482,7 +2482,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2759,7 +2759,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2795,8 +2795,8 @@ if (evt.getSource() instanceof JTextField) {
                      JTextField jf1;
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
-
-    if (evt.getKeyCode()!=8)
+    System.out.println(evt.getKeyCode());
+    if (evt.getKeyCode()!=8 && evt.getKeyCode() != 10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2833,7 +2833,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2870,7 +2870,7 @@ if (evt.getSource() instanceof JTextField) {
     if (evt.getSource() instanceof JTextField) {
         jf1 = (JTextField) evt.getSource();
 
-        if (evt.getKeyCode()!=8)
+        if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
         {
             if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
             {
@@ -2907,7 +2907,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
@@ -2944,7 +2944,7 @@ if (evt.getSource() instanceof JTextField) {
 if (evt.getSource() instanceof JTextField) {
     jf1 = (JTextField) evt.getSource();
 
-    if (evt.getKeyCode()!=8)
+    if (evt.getKeyCode()!=8 && evt.getKeyCode()!=10)
     {
         if ((evt.getKeyCode()>61 && evt.getKeyCode()<91)||(evt.getKeyCode()>47 && evt.getKeyCode()<59))
         {
