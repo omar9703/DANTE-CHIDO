@@ -57,6 +57,9 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
+import javax.swing.ActionMap;
+import javax.swing.InputMap;
+import static javax.swing.JComponent.WHEN_FOCUSED;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
@@ -81,9 +84,6 @@ public class Panel extends javax.swing.JFrame {
      * Creates new form Panel
      */
     public String shortNew = " ";
-    public String ShortColor1 = " ";
-     public String ShortColor2 = " ";
-      public String ShortColor3 = " ";
     public String shortAdd = " ";
     public String shortCancel = " ";
      private final SimpleDateFormat sdf  = new SimpleDateFormat("HH:mm");
@@ -121,6 +121,7 @@ public class Panel extends javax.swing.JFrame {
    ArrayList<String> colors ;
     public Panel()  {
        initComponents();
+       Bmixer1.setVisible(false);
        colors = new ArrayList<>();
        this.setResizable(false);
        this.setSize(new Dimension(1366,766));
@@ -141,11 +142,24 @@ public class Panel extends javax.swing.JFrame {
        primero.setBackground(Color.black);
        primero.setForeground(Color.white);
        jPanel1.setBackground(Color.red);
-       
+       int condition = WHEN_FOCUSED;  
+      // get our maps for binding from the chatEnterArea JTextArea
+      InputMap inputMap = jTextArea2.getInputMap(condition);
+      ActionMap actionMap = jTextArea2.getActionMap();
+      KeyStroke enterStroke = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
+inputMap.put(enterStroke, enterStroke.toString());
+      final Panel p = this;
+      actionMap.put(enterStroke.toString(), new AbstractAction() {
+
+         @Override
+         public void actionPerformed(ActionEvent arg0) {
+             p.Bmixer2ActionPerformed(arg0);
+
+         }
+      });
        KeyStroke ks = KeyStroke.getKeyStroke("control F12");
         JRootPane rootPane = this.getRootPane();
         rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(ks, "myAction");
-        final Panel p = this;
          rootPane.getActionMap().put("myAction", new AbstractAction() {
              
                 public void actionPerformed(ActionEvent e) {
@@ -198,22 +212,29 @@ public class Panel extends javax.swing.JFrame {
       
         LoadImageProject(Conf);
         ConfigTags ct = Xread.ReadTagsConfig();
+        List<String> auxColors = new ArrayList<>();
+        auxColors.add(ct.Color1);
+        auxColors.add(ct.Color2);
+        auxColors.add(ct.Color3);
+        auxColors.add(ct.Color4);
+        auxColors.add(ct.Color5);
+        auxColors.add(ct.Color6);
+        auxColors.add(ct.Color7);
+        auxColors.add(ct.Color8);
         shortNew = ct.ShortcutNew;
         this.shortAdd=ct.ShortcutAdd;
         this.shortCancel=ct.ShortcutCancel;
-        this.ShortColor1 = ct.ShortcutColor1;
-        this.ShortColor2 = ct.ShortcutColor2;
-        this.ShortColor3 = ct.ShortcutColor3;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
         for(int x = 0; x<ct.getCommands().size();x++)
         {
-            if (ct.getCommands().get(x) != " ")
+            if (!" ".equals(ct.getCommands().get(x)))
             {
                 final int index = x;
             jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
             jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
+                    jComboBox1.setSelectedItem(auxColors.get(index));
                     jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index));
                     
                 }
@@ -253,45 +274,7 @@ public class Panel extends javax.swing.JFrame {
                     
                 }
             });
-        }
-        if (!" ".equals(ShortColor1))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor1), "ButtonC1");
-            rootPane.getActionMap().put("ButtonC1", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color1);
-                    p.jComboBox1.setSelectedItem(ct.Color1);
-                    
-                }
-            });
-        }
-        if (!" ".equals(ShortColor2))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor2), "ButtonC2");
-            rootPane.getActionMap().put("ButtonC2", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color2);
-                    p.jComboBox1.setSelectedItem(ct.Color2);
-                    
-                }
-            });
-        }
-        if (!" ".equals(ShortColor3))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor3), "ButtonC3");
-            rootPane.getActionMap().put("ButtonC3", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color1);
-                    p.jComboBox1.setSelectedItem(ct.Color3);
-                    
-                }
-            });
-        }
-
-    
+        } 
         String[] columnNames = {"Hora",
                         "Descripción","Color"};
         model = new DefaultTableModel(columnNames,0);
@@ -407,35 +390,34 @@ public class Panel extends javax.swing.JFrame {
         {
             rootPane.getInputMap().remove(KeyStroke.getKeyStroke(shortCancel));
         }
-        if (!" ".equals(ShortColor1))
-        {
-            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor1));
-        }
-        if (!" ".equals(ShortColor2))
-        {
-            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor2));
-        }
-        if (!" ".equals(ShortColor3))
-        {
-            rootPane.getInputMap().remove(KeyStroke.getKeyStroke(ShortColor3));
-        }
         ConfigTags ct = Xread.ReadTagsConfig();
         shortNew = ct.ShortcutNew;
         shortAdd = ct.ShortcutAdd;
         shortCancel = ct.ShortcutCancel;
-         this.ShortColor1 = ct.ShortcutColor1;
-        this.ShortColor2 = ct.ShortcutColor2;
-        this.ShortColor3 = ct.ShortcutColor3;
         System.out.println(ct.getCommands());
         comandos = ct.getCommands();
+        List<String> auxColors = new ArrayList<>();
+        auxColors.add(ct.Color1);
+        auxColors.add(ct.Color2);
+        auxColors.add(ct.Color3);
+        auxColors.add(ct.Color4);
+        auxColors.add(ct.Color5);
+        auxColors.add(ct.Color6);
+        auxColors.add(ct.Color7);
+        auxColors.add(ct.Color8);
+        
+      // tell input map that we are handling the enter key
+      
+      final Panel p = this;
         for(int x = 0; x<ct.getCommands().size();x++)
         {
-            if (ct.getCommands().get(x) != " ")
+            if (!" ".equals(ct.getCommands().get(x)))
             {
                 final int index = x;
             jTextArea2.getInputMap(JComponent.WHEN_FOCUSED).put(KeyStroke.getKeyStroke(ct.getCommands().get(x)), "Enter"+x);
             jTextArea2.getActionMap().put("Enter"+x, new AbstractAction() {
                 public void actionPerformed(ActionEvent e) {
+                    jComboBox1.setSelectedItem(auxColors.get(index));
                     jTextArea2.setText(jTextArea2.getText() + " " + ct.getNames().get(index));
                     
                 }
@@ -444,7 +426,6 @@ public class Panel extends javax.swing.JFrame {
         }
         if (!" ".equals(shortNew))
         {
-            final Panel p = this;
             rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortNew), "newButton");
             rootPane.getActionMap().put("newButton", new AbstractAction()
             {
@@ -456,7 +437,6 @@ public class Panel extends javax.swing.JFrame {
         }
         if (!" ".equals(shortAdd))
         {
-            final Panel p = this;
             rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortAdd), "addButton");
             rootPane.getActionMap().put("addButton", new AbstractAction()
             {
@@ -468,7 +448,6 @@ public class Panel extends javax.swing.JFrame {
         }
         if (!" ".equals(shortCancel))
         {
-            final Panel p = this;
             rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(shortCancel), "canButton");
             rootPane.getActionMap().put("canButton", new AbstractAction()
             {
@@ -477,45 +456,7 @@ public class Panel extends javax.swing.JFrame {
                     
                 }
             });
-        }
-        final Panel p = this;
-        if (!" ".equals(ShortColor1))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor1), "ButtonC1");
-            rootPane.getActionMap().put("ButtonC1", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color1);
-                    p.jComboBox1.setSelectedItem(ct.Color1);
-                    
-                }
-            });
-        }
-        if (!" ".equals(ShortColor2))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor2), "ButtonC2");
-            rootPane.getActionMap().put("ButtonC2", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color2);
-                    p.jComboBox1.setSelectedItem(ct.Color2);
-                    
-                }
-            });
-        }
-        if (!" ".equals(ShortColor3))
-        {
-            rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(ShortColor3), "ButtonC3");
-            rootPane.getActionMap().put("ButtonC3", new AbstractAction()
-            {
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(ct.Color1);
-                    p.jComboBox1.setSelectedItem(ct.Color3);
-                    
-                }
-            });
-        }
-        
+        }      
     }
     public void SetNewProject(String url, String nombre)
     {
@@ -1146,7 +1087,7 @@ FileOutputStream outputStream;
         Bmixer2.setBackground(new java.awt.Color(0, 204, 0));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer2.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer2.setText("Nueva marca");
+        Bmixer2.setText("Añadir marca");
         Bmixer2.setMargin(new java.awt.Insets(2, 2, 3, 2));
         Bmixer2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1167,7 +1108,7 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(Bmixer3);
-        Bmixer3.setBounds(297, 145, 90, 40);
+        Bmixer3.setBounds(280, 145, 110, 40);
 
         Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
         Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
@@ -1526,25 +1467,26 @@ FileOutputStream outputStream;
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
             Date date = new Date();
             String result = formatter.format(date);
-            String[] item = {result," ",jComboBox1.getSelectedItem().toString()}; 
+            String[] item = {result,jTextArea2.getText(),jComboBox1.getSelectedItem().toString()}; 
             colors.add(jComboBox1.getSelectedItem().toString());
             WriteColorsFile();
-            //model.addRow(item);
+            //model.addRow(item);jTextArea2.getText()
             model.insertRow(0, item);
             
             
-             String[] record1 = {result, "na",""+list.size() ," "};
+             String[] record1 = {result, "na",""+list.size() ,jTextArea2.getText()};
             jTextArea2.setText("");
             list.add(record1);
             this.added = false;
         // default all fields are enclosed in double quotes
         // default separator is a comma
-        try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\"+this.fileName+".csv"))) {
-            writer.writeAll(list);
-        }   catch (IOException ex) {
-                Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        
+        //try (CSVWriter writer = new CSVWriter(new FileWriter(URL+"\\"+this.fileName+".csv"))) {
+          //  writer.writeAll(list);
+        //}   catch (IOException ex) {
+              //  Logger.getLogger(Panel.class.getName()).log(Level.SEVERE, null, ex);
+            //}
+        this.UpdateFile();
+                jTextArea2.setText("");
         }
         else
         {

@@ -1,10 +1,8 @@
-Exciting Purple
-Green
-Red
-Yellow
-Blue
-Magenta
 Cyan
+Cyan
+Cyan
+Cyan
+Black
 Cyan
 Cyan
 Cyan

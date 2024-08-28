@@ -159,21 +159,51 @@ public class WriteXml {
                 
                 Element canal6=document.createElement("COLOR1");
                 canal6.setAttribute("id", ct.Color1);
-            Text Valuecanal6=document.createTextNode(ct.ShortcutColor1);
+            Text Valuecanal6=document.createTextNode("");
                 canal6.appendChild(Valuecanal6);
                 Asio.appendChild(canal6);
                 
                 Element canal7=document.createElement("COLOR2");
                 canal7.setAttribute("id", ct.Color2);
-            Text Valuecanal7=document.createTextNode(ct.ShortcutColor2);
+            Text Valuecanal7=document.createTextNode("");
                 canal7.appendChild(Valuecanal7);
                 Asio.appendChild(canal7);
                 
                 Element canal8=document.createElement("COLOR3");
                 canal8.setAttribute("id", ct.Color3);
-            Text Valuecanal8=document.createTextNode(ct.ShortcutColor3);
+            Text Valuecanal8=document.createTextNode("");
                 canal8.appendChild(Valuecanal8);
                 Asio.appendChild(canal8);
+                
+                Element canal9=document.createElement("COLOR4");
+                canal9.setAttribute("id", ct.Color4);
+            Text Valuecanal9=document.createTextNode("");
+                canal9.appendChild(Valuecanal9);
+                Asio.appendChild(canal9);
+                
+                Element canal10=document.createElement("COLOR5");
+                canal10.setAttribute("id", ct.Color5);
+            Text Valuecanal10=document.createTextNode("");
+                canal10.appendChild(Valuecanal10);
+                Asio.appendChild(canal10);
+                
+                Element canal11=document.createElement("COLOR6");
+                canal11.setAttribute("id", ct.Color6);
+            Text Valuecanal11=document.createTextNode("");
+                canal11.appendChild(Valuecanal11);
+                Asio.appendChild(canal11);
+                
+                Element canal12=document.createElement("COLOR7");
+                canal12.setAttribute("id", ct.Color7);
+            Text Valuecanal12=document.createTextNode("");
+                canal12.appendChild(Valuecanal12);
+                Asio.appendChild(canal12);
+                
+                Element canal13=document.createElement("COLOR8");
+                canal13.setAttribute("id", ct.Color8);
+            Text Valuecanal13=document.createTextNode("");
+                canal13.appendChild(Valuecanal13);
+                Asio.appendChild(canal13);
                 
             for(int i=0;i<ct.getNames().size();i++){
                 canal=document.createElement("COMENTARIO");

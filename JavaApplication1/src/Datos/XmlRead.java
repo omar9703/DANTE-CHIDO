@@ -187,24 +187,44 @@ public class XmlRead {
             configT.ShortcutCancel = firstNameList.item(0).getTextContent();
             
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR1");
-            configT.ShortcutColor1 = firstNameList.item(0).getTextContent();
             Node N=firstNameList.item(0);          
              Element E=(Element)N;
             configT.Color1 = E.getAttribute("id");
             
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR2");
-            configT.ShortcutColor2 = firstNameList.item(0).getTextContent();
             Node N2=firstNameList.item(0);          
              Element E2=(Element)N2;
             configT.Color2 = E2.getAttribute("id");
             
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR3");
-            configT.ShortcutColor3 = firstNameList.item(0).getTextContent();
             Node N3=firstNameList.item(0);          
              Element E3=(Element)N3;
             configT.Color3 = E3.getAttribute("id");
             
-           System.out.println(configT.Color1 + configT.ShortcutColor1);
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR4");
+            Node N4=firstNameList.item(0);          
+             Element E4=(Element)N4;
+            configT.Color4 = E4.getAttribute("id");
+            
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR5");
+            Node N5=firstNameList.item(0);          
+             Element E5=(Element)N5;
+            configT.Color5 = E5.getAttribute("id");
+            
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR6");
+            Node N6=firstNameList.item(0);          
+             Element E6=(Element)N6;
+            configT.Color6 = E6.getAttribute("id");
+            
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR7");
+            Node N7=firstNameList.item(0);          
+             Element E7=(Element)N7;
+            configT.Color7 = E7.getAttribute("id");
+            
+            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("COLOR8");
+            Node N8=firstNameList.item(0);          
+             Element E8=(Element)N8;
+            configT.Color8 = E8.getAttribute("id");
         }
         catch (ParserConfigurationException ex) {
             Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
