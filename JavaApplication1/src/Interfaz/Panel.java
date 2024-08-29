@@ -1375,7 +1375,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 525);
+                this.scrollPane1.setScrollPosition(0, 410);
             }
             
         }
@@ -1404,7 +1404,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 1050);
+                this.scrollPane1.setScrollPosition(0, 815);
             }
             
         }
@@ -1433,7 +1433,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 1575);
+                this.scrollPane1.setScrollPosition(0, 1230);
             }
             
         }
