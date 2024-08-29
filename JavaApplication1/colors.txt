@@ -7,5 +7,3 @@ Cyan
 Cyan
 Cyan
 Cyan
-Black
-Cyan

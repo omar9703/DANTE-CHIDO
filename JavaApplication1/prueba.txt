@@ -1,12 +1,10 @@
-jhjhjk	15:22:19;847	V1	Cyan	Take: 1 Quality: 0 LOGGER fdslkfdslñfñ	1
-jhjhjk	15:22:33;532	V1	Cyan	Take: 2 Quality: 0 LOGGER prueba 5	1
-jhjhjk	15:34:19;276	V1	Cyan	Take: 3 Quality: 0 LOGGER jdslfjhdslfhdsfhdskfjsdkj	1
-jhjhjk	15:35:23;593	V1	Cyan	Take: 4 Quality: 0 LOGGER jgkjhgjhgjhgjh	1
-jhjhjk	15:36:30;279	V1	Black	Take: 5 Quality: 0 LOGGER t	1
-jhjhjk	15:56:02;621	V1	Cyan	Take: 6 Quality: 0 LOGGER jyhjkjhkj
+jhjk	15:22:19;847	V1	Cyan	Take: 1 Quality: 0 LOGGER fdslkfdslñfñ	1
+jhjk	15:22:33;532	V1	Cyan	Take: 2 Quality: 0 LOGGER prueba 5	1
+jhjk	15:34:19;276	V1	Cyan	Take: 3 Quality: 0 LOGGER jdslfjhdslfhdsfhdskfjsdkj	1
+jhjk	15:35:23;593	V1	Cyan	Take: 4 Quality: 0 LOGGER jgkjhgjhgjhgjh	1
+jhjk	15:36:30;279	V1	Black	Take: 5 Quality: 0 LOGGER t	1
+jhjk	15:56:02;621	V1	Cyan	Take: 6 Quality: 0 LOGGER jyhjkjhkj
 	1
-jhjhjk	15:56:34;213	V1	Cyan	Take: 7 Quality: 0 LOGGER hghjghjghj	1
-jhjhjk	16:50:47;175	V1	Cyan	Take: 8 Quality: 0 LOGGER dsfd ds fsd	1
-jhjhjk	16:51:04;551	V1	Cyan	Take: 9 Quality: 0 LOGGER jhfdh sjkd hdsjhkja	1
-jhjhjk	16:51:17;577	V1	Black	Take: 10 Quality: 0 LOGGER  muy importatante poco importante sdfdsfdsfdsf	1
-jhjhjk	17:15:50;635	V1	Cyan	Take: 11 Quality: 0 LOGGER jdsflkjdsklfjdsfkdsj  	1
+jhjk	15:56:34;213	V1	Cyan	Take: 7 Quality: 0 LOGGER hghjghjghj	1
+jhjk	12:49:27;168	V1	Cyan	Take: 8 Quality: 0 LOGGER uj khg jkj kjh kjhk hk hk hj khg jhk j	1
+jhjk	12:50:10;982	V1	Cyan	Take: 9 Quality: 0 LOGGER bjghbh  hjhg  hgjkhjhn	1

@@ -51,7 +51,9 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.classfile.components.ClassPrinter.Node;
 import java.util.List;
+import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
@@ -62,6 +64,7 @@ import javax.swing.InputMap;
 import static javax.swing.JComponent.WHEN_FOCUSED;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -138,8 +141,10 @@ public class Panel extends javax.swing.JFrame {
        segundo.setBorder(null);
        tercero.setBorder(null);
        cuarto.setBorder(null);
-       
+       int scrollbarSize = 60;
        primero.setBackground(Color.black);
+  
+    
        primero.setForeground(Color.white);
        jPanel1.setBackground(Color.red);
        int condition = WHEN_FOCUSED;  
@@ -325,8 +330,8 @@ inputMap.put(enterStroke, enterStroke.toString());
      this.SetTimer();
      jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
      jTable1.getColumnModel().getColumn(0).setPreferredWidth(75);
-     jTable1.getColumnModel().getColumn(1).setPreferredWidth(180);
-     jTable1.getColumnModel().getColumn(2).setPreferredWidth(42);
+     jTable1.getColumnModel().getColumn(1).setPreferredWidth(745);
+     jTable1.getColumnModel().getColumn(2).setPreferredWidth(60);
     
     }
     public void SetTimer()
@@ -995,9 +1000,9 @@ FileOutputStream outputStream;
         getContentPane().setLayout(null);
 
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
-        scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(390, 140, 960, 590);
+        scrollPane1.setBounds(90, 140, 1260, 390);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
         Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -1082,7 +1087,7 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(290, 120, 90, 22);
+        jComboBox1.setBounds(140, 533, 170, 40);
 
         Bmixer2.setBackground(new java.awt.Color(0, 204, 0));
         Bmixer2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
@@ -1095,12 +1100,12 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(Bmixer2);
-        Bmixer2.setBounds(90, 145, 100, 40);
+        Bmixer2.setBounds(0, 533, 140, 40);
 
         Bmixer3.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer3.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 12)); // NOI18N
         Bmixer3.setForeground(new java.awt.Color(255, 255, 255));
-        Bmixer3.setText("Cancelar marca");
+        Bmixer3.setLabel("Borrar marca");
         Bmixer3.setMargin(new java.awt.Insets(2, 1, 3, 1));
         Bmixer3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1108,12 +1113,13 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(Bmixer3);
-        Bmixer3.setBounds(280, 145, 110, 40);
+        Bmixer3.setBounds(310, 533, 140, 40);
 
         Bmixer1.setBackground(new java.awt.Color(51, 51, 255));
         Bmixer1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 14)); // NOI18N
         Bmixer1.setForeground(new java.awt.Color(255, 255, 255));
         Bmixer1.setText("Añadir marca");
+        Bmixer1.setEnabled(false);
         Bmixer1.setMargin(new java.awt.Insets(2, 2, 3, 2));
         Bmixer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1121,7 +1127,7 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(Bmixer1);
-        Bmixer1.setBounds(195, 145, 100, 40);
+        Bmixer1.setBounds(100, 490, 100, 40);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -1149,7 +1155,7 @@ FileOutputStream outputStream;
         jScrollPane1.setViewportView(jTextArea2);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(90, 186, 300, 270);
+        jScrollPane1.setBounds(0, 573, 450, 160);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1166,7 +1172,7 @@ FileOutputStream outputStream;
         jScrollPane3.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(90, 460, 300, 260);
+        jScrollPane3.setBounds(450, 533, 900, 200);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N

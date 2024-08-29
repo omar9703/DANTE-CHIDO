@@ -2970,12 +2970,14 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel63 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 0, 0));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         V1.setBackground(new java.awt.Color(47, 55, 76));
         V1.setForeground(new java.awt.Color(255, 0, 102));
         V1.setMaximum(10);
         V1.setOrientation(javax.swing.JSlider.VERTICAL);
         V1.setPaintLabels(true);
+        add(V1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, 22, 170));
 
         C1.setBackground(new java.awt.Color(25, 31, 49));
         C1.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -2987,6 +2989,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C1ActionPerformed(evt);
             }
         });
+        add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 188, 97, 42));
 
         C9.setBackground(new java.awt.Color(102, 102, 102));
         C9.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3000,10 +3003,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C9ActionPerformed(evt);
             }
         });
+        add(C9, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 188, 97, 42));
 
         V9.setBackground(new java.awt.Color(47, 55, 76));
         V9.setMaximum(10);
         V9.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 12, 22, 170));
 
         S1.setBackground(new java.awt.Color(69, 93, 220));
         S1.setForeground(new java.awt.Color(186, 195, 242));
@@ -3015,6 +3020,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S1ActionPerformed(evt);
             }
         });
+        add(S1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 188, 42, -1));
 
         C17.setBackground(new java.awt.Color(102, 102, 102));
         C17.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3026,10 +3032,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C17ActionPerformed(evt);
             }
         });
+        add(C17, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 188, 97, 42));
 
         V17.setBackground(new java.awt.Color(47, 55, 76));
         V17.setMaximum(10);
         V17.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V17, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 12, 22, 170));
 
         S17.setBackground(new java.awt.Color(69, 93, 220));
         S17.setForeground(new java.awt.Color(186, 195, 242));
@@ -3041,6 +3049,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S17ActionPerformed(evt);
             }
         });
+        add(S17, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 188, 42, -1));
 
         C25.setBackground(new java.awt.Color(102, 102, 102));
         C25.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3052,10 +3061,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C25ActionPerformed(evt);
             }
         });
+        add(C25, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 188, 97, 42));
 
         V25.setBackground(new java.awt.Color(47, 55, 76));
         V25.setMaximum(10);
         V25.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V25, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 12, 22, 170));
 
         S25.setBackground(new java.awt.Color(69, 93, 220));
         S25.setForeground(new java.awt.Color(186, 195, 242));
@@ -3068,6 +3079,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S25ActionPerformed(evt);
             }
         });
+        add(S25, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 188, 42, -1));
 
         S9.setBackground(new java.awt.Color(69, 93, 220));
         S9.setForeground(new java.awt.Color(186, 195, 242));
@@ -3079,6 +3091,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S9ActionPerformed(evt);
             }
         });
+        add(S9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 188, 42, -1));
 
         C3.setBackground(new java.awt.Color(102, 102, 102));
         C3.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3090,10 +3103,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C3ActionPerformed(evt);
             }
         });
+        add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 188, 97, 42));
 
         V3.setBackground(new java.awt.Color(47, 55, 76));
         V3.setMaximum(10);
         V3.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V3, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 12, 22, 170));
 
         S3.setBackground(new java.awt.Color(69, 93, 220));
         S3.setForeground(new java.awt.Color(186, 195, 242));
@@ -3105,6 +3120,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S3ActionPerformed(evt);
             }
         });
+        add(S3, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 188, 42, -1));
 
         C11.setBackground(new java.awt.Color(102, 102, 102));
         C11.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3116,10 +3132,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C11ActionPerformed(evt);
             }
         });
+        add(C11, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 188, 97, 42));
 
         V11.setBackground(new java.awt.Color(47, 55, 76));
         V11.setMaximum(10);
         V11.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V11, new org.netbeans.lib.awtextra.AbsoluteConstraints(755, 12, 22, 170));
 
         S11.setBackground(new java.awt.Color(69, 93, 220));
         S11.setForeground(new java.awt.Color(186, 195, 242));
@@ -3131,6 +3149,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S11ActionPerformed(evt);
             }
         });
+        add(S11, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 188, 42, -1));
 
         C19.setBackground(new java.awt.Color(102, 102, 102));
         C19.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3142,10 +3161,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C19ActionPerformed(evt);
             }
         });
+        add(C19, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 188, 97, 42));
 
         V19.setBackground(new java.awt.Color(47, 55, 76));
         V19.setMaximum(10);
         V19.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V19, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 12, 22, 170));
 
         S19.setBackground(new java.awt.Color(69, 93, 220));
         S19.setForeground(new java.awt.Color(186, 195, 242));
@@ -3157,6 +3178,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S19ActionPerformed(evt);
             }
         });
+        add(S19, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 188, 42, -1));
 
         C27.setBackground(new java.awt.Color(102, 102, 102));
         C27.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3168,10 +3190,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C27ActionPerformed(evt);
             }
         });
+        add(C27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 188, 97, 42));
 
         V27.setBackground(new java.awt.Color(47, 55, 76));
         V27.setMaximum(10);
         V27.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1056, 12, 22, 170));
 
         S27.setBackground(new java.awt.Color(69, 93, 220));
         S27.setForeground(new java.awt.Color(186, 195, 242));
@@ -3183,6 +3207,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S27ActionPerformed(evt);
             }
         });
+        add(S27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 188, 42, -1));
 
         S2.setBackground(new java.awt.Color(69, 93, 220));
         S2.setForeground(new java.awt.Color(186, 195, 242));
@@ -3194,10 +3219,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S2ActionPerformed(evt);
             }
         });
+        add(S2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 456, 42, -1));
 
         V2.setBackground(new java.awt.Color(47, 55, 76));
         V2.setMaximum(10);
         V2.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 280, 22, 170));
 
         C2.setBackground(new java.awt.Color(102, 102, 102));
         C2.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3209,6 +3236,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C2ActionPerformed(evt);
             }
         });
+        add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 456, 97, 42));
 
         S10.setBackground(new java.awt.Color(69, 93, 220));
         S10.setForeground(new java.awt.Color(186, 195, 242));
@@ -3220,11 +3248,13 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S10ActionPerformed(evt);
             }
         });
+        add(S10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 456, 42, -1));
 
         V10.setBackground(new java.awt.Color(47, 55, 76));
         V10.setMaximum(10);
         V10.setOrientation(javax.swing.JSlider.VERTICAL);
         V10.setPaintLabels(true);
+        add(V10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 22, 170));
 
         C10.setBackground(new java.awt.Color(102, 102, 102));
         C10.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3236,6 +3266,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C10ActionPerformed(evt);
             }
         });
+        add(C10, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 456, 97, 42));
 
         S18.setBackground(new java.awt.Color(69, 93, 220));
         S18.setForeground(new java.awt.Color(186, 195, 242));
@@ -3247,10 +3278,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S18ActionPerformed(evt);
             }
         });
+        add(S18, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 456, 42, -1));
 
         V18.setBackground(new java.awt.Color(47, 55, 76));
         V18.setMaximum(10);
         V18.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V18, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 280, 22, 170));
 
         C18.setBackground(new java.awt.Color(102, 102, 102));
         C18.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3262,6 +3295,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C18ActionPerformed(evt);
             }
         });
+        add(C18, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 456, 97, 42));
 
         S26.setBackground(new java.awt.Color(69, 93, 220));
         S26.setForeground(new java.awt.Color(186, 195, 242));
@@ -3273,10 +3307,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S26ActionPerformed(evt);
             }
         });
+        add(S26, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 456, 42, -1));
 
         V26.setBackground(new java.awt.Color(47, 55, 76));
         V26.setMaximum(10);
         V26.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V26, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 280, 22, 170));
 
         C26.setBackground(new java.awt.Color(102, 102, 120));
         C26.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3288,6 +3324,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C26ActionPerformed(evt);
             }
         });
+        add(C26, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 456, 97, 42));
 
         C4.setBackground(new java.awt.Color(102, 102, 102));
         C4.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3299,10 +3336,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C4ActionPerformed(evt);
             }
         });
+        add(C4, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 456, 97, 42));
 
         V4.setBackground(new java.awt.Color(47, 55, 76));
         V4.setMaximum(10);
         V4.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V4, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 280, 22, 170));
 
         S4.setBackground(new java.awt.Color(69, 93, 220));
         S4.setForeground(new java.awt.Color(186, 195, 242));
@@ -3314,6 +3353,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S4ActionPerformed(evt);
             }
         });
+        add(S4, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 456, 42, -1));
 
         C12.setBackground(new java.awt.Color(102, 102, 102));
         C12.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3325,10 +3365,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C12ActionPerformed(evt);
             }
         });
+        add(C12, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 456, 97, 42));
 
         V12.setBackground(new java.awt.Color(47, 55, 76));
         V12.setMaximum(10);
         V12.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V12, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 280, 22, 170));
 
         S12.setBackground(new java.awt.Color(69, 93, 220));
         S12.setForeground(new java.awt.Color(186, 195, 242));
@@ -3340,6 +3382,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S12ActionPerformed(evt);
             }
         });
+        add(S12, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 456, 42, -1));
 
         C20.setBackground(new java.awt.Color(102, 102, 102));
         C20.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3351,10 +3394,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C20ActionPerformed(evt);
             }
         });
+        add(C20, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 456, 97, 42));
 
         V20.setBackground(new java.awt.Color(47, 55, 76));
         V20.setMaximum(10);
         V20.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V20, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 280, 22, 170));
 
         S20.setBackground(new java.awt.Color(69, 93, 220));
         S20.setForeground(new java.awt.Color(186, 195, 242));
@@ -3366,6 +3411,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S20ActionPerformed(evt);
             }
         });
+        add(S20, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 456, 42, -1));
 
         C28.setBackground(new java.awt.Color(102, 102, 102));
         C28.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -3377,10 +3423,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C28ActionPerformed(evt);
             }
         });
+        add(C28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 456, 97, 42));
 
         V28.setBackground(new java.awt.Color(47, 55, 76));
         V28.setMaximum(10);
         V28.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 280, 22, 170));
 
         S28.setBackground(new java.awt.Color(69, 93, 220));
         S28.setForeground(new java.awt.Color(186, 195, 242));
@@ -3392,6 +3440,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S28ActionPerformed(evt);
             }
         });
+        add(S28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 456, 42, -1));
 
         C5.setBackground(new java.awt.Color(102, 102, 102));
         C5.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3403,10 +3452,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C5ActionPerformed(evt);
             }
         });
+        add(C5, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 724, 97, 42));
 
         V5.setBackground(new java.awt.Color(47, 55, 76));
         V5.setMaximum(10);
         V5.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 548, 22, 170));
 
         S5.setBackground(new java.awt.Color(69, 93, 220));
         S5.setForeground(new java.awt.Color(186, 195, 242));
@@ -3419,6 +3470,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S5ActionPerformed(evt);
             }
         });
+        add(S5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 724, 42, -1));
 
         C7.setBackground(new java.awt.Color(102, 102, 102));
         C7.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3429,6 +3481,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C7ActionPerformed(evt);
             }
         });
+        add(C7, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 992, 97, 42));
 
         V7.setBackground(new java.awt.Color(47, 55, 76));
         V7.setMaximum(10);
@@ -3438,6 +3491,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V7StateChanged(evt);
             }
         });
+        add(V7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 816, 22, 170));
 
         S7.setBackground(new java.awt.Color(69, 93, 220));
         S7.setForeground(new java.awt.Color(186, 195, 242));
@@ -3449,6 +3503,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S7ActionPerformed(evt);
             }
         });
+        add(S7, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 992, 42, -1));
 
         C13.setBackground(new java.awt.Color(102, 102, 102));
         C13.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3459,10 +3514,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C13ActionPerformed(evt);
             }
         });
+        add(C13, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 724, 97, 42));
 
         V13.setBackground(new java.awt.Color(47, 55, 76));
         V13.setMaximum(10);
         V13.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V13, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 548, 22, 170));
 
         S13.setBackground(new java.awt.Color(69, 93, 220));
         S13.setForeground(new java.awt.Color(186, 195, 242));
@@ -3474,6 +3531,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S13ActionPerformed(evt);
             }
         });
+        add(S13, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 724, 42, -1));
 
         C21.setBackground(new java.awt.Color(102, 102, 102));
         C21.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3484,10 +3542,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C21ActionPerformed(evt);
             }
         });
+        add(C21, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 724, 97, 42));
 
         V21.setBackground(new java.awt.Color(47, 55, 76));
         V21.setMaximum(10);
         V21.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V21, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 548, 22, 170));
 
         S21.setBackground(new java.awt.Color(69, 93, 220));
         S21.setForeground(new java.awt.Color(186, 195, 242));
@@ -3499,6 +3559,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S21ActionPerformed(evt);
             }
         });
+        add(S21, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 724, 42, -1));
 
         C6.setBackground(new java.awt.Color(102, 102, 102));
         C6.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3509,10 +3570,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C6ActionPerformed(evt);
             }
         });
+        add(C6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 724, 97, 42));
 
         V6.setBackground(new java.awt.Color(47, 55, 76));
         V6.setMaximum(10);
         V6.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V6, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 548, 22, 170));
 
         S6.setBackground(new java.awt.Color(69, 93, 220));
         S6.setForeground(new java.awt.Color(186, 195, 242));
@@ -3524,6 +3587,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S6ActionPerformed(evt);
             }
         });
+        add(S6, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 724, 42, -1));
 
         C29.setBackground(new java.awt.Color(102, 102, 102));
         C29.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3534,10 +3598,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C29ActionPerformed(evt);
             }
         });
+        add(C29, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 724, 97, 42));
 
         V29.setBackground(new java.awt.Color(47, 55, 76));
         V29.setMaximum(10);
         V29.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V29, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 548, 22, 170));
 
         S29.setBackground(new java.awt.Color(69, 93, 220));
         S29.setForeground(new java.awt.Color(186, 195, 242));
@@ -3549,6 +3615,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S29ActionPerformed(evt);
             }
         });
+        add(S29, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 724, 42, -1));
 
         C14.setBackground(new java.awt.Color(102, 102, 102));
         C14.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3559,11 +3626,13 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C14ActionPerformed(evt);
             }
         });
+        add(C14, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 724, 97, 42));
 
         V14.setBackground(new java.awt.Color(47, 55, 76));
         V14.setMaximum(10);
         V14.setOrientation(javax.swing.JSlider.VERTICAL);
         V14.setPaintLabels(true);
+        add(V14, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 548, 22, 170));
 
         S14.setBackground(new java.awt.Color(69, 93, 220));
         S14.setForeground(new java.awt.Color(186, 195, 242));
@@ -3575,6 +3644,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S14ActionPerformed(evt);
             }
         });
+        add(S14, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 724, 42, -1));
 
         C22.setBackground(new java.awt.Color(102, 102, 102));
         C22.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3585,10 +3655,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C22ActionPerformed(evt);
             }
         });
+        add(C22, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 724, 97, 42));
 
         V22.setBackground(new java.awt.Color(47, 55, 76));
         V22.setMaximum(10);
         V22.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V22, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 548, 22, 170));
 
         S22.setBackground(new java.awt.Color(69, 93, 220));
         S22.setForeground(new java.awt.Color(186, 195, 242));
@@ -3600,6 +3672,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S22ActionPerformed(evt);
             }
         });
+        add(S22, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 724, 42, -1));
 
         C30.setBackground(new java.awt.Color(102, 102, 102));
         C30.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3610,10 +3683,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C30ActionPerformed(evt);
             }
         });
+        add(C30, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 724, 97, 42));
 
         V30.setBackground(new java.awt.Color(47, 55, 76));
         V30.setMaximum(10);
         V30.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V30, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 548, 22, 170));
 
         S30.setBackground(new java.awt.Color(69, 93, 220));
         S30.setForeground(new java.awt.Color(186, 195, 242));
@@ -3625,6 +3700,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S30ActionPerformed(evt);
             }
         });
+        add(S30, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 724, 42, -1));
 
         C8.setBackground(new java.awt.Color(102, 102, 102));
         C8.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3635,10 +3711,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C8ActionPerformed(evt);
             }
         });
+        add(C8, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 992, 97, 42));
 
         V8.setBackground(new java.awt.Color(47, 55, 76));
         V8.setMaximum(10);
         V8.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 816, 22, 170));
 
         S8.setBackground(new java.awt.Color(69, 93, 220));
         S8.setForeground(new java.awt.Color(186, 195, 242));
@@ -3650,6 +3728,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S8ActionPerformed(evt);
             }
         });
+        add(S8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 992, 42, -1));
 
         C15.setBackground(new java.awt.Color(102, 102, 102));
         C15.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3660,10 +3739,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C15ActionPerformed(evt);
             }
         });
+        add(C15, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 992, 97, 42));
 
         V15.setBackground(new java.awt.Color(47, 55, 76));
         V15.setMaximum(10);
         V15.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V15, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 816, 22, 170));
 
         S15.setBackground(new java.awt.Color(69, 93, 220));
         S15.setForeground(new java.awt.Color(186, 195, 242));
@@ -3675,6 +3756,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S15ActionPerformed(evt);
             }
         });
+        add(S15, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 992, 42, -1));
 
         C16.setBackground(new java.awt.Color(102, 102, 102));
         C16.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3685,10 +3767,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C16ActionPerformed(evt);
             }
         });
+        add(C16, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 992, 97, 42));
 
         V16.setBackground(new java.awt.Color(47, 55, 76));
         V16.setMaximum(10);
         V16.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V16, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 816, 22, 170));
 
         S16.setBackground(new java.awt.Color(69, 93, 220));
         S16.setForeground(new java.awt.Color(186, 195, 242));
@@ -3700,6 +3784,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S16ActionPerformed(evt);
             }
         });
+        add(S16, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 992, 42, -1));
 
         C23.setBackground(new java.awt.Color(102, 102, 102));
         C23.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3710,10 +3795,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C23ActionPerformed(evt);
             }
         });
+        add(C23, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 992, 97, 42));
 
         V23.setBackground(new java.awt.Color(47, 55, 76));
         V23.setMaximum(10);
         V23.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V23, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 816, 22, 170));
 
         S23.setBackground(new java.awt.Color(69, 93, 220));
         S23.setForeground(new java.awt.Color(186, 195, 242));
@@ -3725,6 +3812,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S23ActionPerformed(evt);
             }
         });
+        add(S23, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 992, 42, -1));
 
         C24.setBackground(new java.awt.Color(102, 102, 102));
         C24.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3735,10 +3823,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C24ActionPerformed(evt);
             }
         });
+        add(C24, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 992, 97, 42));
 
         V24.setBackground(new java.awt.Color(47, 55, 76));
         V24.setMaximum(10);
         V24.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V24, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 816, 22, 170));
 
         S24.setBackground(new java.awt.Color(69, 93, 220));
         S24.setForeground(new java.awt.Color(186, 195, 242));
@@ -3750,6 +3840,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S24ActionPerformed(evt);
             }
         });
+        add(S24, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 992, 42, -1));
 
         C31.setBackground(new java.awt.Color(102, 102, 102));
         C31.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3760,10 +3851,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C31ActionPerformed(evt);
             }
         });
+        add(C31, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 992, 97, 42));
 
         V31.setBackground(new java.awt.Color(47, 55, 76));
         V31.setMaximum(10);
         V31.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V31, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 816, 22, 170));
 
         S31.setBackground(new java.awt.Color(69, 93, 220));
         S31.setForeground(new java.awt.Color(186, 195, 242));
@@ -3775,6 +3868,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S31ActionPerformed(evt);
             }
         });
+        add(S31, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 992, 42, -1));
 
         C32.setBackground(new java.awt.Color(102, 102, 102));
         C32.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3785,10 +3879,12 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C32ActionPerformed(evt);
             }
         });
+        add(C32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 992, 97, 42));
 
         V32.setBackground(new java.awt.Color(47, 55, 76));
         V32.setMaximum(10);
         V32.setOrientation(javax.swing.JSlider.VERTICAL);
+        add(V32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 816, 22, 170));
 
         S32.setBackground(new java.awt.Color(69, 93, 220));
         S32.setForeground(new java.awt.Color(186, 195, 242));
@@ -3800,6 +3896,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S32ActionPerformed(evt);
             }
         });
+        add(S32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 992, 42, -1));
 
         C33.setBackground(new java.awt.Color(102, 102, 102));
         C33.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3810,6 +3907,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C33ActionPerformed(evt);
             }
         });
+        add(C33, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 1260, 97, 42));
 
         V33.setBackground(new java.awt.Color(47, 55, 76));
         V33.setMaximum(10);
@@ -3819,6 +3917,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V33StateChanged(evt);
             }
         });
+        add(V33, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1084, 22, 170));
 
         S33.setBackground(new java.awt.Color(69, 93, 220));
         S33.setForeground(new java.awt.Color(186, 195, 242));
@@ -3830,6 +3929,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S33ActionPerformed(evt);
             }
         });
+        add(S33, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1260, 42, -1));
 
         V34.setBackground(new java.awt.Color(47, 55, 76));
         V34.setMaximum(10);
@@ -3839,6 +3939,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V34StateChanged(evt);
             }
         });
+        add(V34, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1084, 22, 170));
 
         C34.setBackground(new java.awt.Color(102, 102, 102));
         C34.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3849,6 +3950,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C34ActionPerformed(evt);
             }
         });
+        add(C34, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 1260, 97, 42));
 
         S34.setBackground(new java.awt.Color(69, 93, 220));
         S34.setForeground(new java.awt.Color(186, 195, 242));
@@ -3860,6 +3962,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S34ActionPerformed(evt);
             }
         });
+        add(S34, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1260, 42, -1));
 
         V35.setBackground(new java.awt.Color(47, 55, 76));
         V35.setMaximum(10);
@@ -3869,6 +3972,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V35StateChanged(evt);
             }
         });
+        add(V35, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1084, 22, 170));
 
         C35.setBackground(new java.awt.Color(102, 102, 102));
         C35.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3879,6 +3983,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C35ActionPerformed(evt);
             }
         });
+        add(C35, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 1260, 97, 42));
 
         S35.setBackground(new java.awt.Color(69, 93, 220));
         S35.setForeground(new java.awt.Color(186, 195, 242));
@@ -3890,6 +3995,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S35ActionPerformed(evt);
             }
         });
+        add(S35, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1260, 42, -1));
 
         V36.setBackground(new java.awt.Color(47, 55, 76));
         V36.setMaximum(10);
@@ -3899,6 +4005,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V36StateChanged(evt);
             }
         });
+        add(V36, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 1084, 22, 170));
 
         C36.setBackground(new java.awt.Color(102, 102, 102));
         C36.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3909,6 +4016,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C36ActionPerformed(evt);
             }
         });
+        add(C36, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 1260, 97, 42));
 
         S36.setBackground(new java.awt.Color(69, 93, 220));
         S36.setForeground(new java.awt.Color(186, 195, 242));
@@ -3920,6 +4028,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S36ActionPerformed(evt);
             }
         });
+        add(S36, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 1260, 42, -1));
 
         V37.setBackground(new java.awt.Color(47, 55, 76));
         V37.setMaximum(10);
@@ -3929,6 +4038,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V37StateChanged(evt);
             }
         });
+        add(V37, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 1084, 22, 170));
 
         C37.setBackground(new java.awt.Color(102, 102, 102));
         C37.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3939,6 +4049,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C37ActionPerformed(evt);
             }
         });
+        add(C37, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 1260, 97, 42));
 
         S37.setBackground(new java.awt.Color(69, 93, 220));
         S37.setForeground(new java.awt.Color(186, 195, 242));
@@ -3950,6 +4061,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S37ActionPerformed(evt);
             }
         });
+        add(S37, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 1260, 42, -1));
 
         C38.setBackground(new java.awt.Color(102, 102, 102));
         C38.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3960,6 +4072,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C38ActionPerformed(evt);
             }
         });
+        add(C38, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 1260, 97, 42));
 
         V38.setBackground(new java.awt.Color(47, 55, 76));
         V38.setMaximum(10);
@@ -3969,6 +4082,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V38StateChanged(evt);
             }
         });
+        add(V38, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1084, 22, 170));
 
         S38.setBackground(new java.awt.Color(69, 93, 220));
         S38.setForeground(new java.awt.Color(186, 195, 242));
@@ -3980,6 +4094,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S38ActionPerformed(evt);
             }
         });
+        add(S38, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1260, 42, -1));
 
         C39.setBackground(new java.awt.Color(102, 102, 102));
         C39.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -3990,6 +4105,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C39ActionPerformed(evt);
             }
         });
+        add(C39, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 1260, 97, 42));
 
         V39.setBackground(new java.awt.Color(47, 55, 76));
         V39.setMaximum(10);
@@ -3999,6 +4115,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V39StateChanged(evt);
             }
         });
+        add(V39, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 1084, 22, 170));
 
         S39.setBackground(new java.awt.Color(69, 93, 220));
         S39.setForeground(new java.awt.Color(186, 195, 242));
@@ -4010,6 +4127,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S39ActionPerformed(evt);
             }
         });
+        add(S39, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 1260, 42, -1));
 
         C40.setBackground(new java.awt.Color(102, 102, 102));
         C40.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4020,6 +4138,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C40ActionPerformed(evt);
             }
         });
+        add(C40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 1260, 97, 42));
 
         V40.setBackground(new java.awt.Color(47, 55, 76));
         V40.setMaximum(10);
@@ -4029,6 +4148,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V40StateChanged(evt);
             }
         });
+        add(V40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 1084, 22, 170));
 
         S40.setBackground(new java.awt.Color(69, 93, 220));
         S40.setForeground(new java.awt.Color(186, 195, 242));
@@ -4040,6 +4160,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S40ActionPerformed(evt);
             }
         });
+        add(S40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 1260, 42, -1));
 
         C41.setBackground(new java.awt.Color(102, 102, 102));
         C41.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4050,6 +4171,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C41ActionPerformed(evt);
             }
         });
+        add(C41, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 1528, 97, 42));
 
         V41.setBackground(new java.awt.Color(47, 55, 76));
         V41.setMaximum(10);
@@ -4059,6 +4181,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V41StateChanged(evt);
             }
         });
+        add(V41, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1352, 22, 170));
 
         S41.setBackground(new java.awt.Color(69, 93, 220));
         S41.setForeground(new java.awt.Color(186, 195, 242));
@@ -4070,6 +4193,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S41ActionPerformed(evt);
             }
         });
+        add(S41, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1528, 42, -1));
 
         C42.setBackground(new java.awt.Color(102, 102, 102));
         C42.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4080,6 +4204,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C42ActionPerformed(evt);
             }
         });
+        add(C42, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 1528, 97, 42));
 
         S42.setBackground(new java.awt.Color(69, 93, 220));
         S42.setForeground(new java.awt.Color(186, 195, 242));
@@ -4091,6 +4216,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S42ActionPerformed(evt);
             }
         });
+        add(S42, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1528, 42, -1));
 
         V42.setBackground(new java.awt.Color(47, 55, 76));
         V42.setMaximum(10);
@@ -4100,6 +4226,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V42StateChanged(evt);
             }
         });
+        add(V42, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1352, 22, 170));
 
         C43.setBackground(new java.awt.Color(102, 102, 102));
         C43.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4110,6 +4237,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C43ActionPerformed(evt);
             }
         });
+        add(C43, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 1528, 97, 42));
 
         S43.setBackground(new java.awt.Color(69, 93, 220));
         S43.setForeground(new java.awt.Color(186, 195, 242));
@@ -4121,6 +4249,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S43ActionPerformed(evt);
             }
         });
+        add(S43, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1528, 42, -1));
 
         V43.setBackground(new java.awt.Color(47, 55, 76));
         V43.setMaximum(10);
@@ -4130,6 +4259,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V43StateChanged(evt);
             }
         });
+        add(V43, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1352, 22, 170));
 
         C44.setBackground(new java.awt.Color(102, 102, 102));
         C44.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4140,6 +4270,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C44ActionPerformed(evt);
             }
         });
+        add(C44, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 1528, 97, 42));
 
         S44.setBackground(new java.awt.Color(69, 93, 220));
         S44.setForeground(new java.awt.Color(186, 195, 242));
@@ -4151,6 +4282,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S44ActionPerformed(evt);
             }
         });
+        add(S44, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 1528, 42, -1));
 
         V44.setBackground(new java.awt.Color(47, 55, 76));
         V44.setMaximum(10);
@@ -4160,6 +4292,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V44StateChanged(evt);
             }
         });
+        add(V44, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 1352, 22, 170));
 
         C45.setBackground(new java.awt.Color(102, 102, 102));
         C45.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4170,6 +4303,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C45ActionPerformed(evt);
             }
         });
+        add(C45, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 1528, 97, 42));
 
         V45.setBackground(new java.awt.Color(47, 55, 76));
         V45.setMaximum(10);
@@ -4179,6 +4313,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V45StateChanged(evt);
             }
         });
+        add(V45, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 1352, 22, 170));
 
         S45.setBackground(new java.awt.Color(69, 93, 220));
         S45.setForeground(new java.awt.Color(186, 195, 242));
@@ -4190,6 +4325,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S45ActionPerformed(evt);
             }
         });
+        add(S45, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 1528, 42, -1));
 
         C46.setBackground(new java.awt.Color(102, 102, 102));
         C46.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4200,6 +4336,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C46ActionPerformed(evt);
             }
         });
+        add(C46, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 1528, 97, 42));
 
         V46.setBackground(new java.awt.Color(47, 55, 76));
         V46.setMaximum(10);
@@ -4209,6 +4346,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V46StateChanged(evt);
             }
         });
+        add(V46, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1352, 22, 170));
 
         S46.setBackground(new java.awt.Color(69, 93, 220));
         S46.setForeground(new java.awt.Color(186, 195, 242));
@@ -4220,6 +4358,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S46ActionPerformed(evt);
             }
         });
+        add(S46, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1528, 42, -1));
 
         C47.setBackground(new java.awt.Color(102, 102, 102));
         C47.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4230,6 +4369,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C47ActionPerformed(evt);
             }
         });
+        add(C47, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 1528, 97, 42));
 
         V47.setBackground(new java.awt.Color(47, 55, 76));
         V47.setMaximum(10);
@@ -4239,6 +4379,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V47StateChanged(evt);
             }
         });
+        add(V47, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 1352, 22, 170));
 
         S47.setBackground(new java.awt.Color(69, 93, 220));
         S47.setForeground(new java.awt.Color(186, 195, 242));
@@ -4250,6 +4391,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S47ActionPerformed(evt);
             }
         });
+        add(S47, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 1528, 42, -1));
 
         C48.setBackground(new java.awt.Color(102, 102, 102));
         C48.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4260,6 +4402,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C48ActionPerformed(evt);
             }
         });
+        add(C48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 1528, 97, 42));
 
         V48.setBackground(new java.awt.Color(47, 55, 76));
         V48.setMaximum(10);
@@ -4269,6 +4412,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V48StateChanged(evt);
             }
         });
+        add(V48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 1352, 22, 170));
 
         S48.setBackground(new java.awt.Color(69, 93, 220));
         S48.setForeground(new java.awt.Color(186, 195, 242));
@@ -4280,6 +4424,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S48ActionPerformed(evt);
             }
         });
+        add(S48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 1528, 42, -1));
 
         C49.setBackground(new java.awt.Color(102, 102, 102));
         C49.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4290,6 +4435,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C49ActionPerformed(evt);
             }
         });
+        add(C49, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 1797, 97, 42));
 
         V49.setBackground(new java.awt.Color(47, 55, 76));
         V49.setMaximum(10);
@@ -4299,6 +4445,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V49StateChanged(evt);
             }
         });
+        add(V49, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1621, 22, 170));
 
         S49.setBackground(new java.awt.Color(69, 93, 220));
         S49.setForeground(new java.awt.Color(186, 195, 242));
@@ -4310,6 +4457,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S49ActionPerformed(evt);
             }
         });
+        add(S49, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1797, 42, -1));
 
         C50.setBackground(new java.awt.Color(102, 102, 102));
         C50.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4320,6 +4468,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C50ActionPerformed(evt);
             }
         });
+        add(C50, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 1797, 97, 42));
 
         V50.setBackground(new java.awt.Color(47, 55, 76));
         V50.setMaximum(10);
@@ -4329,6 +4478,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V50StateChanged(evt);
             }
         });
+        add(V50, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1621, 22, 170));
 
         S50.setBackground(new java.awt.Color(69, 93, 220));
         S50.setForeground(new java.awt.Color(186, 195, 242));
@@ -4340,6 +4490,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S50ActionPerformed(evt);
             }
         });
+        add(S50, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1797, 42, -1));
 
         C51.setBackground(new java.awt.Color(102, 102, 102));
         C51.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4350,6 +4501,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C51ActionPerformed(evt);
             }
         });
+        add(C51, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 1797, 97, 42));
 
         V51.setBackground(new java.awt.Color(47, 55, 76));
         V51.setMaximum(10);
@@ -4359,6 +4511,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V51StateChanged(evt);
             }
         });
+        add(V51, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1621, 22, 170));
 
         S51.setBackground(new java.awt.Color(69, 93, 220));
         S51.setForeground(new java.awt.Color(186, 195, 242));
@@ -4370,6 +4523,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S51ActionPerformed(evt);
             }
         });
+        add(S51, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 1797, 42, -1));
 
         C52.setBackground(new java.awt.Color(102, 102, 102));
         C52.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4380,6 +4534,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C52ActionPerformed(evt);
             }
         });
+        add(C52, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 1797, 97, 42));
 
         V52.setBackground(new java.awt.Color(47, 55, 76));
         V52.setMaximum(10);
@@ -4389,6 +4544,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V52StateChanged(evt);
             }
         });
+        add(V52, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 1621, 22, 170));
 
         S52.setBackground(new java.awt.Color(69, 93, 220));
         S52.setForeground(new java.awt.Color(186, 195, 242));
@@ -4400,6 +4556,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S52ActionPerformed(evt);
             }
         });
+        add(S52, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 1797, 42, -1));
 
         C53.setBackground(new java.awt.Color(102, 102, 102));
         C53.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4410,6 +4567,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C53ActionPerformed(evt);
             }
         });
+        add(C53, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 1797, 97, 42));
 
         V53.setBackground(new java.awt.Color(47, 55, 76));
         V53.setMaximum(10);
@@ -4419,6 +4577,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V53StateChanged(evt);
             }
         });
+        add(V53, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 1621, 22, 170));
 
         S53.setBackground(new java.awt.Color(69, 93, 220));
         S53.setForeground(new java.awt.Color(186, 195, 242));
@@ -4430,6 +4589,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S53ActionPerformed(evt);
             }
         });
+        add(S53, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 1797, 42, -1));
 
         S54.setBackground(new java.awt.Color(69, 93, 220));
         S54.setForeground(new java.awt.Color(186, 195, 242));
@@ -4441,6 +4601,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S54ActionPerformed(evt);
             }
         });
+        add(S54, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1797, 42, -1));
 
         V54.setBackground(new java.awt.Color(47, 55, 76));
         V54.setMaximum(10);
@@ -4450,6 +4611,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V54StateChanged(evt);
             }
         });
+        add(V54, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 1621, 22, 170));
 
         C54.setBackground(new java.awt.Color(102, 102, 102));
         C54.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4460,6 +4622,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C54ActionPerformed(evt);
             }
         });
+        add(C54, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 1797, 97, 42));
 
         S55.setBackground(new java.awt.Color(69, 93, 220));
         S55.setForeground(new java.awt.Color(186, 195, 242));
@@ -4471,6 +4634,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S55ActionPerformed(evt);
             }
         });
+        add(S55, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 1797, 42, -1));
 
         V55.setBackground(new java.awt.Color(47, 55, 76));
         V55.setMaximum(10);
@@ -4480,6 +4644,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V55StateChanged(evt);
             }
         });
+        add(V55, new org.netbeans.lib.awtextra.AbsoluteConstraints(907, 1621, 22, 170));
 
         C55.setBackground(new java.awt.Color(102, 102, 102));
         C55.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4490,6 +4655,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C55ActionPerformed(evt);
             }
         });
+        add(C55, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 1797, 97, 42));
 
         S56.setBackground(new java.awt.Color(69, 93, 220));
         S56.setForeground(new java.awt.Color(186, 195, 242));
@@ -4501,6 +4667,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S56ActionPerformed(evt);
             }
         });
+        add(S56, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 1797, 42, -1));
 
         V56.setBackground(new java.awt.Color(47, 55, 76));
         V56.setMaximum(10);
@@ -4510,6 +4677,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V56StateChanged(evt);
             }
         });
+        add(V56, new org.netbeans.lib.awtextra.AbsoluteConstraints(1058, 1621, 22, 170));
 
         C56.setBackground(new java.awt.Color(102, 102, 102));
         C56.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4520,6 +4688,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C56ActionPerformed(evt);
             }
         });
+        add(C56, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 1797, 97, 42));
 
         C57.setBackground(new java.awt.Color(102, 102, 102));
         C57.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4530,6 +4699,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C57ActionPerformed(evt);
             }
         });
+        add(C57, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 2065, 97, 42));
 
         V57.setBackground(new java.awt.Color(47, 55, 76));
         V57.setMaximum(10);
@@ -4539,6 +4709,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V57StateChanged(evt);
             }
         });
+        add(V57, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 1889, -1, 170));
 
         S57.setBackground(new java.awt.Color(69, 93, 220));
         S57.setForeground(new java.awt.Color(186, 195, 242));
@@ -4550,6 +4721,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S57ActionPerformed(evt);
             }
         });
+        add(S57, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 2065, 42, -1));
 
         C58.setBackground(new java.awt.Color(102, 102, 102));
         C58.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4560,6 +4732,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C58ActionPerformed(evt);
             }
         });
+        add(C58, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 2065, 97, 42));
 
         V58.setBackground(new java.awt.Color(47, 55, 76));
         V58.setMaximum(10);
@@ -4569,6 +4742,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V58StateChanged(evt);
             }
         });
+        add(V58, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 1889, 22, 170));
 
         S58.setBackground(new java.awt.Color(69, 93, 220));
         S58.setForeground(new java.awt.Color(186, 195, 242));
@@ -4580,6 +4754,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S58ActionPerformed(evt);
             }
         });
+        add(S58, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 2065, 42, -1));
 
         C59.setBackground(new java.awt.Color(102, 102, 102));
         C59.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4590,6 +4765,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C59ActionPerformed(evt);
             }
         });
+        add(C59, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 2065, 97, 42));
 
         V59.setBackground(new java.awt.Color(47, 55, 76));
         V59.setMaximum(10);
@@ -4599,6 +4775,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V59StateChanged(evt);
             }
         });
+        add(V59, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 1889, 22, 170));
 
         S59.setBackground(new java.awt.Color(69, 93, 220));
         S59.setForeground(new java.awt.Color(186, 195, 242));
@@ -4610,6 +4787,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S59ActionPerformed(evt);
             }
         });
+        add(S59, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 2065, 42, -1));
 
         C60.setBackground(new java.awt.Color(102, 102, 102));
         C60.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4620,6 +4798,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C60ActionPerformed(evt);
             }
         });
+        add(C60, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 2065, 97, 42));
 
         V60.setBackground(new java.awt.Color(47, 55, 76));
         V60.setMaximum(10);
@@ -4629,6 +4808,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V60StateChanged(evt);
             }
         });
+        add(V60, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 1889, 22, 170));
 
         S60.setBackground(new java.awt.Color(69, 93, 220));
         S60.setForeground(new java.awt.Color(186, 195, 242));
@@ -4640,6 +4820,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S60ActionPerformed(evt);
             }
         });
+        add(S60, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 2065, 42, -1));
 
         C61.setBackground(new java.awt.Color(102, 102, 102));
         C61.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4650,6 +4831,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C61ActionPerformed(evt);
             }
         });
+        add(C61, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 2065, 97, 42));
 
         V61.setBackground(new java.awt.Color(47, 55, 76));
         V61.setMaximum(10);
@@ -4659,6 +4841,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V61StateChanged(evt);
             }
         });
+        add(V61, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 1889, 22, 170));
 
         S61.setBackground(new java.awt.Color(69, 93, 220));
         S61.setForeground(new java.awt.Color(186, 195, 242));
@@ -4670,6 +4853,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S61ActionPerformed(evt);
             }
         });
+        add(S61, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 2065, 42, -1));
 
         C62.setBackground(new java.awt.Color(102, 102, 102));
         C62.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4680,6 +4864,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C62ActionPerformed(evt);
             }
         });
+        add(C62, new org.netbeans.lib.awtextra.AbsoluteConstraints(798, 2065, 97, 42));
 
         V62.setBackground(new java.awt.Color(47, 55, 76));
         V62.setMaximum(10);
@@ -4689,6 +4874,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V62StateChanged(evt);
             }
         });
+        add(V62, new org.netbeans.lib.awtextra.AbsoluteConstraints(757, 1889, 22, 170));
 
         S62.setBackground(new java.awt.Color(69, 93, 220));
         S62.setForeground(new java.awt.Color(186, 195, 242));
@@ -4700,6 +4886,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S62ActionPerformed(evt);
             }
         });
+        add(S62, new org.netbeans.lib.awtextra.AbsoluteConstraints(756, 2065, 42, -1));
 
         C63.setBackground(new java.awt.Color(102, 102, 102));
         C63.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4710,6 +4897,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C63ActionPerformed(evt);
             }
         });
+        add(C63, new org.netbeans.lib.awtextra.AbsoluteConstraints(947, 2065, 97, 42));
 
         V63.setBackground(new java.awt.Color(47, 55, 76));
         V63.setMaximum(10);
@@ -4719,6 +4907,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V63StateChanged(evt);
             }
         });
+        add(V63, new org.netbeans.lib.awtextra.AbsoluteConstraints(908, 1889, 22, 170));
 
         S63.setBackground(new java.awt.Color(69, 93, 220));
         S63.setForeground(new java.awt.Color(186, 195, 242));
@@ -4730,6 +4919,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S63ActionPerformed(evt);
             }
         });
+        add(S63, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 2065, 42, -1));
 
         C64.setBackground(new java.awt.Color(102, 102, 102));
         C64.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -4740,6 +4930,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 C64ActionPerformed(evt);
             }
         });
+        add(C64, new org.netbeans.lib.awtextra.AbsoluteConstraints(1096, 2065, 97, 42));
 
         V64.setBackground(new java.awt.Color(47, 55, 76));
         V64.setMaximum(10);
@@ -4749,6 +4940,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 V64StateChanged(evt);
             }
         });
+        add(V64, new org.netbeans.lib.awtextra.AbsoluteConstraints(1059, 1889, 22, 170));
 
         S64.setBackground(new java.awt.Color(69, 93, 220));
         S64.setForeground(new java.awt.Color(186, 195, 242));
@@ -4760,6 +4952,7 @@ public class newPanelMixer extends javax.swing.JPanel {
                 S64ActionPerformed(evt);
             }
         });
+        add(S64, new org.netbeans.lib.awtextra.AbsoluteConstraints(1054, 2065, 42, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4776,6 +4969,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel2.add(I1);
         I1.setBounds(0, 0, 115, 170);
 
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 12, -1, -1));
+
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel1.setLayout(null);
@@ -4789,6 +4984,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel2.setText("T");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(90, 0, 20, 30);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 12, -1, -1));
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4804,6 +5001,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel3.add(jLabel3);
         jLabel3.setBounds(90, 0, 20, 30);
 
+        add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 12, -1, -1));
+
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel4.setLayout(null);
@@ -4817,6 +5016,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel4.setText("T");
         jPanel4.add(jLabel4);
         jLabel4.setBounds(90, 0, 20, 30);
+
+        add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 12, -1, -1));
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4832,6 +5033,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel5.add(jLabel5);
         jLabel5.setBounds(90, 0, 20, 30);
 
+        add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 12, -1, -1));
+
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel6.setLayout(null);
@@ -4845,6 +5048,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel6.setText("T");
         jPanel6.add(jLabel6);
         jLabel6.setBounds(90, 0, 20, 30);
+
+        add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 12, -1, -1));
 
         jPanel7.setBackground(new java.awt.Color(0, 0, 0));
         jPanel7.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4860,6 +5065,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel7.add(jLabel7);
         jLabel7.setBounds(90, 0, 20, 30);
 
+        add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(929, 12, -1, -1));
+
         jPanel8.setBackground(new java.awt.Color(0, 0, 0));
         jPanel8.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel8.setLayout(null);
@@ -4873,6 +5080,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel8.setText("T");
         jPanel8.add(jLabel8);
         jLabel8.setBounds(90, 0, 20, 30);
+
+        add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 12, -1, -1));
 
         jPanel9.setBackground(new java.awt.Color(0, 0, 0));
         jPanel9.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4888,6 +5097,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel9.add(jLabel9);
         jLabel9.setBounds(90, 0, 20, 30);
 
+        add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 280, -1, -1));
+
         jPanel10.setBackground(new java.awt.Color(0, 0, 0));
         jPanel10.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel10.setLayout(null);
@@ -4901,6 +5112,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel10.setText("T");
         jPanel10.add(jLabel10);
         jLabel10.setBounds(90, 0, 20, 30);
+
+        add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 280, -1, -1));
 
         jPanel11.setBackground(new java.awt.Color(0, 0, 0));
         jPanel11.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4916,6 +5129,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel11.add(jLabel11);
         jLabel11.setBounds(90, 0, 20, 30);
 
+        add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 280, -1, -1));
+
         jPanel12.setBackground(new java.awt.Color(0, 0, 0));
         jPanel12.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel12.setLayout(null);
@@ -4929,6 +5144,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel12.setText("T");
         jPanel12.add(jLabel12);
         jLabel12.setBounds(90, 0, 20, 30);
+
+        add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 280, -1, -1));
 
         jPanel13.setBackground(new java.awt.Color(0, 0, 0));
         jPanel13.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4944,6 +5161,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel13.add(jLabel13);
         jLabel13.setBounds(90, 0, 20, 30);
 
+        add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
+
         jPanel14.setBackground(new java.awt.Color(0, 0, 0));
         jPanel14.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel14.setLayout(null);
@@ -4957,6 +5176,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel14.setText("T");
         jPanel14.add(jLabel14);
         jLabel14.setBounds(90, 0, 20, 30);
+
+        add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, -1, -1));
 
         jPanel15.setBackground(new java.awt.Color(0, 0, 0));
         jPanel15.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -4972,6 +5193,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel15.add(jLabel15);
         jLabel15.setBounds(90, 0, 20, 30);
 
+        add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 280, -1, -1));
+
         jPanel16.setBackground(new java.awt.Color(0, 0, 0));
         jPanel16.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel16.setLayout(null);
@@ -4985,6 +5208,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel16.setText("T");
         jPanel16.add(jLabel16);
         jLabel16.setBounds(90, 0, 20, 30);
+
+        add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 280, -1, -1));
 
         jPanel17.setBackground(new java.awt.Color(0, 0, 0));
         jPanel17.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5000,6 +5225,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel17.add(jLabel17);
         jLabel17.setBounds(90, 0, 20, 30);
 
+        add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 548, -1, -1));
+
         jPanel18.setBackground(new java.awt.Color(0, 0, 0));
         jPanel18.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel18.setLayout(null);
@@ -5013,6 +5240,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel18.setText("T");
         jPanel18.add(jLabel18);
         jLabel18.setBounds(90, 0, 20, 30);
+
+        add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 548, -1, -1));
 
         jPanel19.setBackground(new java.awt.Color(0, 0, 0));
         jPanel19.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5028,6 +5257,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel19.add(jLabel19);
         jLabel19.setBounds(90, 0, 20, 30);
 
+        add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 548, -1, -1));
+
         jPanel20.setBackground(new java.awt.Color(0, 0, 0));
         jPanel20.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel20.setLayout(null);
@@ -5041,6 +5272,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel20.setText("T");
         jPanel20.add(jLabel20);
         jLabel20.setBounds(90, 0, 20, 30);
+
+        add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 548, -1, -1));
 
         jPanel21.setBackground(new java.awt.Color(0, 0, 0));
         jPanel21.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5056,6 +5289,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel21.add(jLabel21);
         jLabel21.setBounds(90, 0, 20, 30);
 
+        add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 548, -1, -1));
+
         jPanel22.setBackground(new java.awt.Color(0, 0, 0));
         jPanel22.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel22.setLayout(null);
@@ -5069,6 +5304,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel22.setText("T");
         jPanel22.add(jLabel22);
         jLabel22.setBounds(90, 0, 20, 30);
+
+        add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 548, -1, -1));
 
         jPanel23.setBackground(new java.awt.Color(0, 0, 0));
         jPanel23.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5084,6 +5321,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel23.add(jLabel23);
         jLabel23.setBounds(90, 0, 20, 30);
 
+        add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 548, -1, -1));
+
         jPanel24.setBackground(new java.awt.Color(0, 0, 0));
         jPanel24.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel24.setLayout(null);
@@ -5097,6 +5336,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel24.setText("T");
         jPanel24.add(jLabel24);
         jLabel24.setBounds(90, 0, 20, 30);
+
+        add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 548, -1, -1));
 
         jPanel25.setBackground(new java.awt.Color(0, 0, 0));
         jPanel25.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5112,6 +5353,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel25.add(jLabel25);
         jLabel25.setBounds(90, 0, 20, 30);
 
+        add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 816, -1, -1));
+
         jPanel26.setBackground(new java.awt.Color(0, 0, 0));
         jPanel26.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel26.setLayout(null);
@@ -5125,6 +5368,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel26.setText("T");
         jPanel26.add(jLabel26);
         jLabel26.setBounds(90, 0, 20, 30);
+
+        add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 816, -1, -1));
 
         jPanel27.setBackground(new java.awt.Color(0, 0, 0));
         jPanel27.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5140,6 +5385,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel27.add(jLabel27);
         jLabel27.setBounds(90, 0, 20, 30);
 
+        add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 816, -1, -1));
+
         jPanel28.setBackground(new java.awt.Color(0, 0, 0));
         jPanel28.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel28.setLayout(null);
@@ -5153,6 +5400,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel28.setText("T");
         jPanel28.add(jLabel28);
         jLabel28.setBounds(90, 0, 20, 30);
+
+        add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 816, -1, -1));
 
         jPanel29.setBackground(new java.awt.Color(0, 0, 0));
         jPanel29.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5168,6 +5417,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel29.add(jLabel29);
         jLabel29.setBounds(90, 0, 20, 30);
 
+        add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 816, -1, -1));
+
         jPanel30.setBackground(new java.awt.Color(0, 0, 0));
         jPanel30.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel30.setLayout(null);
@@ -5181,6 +5432,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel30.setText("T");
         jPanel30.add(jLabel30);
         jLabel30.setBounds(90, 0, 20, 30);
+
+        add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 816, -1, -1));
 
         jPanel31.setBackground(new java.awt.Color(0, 0, 0));
         jPanel31.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5196,6 +5449,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel31.add(jLabel31);
         jLabel31.setBounds(90, 0, 20, 30);
 
+        add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 816, -1, -1));
+
         jPanel32.setBackground(new java.awt.Color(0, 0, 0));
         jPanel32.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel32.setLayout(null);
@@ -5209,6 +5464,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel32.setText("T");
         jPanel32.add(jLabel32);
         jLabel32.setBounds(90, 0, 20, 30);
+
+        add(jPanel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 816, -1, -1));
 
         jPanel33.setBackground(new java.awt.Color(0, 0, 0));
         jPanel33.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5224,6 +5481,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel33.add(jLabel33);
         jLabel33.setBounds(90, 0, 20, 30);
 
+        add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 1084, -1, -1));
+
         jPanel34.setBackground(new java.awt.Color(0, 0, 0));
         jPanel34.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel34.setLayout(null);
@@ -5237,6 +5496,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel34.setText("T");
         jPanel34.add(jLabel34);
         jLabel34.setBounds(90, 0, 20, 30);
+
+        add(jPanel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 1084, -1, -1));
 
         jPanel35.setBackground(new java.awt.Color(0, 0, 0));
         jPanel35.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5252,6 +5513,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel35.add(jLabel35);
         jLabel35.setBounds(90, 0, 20, 30);
 
+        add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 1084, -1, -1));
+
         jPanel36.setBackground(new java.awt.Color(0, 0, 0));
         jPanel36.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel36.setLayout(null);
@@ -5265,6 +5528,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel36.setText("T");
         jPanel36.add(jLabel36);
         jLabel36.setBounds(90, 0, 20, 30);
+
+        add(jPanel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 1084, -1, -1));
 
         jPanel37.setBackground(new java.awt.Color(0, 0, 0));
         jPanel37.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5280,6 +5545,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel37.add(jLabel37);
         jLabel37.setBounds(90, 0, 20, 30);
 
+        add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 1084, -1, -1));
+
         jPanel38.setBackground(new java.awt.Color(0, 0, 0));
         jPanel38.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel38.setLayout(null);
@@ -5293,6 +5560,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel38.setText("T");
         jPanel38.add(jLabel38);
         jLabel38.setBounds(90, 0, 20, 30);
+
+        add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 1084, -1, -1));
 
         jPanel39.setBackground(new java.awt.Color(0, 0, 0));
         jPanel39.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5308,6 +5577,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel39.add(jLabel39);
         jLabel39.setBounds(90, 0, 20, 30);
 
+        add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 1084, -1, -1));
+
         jPanel40.setBackground(new java.awt.Color(0, 0, 0));
         jPanel40.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel40.setLayout(null);
@@ -5315,6 +5586,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         I40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel40.add(I40);
         I40.setBounds(0, 0, 115, 170);
+
+        add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 1084, -1, -1));
 
         jPanel41.setBackground(new java.awt.Color(0, 0, 0));
         jPanel41.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5330,6 +5603,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel41.add(jLabel40);
         jLabel40.setBounds(90, 0, 20, 30);
 
+        add(jPanel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 1352, -1, -1));
+
         jPanel42.setBackground(new java.awt.Color(0, 0, 0));
         jPanel42.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel42.setLayout(null);
@@ -5343,6 +5618,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel41.setText("T");
         jPanel42.add(jLabel41);
         jLabel41.setBounds(90, 0, 20, 30);
+
+        add(jPanel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 1352, -1, -1));
 
         jPanel43.setBackground(new java.awt.Color(0, 0, 0));
         jPanel43.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5358,6 +5635,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel43.add(jLabel42);
         jLabel42.setBounds(90, 0, 20, 30);
 
+        add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 1352, -1, -1));
+
         jPanel44.setBackground(new java.awt.Color(0, 0, 0));
         jPanel44.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel44.setLayout(null);
@@ -5371,6 +5650,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel43.setText("T");
         jPanel44.add(jLabel43);
         jLabel43.setBounds(90, 0, 20, 30);
+
+        add(jPanel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 1352, -1, -1));
 
         jPanel45.setBackground(new java.awt.Color(0, 0, 0));
         jPanel45.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5386,6 +5667,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel45.add(jLabel44);
         jLabel44.setBounds(90, 0, 20, 30);
 
+        add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 1352, -1, -1));
+
         jPanel46.setBackground(new java.awt.Color(0, 0, 0));
         jPanel46.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel46.setLayout(null);
@@ -5399,6 +5682,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel45.setText("T");
         jPanel46.add(jLabel45);
         jLabel45.setBounds(90, 0, 20, 30);
+
+        add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 1352, -1, -1));
 
         jPanel47.setBackground(new java.awt.Color(0, 0, 0));
         jPanel47.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5414,6 +5699,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel47.add(jLabel46);
         jLabel46.setBounds(90, 0, 20, 30);
 
+        add(jPanel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 1352, -1, -1));
+
         jPanel48.setBackground(new java.awt.Color(0, 0, 0));
         jPanel48.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel48.setLayout(null);
@@ -5427,6 +5714,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel47.setText("T");
         jPanel48.add(jLabel47);
         jLabel47.setBounds(90, 0, 20, 30);
+
+        add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 1352, -1, -1));
 
         jPanel49.setBackground(new java.awt.Color(0, 0, 0));
         jPanel49.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5442,6 +5731,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel49.add(jLabel48);
         jLabel48.setBounds(90, 0, 20, 30);
 
+        add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 1621, -1, -1));
+
         jPanel50.setBackground(new java.awt.Color(0, 0, 0));
         jPanel50.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel50.setLayout(null);
@@ -5455,6 +5746,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel49.setText("T");
         jPanel50.add(jLabel49);
         jLabel49.setBounds(90, 0, 20, 30);
+
+        add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 1621, -1, -1));
 
         jPanel51.setBackground(new java.awt.Color(0, 0, 0));
         jPanel51.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5470,6 +5763,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel51.add(jLabel50);
         jLabel50.setBounds(90, 0, 20, 30);
 
+        add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 1621, -1, -1));
+
         jPanel52.setBackground(new java.awt.Color(0, 0, 0));
         jPanel52.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel52.setLayout(null);
@@ -5483,6 +5778,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel51.setText("T");
         jPanel52.add(jLabel51);
         jLabel51.setBounds(90, 0, 20, 30);
+
+        add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 1621, -1, -1));
 
         jPanel53.setBackground(new java.awt.Color(0, 0, 0));
         jPanel53.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5498,6 +5795,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel53.add(jLabel52);
         jLabel52.setBounds(90, 0, 20, 30);
 
+        add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 1621, -1, -1));
+
         jPanel54.setBackground(new java.awt.Color(0, 0, 0));
         jPanel54.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel54.setLayout(null);
@@ -5511,6 +5810,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel53.setText("T");
         jPanel54.add(jLabel53);
         jLabel53.setBounds(90, 0, 20, 30);
+
+        add(jPanel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 1621, -1, -1));
 
         jPanel55.setBackground(new java.awt.Color(0, 0, 0));
         jPanel55.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5526,6 +5827,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel55.add(jLabel54);
         jLabel54.setBounds(90, 0, 20, 30);
 
+        add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(931, 1621, -1, -1));
+
         jPanel56.setBackground(new java.awt.Color(0, 0, 0));
         jPanel56.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel56.setLayout(null);
@@ -5539,6 +5842,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel55.setText("T");
         jPanel56.add(jLabel55);
         jLabel55.setBounds(90, 0, 20, 30);
+
+        add(jPanel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(1082, 1621, -1, -1));
 
         jPanel57.setBackground(new java.awt.Color(0, 0, 0));
         jPanel57.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5554,6 +5859,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel57.add(jLabel58);
         jLabel58.setBounds(90, 0, 20, 30);
 
+        add(jPanel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(1083, 1889, -1, -1));
+
         jPanel58.setBackground(new java.awt.Color(0, 0, 0));
         jPanel58.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel58.setLayout(null);
@@ -5567,6 +5874,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel56.setText("T");
         jPanel58.add(jLabel56);
         jLabel56.setBounds(90, 0, 20, 30);
+
+        add(jPanel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(932, 1889, -1, -1));
 
         jPanel59.setBackground(new java.awt.Color(0, 0, 0));
         jPanel59.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5582,6 +5891,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel59.add(jLabel57);
         jLabel57.setBounds(90, 0, 20, 30);
 
+        add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(781, 1889, -1, -1));
+
         jPanel60.setBackground(new java.awt.Color(0, 0, 0));
         jPanel60.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel60.setLayout(null);
@@ -5595,6 +5906,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel59.setText("T");
         jPanel60.add(jLabel59);
         jLabel59.setBounds(90, 0, 20, 30);
+
+        add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(631, 1889, -1, -1));
 
         jPanel61.setBackground(new java.awt.Color(0, 0, 0));
         jPanel61.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5610,6 +5923,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel61.add(jLabel60);
         jLabel60.setBounds(90, 0, 20, 30);
 
+        add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(482, 1889, -1, -1));
+
         jPanel62.setBackground(new java.awt.Color(0, 0, 0));
         jPanel62.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel62.setLayout(null);
@@ -5623,6 +5938,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel61.setText("T");
         jPanel62.add(jLabel61);
         jLabel61.setBounds(90, 0, 20, 30);
+
+        add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 1889, -1, -1));
 
         jPanel63.setBackground(new java.awt.Color(0, 0, 0));
         jPanel63.setPreferredSize(new java.awt.Dimension(115, 170));
@@ -5638,6 +5955,8 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel63.add(jLabel62);
         jLabel62.setBounds(90, 0, 20, 30);
 
+        add(jPanel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 1889, -1, -1));
+
         jPanel64.setBackground(new java.awt.Color(0, 0, 0));
         jPanel64.setPreferredSize(new java.awt.Dimension(115, 170));
         jPanel64.setLayout(null);
@@ -5652,835 +5971,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         jPanel64.add(jLabel63);
         jLabel63.setBounds(90, 0, 20, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(S57, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C57, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(9, 9, 9)
-                            .addComponent(S58, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C58, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S59, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C59, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S60, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C60, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S61, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C61, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S62, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C62, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S63, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C63, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(S64, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(C64, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(V57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(12, 12, 12)
-                            .addComponent(V58, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(V59, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(9, 9, 9)
-                            .addComponent(V60, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(V61, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(11, 11, 11)
-                            .addComponent(V62, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(V63, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(V64, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(2, 2, 2)
-                            .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V21, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V29, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V14, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V22, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V30, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V9, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V17, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V25, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1, 1, 1)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1, 1, 1)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V19, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V27, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S9, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C9, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S17, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C17, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S25, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C25, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S11, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C11, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S19, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C19, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S27, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C27, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V18, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V26, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V12, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V20, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V28, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C10, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S18, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C18, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S26, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C26, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S12, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C12, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S20, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C20, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S28, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C28, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S13, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C13, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S21, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C21, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C6, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S29, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C29, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C14, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C22, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C30, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V15, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V16, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V23, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V24, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V31, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V32, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S7, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C7, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S8, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C8, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S15, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C15, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C16, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S23, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C23, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S24, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C24, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C31, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C32, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V33, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V34, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V35, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V36, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V37, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V38, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V39, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V40, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C33, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S34, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C34, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S35, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C35, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S36, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C36, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S37, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C37, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S38, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C38, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S39, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C39, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S40, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C40, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V41, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V42, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V43, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V44, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V45, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V46, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V47, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V48, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S41, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C41, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C42, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C43, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C44, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C45, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S46, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C46, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S47, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C47, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C48, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(V49, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V50, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V51, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(V52, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(V53, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(V54, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V55, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(V56, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(S49, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C49, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
-                        .addComponent(S50, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C50, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S51, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C51, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S52, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C52, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S53, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C53, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S54, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C54, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S55, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C55, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(S56, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(C56, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(9, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V9, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V17, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V25, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V19, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V27, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S1)
-                            .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S9)
-                            .addComponent(C9, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S17)
-                            .addComponent(C17, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S25)
-                            .addComponent(C25, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S3)
-                            .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S11)
-                            .addComponent(C11, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S19)
-                            .addComponent(C19, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S27)
-                            .addComponent(C27, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V10, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V18, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V26, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V12, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V20, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V28, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S2)
-                            .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S10)
-                            .addComponent(C10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S18)
-                            .addComponent(C18, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S26)
-                            .addComponent(C26, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S4)
-                            .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S12)
-                            .addComponent(C12, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S20)
-                            .addComponent(C20, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S28)
-                            .addComponent(C28, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V13, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V21, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V6, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V29, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V14, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V22, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V30, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S5)
-                            .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S13)
-                            .addComponent(C13, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S21)
-                            .addComponent(C21, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S6)
-                            .addComponent(C6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S29)
-                            .addComponent(C29, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S14)
-                            .addComponent(C14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S22)
-                            .addComponent(C22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S30)
-                            .addComponent(C30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V8, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V15, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V16, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V23, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V24, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V31, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V32, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S7)
-                            .addComponent(C7, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S8)
-                            .addComponent(C8, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S15)
-                            .addComponent(C15, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S16)
-                            .addComponent(C16, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S23)
-                            .addComponent(C23, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S24)
-                            .addComponent(C24, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S31)
-                            .addComponent(C31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S32)
-                            .addComponent(C32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V33, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V34, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V35, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V36, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V37, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V38, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V39, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V40, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S33)
-                            .addComponent(C33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S34)
-                            .addComponent(C34, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S35)
-                            .addComponent(C35, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S36)
-                            .addComponent(C36, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S37)
-                            .addComponent(C37, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S38)
-                            .addComponent(C38, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S39)
-                            .addComponent(C39, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S40)
-                            .addComponent(C40, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V41, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V42, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V43, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V44, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V45, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V46, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V47, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V48, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S41)
-                            .addComponent(C41, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S42)
-                            .addComponent(C42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S43)
-                            .addComponent(C43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S44)
-                            .addComponent(C44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S45)
-                            .addComponent(C45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S46)
-                            .addComponent(C46, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S47)
-                            .addComponent(C47, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S48)
-                            .addComponent(C48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(V49, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V50, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V51, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V52, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V53, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V54, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V55, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(V56, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(S49)
-                            .addComponent(C49, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S50)
-                            .addComponent(C50, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S51)
-                            .addComponent(C51, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S52)
-                            .addComponent(C52, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S53)
-                            .addComponent(C53, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S54)
-                            .addComponent(C54, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S55)
-                            .addComponent(C55, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(S56)
-                            .addComponent(C56, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V57, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V58, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V59, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V60, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V61, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V62, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V63, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V64, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(C57, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S58)
-                    .addComponent(C58, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S59)
-                    .addComponent(C59, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S60)
-                    .addComponent(C60, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S61)
-                    .addComponent(C61, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S62)
-                    .addComponent(C62, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S63)
-                    .addComponent(C63, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S64)
-                    .addComponent(C64, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(S57))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
+        add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 1889, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void C19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C19ActionPerformed
