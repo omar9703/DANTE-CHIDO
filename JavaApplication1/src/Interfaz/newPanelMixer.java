@@ -4762,7 +4762,7 @@ public class newPanelMixer extends javax.swing.JPanel {
         });
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel2.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel2.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel2.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
@@ -4774,15 +4774,15 @@ public class newPanelMixer extends javax.swing.JPanel {
         I1.setBackground(new java.awt.Color(255, 0, 204));
         I1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel2.add(I1);
-        I1.setBounds(0, 0, 115, 120);
+        I1.setBounds(0, 0, 115, 130);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel1.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel1.setLayout(null);
 
         I9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(I9);
-        I9.setBounds(0, 0, 115, 120);
+        I9.setBounds(0, 0, 115, 130);
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -4791,12 +4791,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel2.setBounds(90, 0, 20, 30);
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel3.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel3.setLayout(null);
 
         I17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel3.add(I17);
-        I17.setBounds(0, 0, 115, 120);
+        I17.setBounds(0, 0, 115, 130);
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -4805,12 +4805,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel3.setBounds(90, 0, 20, 30);
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel4.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel4.setLayout(null);
 
         I25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel4.add(I25);
-        I25.setBounds(0, 0, 115, 120);
+        I25.setBounds(0, 0, 115, 130);
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -4819,12 +4819,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel4.setBounds(90, 0, 20, 30);
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel5.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel5.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel5.setLayout(null);
 
         I3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel5.add(I3);
-        I3.setBounds(0, 0, 115, 120);
+        I3.setBounds(0, 0, 115, 130);
 
         jLabel5.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -4833,12 +4833,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel5.setBounds(90, 0, 20, 30);
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel6.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel6.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel6.setLayout(null);
 
         I11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel6.add(I11);
-        I11.setBounds(0, 0, 115, 120);
+        I11.setBounds(0, 0, 115, 130);
 
         jLabel6.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -4847,12 +4847,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel6.setBounds(90, 0, 20, 30);
 
         jPanel7.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel7.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel7.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel7.setLayout(null);
 
         I19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel7.add(I19);
-        I19.setBounds(0, 0, 115, 120);
+        I19.setBounds(0, 0, 115, 130);
 
         jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -4861,12 +4861,12 @@ public class newPanelMixer extends javax.swing.JPanel {
         jLabel7.setBounds(90, 0, 20, 30);
 
         jPanel8.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel8.setPreferredSize(new java.awt.Dimension(115, 120));
+        jPanel8.setPreferredSize(new java.awt.Dimension(115, 124));
         jPanel8.setLayout(null);
 
         I27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel8.add(I27);
-        I27.setBounds(0, 0, 115, 120);
+        I27.setBounds(0, 0, 115, 130);
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -4880,7 +4880,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel9.add(I2);
-        I2.setBounds(0, 0, 115, 120);
+        I2.setBounds(0, 0, 115, 130);
 
         jLabel9.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -4894,7 +4894,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel10.add(I10);
-        I10.setBounds(0, 0, 115, 120);
+        I10.setBounds(0, 0, 115, 130);
 
         jLabel10.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -4908,7 +4908,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel11.add(I18);
-        I18.setBounds(0, 0, 115, 120);
+        I18.setBounds(0, 0, 115, 130);
 
         jLabel11.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -4922,7 +4922,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel12.add(I26);
-        I26.setBounds(0, 0, 115, 120);
+        I26.setBounds(0, 0, 115, 130);
 
         jLabel12.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -4936,7 +4936,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel13.add(I4);
-        I4.setBounds(0, 0, 115, 120);
+        I4.setBounds(0, 0, 115, 130);
 
         jLabel13.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -4950,7 +4950,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel14.add(I12);
-        I12.setBounds(0, 0, 115, 120);
+        I12.setBounds(0, 0, 115, 130);
 
         jLabel14.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -4964,7 +4964,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel15.add(I20);
-        I20.setBounds(0, 0, 115, 120);
+        I20.setBounds(0, 0, 115, 130);
 
         jLabel15.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -4978,7 +4978,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel16.add(I28);
-        I28.setBounds(0, 0, 115, 120);
+        I28.setBounds(0, 0, 115, 130);
 
         jLabel16.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -4992,7 +4992,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel17.add(I5);
-        I5.setBounds(0, 0, 115, 120);
+        I5.setBounds(0, 0, 115, 130);
 
         jLabel17.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -5006,7 +5006,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel18.add(I13);
-        I13.setBounds(0, 0, 115, 120);
+        I13.setBounds(0, 0, 115, 130);
 
         jLabel18.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
@@ -5020,7 +5020,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel19.add(I21);
-        I21.setBounds(0, 0, 115, 120);
+        I21.setBounds(0, 0, 115, 130);
 
         jLabel19.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
@@ -5034,7 +5034,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel20.add(I29);
-        I29.setBounds(0, 0, 115, 120);
+        I29.setBounds(0, 0, 115, 130);
 
         jLabel20.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
@@ -5048,7 +5048,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel21.add(I6);
-        I6.setBounds(0, 0, 115, 120);
+        I6.setBounds(0, 0, 115, 130);
 
         jLabel21.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
@@ -5062,7 +5062,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel22.add(I14);
-        I14.setBounds(0, 0, 115, 120);
+        I14.setBounds(0, 0, 115, 130);
 
         jLabel22.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
@@ -5076,7 +5076,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel23.add(I30);
-        I30.setBounds(0, 0, 115, 120);
+        I30.setBounds(0, 0, 115, 130);
 
         jLabel23.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
@@ -5090,7 +5090,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel24.add(I22);
-        I22.setBounds(0, 0, 115, 120);
+        I22.setBounds(0, 0, 115, 130);
 
         jLabel24.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
@@ -5104,7 +5104,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel25.add(I7);
-        I7.setBounds(0, 0, 115, 120);
+        I7.setBounds(0, 0, 115, 130);
 
         jLabel25.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
@@ -5118,7 +5118,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel26.add(I8);
-        I8.setBounds(0, 0, 115, 120);
+        I8.setBounds(0, 0, 115, 130);
 
         jLabel26.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
@@ -5132,7 +5132,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel27.add(I15);
-        I15.setBounds(0, 0, 115, 120);
+        I15.setBounds(0, 0, 115, 130);
 
         jLabel27.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
@@ -5146,7 +5146,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel28.add(I16);
-        I16.setBounds(0, 0, 115, 120);
+        I16.setBounds(0, 0, 115, 130);
 
         jLabel28.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
@@ -5160,7 +5160,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel29.add(I23);
-        I23.setBounds(0, 0, 115, 120);
+        I23.setBounds(0, 0, 115, 130);
 
         jLabel29.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
@@ -5174,7 +5174,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel30.add(I24);
-        I24.setBounds(0, 0, 115, 120);
+        I24.setBounds(0, 0, 115, 130);
 
         jLabel30.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
@@ -5188,7 +5188,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel31.add(I31);
-        I31.setBounds(0, 0, 115, 120);
+        I31.setBounds(0, 0, 115, 130);
 
         jLabel31.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
@@ -5202,7 +5202,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel32.add(I32);
-        I32.setBounds(0, 0, 115, 120);
+        I32.setBounds(0, 0, 115, 130);
 
         jLabel32.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
@@ -5216,7 +5216,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel33.add(I33);
-        I33.setBounds(0, 0, 115, 120);
+        I33.setBounds(0, 0, 115, 130);
 
         jLabel33.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
@@ -5230,7 +5230,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel34.add(I34);
-        I34.setBounds(0, 0, 115, 120);
+        I34.setBounds(0, 0, 115, 130);
 
         jLabel34.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
@@ -5244,7 +5244,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel35.add(I35);
-        I35.setBounds(0, 0, 115, 120);
+        I35.setBounds(0, 0, 115, 130);
 
         jLabel35.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
@@ -5258,7 +5258,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel36.add(I36);
-        I36.setBounds(0, 0, 115, 120);
+        I36.setBounds(0, 0, 115, 130);
 
         jLabel36.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
@@ -5272,7 +5272,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel37.add(I37);
-        I37.setBounds(0, 0, 115, 120);
+        I37.setBounds(0, 0, 115, 130);
 
         jLabel37.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
@@ -5286,7 +5286,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel38.add(I38);
-        I38.setBounds(0, 0, 115, 120);
+        I38.setBounds(0, 0, 115, 130);
 
         jLabel38.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
@@ -5300,7 +5300,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel39.add(I39);
-        I39.setBounds(0, 0, 115, 120);
+        I39.setBounds(0, 0, 115, 130);
 
         jLabel39.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
@@ -5314,7 +5314,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel40.add(I40);
-        I40.setBounds(0, 0, 115, 120);
+        I40.setBounds(0, 0, 115, 130);
 
         jPanel41.setBackground(new java.awt.Color(0, 0, 0));
         jPanel41.setPreferredSize(new java.awt.Dimension(115, 120));
@@ -5322,7 +5322,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel41.add(I41);
-        I41.setBounds(0, 0, 115, 120);
+        I41.setBounds(0, 0, 115, 130);
 
         jLabel40.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(255, 255, 255));
@@ -5336,7 +5336,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel42.add(I42);
-        I42.setBounds(0, 0, 115, 120);
+        I42.setBounds(0, 0, 115, 130);
 
         jLabel41.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
@@ -5350,7 +5350,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel43.add(I43);
-        I43.setBounds(0, 0, 115, 120);
+        I43.setBounds(0, 0, 115, 130);
 
         jLabel42.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
@@ -5364,7 +5364,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel44.add(I44);
-        I44.setBounds(0, 0, 115, 120);
+        I44.setBounds(0, 0, 115, 130);
 
         jLabel43.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
@@ -5378,7 +5378,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel45.add(I45);
-        I45.setBounds(0, 0, 115, 120);
+        I45.setBounds(0, 0, 115, 130);
 
         jLabel44.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(255, 255, 255));
@@ -5392,7 +5392,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel46.add(I46);
-        I46.setBounds(0, 0, 115, 120);
+        I46.setBounds(0, 0, 115, 130);
 
         jLabel45.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
@@ -5406,7 +5406,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel47.add(I47);
-        I47.setBounds(0, 0, 115, 120);
+        I47.setBounds(0, 0, 115, 130);
 
         jLabel46.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel46.setForeground(new java.awt.Color(255, 255, 255));
@@ -5420,7 +5420,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel48.add(I48);
-        I48.setBounds(0, 0, 115, 120);
+        I48.setBounds(0, 0, 115, 130);
 
         jLabel47.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(255, 255, 255));
@@ -5434,7 +5434,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel49.add(I49);
-        I49.setBounds(0, 0, 115, 120);
+        I49.setBounds(0, 0, 115, 130);
 
         jLabel48.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(255, 255, 255));
@@ -5448,7 +5448,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel50.add(I50);
-        I50.setBounds(0, 0, 115, 120);
+        I50.setBounds(0, 0, 115, 130);
 
         jLabel49.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(255, 255, 255));
@@ -5462,7 +5462,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel51.add(I51);
-        I51.setBounds(0, 0, 115, 120);
+        I51.setBounds(0, 0, 115, 130);
 
         jLabel50.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel50.setForeground(new java.awt.Color(255, 255, 255));
@@ -5476,7 +5476,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel52.add(I52);
-        I52.setBounds(0, 0, 115, 120);
+        I52.setBounds(0, 0, 115, 130);
 
         jLabel51.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel51.setForeground(new java.awt.Color(255, 255, 255));
@@ -5490,7 +5490,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel53.add(I53);
-        I53.setBounds(0, 0, 115, 120);
+        I53.setBounds(0, 0, 115, 130);
 
         jLabel52.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(255, 255, 255));
@@ -5504,7 +5504,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel54.add(I54);
-        I54.setBounds(0, 0, 115, 120);
+        I54.setBounds(0, 0, 115, 130);
 
         jLabel53.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(255, 255, 255));
@@ -5518,7 +5518,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel55.add(I55);
-        I55.setBounds(0, 0, 115, 120);
+        I55.setBounds(0, 0, 115, 130);
 
         jLabel54.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel54.setForeground(new java.awt.Color(255, 255, 255));
@@ -5532,7 +5532,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel56.add(I56);
-        I56.setBounds(0, 0, 115, 120);
+        I56.setBounds(0, 0, 115, 130);
 
         jLabel55.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 255));
@@ -5546,7 +5546,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel57.add(I64);
-        I64.setBounds(0, 0, 115, 120);
+        I64.setBounds(0, 0, 115, 130);
 
         jLabel58.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 255));
@@ -5560,7 +5560,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel58.add(I63);
-        I63.setBounds(0, 0, 115, 120);
+        I63.setBounds(0, 0, 115, 130);
 
         jLabel56.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel56.setForeground(new java.awt.Color(255, 255, 255));
@@ -5574,7 +5574,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel59.add(I62);
-        I62.setBounds(0, 0, 115, 120);
+        I62.setBounds(0, 0, 115, 130);
 
         jLabel57.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(255, 255, 255));
@@ -5588,7 +5588,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel60.add(I61);
-        I61.setBounds(0, 0, 115, 120);
+        I61.setBounds(0, 0, 115, 130);
 
         jLabel59.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(255, 255, 255));
@@ -5602,7 +5602,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel61.add(I60);
-        I60.setBounds(0, 0, 115, 120);
+        I60.setBounds(0, 0, 115, 130);
 
         jLabel60.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel60.setForeground(new java.awt.Color(255, 255, 255));
@@ -5616,7 +5616,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel62.add(I57);
-        I57.setBounds(0, 0, 115, 120);
+        I57.setBounds(0, 0, 115, 130);
 
         jLabel61.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel61.setForeground(new java.awt.Color(255, 255, 255));
@@ -5630,7 +5630,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel63.add(I58);
-        I58.setBounds(0, 0, 115, 120);
+        I58.setBounds(0, 0, 115, 130);
 
         jLabel62.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel62.setForeground(new java.awt.Color(255, 255, 255));
@@ -5644,7 +5644,7 @@ public class newPanelMixer extends javax.swing.JPanel {
 
         I59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel64.add(I59);
-        I59.setBounds(0, 0, 115, 120);
+        I59.setBounds(0, 0, 115, 130);
 
         jLabel63.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel63.setForeground(new java.awt.Color(255, 255, 255));
@@ -6177,22 +6177,22 @@ public class newPanelMixer extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V9, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V17, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V25, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V19, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V27, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V17, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V25, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V27, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S1)
@@ -6213,22 +6213,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C27, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V18, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V26, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V12, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V20, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V28, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V10, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V18, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V26, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V12, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V20, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V28, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S2)
@@ -6249,22 +6249,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C28, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V13, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V21, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V29, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V14, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V22, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V30, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V13, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V21, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V29, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V14, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V22, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V30, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S5)
@@ -6285,22 +6285,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V15, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V16, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V23, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V24, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V31, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V32, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V16, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V23, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V24, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V31, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S7)
@@ -6321,22 +6321,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V33, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V34, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V35, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V36, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V37, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V38, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V39, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V40, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V33, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V34, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V35, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V36, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V37, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V38, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V39, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V40, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S33)
@@ -6357,22 +6357,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C40, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V41, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V42, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V43, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V44, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V45, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V46, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V47, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V48, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V41, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V42, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V43, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V44, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V45, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V46, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V47, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V48, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S41)
@@ -6393,22 +6393,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V49, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V50, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V51, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V52, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V53, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V54, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V55, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V56, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V49, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V50, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V51, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V52, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V53, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V54, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel54, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V55, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel55, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V56, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel56, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S49)
@@ -6429,22 +6429,22 @@ public class newPanelMixer extends javax.swing.JPanel {
                     .addComponent(C56, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(V57, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V58, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V59, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V60, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V61, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V62, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V63, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(V64, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(V57, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V58, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V59, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V60, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V61, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel60, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V62, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V63, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V64, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(S57)

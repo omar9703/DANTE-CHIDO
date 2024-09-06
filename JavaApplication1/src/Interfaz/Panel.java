@@ -207,7 +207,7 @@ inputMap.put(enterStroke, enterStroke.toString());
     });   
       vol = new volumen(vPrincipal); 
       
-      jLabel4.setIcon(new javax.swing.ImageIcon("fondosinlogo.png"));
+      jLabel4.setIcon(new javax.swing.ImageIcon("EDITABLE.png"));
          
       EtiquetaConect.setVisible(false);
       EtiquetaStatus.setVisible(false);
@@ -1002,7 +1002,7 @@ FileOutputStream outputStream;
         scrollPane1.setBackground(new java.awt.Color(51, 51, 51));
         scrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(scrollPane1);
-        scrollPane1.setBounds(90, 140, 1260, 390);
+        scrollPane1.setBounds(90, 104, 1260, 430);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
         Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
@@ -1259,13 +1259,13 @@ FileOutputStream outputStream;
             }
         });
         getContentPane().add(vPrincipal);
-        vPrincipal.setBounds(950, 75, 360, 30);
+        vPrincipal.setBounds(950, 68, 360, 30);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(720, 90, 160, 30);
+        jLabel5.setBounds(2, 90, 160, 30);
 
         jPanel4.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel4);
@@ -1285,7 +1285,7 @@ FileOutputStream outputStream;
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/bocina.png"))); // NOI18N
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(910, 70, 40, 40);
+        jLabel6.setBounds(910, 63, 40, 40);
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 1350, 740);
 
@@ -1375,7 +1375,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 410);
+                this.scrollPane1.setScrollPosition(0, 430);
             }
             
         }
@@ -1404,7 +1404,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 815);
+                this.scrollPane1.setScrollPosition(0, 855);
             }
             
         }
@@ -1433,7 +1433,7 @@ FileOutputStream outputStream;
         
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 1230);
+                this.scrollPane1.setScrollPosition(0, 1290);
             }
             
         }
