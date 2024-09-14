@@ -158548,3 +158548,15 @@
 13/9/2024;7:33:39 - Lectura de xml escrita correctamente
 13/9/2024;7:33:40 - No se encontro el servidor
 13/9/2024;7:33:43 - Lectura de xml escrita correctamente
+14/9/2024;13:9:30 - Iniciando aplicacion clente
+14/9/2024;13:9:32 - Lectura de xml escrita correctamente
+14/9/2024;13:9:32 - Lectura de xml escrita correctamente
+14/9/2024;13:9:33 - Lectura de xml escrita correctamente
+14/9/2024;13:9:33 - Lectura de xml escrita correctamente
+14/9/2024;13:9:33 - Lectura de xml escrita correctamente
+14/9/2024;13:9:39 - Lectura de xml escrita correctamente
+14/9/2024;13:9:40 - No se encontro el servidor
+14/9/2024;13:9:43 - Lectura de xml escrita correctamente
+14/9/2024;13:9:44 - No se encontro el servidor
+14/9/2024;13:9:46 - Lectura de xml escrita correctamente
+14/9/2024;13:9:47 - Lectura de xml escrita correctamente
