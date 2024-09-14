@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Datos;
-import com.sun.jndi.ldap.LdapName;
+//import com.sun.jndi.ldap.LdapName;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.logging.Level;

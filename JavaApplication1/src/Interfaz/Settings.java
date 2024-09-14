@@ -3274,7 +3274,7 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im65ActionPerformed
         // TODO add your handling code here:
-        SaveImage(65);
+        SaveImage(26);
     }//GEN-LAST:event_Im65ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -3410,7 +3410,7 @@ public class Settings extends javax.swing.JPanel {
             }            
         }
         catch(Exception ex){
-            JOptionPane.showMessageDialog(null,"Error de archivo ");
+            JOptionPane.showMessageDialog(null,"Error de archivo "+ex.getMessage());
         }
     }
 

@@ -163493,12 +163493,30 @@
 6/9/2024;16:37:29 - No se encontro el servidor
 6/9/2024;16:37:32 - Lectura de xml escrita correctamente
 6/9/2024;16:37:33 - No se encontro el servidor
-6/9/2024;16:38:55 - Iniciando aplicacion clente
-6/9/2024;16:38:57 - Lectura de xml escrita correctamente
-6/9/2024;16:38:57 - Lectura de xml escrita correctamente
-6/9/2024;16:38:57 - Lectura de xml escrita correctamente
-6/9/2024;16:38:57 - Lectura de xml escrita correctamente
-6/9/2024;16:38:58 - Lectura de xml escrita correctamente
-6/9/2024;16:39:4 - Lectura de xml escrita correctamente
-6/9/2024;16:39:5 - No se encontro el servidor
-6/9/2024;16:39:8 - Lectura de xml escrita correctamente
+13/9/2024;7:38:35 - Iniciando aplicacion clente
+13/9/2024;7:38:42 - Lectura de xml escrita correctamente
+13/9/2024;7:38:42 - Lectura de xml escrita correctamente
+13/9/2024;7:38:42 - Lectura de xml escrita correctamente
+13/9/2024;7:38:42 - Lectura de xml escrita correctamente
+13/9/2024;7:38:43 - Lectura de xml escrita correctamente
+13/9/2024;7:38:49 - Lectura de xml escrita correctamente
+13/9/2024;7:38:49 - No se encontro el servidor
+13/9/2024;7:38:52 - Lectura de xml escrita correctamente
+13/9/2024;7:38:53 - No se encontro el servidor
+13/9/2024;7:38:56 - Lectura de xml escrita correctamente
+13/9/2024;7:38:57 - No se encontro el servidor
+13/9/2024;7:39:0 - Lectura de xml escrita correctamente
+13/9/2024;7:39:0 - No se encontro el servidor
+13/9/2024;7:39:3 - Lectura de xml escrita correctamente
+13/9/2024;7:39:4 - No se encontro el servidor
+13/9/2024;7:39:7 - Lectura de xml escrita correctamente
+13/9/2024;7:39:8 - No se encontro el servidor
+13/9/2024;7:39:11 - Lectura de xml escrita correctamente
+13/9/2024;7:39:12 - No se encontro el servidor
+13/9/2024;7:39:15 - Lectura de xml escrita correctamente
+13/9/2024;7:39:16 - No se encontro el servidor
+13/9/2024;7:39:19 - Lectura de xml escrita correctamente
+13/9/2024;7:39:20 - No se encontro el servidor
+13/9/2024;7:39:23 - Lectura de xml escrita correctamente
+13/9/2024;7:39:24 - No se encontro el servidor
+13/9/2024;7:40:2 - Iniciando aplicacion clente
