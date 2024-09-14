@@ -163772,3 +163772,26 @@
 14/9/2024;13:6:14 - Lectura de xml escrita correctamente
 14/9/2024;13:6:15 - Lectura de xml escrita correctamente
 14/9/2024;13:6:16 - No se encontro el servidor
+14/9/2024;15:45:32 - Iniciando aplicacion clente
+14/9/2024;15:45:35 - Lectura de xml escrita correctamente
+14/9/2024;15:45:35 - Lectura de xml escrita correctamente
+14/9/2024;15:45:36 - Lectura de xml escrita correctamente
+14/9/2024;15:45:36 - Lectura de xml escrita correctamente
+14/9/2024;15:45:36 - Lectura de xml escrita correctamente
+14/9/2024;15:45:41 - Lectura de xml escrita correctamente
+14/9/2024;15:45:42 - No se encontro el servidor
+14/9/2024;15:45:45 - Lectura de xml escrita correctamente
+14/9/2024;15:45:46 - No se encontro el servidor
+14/9/2024;15:45:48 - Lectura de xml escrita correctamente
+14/9/2024;15:45:49 - Lectura de xml escrita correctamente
+14/9/2024;15:45:50 - No se encontro el servidor
+14/9/2024;15:45:53 - Lectura de xml escrita correctamente
+14/9/2024;15:45:54 - No se encontro el servidor
+14/9/2024;15:45:57 - Lectura de xml escrita correctamente
+14/9/2024;15:45:58 - No se encontro el servidor
+14/9/2024;15:46:1 - Lectura de xml escrita correctamente
+14/9/2024;15:46:1 - No se encontro el servidor
+14/9/2024;15:46:1 - Configuracion escrita correctamente
+14/9/2024;15:46:4 - Lectura de xml escrita correctamente
+14/9/2024;15:46:5 - No se encontro el servidor
+14/9/2024;15:46:8 - Lectura de xml escrita correctamente
