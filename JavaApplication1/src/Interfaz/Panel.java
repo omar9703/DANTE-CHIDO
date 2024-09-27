@@ -1470,9 +1470,10 @@ FileOutputStream outputStream;
         {
         //if (!jTextArea2.getText().equals(""))
        // {
-            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss:S", Locale.US);
+            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss", Locale.US);
             Date date = new Date();
             String result = formatter.format(date);
+            result = result + ":00";
             String[] item = {result,jTextArea2.getText(),jComboBox1.getSelectedItem().toString()}; 
             colors.add(jComboBox1.getSelectedItem().toString());
             WriteColorsFile();

@@ -107,15 +107,15 @@ public class XmlWrite {
             return true;
         } catch (ParserConfigurationException ex) {
             Logger.getLogger(XmlWrite.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("error de configuracion");
+            Logs.Write("error de configuracion"+ex.getMessage());
             return false;
         } catch (FileNotFoundException ex) {
             Logger.getLogger(XmlWrite.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("NO se encontro el archivo xml");
+            Logs.Write("NO se encontro el archivo xml"+ex.getMessage());
             return false;
         } catch (TransformerException ex) {
             Logger.getLogger(XmlWrite.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("Error de escritura de xml");
+            Logs.Write("Error de escritura de xml"+ex.getMessage());
             return false;
         }
       

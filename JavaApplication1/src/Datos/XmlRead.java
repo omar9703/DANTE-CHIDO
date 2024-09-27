@@ -181,8 +181,6 @@ public class XmlRead {
             configT.nameFiles = firstNameList.item(0).getTextContent();
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNEW");
             configT.ShortcutNew = firstNameList.item(0).getTextContent();
-            firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNADD");
-            configT.ShortcutAdd = firstNameList.item(0).getTextContent();
             firstNameList = ((Element)nodo1.item(0)).getElementsByTagName("SHORTCUTNCANCEL");
             configT.ShortcutCancel = firstNameList.item(0).getTextContent();
             
@@ -228,13 +226,13 @@ public class XmlRead {
         }
         catch (ParserConfigurationException ex) {
             Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("Error en lectura de configuracion");
+            Logs.Write("Error en lectura de configuracion"+ex.getMessage());
         } catch (SAXException ex) {
             Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("error en lectura de configuracion");
+            Logs.Write("error en lectura de configuracion"+ex.getMessage());
         } catch (IOException ex) {
             Logger.getLogger(XmlRead.class.getName()).log(Level.SEVERE, null, ex);
-            Logs.Write("Error en lectura de configuracion");
+            Logs.Write("Error en lectura de configuracion"+ ex.getMessage());
         }
         return configT;
     }
