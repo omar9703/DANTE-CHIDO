@@ -22,6 +22,9 @@ import java.awt.Image;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JScrollPane;
@@ -38,6 +41,7 @@ public class Panel extends javax.swing.JFrame {
    private PanelAjustes ajustes;
    //private PanelMixer mixer;
    private newPanelMixer mixer;
+   private MixerDynamic mix;
    private PanelLogs logs;
    private Coordinador C;
    private Settings set;
@@ -66,6 +70,9 @@ public class Panel extends javax.swing.JFrame {
        mixer= new newPanelMixer(this);
        //ajustes = new PanelAjustes(C,this,mixer);
        set=new Settings(C,this,mixer);
+ 
+           mix = new MixerDynamic();
+    
        this.setBackground(Color.yellow);
     //   this.Bconnect.setEnabled(false);
        primero.setBorder(null);
@@ -152,6 +159,11 @@ public class Panel extends javax.swing.JFrame {
     }
     
     public void setpanel(newPanelMixer mixer){
+       
+       scrollPane1.add(mixer);
+    }
+    
+    public void setpanelD(MixerDynamic mixer){
        
        scrollPane1.add(mixer);
     }
@@ -539,7 +551,7 @@ public class Panel extends javax.swing.JFrame {
 
     private void BmixerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BmixerActionPerformed
         // TODO add your handling code here:
-        this.setpanel(mixer);
+        this.setpanelD(mix);
         //this.Bconnect.setEnabled(rootPaneCheckingEnabled);
         //this.Bstop.setEnabled(true);
         isMixer = true;
