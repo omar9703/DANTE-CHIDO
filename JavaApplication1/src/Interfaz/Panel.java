@@ -56,6 +56,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
@@ -111,6 +112,7 @@ public class Panel extends javax.swing.JFrame {
    private ArrayList<String> listaInterfaces;
    private String Red=null;
    public volumen vol;
+   Date baseDate;
    private boolean isMixer=false;
    private boolean isSetting = false;
    JFileChooser chooser;
@@ -121,6 +123,7 @@ public class Panel extends javax.swing.JFrame {
    public Boolean added = true;
    public String User;
    public String fileName;
+   public int contadorClock = 0;
    ArrayList<String> colors ;
     public Panel()  {
        initComponents();
@@ -326,8 +329,9 @@ inputMap.put(enterStroke, enterStroke.toString());
             
             
             SetListenerTable();
-           
-     this.SetTimer();
+     baseDate = new Date();   
+     jLabel5.setVisible(false);
+     this.SetTimer();   
      jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
      jTable1.getColumnModel().getColumn(0).setPreferredWidth(75);
      jTable1.getColumnModel().getColumn(1).setPreferredWidth(745);
@@ -336,7 +340,8 @@ inputMap.put(enterStroke, enterStroke.toString());
     }
     public void SetTimer()
     {
-        
+        calendar = Calendar.getInstance();
+        baseDate = calendar.getTime();
         reset();
         Timer timer = new Timer();
         timer.scheduleAtFixedRate( new TimerTask(){
@@ -344,10 +349,24 @@ inputMap.put(enterStroke, enterStroke.toString());
                 if( currentSecond == 60 ) {
                     reset();
                 }
+                //calendar.add(Calendar.MILLISECOND, contadorClock);
+                //String result = sdf.format(calendar.getTime());
                 jLabel5.setText( String.format("%s:%02d", sdf.format(calendar.getTime()), currentSecond ));
+                calendar = Calendar.getInstance();
                 currentSecond++;
+                long duration  = calendar.getTime().getTime() - baseDate.getTime();
+                long diff = TimeUnit.MILLISECONDS.toMinutes(duration);
+                System.out.println(diff);
+                if (diff >= 5)
+                {
+                    //calendarc.add(Calendar.MILLISECOND, contadorClock);
+                    //jLabel5.setText( String.format("%s:%02d", sdf.format(calendar.getTime()), currentSecond ));
+                    contadorClock = contadorClock - 200;
+                    baseDate = calendar.getTime();
+                }
+                System.out.println(diff+"/"+contadorClock);
             }
-        }, 0, 1000 );
+        }, 0, 1001 );
     }
      private void reset(){
         calendar = Calendar.getInstance();
@@ -1471,8 +1490,10 @@ FileOutputStream outputStream;
         //if (!jTextArea2.getText().equals(""))
        // {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss", Locale.US);
-            Date date = new Date();
-            String result = formatter.format(date);
+            Calendar calendarc = Calendar.getInstance();
+            calendarc.add(Calendar.MILLISECOND, contadorClock);
+            //calendarc.add(Calendar.SECOND, contadorClock);
+            String result = formatter.format(calendarc.getTime());
             result = result + ":00";
             String[] item = {result,jTextArea2.getText(),jComboBox1.getSelectedItem().toString()}; 
             colors.add(jComboBox1.getSelectedItem().toString());

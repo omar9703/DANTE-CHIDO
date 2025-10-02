@@ -5,13 +5,16 @@
         <group>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Datos/WriteXml.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/SettingsTags.java</file>
+            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Datos/Logs.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/Settings.java</file>
-            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/PanelLogs.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/Panel.java</file>
+            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/newPanelMixer.java</file>
+            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Negocio/ThreadAudio.java</file>
+            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/PanelLogs.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Negocio/ClienteDante.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Datos/XmlRead.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Interfaz/PanelAjustes.java</file>
-            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Negocio/ThreadAudio.java</file>
+            <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Datos/GlobalConfig.java</file>
             <file>file:/C:/Users/ocamp/Documents/GitHub/DANTE-CHIDO/JavaApplication1/src/Datos/XmlWrite.java</file>
         </group>
     </open-files>
