@@ -9,6 +9,8 @@ package Interfaz;
  * @author ocamp
  */
 import Datos.Configuracion;
+import Datos.GlobalConfig;
+import Negocio.ThreadAudio;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +19,8 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 public class CeldaIndividual extends JPanel{
     private final int ANCHO_CELDA = 148;
     private final int ALTO_CELDA = 240;
@@ -24,14 +28,16 @@ public class CeldaIndividual extends JPanel{
     private int numeroCelda;
     Configuracion Conf;
     // Componentes de la celda
-    private JSlider slider;
-    private JLabel labelCentral;
-    private JToggleButton toggleButton;
-    private JButton botonPrincipal;
+    public JSlider slider;
+    public JLabel labelCentral;
+    public JToggleButton toggleButton;
+    public JButton botonPrincipal;
+    private MixerDynamic md;
     
-    public CeldaIndividual(int numeroCelda, Configuracion conf) {
+    public CeldaIndividual(int numeroCelda, Configuracion conf, MixerDynamic md) {
         this.numeroCelda = numeroCelda;
         this.Conf = conf;
+        this.md = md; 
         inicializarCelda();
     }
     
@@ -93,7 +99,15 @@ public class CeldaIndividual extends JPanel{
         slider.setPaintTrack(true);
         slider.setPaintLabels(false);
         slider.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+        slider.addChangeListener(new ChangeListener(){
+            @Override
+            public void stateChanged(ChangeEvent e)
+            {
+                md.ganancias.set(numeroCelda, slider.getValue());
+            }
+    });
         
+    
         return slider;
     }
     
@@ -105,8 +119,8 @@ public class CeldaIndividual extends JPanel{
         label.setVerticalAlignment(SwingConstants.CENTER);
         label.setFont(new Font("Arial", Font.PLAIN, 10));
         label.setForeground(Color.black);
-          if(!Conf.GetListaImages().get(numeroCelda).equals("0")){
-                try{
+        if(!Conf.GetListaImages().get(numeroCelda).equals("0")){
+        try{
                     label.setIcon(new javax.swing.ImageIcon(Conf.GetListaImages().get(numeroCelda)));
                     this.repaint();
                 }
@@ -140,13 +154,43 @@ public class CeldaIndividual extends JPanel{
         }
         
         toggle.addActionListener((ActionEvent e) -> {
-            if (toggle.isSelected()) {
-                
-               
-            } else {
-                
+             md.var[(numeroCelda + 1)*2]=true;
+        if(toggle.isSelected()&&!md.var[((numeroCelda + 1)*2)-1]){
+            md.DisableVolumeExcept(slider,toggleButton,(numeroCelda + 1)*2,(numeroCelda + 1)-1);
+            System.out.println("activado");
+                        
+         try{
+             md.audioSolo[(numeroCelda + 1)-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,md.P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,numeroCelda,slider,this.botonPrincipal,md.socket);
+             md.audioSolo[(numeroCelda + 1)-1].start();
+             md.varNoexcept[(numeroCelda + 1)] = true; 
+              
+         }
+         catch(Exception ex){
+             System.out.println("Error de hilo ");
+               md.var[(numeroCelda + 1)*2]=false;
+         }     
+        }
+        if(toggle.isSelected()&&md.var[((numeroCelda + 1)*2)-1])
+        {
+            md.DisableVolumeExcept(slider,toggleButton,(numeroCelda + 1)*2,(numeroCelda + 1)-1);
+        }
+        if(!toggle.isSelected()){
+            md.EnableVolume();
+            md.var[(numeroCelda + 1)*2]=false;
+            try{
+                if(md.varNoexcept[(numeroCelda + 1)]){
+                    md.audioSolo[(numeroCelda + 1)-1].detener();
+                    md.audioSolo[(numeroCelda + 1)-1].stop();
+                }
                 
             }
+            catch(Exception ex)
+            {
+            }
+            
+            toggle.setBackground(new Color(69, 93, 220));
+            toggle.setIcon(new ImageIcon(getClass().getResource("microfono.png")));
+        }
         });
         
         return toggle;
@@ -155,16 +199,45 @@ public class CeldaIndividual extends JPanel{
     private JButton crearBotonPrincipal() {
         JButton boton = new JButton(Conf.GetAlias().get(numeroCelda));
         boton.setFont(new Font("Arial", Font.BOLD, 17));
-        boton.setBackground(new Color(102, 102, 102));
+        boton.setBackground(new Color(25, 31, 49));
         boton.setForeground(Color.WHITE);
         boton.setFocusPainted(false);
-        boton.setMargin(new Insets(4,3,4,3));
+        boton.setMargin(new Insets(2,2,2,2));
         boton.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(this,
-                "Ejecutando acción del panel " + (numeroCelda + 1),
-                "Botón Principal", 
-                JOptionPane.INFORMATION_MESSAGE
-            );
+        md.var[((numeroCelda + 1)*2)-1]=true;
+        if(!md.var[(numeroCelda + 1)*2])
+        {// TODO add your handling code here:     
+            md.alternar[(numeroCelda + 1)-1]++;   
+            if(md.alternar[(numeroCelda + 1)-1]==1){
+
+                 try{
+                                                   
+                    md.audio[(numeroCelda + 1)-1]=new ThreadAudio(GlobalConfig.Network,GlobalConfig.ListaPuertos.get(0),GlobalConfig.multicast,md.P,GlobalConfig.Frecuencia,GlobalConfig.Muestra,numeroCelda,slider,boton,md.socket);
+                    md.audio[(numeroCelda + 1)-1].start();
+                    boton.setBackground(Color.GREEN);
+                    md.varNoexcept[(numeroCelda + 1)] = false; 
+                                     
+                 }
+                 catch(Exception ex){
+                    System.out.println("Error de hilo ");
+                    boton.setBackground(Color.RED);
+                    slider.setEnabled(false);
+                    //var[index-1]=false;
+                 }
+
+
+            }   
+
+            if(md.alternar[(numeroCelda + 1)-1]==2){
+                 md.audio[(numeroCelda + 1)-1].detener();
+                 md.audio[(numeroCelda + 1)-1].stop();
+                 md.alternar[(numeroCelda + 1)-1]=0;
+                 boton.setBackground(new Color(25, 31, 49));
+                 //var[index-1]=false;
+                    
+                 md.var[((numeroCelda + 1)*2)-1]=false;
+            }
+        }
         });
         
         return boton;
@@ -196,6 +269,9 @@ public class CeldaIndividual extends JPanel{
     
     public void setTextoLabel(String texto) {
         labelCentral.setText(texto);
+        System.out.println(texto);
+        this.revalidate();
+        this.updateUI();
     }
     
     public int getNumeroCelda() {
@@ -213,4 +289,5 @@ public class CeldaIndividual extends JPanel{
     public JButton getBotonPrincipal() {
         return botonPrincipal;
     }
+    
 }

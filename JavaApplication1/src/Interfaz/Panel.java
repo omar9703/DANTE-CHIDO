@@ -67,11 +67,12 @@ public class Panel extends javax.swing.JFrame {
        C=new Coordinador(this);
        C.SetPanel(this);
        //mixer= new PanelMixer(this);
-       mixer= new newPanelMixer(this);
+      // mixer= new newPanelMixer(this);
+        mix = new MixerDynamic(this);
        //ajustes = new PanelAjustes(C,this,mixer);
-       set=new Settings(C,this,mixer);
+       set=new Settings(C,this,mix);
  
-           mix = new MixerDynamic();
+          
     
        this.setBackground(Color.yellow);
     //   this.Bconnect.setEnabled(false);
@@ -321,6 +322,10 @@ public class Panel extends javax.swing.JFrame {
         segundo = new javax.swing.JButton();
         cuarto = new javax.swing.JButton();
         Bmixer = new javax.swing.JButton();
+        Quinto = new javax.swing.JButton();
+        Sexto = new javax.swing.JButton();
+        Septimo = new javax.swing.JButton();
+        Octavo = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         EtiquetaStatus = new javax.swing.JLabel();
         EtiquetaConect = new javax.swing.JLabel();
@@ -334,6 +339,10 @@ public class Panel extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         vPrincipal = new javax.swing.JSlider();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -357,9 +366,10 @@ public class Panel extends javax.swing.JFrame {
         scrollPane1.setBounds(90, 140, 1260, 600);
 
         Bsettings.setBackground(new java.awt.Color(231, 25, 76));
-        Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
+        Bsettings.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 18)); // NOI18N
         Bsettings.setForeground(new java.awt.Color(255, 255, 255));
         Bsettings.setText("SETTINGS");
+        Bsettings.setMargin(new java.awt.Insets(1, 5, 1, 5));
         Bsettings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BsettingsActionPerformed(evt);
@@ -394,7 +404,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(primero);
-        primero.setBounds(0, 180, 84, 70);
+        primero.setBounds(0, 150, 84, 70);
 
         segundo.setBackground(new java.awt.Color(35, 38, 49));
         segundo.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -406,7 +416,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(segundo);
-        segundo.setBounds(0, 250, 84, 70);
+        segundo.setBounds(0, 220, 84, 70);
 
         cuarto.setBackground(new java.awt.Color(35, 38, 49));
         cuarto.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -418,7 +428,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cuarto);
-        cuarto.setBounds(0, 390, 84, 70);
+        cuarto.setBounds(0, 360, 84, 70);
 
         Bmixer.setBackground(new java.awt.Color(231, 25, 76));
         Bmixer.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 24)); // NOI18N
@@ -431,6 +441,80 @@ public class Panel extends javax.swing.JFrame {
         });
         getContentPane().add(Bmixer);
         Bmixer.setBounds(1050, 20, 120, 40);
+
+        Quinto.setBackground(new java.awt.Color(35, 38, 49));
+        Quinto.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
+        Quinto.setForeground(new java.awt.Color(65, 71, 90));
+        Quinto.setText("65-80");
+        Quinto.setBorder(null);
+        Quinto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                QuintoMousePressed(evt);
+            }
+        });
+        Quinto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuintoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Quinto);
+        Quinto.setBounds(0, 430, 84, 70);
+
+        Sexto.setBackground(new java.awt.Color(35, 38, 49));
+        Sexto.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
+        Sexto.setForeground(new java.awt.Color(65, 71, 90));
+        Sexto.setText("81-96");
+        Sexto.setBorder(null);
+        Sexto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                SextoMousePressed(evt);
+            }
+        });
+        Sexto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SextoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Sexto);
+        Sexto.setBounds(0, 500, 84, 70);
+
+        Septimo.setBackground(new java.awt.Color(35, 38, 49));
+        Septimo.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 22)); // NOI18N
+        Septimo.setForeground(new java.awt.Color(65, 71, 90));
+        Septimo.setText("97-112");
+        Septimo.setBorder(null);
+        Septimo.setMargin(new java.awt.Insets(0, 14, 0, 14));
+        Septimo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                SeptimoMousePressed(evt);
+            }
+        });
+        Septimo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SeptimoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Septimo);
+        Septimo.setBounds(0, 570, 84, 70);
+
+        Octavo.setBackground(new java.awt.Color(35, 38, 49));
+        Octavo.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 20)); // NOI18N
+        Octavo.setForeground(new java.awt.Color(65, 71, 90));
+        Octavo.setText("113-128");
+        Octavo.setBorder(null);
+        Octavo.setMargin(new java.awt.Insets(0, 14, 0, 14));
+        Octavo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                OctavoMousePressed(evt);
+            }
+        });
+        Octavo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OctavoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Octavo);
+        Octavo.setBounds(0, 640, 84, 70);
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 204));
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 24)); // NOI18N
@@ -485,7 +569,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(networks);
-        networks.setBounds(880, 690, 130, 24);
+        networks.setBounds(880, 690, 130, 22);
 
         tercero.setBackground(new java.awt.Color(35, 38, 49));
         tercero.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 30)); // NOI18N
@@ -497,7 +581,7 @@ public class Panel extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tercero);
-        tercero.setBounds(0, 320, 84, 70);
+        tercero.setBounds(0, 290, 84, 70);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -515,21 +599,37 @@ public class Panel extends javax.swing.JFrame {
         getContentPane().add(vPrincipal);
         vPrincipal.setBounds(950, 75, 360, 30);
 
+        jPanel5.setBackground(new java.awt.Color(35, 38, 49));
+        getContentPane().add(jPanel5);
+        jPanel5.setBounds(83, 430, 7, 70);
+
+        jPanel6.setBackground(new java.awt.Color(35, 38, 49));
+        getContentPane().add(jPanel6);
+        jPanel6.setBounds(83, 500, 7, 70);
+
+        jPanel7.setBackground(new java.awt.Color(35, 38, 49));
+        getContentPane().add(jPanel7);
+        jPanel7.setBounds(83, 570, 7, 70);
+
+        jPanel8.setBackground(new java.awt.Color(35, 38, 49));
+        getContentPane().add(jPanel8);
+        jPanel8.setBounds(83, 640, 7, 70);
+
         jPanel4.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel4);
-        jPanel4.setBounds(83, 390, 7, 70);
+        jPanel4.setBounds(83, 360, 7, 70);
 
         jPanel3.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel3);
-        jPanel3.setBounds(83, 320, 7, 70);
+        jPanel3.setBounds(83, 290, 7, 70);
 
         jPanel2.setBackground(new java.awt.Color(35, 38, 49));
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(83, 250, 7, 70);
+        jPanel2.setBounds(83, 220, 7, 70);
 
         jPanel1.setBackground(java.awt.Color.red);
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(83, 180, 7, 70);
+        jPanel1.setBounds(83, 150, 7, 70);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/bocina.png"))); // NOI18N
         getContentPane().add(jLabel6);
@@ -591,6 +691,22 @@ public class Panel extends javax.swing.JFrame {
         cuarto.setForeground(new Color(65, 71, 90));
         jPanel4.setBackground(new Color(35, 38, 49));
         
+        Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
                 this.scrollPane1.setScrollPosition(0, 0);
@@ -621,9 +737,25 @@ public class Panel extends javax.swing.JFrame {
         cuarto.setForeground(new Color(65, 71, 90));
         jPanel4.setBackground(new Color(35, 38, 49));
         
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 525);
+                this.scrollPane1.setScrollPosition(0, 620);
             }
             
         }
@@ -650,9 +782,25 @@ public class Panel extends javax.swing.JFrame {
         cuarto.setForeground(new Color(65, 71, 90));
         jPanel4.setBackground(new Color(35, 38, 49));
         
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 1050);
+                this.scrollPane1.setScrollPosition(0, 1240);
             }
             
         }
@@ -679,9 +827,25 @@ public class Panel extends javax.swing.JFrame {
         tercero.setForeground(new Color(65, 71, 90));
         jPanel3.setBackground(new Color(35, 38, 49));
         
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
         try{
             if(isMixer){
-                this.scrollPane1.setScrollPosition(0, 1575);
+                this.scrollPane1.setScrollPosition(0, 1860);
             }
             
         }
@@ -697,28 +861,200 @@ public class Panel extends javax.swing.JFrame {
     private void primeroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_primeroMousePressed
     }//GEN-LAST:event_primeroMousePressed
 
-    
-    /**
-     * @param args the command line arguments
-     */
-    
-    /*
-    
-    /*
-    
-    /*
-    */
-    
-    /*
-    public static void main(String args[]) {
-       
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Panel().setVisible(true);
+    private void QuintoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QuintoMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuintoMousePressed
+
+    private void QuintoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuintoActionPerformed
+        // TODO add your handling code here:
+        Quinto.setBackground(Color.black);
+        Quinto.setForeground(Color.white);
+        jPanel5.setBackground(Color.red);
+        
+        
+         primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+         cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
+        try{
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 2480);
             }
-        });
-    }
-    */
+            
+        }
+        catch(Exception ex){
+        }
+    }//GEN-LAST:event_QuintoActionPerformed
+
+    private void SextoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SextoMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SextoMousePressed
+
+    private void SextoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SextoActionPerformed
+        // TODO add your handling code here:
+          Sexto.setBackground(Color.black);
+        Sexto.setForeground(Color.white);
+        jPanel6.setBackground(Color.red);
+        
+        
+         primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+         cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
+        try{
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 3100);
+            }
+            
+        }
+        catch(Exception ex){
+        }
+    }//GEN-LAST:event_SextoActionPerformed
+
+    private void SeptimoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SeptimoMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SeptimoMousePressed
+
+    private void SeptimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SeptimoActionPerformed
+          Septimo.setBackground(Color.black);
+        Septimo.setForeground(Color.white);
+        jPanel7.setBackground(Color.red);
+        
+        
+         primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+         cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Octavo.setBackground(new Color(35, 38, 49));
+        Octavo.setForeground(new Color(65, 71, 90));
+        jPanel8.setBackground(new Color(35, 38, 49));
+        
+        try{
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 3720);
+            }
+            
+        }
+        catch(Exception ex){
+        }
+    }//GEN-LAST:event_SeptimoActionPerformed
+
+    private void OctavoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OctavoMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OctavoMousePressed
+
+    private void OctavoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OctavoActionPerformed
+        Octavo.setBackground(Color.black);
+        Octavo.setForeground(Color.white);
+        jPanel8.setBackground(Color.red);
+        
+        
+         primero.setBackground(new Color(35, 38, 49));
+        primero.setForeground(new Color(65, 71, 90));
+        jPanel1.setBackground(new Color(35, 38, 49));
+        
+        segundo.setBackground(new Color(35, 38, 49));
+        segundo.setForeground(new Color(65, 71, 90));
+        jPanel2.setBackground(new Color(35, 38, 49));
+        
+        tercero.setBackground(new Color(35, 38, 49));
+        tercero.setForeground(new Color(65, 71, 90));
+        jPanel3.setBackground(new Color(35, 38, 49));
+        
+         cuarto.setBackground(new Color(35, 38, 49));
+        cuarto.setForeground(new Color(65, 71, 90));
+        jPanel4.setBackground(new Color(35, 38, 49));
+        
+         Quinto.setBackground(new Color(35, 38, 49));
+        Quinto.setForeground(new Color(65, 71, 90));
+        jPanel5.setBackground(new Color(35, 38, 49));
+        
+         Sexto.setBackground(new Color(35, 38, 49));
+        Sexto.setForeground(new Color(65, 71, 90));
+        jPanel6.setBackground(new Color(35, 38, 49));
+        
+         Septimo.setBackground(new Color(35, 38, 49));
+        Septimo.setForeground(new Color(65, 71, 90));
+        jPanel7.setBackground(new Color(35, 38, 49));
+        
+        try{
+            if(isMixer){
+                this.scrollPane1.setScrollPosition(0, 4340);
+            }
+            
+        }
+        catch(Exception ex){
+        }
+    }//GEN-LAST:event_OctavoActionPerformed
+
     
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -728,6 +1064,10 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JLabel EtiquetaStatus;
     private javax.swing.JLabel Etiquetacanales;
     private javax.swing.JTextField MSG;
+    private javax.swing.JButton Octavo;
+    private javax.swing.JButton Quinto;
+    private javax.swing.JButton Septimo;
+    private javax.swing.JButton Sexto;
     private javax.swing.JLabel alarma;
     private javax.swing.JButton cLEAR;
     private javax.swing.JButton cuarto;
@@ -741,6 +1081,10 @@ public class Panel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JComboBox<String> networks;

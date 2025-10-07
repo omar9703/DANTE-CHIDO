@@ -37,10 +37,10 @@ public class Settings extends javax.swing.JPanel {
     private XmlRead X;
     private Panel P;
     //private PanelMixer Mixer;
-    private newPanelMixer Mixer;
+    private MixerDynamic Mixer;
     private String Inteface;
     private String pathImageProject="";
-    public Settings(Coordinador cor,Panel P,newPanelMixer Mixer) {
+    public Settings(Coordinador cor,Panel P,MixerDynamic Mixer) {
         
         puertos=new ArrayList<>();
         Images=new ArrayList<>();
@@ -59,7 +59,7 @@ public class Settings extends javax.swing.JPanel {
         this.P=P;
         this.Mixer=Mixer;
         X=new XmlRead();
-        for(int i=0;i<64;i++){
+        for(int i=0;i<128;i++){
             Images.add("0");
         }
         Confread=X.Read("config.xml");
@@ -2823,7 +2823,6 @@ public class Settings extends javax.swing.JPanel {
         if(!Alias.isEmpty()){
             Alias.clear();
         }
-
         //Images.clear();
         Conf.SetMultiCast(multicast.getText());
         String a=multicast.getText();
@@ -2876,9 +2875,7 @@ public class Settings extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "El tamaño de muestra no es el correcto");
             return;
         }
-
         Conf.SetFrecuencia(Integer.parseInt(Frecuencys.getText()) );
-
         Conf.SetMuestra(Integer.parseInt(Samples.getText()));
 
         //crear lista de todos lo canales
@@ -2900,12 +2897,7 @@ public class Settings extends javax.swing.JPanel {
         else{
             Conf.SetNet(Inteface);
         }
-
         Conf.SetPortUDP(ch1.getText());
-
-        
-       
-
         //crear lista de alias
         Alias.add(id1.getText());
         Alias.add(id2.getText());
@@ -2973,8 +2965,74 @@ public class Settings extends javax.swing.JPanel {
         Alias.add(id63.getText());
         Alias.add(id64.getText());
         
+        Alias.add(id33.getText());
+        Alias.add(id34.getText());
+        Alias.add(id35.getText());
+        Alias.add(id36.getText());
+        Alias.add(id37.getText());
+        Alias.add(id38.getText());
+        Alias.add(id39.getText());
+        Alias.add(id40.getText());    
+        Alias.add(id41.getText());
+        Alias.add(id42.getText());
+        Alias.add(id43.getText());
+        Alias.add(id44.getText());
+        Alias.add(id45.getText());
+        Alias.add(id46.getText());
+        Alias.add(id47.getText());
+        Alias.add(id48.getText());
+        Alias.add(id49.getText());
+        Alias.add(id50.getText());
+        Alias.add(id51.getText());
+        Alias.add(id52.getText());
+        Alias.add(id53.getText());
+        Alias.add(id54.getText());
+        Alias.add(id55.getText());
+        Alias.add(id56.getText());
+        Alias.add(id57.getText());
+        Alias.add(id58.getText());
+        Alias.add(id59.getText());
+        Alias.add(id60.getText());
+        Alias.add(id61.getText());
+        Alias.add(id62.getText());
+        Alias.add(id63.getText());
+        Alias.add(id64.getText());
+        
+         Alias.add(id33.getText());
+        Alias.add(id34.getText());
+        Alias.add(id35.getText());
+        Alias.add(id36.getText());
+        Alias.add(id37.getText());
+        Alias.add(id38.getText());
+        Alias.add(id39.getText());
+        Alias.add(id40.getText());    
+        Alias.add(id41.getText());
+        Alias.add(id42.getText());
+        Alias.add(id43.getText());
+        Alias.add(id44.getText());
+        Alias.add(id45.getText());
+        Alias.add(id46.getText());
+        Alias.add(id47.getText());
+        Alias.add(id48.getText());
+        Alias.add(id49.getText());
+        Alias.add(id50.getText());
+        Alias.add(id51.getText());
+        Alias.add(id52.getText());
+        Alias.add(id53.getText());
+        Alias.add(id54.getText());
+        Alias.add(id55.getText());
+        Alias.add(id56.getText());
+        Alias.add(id57.getText());
+        Alias.add(id58.getText());
+        Alias.add(id59.getText());
+        Alias.add(id60.getText());
+        Alias.add(id61.getText());
+        Alias.add(id62.getText());
+        Alias.add(id63.getText());
+        Alias.add(id64.getText());
+        
         puertos.clear();
-        for(int i=0;i<64;i++){
+        for(int i=0;i<128;i++){
             puertos.add(ch1.getText());
             
         }
@@ -3002,7 +3060,7 @@ public class Settings extends javax.swing.JPanel {
 
             JOptionPane.showMessageDialog(null, "Configuracion guardada exitosamente");
             Mixer.SetAlias(Alias);
-            Mixer.SetImages(Images);
+            //Mixer.SetImages(Images);
             P.LoadImageProject(Conf);
 
         }
@@ -3378,8 +3436,7 @@ public class Settings extends javax.swing.JPanel {
         id62.setText(nombres.get(61));
         id63.setText(nombres.get(62));
         id64.setText(nombres.get(63));
-        
-        
+           
     }
     
      private void SaveImage(int index){
@@ -3388,21 +3445,9 @@ public class Settings extends javax.swing.JPanel {
             if(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
                String path=fc.getSelectedFile().getAbsolutePath();
                String nombre=fc.getSelectedFile().getName();
-               /*
-               File inFile = new File(path);
-               File outFile = new File(nombre);
-               FileInputStream in = new FileInputStream(inFile);
-               FileOutputStream out = new FileOutputStream(outFile);
-               int c;
-                while( (c = in.read() ) != -1)
-                    out.write(c);
-                in.close();
-                out.close();
-                */
                 System.out.println(path);
                 Images.remove(index);
-                Images.add(index,path);
-                
+                Images.add(index,path);       
             }
             else
             {
