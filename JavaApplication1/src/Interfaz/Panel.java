@@ -855,7 +855,7 @@ public class Panel extends javax.swing.JFrame {
 
     private void cLEARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cLEARActionPerformed
         // TODO add your handling code here:
-        mixer.ClearAll();
+        mix.ClearAll();
     }//GEN-LAST:event_cLEARActionPerformed
 
     private void primeroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_primeroMousePressed

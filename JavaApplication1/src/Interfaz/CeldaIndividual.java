@@ -198,7 +198,7 @@ public class CeldaIndividual extends JPanel{
     
     private JButton crearBotonPrincipal() {
         JButton boton = new JButton(Conf.GetAlias().get(numeroCelda));
-        boton.setFont(new Font("Arial", Font.BOLD, 17));
+        boton.setFont(new Font("Arial", Font.BOLD, 15));
         boton.setBackground(new Color(25, 31, 49));
         boton.setForeground(Color.WHITE);
         boton.setFocusPainted(false);

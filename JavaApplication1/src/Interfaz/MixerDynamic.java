@@ -191,4 +191,84 @@ public class MixerDynamic extends JPanel {
         
      }
 
+     public void SetImages(ArrayList<String> Images){
+         int contador = 0;
+        for (CeldaIndividual component : CeldaIndividual())
+        {
+            if(!Images.get(contador).equals("0")){
+                try{
+                    component.labelCentral.setIcon(new javax.swing.ImageIcon(Images.get(contador)));
+                    this.repaint();
+                }
+                    catch(Exception ex){
+                    System.out.println("ERROR DE ESCRITURA");
+                }      
+            }
+            else
+            {
+               try{
+                    component.labelCentral.setIcon(new javax.swing.ImageIcon("no_image.png"));
+                    this.repaint();
+                    }
+                    catch(Exception ex){
+                        System.out.println("ERROR DE ESCRITURA");
+                    }
+
+            }
+            contador++;
+        }
+     }
+     public void ClearAll(){
+        
+        for (CeldaIndividual component : CeldaIndividual())
+        {
+                               
+                component.slider.setValue(10);
+                //((JSlider) component).disable();
+                
+
+                component.toggleButton.setSelected(false);
+                component.toggleButton.setBackground(Color.white);
+
+                component.botonPrincipal.setBackground(Color.BLUE);
+            
+            
+        }
+        for (int x=0;x<260;x++)
+        {           
+                var[x]=false;
+            
+        }
+        for (int x=0;x<128;x++)
+        {
+            alternar[x]=0;
+            
+            try{
+            if(!audio[x].equals(null))
+                audio[x].detener();
+                audio[x].stop();
+            }
+            catch(Exception e)
+            {
+                System.out.println("error cerrando ");
+            }
+            
+            try{
+                
+                if(varNoexcept[x+1]){
+                    audioSolo[x].detener();
+                    audioSolo[x].stop();
+                }
+                
+            }                             
+            catch(Exception ex)
+            {
+            }
+            
+        }
+        
+        for(int x=0;x<varNoexcept.length;x++){
+            varNoexcept[x]=false;
+        }
+    }
 }

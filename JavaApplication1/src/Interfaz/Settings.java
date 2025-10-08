@@ -3122,6 +3122,11 @@ public class Settings extends javax.swing.JPanel {
         id116.setForeground(new java.awt.Color(208, 212, 223));
         id116.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         id116.setText("NOMBRE LARGO");
+        id116.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                id116ActionPerformed(evt);
+            }
+        });
 
         jLabel311.setFont(new java.awt.Font("Knockout 48 Featherweight", 0, 22)); // NOI18N
         jLabel311.setForeground(new java.awt.Color(208, 212, 223));
@@ -3946,204 +3951,200 @@ public class Settings extends javax.swing.JPanel {
                         .addComponent(Im88, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Im89, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel290, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel283, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel284, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel285, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel286, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel287, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel288, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel289, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(id96, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id89, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id90, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id91, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id92, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id93, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id94, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id95, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Im90, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im91, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im92, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im93, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im94, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im95, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im96, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im97, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel298, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel291, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel292, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel293, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel294, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel295, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel296, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel297, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(id104, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id97, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id98, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id99, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id100, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id101, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id102, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id103, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Im98, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im99, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im100, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im101, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im102, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im103, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im104, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im105, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel306, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel299, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel300, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel301, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel302, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel303, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel304, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel305, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(id112, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id105, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id106, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id107, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id108, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id109, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id110, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id111, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Im106, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im107, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im108, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im109, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im110, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im111, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im112, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im113, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel313, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel311, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel310, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel309, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel308, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel312, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel314, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(id117, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id113, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id116, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id115, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id114, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id120, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id119, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(id118, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Im114, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im118, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im117, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im116, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im115, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im121, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im120, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(Im119, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(jLabel290, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel283, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel284, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel285, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel286, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel287, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel288, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel289, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(id96, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id89, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id90, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id91, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id92, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id93, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id94, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id95, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Im90, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im91, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im92, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im93, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im94, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im95, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im96, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im97, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel298, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel291, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel292, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel293, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel294, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel295, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel296, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel297, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(id104, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id97, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id98, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id99, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id100, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id101, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id102, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id103, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Im98, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im99, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im100, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im101, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im102, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im103, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im104, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im105, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel306, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel299, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel300, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel301, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel302, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel303, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel304, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel305, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(id112, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id105, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id106, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id107, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id108, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id109, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id110, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id111, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Im106, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im107, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im108, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im109, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im110, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im111, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im112, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im113, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel313, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel307, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel311, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel310, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel309, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel308, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel312, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel314, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(id117, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id113, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id116, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id115, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id114, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id120, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id119, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(id118, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Im114, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im118, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im117, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im116, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im115, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im121, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im120, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Im119, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, 0)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel316, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4700,92 +4701,92 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im3ActionPerformed
         // TODO add your handling code here:
-        SaveImage(2);
+        SaveImage(4);
     }//GEN-LAST:event_Im3ActionPerformed
 
     private void Im4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im4ActionPerformed
         // TODO add your handling code here:
-        SaveImage(3);
+        SaveImage(12);
     }//GEN-LAST:event_Im4ActionPerformed
 
     private void Im6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im6ActionPerformed
         // TODO add your handling code here:
-        SaveImage(5);
+        SaveImage(20);
     }//GEN-LAST:event_Im6ActionPerformed
 
     private void Im11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im11ActionPerformed
         // TODO add your handling code here:
-        SaveImage(10);
+        SaveImage(5);
     }//GEN-LAST:event_Im11ActionPerformed
 
     private void Im12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im12ActionPerformed
         // TODO add your handling code here:
-        SaveImage(11);
+        SaveImage(13);
     }//GEN-LAST:event_Im12ActionPerformed
 
     private void Im14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im14ActionPerformed
         // TODO add your handling code here:
-        SaveImage(13);
+        SaveImage(21);
     }//GEN-LAST:event_Im14ActionPerformed
 
     private void Im19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im19ActionPerformed
         // TODO add your handling code here:
-        SaveImage(18);
+        SaveImage(6);
     }//GEN-LAST:event_Im19ActionPerformed
 
     private void Im20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im20ActionPerformed
         // TODO add your handling code here:
-        SaveImage(19);
+        SaveImage(14);
     }//GEN-LAST:event_Im20ActionPerformed
 
     private void Im22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im22ActionPerformed
         // TODO add your handling code here:
-        SaveImage(21);
+        SaveImage(22);
     }//GEN-LAST:event_Im22ActionPerformed
 
     private void Im28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im28ActionPerformed
         // TODO add your handling code here:
-        SaveImage(27);
+        SaveImage(15);
     }//GEN-LAST:event_Im28ActionPerformed
 
     private void Im30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im30ActionPerformed
         // TODO add your handling code here:
-        SaveImage(29);
+        SaveImage(23);
     }//GEN-LAST:event_Im30ActionPerformed
 
     private void Im29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im29ActionPerformed
         // TODO add your handling code here:
-        SaveImage(28);
+        SaveImage(19);
     }//GEN-LAST:event_Im29ActionPerformed
 
     private void Im26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im26ActionPerformed
         // TODO add your handling code here:
-        SaveImage(25);
+        SaveImage(11);
     }//GEN-LAST:event_Im26ActionPerformed
 
     private void Im25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im25ActionPerformed
         // TODO add your handling code here:
-        SaveImage(24);
+        SaveImage(3);
     }//GEN-LAST:event_Im25ActionPerformed
 
     private void Im21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im21ActionPerformed
         // TODO add your handling code here:
-        SaveImage(20);
+        SaveImage(18);
     }//GEN-LAST:event_Im21ActionPerformed
 
     private void Im18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im18ActionPerformed
         // TODO add your handling code here:
-        SaveImage(17);
+        SaveImage(10);
     }//GEN-LAST:event_Im18ActionPerformed
 
     private void Im17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im17ActionPerformed
         // TODO add your handling code here:
-        SaveImage(16);
+        SaveImage(2);
     }//GEN-LAST:event_Im17ActionPerformed
 
     private void Im13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im13ActionPerformed
         // TODO add your handling code here:
-        SaveImage(12);
+        SaveImage(17);
     }//GEN-LAST:event_Im13ActionPerformed
 
     private void id13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id13ActionPerformed
@@ -4803,7 +4804,7 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im9ActionPerformed
         // TODO add your handling code here:
-        SaveImage(8);
+        SaveImage(1);
     }//GEN-LAST:event_Im9ActionPerformed
 
     private void id9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id9ActionPerformed
@@ -4812,12 +4813,12 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im5ActionPerformed
         // TODO add your handling code here:
-        SaveImage(4);
+        SaveImage(16);
     }//GEN-LAST:event_Im5ActionPerformed
 
     private void Im2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im2ActionPerformed
         // TODO add your handling code here:
-        SaveImage(1);
+        SaveImage(8);
     }//GEN-LAST:event_Im2ActionPerformed
 
     private void Im1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im1ActionPerformed
@@ -5098,72 +5099,72 @@ public class Settings extends javax.swing.JPanel {
         Alias.add(id63.getText());
         Alias.add(id64.getText());
         
-        Alias.add(id33.getText());
-        Alias.add(id34.getText());
-        Alias.add(id35.getText());
-        Alias.add(id36.getText());
-        Alias.add(id37.getText());
-        Alias.add(id38.getText());
-        Alias.add(id39.getText());
-        Alias.add(id40.getText());    
-        Alias.add(id41.getText());
-        Alias.add(id42.getText());
-        Alias.add(id43.getText());
-        Alias.add(id44.getText());
-        Alias.add(id45.getText());
-        Alias.add(id46.getText());
-        Alias.add(id47.getText());
-        Alias.add(id48.getText());
-        Alias.add(id49.getText());
-        Alias.add(id50.getText());
-        Alias.add(id51.getText());
-        Alias.add(id52.getText());
-        Alias.add(id53.getText());
-        Alias.add(id54.getText());
-        Alias.add(id55.getText());
-        Alias.add(id56.getText());
-        Alias.add(id57.getText());
-        Alias.add(id58.getText());
-        Alias.add(id59.getText());
-        Alias.add(id60.getText());
-        Alias.add(id61.getText());
-        Alias.add(id62.getText());
-        Alias.add(id63.getText());
-        Alias.add(id64.getText());
+        Alias.add(id72.getText()); 
+        Alias.add(id65.getText());  
+        Alias.add(id66.getText());
+        Alias.add(id67.getText());
+        Alias.add(id68.getText());
+        Alias.add(id69.getText());
+        Alias.add(id70.getText());
+        Alias.add(id71.getText());
+        Alias.add(id80.getText());   
+        Alias.add(id73.getText());
+        Alias.add(id74.getText());
+        Alias.add(id75.getText());
+        Alias.add(id76.getText());
+        Alias.add(id77.getText());
+        Alias.add(id78.getText());
+        Alias.add(id79.getText());
+        Alias.add(id88.getText());
+        Alias.add(id81.getText());
+        Alias.add(id82.getText());
+        Alias.add(id83.getText());
+        Alias.add(id84.getText());
+        Alias.add(id85.getText());
+        Alias.add(id86.getText());
+        Alias.add(id87.getText());
+        Alias.add(id96.getText());
+        Alias.add(id89.getText());
+        Alias.add(id90.getText());
+        Alias.add(id91.getText());
+        Alias.add(id92.getText());
+        Alias.add(id93.getText());
+        Alias.add(id94.getText());
+        Alias.add(id95.getText());
+        Alias.add(id104.getText()); 
         
-         Alias.add(id33.getText());
-        Alias.add(id34.getText());
-        Alias.add(id35.getText());
-        Alias.add(id36.getText());
-        Alias.add(id37.getText());
-        Alias.add(id38.getText());
-        Alias.add(id39.getText());
-        Alias.add(id40.getText());    
-        Alias.add(id41.getText());
-        Alias.add(id42.getText());
-        Alias.add(id43.getText());
-        Alias.add(id44.getText());
-        Alias.add(id45.getText());
-        Alias.add(id46.getText());
-        Alias.add(id47.getText());
-        Alias.add(id48.getText());
-        Alias.add(id49.getText());
-        Alias.add(id50.getText());
-        Alias.add(id51.getText());
-        Alias.add(id52.getText());
-        Alias.add(id53.getText());
-        Alias.add(id54.getText());
-        Alias.add(id55.getText());
-        Alias.add(id56.getText());
-        Alias.add(id57.getText());
-        Alias.add(id58.getText());
-        Alias.add(id59.getText());
-        Alias.add(id60.getText());
-        Alias.add(id61.getText());
-        Alias.add(id62.getText());
-        Alias.add(id63.getText());
-        Alias.add(id64.getText());
-        
+        Alias.add(id97.getText());
+        Alias.add(id98.getText());
+        Alias.add(id99.getText());
+        Alias.add(id100.getText());
+        Alias.add(id101.getText());
+        Alias.add(id102.getText());
+        Alias.add(id103.getText());
+        Alias.add(id112.getText());   
+        Alias.add(id105.getText());
+        Alias.add(id106.getText());
+        Alias.add(id107.getText());
+        Alias.add(id108.getText());
+        Alias.add(id109.getText());
+        Alias.add(id110.getText());
+        Alias.add(id111.getText());
+        Alias.add(id117.getText());
+        Alias.add(id113.getText());
+        Alias.add(id116.getText());
+        Alias.add(id115.getText());
+        Alias.add(id114.getText());
+        Alias.add(id120.getText());
+        Alias.add(id119.getText());      
+        Alias.add(id118.getText());
+        Alias.add(id122.getText());
+        Alias.add(id125.getText());
+        Alias.add(id128.getText());
+        Alias.add(id126.getText());
+        Alias.add(id127.getText());
+        Alias.add(id124.getText());
+        Alias.add(id123.getText());
+        Alias.add(id121.getText());
+           
         puertos.clear();
         for(int i=0;i<128;i++){
             puertos.add(ch1.getText());
@@ -5193,7 +5194,7 @@ public class Settings extends javax.swing.JPanel {
 
             JOptionPane.showMessageDialog(null, "Configuracion guardada exitosamente");
             Mixer.SetAlias(Alias);
-            //Mixer.SetImages(Images);
+            Mixer.SetImages(Images);
             P.LoadImageProject(Conf);
 
         }
@@ -5257,32 +5258,32 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im7ActionPerformed
         // TODO add your handling code here:
-        SaveImage(6);
+        SaveImage(24);
     }//GEN-LAST:event_Im7ActionPerformed
 
     private void Im8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im8ActionPerformed
         // TODO add your handling code here:
-        SaveImage(7);
+        SaveImage(25);
     }//GEN-LAST:event_Im8ActionPerformed
 
     private void Im15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im15ActionPerformed
         // TODO add your handling code here:
-        SaveImage(14);
+        SaveImage(26);
     }//GEN-LAST:event_Im15ActionPerformed
 
     private void Im16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im16ActionPerformed
         // TODO add your handling code here:
-        SaveImage(15);
+        SaveImage(27);
     }//GEN-LAST:event_Im16ActionPerformed
 
     private void Im23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im23ActionPerformed
         // TODO add your handling code here:
-        SaveImage(22);
+        SaveImage(28);
     }//GEN-LAST:event_Im23ActionPerformed
 
     private void Im24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im24ActionPerformed
         // TODO add your handling code here:
-        SaveImage(23);
+        SaveImage(29);
     }//GEN-LAST:event_Im24ActionPerformed
 
     private void Im31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im31ActionPerformed
@@ -5465,7 +5466,7 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im65ActionPerformed
         // TODO add your handling code here:
-        SaveImage(65);
+        SaveImage(7);
     }//GEN-LAST:event_Im65ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -5494,259 +5495,265 @@ public class Settings extends javax.swing.JPanel {
 
     private void Im66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im66ActionPerformed
         // TODO add your handling code here:
+         SaveImage(64);
     }//GEN-LAST:event_Im66ActionPerformed
 
     private void Im67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im67ActionPerformed
         // TODO add your handling code here:
+        SaveImage(65);
     }//GEN-LAST:event_Im67ActionPerformed
 
     private void Im68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im68ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(66);
     }//GEN-LAST:event_Im68ActionPerformed
 
     private void Im69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im69ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(67);
     }//GEN-LAST:event_Im69ActionPerformed
 
     private void Im70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im70ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(68);
     }//GEN-LAST:event_Im70ActionPerformed
 
     private void Im71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im71ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(69);
     }//GEN-LAST:event_Im71ActionPerformed
 
     private void Im72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im72ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(70);
     }//GEN-LAST:event_Im72ActionPerformed
 
     private void Im73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im73ActionPerformed
-        // TODO add your handling code here:
+       SaveImage(71);
     }//GEN-LAST:event_Im73ActionPerformed
 
     private void Im74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im74ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(72);
     }//GEN-LAST:event_Im74ActionPerformed
 
     private void Im75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im75ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(73);
     }//GEN-LAST:event_Im75ActionPerformed
 
     private void Im76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im76ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(74);
     }//GEN-LAST:event_Im76ActionPerformed
 
     private void Im77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im77ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(75);
     }//GEN-LAST:event_Im77ActionPerformed
 
     private void Im78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im78ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(76);
     }//GEN-LAST:event_Im78ActionPerformed
 
     private void Im79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im79ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(77);
     }//GEN-LAST:event_Im79ActionPerformed
 
     private void Im80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im80ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(78);
     }//GEN-LAST:event_Im80ActionPerformed
 
     private void Im81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im81ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(79);
     }//GEN-LAST:event_Im81ActionPerformed
 
     private void Im82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im82ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(80);
     }//GEN-LAST:event_Im82ActionPerformed
 
     private void Im83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im83ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(81);
     }//GEN-LAST:event_Im83ActionPerformed
 
     private void Im84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im84ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(82);
     }//GEN-LAST:event_Im84ActionPerformed
 
     private void Im85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im85ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(83);
     }//GEN-LAST:event_Im85ActionPerformed
 
     private void Im86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im86ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(84);
     }//GEN-LAST:event_Im86ActionPerformed
 
     private void Im87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im87ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(85);
     }//GEN-LAST:event_Im87ActionPerformed
 
     private void Im88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im88ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(86);
     }//GEN-LAST:event_Im88ActionPerformed
 
     private void Im89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im89ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(87);
     }//GEN-LAST:event_Im89ActionPerformed
 
     private void Im90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im90ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(88);
     }//GEN-LAST:event_Im90ActionPerformed
 
     private void Im91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im91ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(89);
     }//GEN-LAST:event_Im91ActionPerformed
 
     private void Im92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im92ActionPerformed
-        // TODO add your handling code here:
+       SaveImage(90);
     }//GEN-LAST:event_Im92ActionPerformed
 
     private void Im93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im93ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(91);
     }//GEN-LAST:event_Im93ActionPerformed
 
     private void Im94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im94ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(92);
     }//GEN-LAST:event_Im94ActionPerformed
 
     private void Im95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im95ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(93);
     }//GEN-LAST:event_Im95ActionPerformed
 
     private void Im96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im96ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(94);
     }//GEN-LAST:event_Im96ActionPerformed
 
     private void Im97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im97ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(95);
     }//GEN-LAST:event_Im97ActionPerformed
 
     private void Im98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im98ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(96);
     }//GEN-LAST:event_Im98ActionPerformed
 
     private void Im99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im99ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(97);
     }//GEN-LAST:event_Im99ActionPerformed
 
     private void Im100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im100ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(98);
     }//GEN-LAST:event_Im100ActionPerformed
 
     private void Im101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im101ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(99);
     }//GEN-LAST:event_Im101ActionPerformed
 
     private void Im102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im102ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(100);
     }//GEN-LAST:event_Im102ActionPerformed
 
     private void Im103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im103ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(101);
     }//GEN-LAST:event_Im103ActionPerformed
 
     private void Im104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im104ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(102);
     }//GEN-LAST:event_Im104ActionPerformed
 
     private void Im105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im105ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(103);
     }//GEN-LAST:event_Im105ActionPerformed
 
     private void Im106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im106ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(104);
     }//GEN-LAST:event_Im106ActionPerformed
 
     private void Im107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im107ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(105);
     }//GEN-LAST:event_Im107ActionPerformed
 
     private void Im108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im108ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(106);
     }//GEN-LAST:event_Im108ActionPerformed
 
     private void Im109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im109ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(107);
     }//GEN-LAST:event_Im109ActionPerformed
 
     private void Im110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im110ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(108);
     }//GEN-LAST:event_Im110ActionPerformed
 
     private void Im111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im111ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(109);
     }//GEN-LAST:event_Im111ActionPerformed
 
     private void Im112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im112ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(110);
     }//GEN-LAST:event_Im112ActionPerformed
 
     private void Im113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im113ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(111);
     }//GEN-LAST:event_Im113ActionPerformed
 
     private void Im114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im114ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(112);
     }//GEN-LAST:event_Im114ActionPerformed
 
     private void Im115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im115ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(116);
     }//GEN-LAST:event_Im115ActionPerformed
 
     private void Im116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im116ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(115);
     }//GEN-LAST:event_Im116ActionPerformed
 
     private void Im117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im117ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(114);
     }//GEN-LAST:event_Im117ActionPerformed
 
     private void Im118ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im118ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(113);
     }//GEN-LAST:event_Im118ActionPerformed
 
     private void Im119ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im119ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(119);
     }//GEN-LAST:event_Im119ActionPerformed
 
     private void Im120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im120ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(118);
     }//GEN-LAST:event_Im120ActionPerformed
 
     private void Im121ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im121ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(117);
     }//GEN-LAST:event_Im121ActionPerformed
 
     private void Im122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im122ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(125);
     }//GEN-LAST:event_Im122ActionPerformed
 
     private void Im123ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im123ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(127);
     }//GEN-LAST:event_Im123ActionPerformed
 
     private void Im124ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im124ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(121);
     }//GEN-LAST:event_Im124ActionPerformed
 
     private void Im125ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im125ActionPerformed
-        // TODO add your handling code here:
+       SaveImage(126);
     }//GEN-LAST:event_Im125ActionPerformed
 
     private void Im126ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im126ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(123);
     }//GEN-LAST:event_Im126ActionPerformed
 
     private void Im127ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im127ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(124);
     }//GEN-LAST:event_Im127ActionPerformed
 
     private void Im128ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im128ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(120);
     }//GEN-LAST:event_Im128ActionPerformed
 
     private void Im129ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Im129ActionPerformed
-        // TODO add your handling code here:
+        SaveImage(122);
     }//GEN-LAST:event_Im129ActionPerformed
+
+    private void id116ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_id116ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_id116ActionPerformed
 
     private void PaintSettings(Configuracion C){
         
@@ -5824,6 +5831,74 @@ public class Settings extends javax.swing.JPanel {
         id62.setText(nombres.get(61));
         id63.setText(nombres.get(62));
         id64.setText(nombres.get(63));
+            
+        id72.setText(nombres.get(64));
+        id65.setText(nombres.get(65));
+        id66.setText(nombres.get(66));
+        id67.setText(nombres.get(67));
+        id68.setText(nombres.get(68));
+        id69.setText(nombres.get(69));
+        id70.setText(nombres.get(70));
+        id71.setText(nombres.get(71));
+        id80.setText(nombres.get(72));
+        id73.setText(nombres.get(73));
+        id74.setText(nombres.get(74));
+        id75.setText(nombres.get(75));
+        id76.setText(nombres.get(76));
+        id77.setText(nombres.get(77));
+        id78.setText(nombres.get(78));
+        id79.setText(nombres.get(79));
+        id88.setText(nombres.get(80));
+        
+        id81.setText(nombres.get(81));
+        id82.setText(nombres.get(82));
+        id83.setText(nombres.get(83));
+        id84.setText(nombres.get(84));
+        id85.setText(nombres.get(85));
+        id86.setText(nombres.get(86));
+        id87.setText(nombres.get(87));
+        id96.setText(nombres.get(88));     
+        id89.setText(nombres.get(89));
+        id90.setText(nombres.get(90));
+        id91.setText(nombres.get(91));
+        id92.setText(nombres.get(92));
+        id93.setText(nombres.get(93));
+        id94.setText(nombres.get(94));
+        id95.setText(nombres.get(95));
+        
+        
+        id104.setText(nombres.get(96));
+        id97.setText(nombres.get(97));
+        id98.setText(nombres.get(98));
+        id99.setText(nombres.get(99));
+        id100.setText(nombres.get(100));
+        id101.setText(nombres.get(101));
+        id102.setText(nombres.get(102));
+        id103.setText(nombres.get(103));
+        id112.setText(nombres.get(104));    
+        id105.setText(nombres.get(105));
+        id106.setText(nombres.get(106));
+        id107.setText(nombres.get(107));
+        id108.setText(nombres.get(108));
+        id109.setText(nombres.get(109));
+        id110.setText(nombres.get(110));
+        id111.setText(nombres.get(111));
+        id117.setText(nombres.get(112));
+        id113.setText(nombres.get(113));
+        id116.setText(nombres.get(114));
+        id115.setText(nombres.get(115));
+        id114.setText(nombres.get(116));
+        id120.setText(nombres.get(117));
+        id119.setText(nombres.get(118));
+        id118.setText(nombres.get(119));
+        id122.setText(nombres.get(120));
+        id125.setText(nombres.get(121));
+        id128.setText(nombres.get(122));
+        id126.setText(nombres.get(123));
+        id127.setText(nombres.get(124));
+        id124.setText(nombres.get(125));
+        id123.setText(nombres.get(126));
+        id121.setText(nombres.get(127));   
            
     }
     
