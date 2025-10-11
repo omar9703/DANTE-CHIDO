@@ -222,7 +222,6 @@ public class CeldaIndividual extends JPanel{
                     System.out.println("Error de hilo ");
                     boton.setBackground(Color.RED);
                     slider.setEnabled(false);
-                    //var[index-1]=false;
                  }
 
 

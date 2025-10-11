@@ -4996,7 +4996,7 @@ public class Settings extends javax.swing.JPanel {
         bandera1=true;
 
         boolean bandera2=false;
-        if(Samples.getText().equals("128") || Samples.getText().equals("256") || Samples.getText().equals("512") || Samples.getText().equals("64")){
+        if(Samples.getText().equals("128") || Samples.getText().equals("256") || Samples.getText().equals("32") || Samples.getText().equals("64")){
             bandera2=true;
         }
 
